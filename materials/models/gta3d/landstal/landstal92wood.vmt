@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/gta3d/landstal/landstal92wood"
+
+$bumpmap "models/gta3d/vehicle/blank_normal"
+
+$phong 1
+$phongexponent 100
+$phongboost 1
+$phongfresnelranges "[.3 .6 4]"
+
+"$halflambert" 1
+
+"$colorfix" "{255 255 255}"
+"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar $color
+		}
+	}
+}

@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/gta3d/vehicle/lightgradient256"
+	"$translucent" 1
+}

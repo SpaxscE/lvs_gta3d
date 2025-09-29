@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/gta3d/vehicle/carundera4bit64"
+
+"$halflambert" 1
+}

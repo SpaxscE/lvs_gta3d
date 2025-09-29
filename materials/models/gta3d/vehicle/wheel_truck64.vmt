@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/gta3d/vehicle/wheel_truck64"
+
+$bumpmap "models/gta3d/vehicle/blank_normal"
+$phong 1
+$phongexponent 3
+$phongboost 1
+$phongfresnelranges "[0 0.5 1]"
+
+"$halflambert" 1
+
+"$colorfix" "{255 255 255}"
+"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar $color
+		}
+	}
+}

@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/gta3d/infernus/infernus92wheel32"
+
+"$envmap" "env_cubemap"
+"$envmaptint" "[.15 .15 .15]"
+
+"$colorfix" "{255 255 255}"
+"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar $color
+		}
+	}
+}

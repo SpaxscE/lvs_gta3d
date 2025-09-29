@@ -1,0 +1,27 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/gta3d/vehicle/vehiclegrunge256"
+
+$bumpmap "models/gta3d/vehicle/blank_normal"
+
+"$envmap" "env_cubemap"
+"$envmaptint" "[.05 .05 .05]"
+$envmapfresnel 1
+
+$phong 1
+$phongexponent 100
+$phongboost 1
+$phongfresnelranges "[.3 .6 4]"
+
+"$blendtintbybasealpha" 1
+"$halflambert" 1
+
+"$nocull" 1
+
+Proxies {
+    	"ColorSlot1"
+	{
+		name "Primary Color"
+       		resultVar $color2
+           	}
+}

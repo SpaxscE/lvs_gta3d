@@ -1,0 +1,21 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/gta3d/vehicle/vehiclelights128"
+
+"$halflambert" 1
+
+"$detail" "models/gta3d/vehicle/vehiclelightson128"
+"$detailscale" 1
+"$detailblendfactor" 0
+"$detailblendmode" 5
+
+"$colorfix" "{255 255 255}"
+"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar $color
+		}
+	}
+}

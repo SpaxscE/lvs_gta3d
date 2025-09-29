@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+"$basetexture" "models/gta3d/vehicle/vehiclepoldecals128_dark"
+
+"$alphatest" 1
+"$AlphaTestReference" .5
+
+"$colorfix" "{255 255 255}"
+"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar $color
+		}
+	}
+}
