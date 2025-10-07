@@ -1,0 +1,7 @@
+"patch"
+{
+	include "materials/models/diggercars/gtavc/shared/mat.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtavc/shared/tyre64a"
+}
