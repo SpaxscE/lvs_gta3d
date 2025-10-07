@@ -13,7 +13,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [1] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/bonnet_dam.mdl",
+					mdl = "models/diggercars/gtasa/fortune/bonnet_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -35,7 +35,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [2] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/boot_dam.mdl",
+					mdl = "models/diggercars/gtasa/fortune/boot_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -57,7 +57,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [3] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/bump_front_dam.mdl",
+					mdl = "models/diggercars/gtasa/fortune/bump_front_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -79,7 +79,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [4] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/bump_rear_dam.mdl",
+					mdl = "models/diggercars/gtasa/fortune/bump_rear_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -101,7 +101,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [6] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/door_lf_dam.mdl",
+					mdl = "models/diggercars/gtasa/fortune/door_lf_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -123,7 +123,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [5] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/door_rf_dam.mdl",
+					mdl = "models/diggercars/gtasa/fortune/door_rf_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
