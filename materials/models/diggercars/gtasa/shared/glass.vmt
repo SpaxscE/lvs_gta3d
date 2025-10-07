@@ -1,6 +1,6 @@
 VertexLitGeneric
 {
-	$basetexture		"models\diggercars/gtavc/shared\glass.vtf"
+	$basetexture		"models\diggercars/gtasa/shared\glass.vtf"
 
 	$nodecal			1
 	$translucent		1
