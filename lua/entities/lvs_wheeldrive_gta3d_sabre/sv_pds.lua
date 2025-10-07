@@ -13,7 +13,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [1] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/bonnet_dam.mdl",
+					mdl = "models/diggercars/gtasa/sabre/bonnet_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -35,7 +35,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [2] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/boot_dam.mdl",
+					mdl = "models/diggercars/gtasa/sabre/boot_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -57,7 +57,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [3] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/bump_front_dam.mdl",
+					mdl = "models/diggercars/gtasa/sabre/bump_front_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -79,7 +79,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [4] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/bump_rear_dam.mdl",
+					mdl = "models/diggercars/gtasa/sabre/bump_rear_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -101,7 +101,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [6] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/door_lf_dam.mdl",
+					mdl = "models/diggercars/gtasa/sabre/door_lf_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -123,7 +123,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [5] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/hustler/door_rf_dam.mdl",
+					mdl = "models/diggercars/gtasa/sabre/door_rf_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -166,8 +166,8 @@ function ENT:CreatePDS()
 		}
 	} )
 
-	-- taillight left
-	local pos, ang, mins, maxs = self:GetBoneInfo( "l_rl" )
+	-- highbeam left
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_flh" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
@@ -176,15 +176,16 @@ function ENT:CreatePDS()
 		allow_damage = true,
 		stages = {
 			{
-				bodygroup = { [12] = 1 },
+				bodygroup = { [14] = 1 },
 				effect = "GlassImpact",
 				sound = "SA_Break_Light",
 			},
 		}
 	} )
 
-	-- taillight right
-	local pos, ang, mins, maxs = self:GetBoneInfo( "l_rr" )
+
+	-- highbeam right
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_frh" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
@@ -193,7 +194,7 @@ function ENT:CreatePDS()
 		allow_damage = true,
 		stages = {
 			{
-				bodygroup = { [11] = 1 },
+				bodygroup = { [13] = 1 },
 				effect = "GlassImpact",
 				sound = "SA_Break_Light",
 			},
@@ -210,12 +211,12 @@ function ENT:CreatePDS()
 		allow_damage = true,
 		stages = {
 			{
-				bodygroup = { [9] = 1 },
+				bodygroup = { [7] = 1 },
 				effect = "GlassImpact",
 				sound = "physics/glass/glass_cup_break1.wav",
 			},
 			{
-				bodygroup = { [9] = 2 },
+				bodygroup = { [7] = 2 },
 				effect = "GlassImpact",
 				sound = "physics/glass/glass_largesheet_break1.wav",
 			},
@@ -223,7 +224,7 @@ function ENT:CreatePDS()
 	} )
 
 	-- glass left
-	local pos, ang, mins, maxs = self:GetBoneInfo( "l_flh" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_rl" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
@@ -232,12 +233,12 @@ function ENT:CreatePDS()
 		allow_damage = true,
 		stages = {
 			{
-				bodygroup = { [14] = 1 },
+				bodygroup = { [12] = 1 },
 				effect = "GlassImpact",
 				sound = "physics/glass/glass_cup_break1.wav",
 			},
 			{
-				bodygroup = { [14] = 2 },
+				bodygroup = { [12] = 2 },
 				effect = "GlassImpact",
 				sound = "physics/glass/glass_largesheet_break1.wav",
 			},
@@ -245,7 +246,7 @@ function ENT:CreatePDS()
 	} )
 
 	-- glass right
-	local pos, ang, mins, maxs = self:GetBoneInfo( "l_frh" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_rr" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
@@ -254,12 +255,12 @@ function ENT:CreatePDS()
 		allow_damage = true,
 		stages = {
 			{
-				bodygroup = { [13] = 1 },
+				bodygroup = { [11] = 1 },
 				effect = "GlassImpact",
 				sound = "physics/glass/glass_cup_break1.wav",
 			},
 			{
-				bodygroup = { [13] = 2 },
+				bodygroup = { [11] = 2 },
 				effect = "GlassImpact",
 				sound = "physics/glass/glass_largesheet_break1.wav",
 			},
