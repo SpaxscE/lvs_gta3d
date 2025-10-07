@@ -51,7 +51,7 @@ function ENT:OnSpawn( PObj )
 	local Engine = self:AddEngine( self:WorldToLocal( att_eng.Pos ) )
 	Engine:SetDoorHandler( DoorHandler )
 
-	local pos, ang, mins, maxs = self:GetBoneInfo( "trunk" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "boot" )
 	local TrunkHandler = self:AddDoorHandler( "trunk", pos, ang, mins, maxs, mins, maxs )
 	TrunkHandler:SetSoundOpen( "lvs/vehicles/generic/car_trunk_open.wav" )
 	TrunkHandler:SetSoundClose( "lvs/vehicles/generic/car_hood_close.wav" )
