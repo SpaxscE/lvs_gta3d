@@ -4,16 +4,7 @@ include("shared.lua")
 include("sv_pds.lua")
 
 function ENT:OnSpawn( PObj )
-	local WheelModel = "models/diggercars/gtasa/shared/wheel_fortune.mdl"
-
-	local SuspensionSettings = {
-		Height = 6,
-		MaxTravel = 7,
-		ControlArmLength = 25,
-		SpringConstant = 30000,
-		SpringDamping = 2000,
-		SpringRelativeDamping = 2000,
-	}
+	self:AddExhaustByAttachment( "exh" )
 
 	local att_eng = self:GetAttachment( self:LookupAttachment( "eng" ) )
 	local att_fuel = self:GetAttachment( self:LookupAttachment( "fuel" ) )
@@ -58,6 +49,17 @@ function ENT:OnSpawn( PObj )
 	TrunkHandler:DisableOnBodyGroup( 2, 3 )
 
 	self:AddFuelTank( self:WorldToLocal( att_fuel.Pos ), self:WorldToLocalAngles( att_fuel.Ang ) + Angle(0,0,90), 600, LVS.FUELTYPE_PETROL )
+
+	local WheelModel = "models/diggercars/gtasa/shared/wheel_fortune.mdl"
+
+	local SuspensionSettings = {
+		Height = 6,
+		MaxTravel = 7,
+		ControlArmLength = 25,
+		SpringConstant = 30000,
+		SpringDamping = 2000,
+		SpringRelativeDamping = 2000,
+	}
 
 	local FrontAxle = self:DefineAxle( {
 		Axle = {

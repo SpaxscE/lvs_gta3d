@@ -18,3 +18,18 @@ ENT.PDSDamageVelocity = 25
 ENT.PDSDamageMultiplier = 0.075
 
 ENT.MaxVelocityReverse = 350
+
+function ENT:AddExhaustByAttachment( name )
+	if not istable( self.ExhaustPositions ) then self.ExhaustPositions = {} end
+
+	local att = self:GetAttachment( self:LookupAttachment( name ) )
+
+	if not att then return end
+
+	local data = {
+		pos = self:WorldToLocal( att.Pos ),
+		ang = self:WorldToLocalAngles( att.Ang ),
+	}
+
+	table.insert( self.ExhaustPositions, data )
+end

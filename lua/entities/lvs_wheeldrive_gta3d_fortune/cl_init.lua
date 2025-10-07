@@ -1,5 +1,9 @@
 include("shared.lua")
 
+function ENT:OnSpawn()
+	self:AddExhaustByAttachment( "exh" )
+end
+
 function ENT:CalcViewOverride( ply, pos, angles, fov, pod )
 	if pod:GetThirdPersonMode() then
 
