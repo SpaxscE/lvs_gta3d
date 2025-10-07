@@ -1,50 +1,10 @@
 AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
-include("sv_pds.lua") -- include physics damage system lua file
-
+include("sv_pds.lua")
 
 function ENT:OnSpawn( PObj )
-	local DriverSeat = self:AddDriverSeat( Vector(-17,17,-2), Angle(0,-90,0) )
-	DriverSeat.ExitPos = Vector(-5,80,0)
-
-	local RFSeat = self:AddPassengerSeat( Vector(0,-18,6), Angle(0,-90,20) )
-	RFSeat.ExitPos = Vector(-5,-80,0)
-	
-	local LFDoorHandler = self:AddDoorHandler( "left_door", Vector(15,45,0), Angle(0,180,0), Vector(0,0,0), Vector(50,15,50), Vector(0,-40,0), Vector(50,15,50) )
-	LFDoorHandler:SetSoundOpen( "gta3d/doors/door_gen_open.wav" )
-	LFDoorHandler:SetSoundClose( "gta3d/doors/door_gen_close.wav" )
-	LFDoorHandler:LinkToSeat( DriverSeat )
-	LFDoorHandler:DisableOnBodyGroup( 6, 3 )
-	
-	local RFDoorHandler = self:AddDoorHandler( "right_door", Vector(15,-45,0), Angle(0,180,0), Vector(0,-15,0), Vector(50,0,50), Vector(0,-15,0), Vector(50,40,50) )
-	RFDoorHandler:SetSoundOpen( "gta3d/doors/door_gen_open.wav" )
-	RFDoorHandler:SetSoundClose( "gta3d/doors/door_gen_close.wav" )
-	RFDoorHandler:LinkToSeat( RFSeat )
-	RFDoorHandler:DisableOnBodyGroup( 5, 3 )
-	
-	local DoorHandler = self:AddDoorHandler( "hood", Vector(20,0,22), Angle(0,0,0), Vector(0,-35,0), Vector(65,35,12), Vector(0,-35,0), Vector(65,35,45) )
-	DoorHandler:SetSoundOpen( "lvs/vehicles/generic/car_hood_open.wav" )
-	DoorHandler:SetSoundClose( "lvs/vehicles/generic/car_hood_close.wav" )
-	DoorHandler:DisableOnBodyGroup( 1, 3 )
-	local Engine = self:AddEngine( Vector(64.6,0,22) )
-	Engine:SetDoorHandler( DoorHandler )
-	
-	local TrunkHandler = self:AddDoorHandler( "trunk", Vector(-53,0,25), Angle(0,180,0), Vector(0,-35,0), Vector(35,35,8), Vector(0,-35,0), Vector(35,35,30) )
-	TrunkHandler:SetSoundOpen( "lvs/vehicles/generic/car_trunk_open.wav" )
-	TrunkHandler:SetSoundClose( "lvs/vehicles/generic/car_hood_close.wav" )
-	TrunkHandler:DisableOnBodyGroup( 2, 3 )
-
-	self:AddFuelTank( Vector(-74,40,5), Angle(0,0,0), 600, LVS.FUELTYPE_PETROL )
-
-
 	local WheelModel = "models/diggercars/gtasa/shared/wheel_fortune.mdl"
-
-	local WheelFrontLeft = self:AddWheel( { pos = Vector(59.8,35,4), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
-	local WheelFrontRight = self:AddWheel( { pos = Vector(59.8,-35,4), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
-
-	local WheelRearLeft = self:AddWheel( { pos = Vector(-59.84,35,4), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
-	local WheelRearRight = self:AddWheel( { pos = Vector(-59.84,-35,4), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
 
 	local SuspensionSettings = {
 		Height = 6,
@@ -55,6 +15,50 @@ function ENT:OnSpawn( PObj )
 		SpringRelativeDamping = 2000,
 	}
 
+	local att_eng = self:GetAttachment( self:LookupAttachment( "eng" ) )
+	local att_fuel = self:GetAttachment( self:LookupAttachment( "fuel" ) )
+
+	local att_seat1 = self:GetAttachment( self:LookupAttachment( "driver" ) )
+	local att_seat2 = self:GetAttachment( self:LookupAttachment( "pass_fr" ) )
+
+	local att_wheel_fl = self:GetAttachment( self:LookupAttachment( "w_fl" ) )
+	local att_wheel_fr = self:GetAttachment( self:LookupAttachment( "w_fr" ) )
+	local att_wheel_rl = self:GetAttachment( self:LookupAttachment( "w_rl" ) )
+	local att_wheel_rr = self:GetAttachment( self:LookupAttachment( "w_rr" ) )
+
+	local DriverSeat = self:AddDriverSeat( self:WorldToLocal( att_seat1.Pos ) + Vector(-10,0,-13), self:WorldToLocalAngles( att_seat1.Ang) + Angle(0,-90,-90) )
+	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(0,0,-6), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-90) )
+
+	local pos, ang, mins, maxs = self:GetBoneInfo( "dfl" )
+	local LFDoorHandler = self:AddDoorHandler( "left_door", pos, ang, mins, maxs, mins, maxs )
+	LFDoorHandler:SetSoundOpen( "gta3d/doors/door_gen_open.wav" )
+	LFDoorHandler:SetSoundClose( "gta3d/doors/door_gen_close.wav" )
+	LFDoorHandler:LinkToSeat( DriverSeat )
+	LFDoorHandler:DisableOnBodyGroup( 6, 3 )
+
+	local pos, ang, mins, maxs = self:GetBoneInfo( "dfr" )
+	local RFDoorHandler = self:AddDoorHandler( "right_door", pos, ang, mins, maxs, mins, maxs )
+	RFDoorHandler:SetSoundOpen( "gta3d/doors/door_gen_open.wav" )
+	RFDoorHandler:SetSoundClose( "gta3d/doors/door_gen_close.wav" )
+	RFDoorHandler:LinkToSeat( RFSeat )
+	RFDoorHandler:DisableOnBodyGroup( 5, 3 )
+
+	local pos, ang, mins, maxs = self:GetBoneInfo( "bonnet" )
+	local DoorHandler = self:AddDoorHandler( "hood", pos, ang, mins, maxs, mins, maxs )
+	DoorHandler:SetSoundOpen( "lvs/vehicles/generic/car_hood_open.wav" )
+	DoorHandler:SetSoundClose( "lvs/vehicles/generic/car_hood_close.wav" )
+	DoorHandler:DisableOnBodyGroup( 1, 3 )
+	local Engine = self:AddEngine( self:WorldToLocal( att_eng.Pos ) )
+	Engine:SetDoorHandler( DoorHandler )
+
+	local pos, ang, mins, maxs = self:GetBoneInfo( "trunk" )
+	local TrunkHandler = self:AddDoorHandler( "trunk", pos, ang, mins, maxs, mins, maxs )
+	TrunkHandler:SetSoundOpen( "lvs/vehicles/generic/car_trunk_open.wav" )
+	TrunkHandler:SetSoundClose( "lvs/vehicles/generic/car_hood_close.wav" )
+	TrunkHandler:DisableOnBodyGroup( 2, 3 )
+
+	self:AddFuelTank( self:WorldToLocal( att_fuel.Pos ), self:WorldToLocalAngles( att_fuel.Ang ) + Angle(0,0,90), 600, LVS.FUELTYPE_PETROL )
+
 	local FrontAxle = self:DefineAxle( {
 		Axle = {
 			ForwardAngle = Angle(0,0,0),
@@ -63,7 +67,10 @@ function ENT:OnSpawn( PObj )
 			TorqueFactor = 1,
 			BrakeFactor = 1,
 		},
-		Wheels = { WheelFrontLeft, WheelFrontRight },
+		Wheels = {
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_fl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fl.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_fr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fr.Ang ) + Angle(90,-90,0) } ),
+		},
 		Suspension = SuspensionSettings,
 	} )
 
@@ -75,11 +82,13 @@ function ENT:OnSpawn( PObj )
 			BrakeFactor = 1,
 			UseHandbrake = true,
 		},
-		Wheels = { WheelRearLeft, WheelRearRight },
+		Wheels = {
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
+		},
 		Suspension = SuspensionSettings,
 	} )
 
-	-- call physics damage system in sv_pds.lua
 	self:CreatePDS()
 end
 
