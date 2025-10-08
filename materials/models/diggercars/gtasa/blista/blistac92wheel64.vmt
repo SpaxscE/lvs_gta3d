@@ -1,0 +1,7 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_met.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/blista/blistac92wheel64"
+}
