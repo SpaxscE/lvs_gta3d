@@ -108,7 +108,12 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 	local LastDuration = EntTable.GearSoundDuration or 1
 	local LastPitch = EntTable.GearSoundPitch or 1
 
-	local TargetRPM = vehicle.EngineIdleRPM + (vehicle.EngineMaxRPM - vehicle.EngineIdleRPM) * (math.max( LastPitch - 1, 0 ) + math.Clamp(1 - (NextPlay - T) / LastDuration,0,1))
+	local CruiseMul = 1
+	if Gear == 0 or Gear > MaxGears then
+		CruiseMul = 0.3
+	end
+
+	local TargetRPM = vehicle.EngineIdleRPM + (vehicle.EngineMaxRPM - vehicle.EngineIdleRPM) * (math.max( LastPitch - 1, 0 ) + math.Clamp(1 - (NextPlay - T) / LastDuration,0,1)) * CruiseMul
 
 	self:SetRPM( self:GetRPM() + (TargetRPM - self:GetRPM()) * FrameTime() * 5 )
 
