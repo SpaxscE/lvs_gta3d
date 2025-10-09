@@ -98,38 +98,50 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 
 	local T = CurTime()
 
+	local EntTable = self:GetTable()
+
 	local Gear = self:GetGear()
 	local MaxGears = vehicle.TransGears
 	local NextGear = Gear + 1
 
-	local NextPlay = self.GearSoundTime
+	local NextPlay = EntTable.GearSoundTime
+	local LastDuration = EntTable.GearSoundDuration or 1
+	local LastPitch = EntTable.GearSoundPitch or 1
+
+	local TargetRPM = vehicle.EngineIdleRPM + (vehicle.EngineMaxRPM - vehicle.EngineIdleRPM) * (math.max( LastPitch - 1, 0 ) + math.Clamp(1 - (NextPlay - T) / LastDuration,0,1))
+
+	self:SetRPM( self:GetRPM() + (TargetRPM - self:GetRPM()) * FrameTime() * 5 )
+
+	EntTable._ClutchActive = NextPlay < T
 
 	if NextGear <= (MaxGears + 1) and Gear ~= 0 then
 		if T < NextPlay then return end
 
-		if self.PreventNextGearSound then
-			if self.PreventNextGearSound > T then
+		if EntTable.PreventNextGearSound then
+			if EntTable.PreventNextGearSound > T then
 				return
 			else
-				self.PreventNextGearSound = nil
+				EntTable.PreventNextGearSound = nil
 			end
 		end
 
 		self:FadeOutCruiseSound()
 		self:StopGearSound()
 
-		local speed = self.EngineSoundsSA.gears.speed[ self:GetGear() ] or 1
+		local speed = EntTable.EngineSoundsSA.gears.speed[ self:GetGear() ] or 1
 
-		if not self._GearSoundSaved then
-			self._GearSoundSaved = CreateSound( self, self.EngineSoundsSA.gears.sound )
-			self._GearSoundSaved:SetSoundLevel( self.EngineSoundsSA.gears.SoundLevel )
+		if not EntTable._GearSoundSaved then
+			EntTable._GearSoundSaved = CreateSound( self, EntTable.EngineSoundsSA.gears.sound )
+			EntTable._GearSoundSaved:SetSoundLevel( EntTable.EngineSoundsSA.gears.SoundLevel )
 		end
 
-		local sound = self._GearSoundSaved
+		local sound = EntTable._GearSoundSaved
 		sound:PlayEx(self:GetEngineVolume(),100 * speed )
 
-		self.GearSound = sound
-		self.GearSoundTime = T + self.EngineSoundsSA.gears.soundDuration * (1 / speed)
+		EntTable.GearSound = sound
+		EntTable.GearSoundDuration = EntTable.EngineSoundsSA.gears.soundDuration * (1 / speed)
+		EntTable.GearSoundPitch = speed
+		EntTable.GearSoundTime = T + EntTable.GearSoundDuration
 
 		local ActualGear = self:CalcGear( vehicle, VelocityGeared ) 
 		local CurrentGear = self:GetGear()
@@ -154,9 +166,9 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 		if Gear == 0 then
 			local wheelSpinMul = 1 + math.Clamp( math.max( vehicle:GetWheelVelocity() - VelocityGeared, 0 ) / (vehicle.MaxVelocity / vehicle.TransGears), 0, 1 ) * 0.5
 
-			sound:ChangePitch( self.EngineSoundsSA.cruise.Pitch + self.EngineSoundsSA.cruise.PitchMul * wheelSpinMul, 0.5 )
+			sound:ChangePitch( EntTable.EngineSoundsSA.cruise.Pitch + EntTable.EngineSoundsSA.cruise.PitchMul * wheelSpinMul, 0.5 )
 		else
-			sound:ChangePitch( self.EngineSoundsSA.cruise.Pitch + self.EngineSoundsSA.cruise.PitchMul * speedMul, 0.5 )
+			sound:ChangePitch( EntTable.EngineSoundsSA.cruise.Pitch + EntTable.EngineSoundsSA.cruise.PitchMul * speedMul, 0.5 )
 		end
 	end
 end
@@ -401,6 +413,7 @@ function ENT:HandleEngineSounds( vehicle )
 			end
 		else
 			self:SetGear( self:CalcGear( vehicle, vehVel ) )
+			self:SetRPM( self:GetRPM() + (vehicle.EngineIdleRPM - self:GetRPM()) * FrameTime() * 5 )
 		end
 
 		if self._oldThrottleActive ~= ThrottleActive then
