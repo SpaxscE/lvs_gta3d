@@ -49,7 +49,7 @@ ENT.EngineSoundsSA = {
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/merc/merc_gear.wav",
+		sound = "gta3d/engines/merc/gear.wav",
 		soundDuration = 3.93,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
