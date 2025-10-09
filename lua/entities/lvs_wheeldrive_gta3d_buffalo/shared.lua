@@ -54,27 +54,27 @@ ENT.HornPos = Vector(45,0,20)
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/cobra_idle.wav",
+		sound = "gta3d/engines/cobra/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/cobra_gear.wav",
+		sound = "gta3d/engines/cobra/gear.wav",
 		soundDuration = 3.51,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/cobra_cruise.wav",
+		sound = "gta3d/engines/cobra/cruise.wav",
 		Pitch = 80,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/cobra_throttleoff.wav",
+		sound = "gta3d/engines/cobra/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {

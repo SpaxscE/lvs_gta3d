@@ -54,27 +54,27 @@ ENT.HornPos = Vector(45,0,20)
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/cutlass_idle.wav",
+		sound = "gta3d/engines/cutlass/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/cutlass_gear.wav",
+		sound = "gta3d/engines/cutlass/gear.wav",
 		soundDuration = 3.2,
 		speed = { 1.4, 1.25, 1.1, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/cutlass_cruise.wav",
+		sound = "gta3d/engines/cutlass/cruise.wav",
 		Pitch = 80,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/cutlass_throttleoff.wav",
+		sound = "gta3d/engines/cutlass/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {

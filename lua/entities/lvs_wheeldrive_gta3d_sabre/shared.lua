@@ -54,27 +54,27 @@ ENT.HornPos = Vector(70,0,20)
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/glen_idle.wav",
+		sound = "gta3d/engines/sabre/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/glen_gear.wav",
-		soundDuration = 3.2,
+		sound = "gta3d/engines/sabre/gear.wav",
+		soundDuration = 3.3,
 		speed = { 1.4, 1.25, 1.1, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/glen_cruise.wav",
+		sound = "gta3d/engines/sabre/cruise.wav",
 		Pitch = 80,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/glen_throttleoff.wav",
+		sound = "gta3d/engines/sabre/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {

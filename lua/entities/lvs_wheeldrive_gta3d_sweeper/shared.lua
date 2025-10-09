@@ -48,27 +48,27 @@ ENT.SirenSound = {
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/merc_idle.wav",
+		sound = "gta3d/engines/merc/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/merc_gear.wav",
+		sound = "gta3d/engines/merc/gear.wav",
 		soundDuration = 3.93,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/merc_cruise.wav",
+		sound = "gta3d/engines/merc/cruise.wav",
 		Pitch = 90,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/merc_throttleoff.wav",
+		sound = "gta3d/engines/merc/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {
