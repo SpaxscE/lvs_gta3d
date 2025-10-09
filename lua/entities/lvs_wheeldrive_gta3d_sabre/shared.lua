@@ -29,9 +29,9 @@ ENT.AITEAM = 0
 
 ENT.MaxHealth = 175
 
-ENT.MaxVelocity = 1775
+ENT.MaxVelocity = 2275
 
-ENT.EngineTorque = 115
+ENT.EngineTorque = 145
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
