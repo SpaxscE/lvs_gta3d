@@ -39,7 +39,7 @@ function ENT:UpdatePoseParameters( steer, speed_kmh, engine_rpm, throttle, brake
 
 	self._smOldJiggle = self._smOldJiggle + math.Clamp(JiggleAdd - self._smOldJiggle,-FT * 1.5, FT * 10)
 
-	local Jiggle = math.Clamp( self._JiggleVel / 10,-0.3,0.3) + math.Clamp( math.cos( CurTime() * 10 + self:EntIndex() * 1.337 ) * self._smOldJiggle * 10, -0.3, 0.3 )
+	local Jiggle = math.Clamp( self._JiggleVel / 10,-0.8,0.8) + math.Clamp( math.cos( CurTime() * 10 + self:EntIndex() * 1.337 ) * self._smOldJiggle * 10, -0.3, 0.3 )
 
 	self._smJiggle = self._smJiggle + (Jiggle - self._smJiggle) * FT * 5
 	
