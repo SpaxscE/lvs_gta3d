@@ -30,8 +30,6 @@ ENT.GibModels = {
 
 ENT.AITEAM = 0
 
-ENT.MaxHealth = 200
-
 ENT.MaxVelocity = 2150
 
 ENT.EngineTorque = 135

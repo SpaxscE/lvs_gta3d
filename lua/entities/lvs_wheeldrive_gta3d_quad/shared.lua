@@ -18,8 +18,6 @@ ENT.MDL = "models/diggercars/gtasa/quad/quad.mdl"
 
 ENT.AITEAM = 0
 
-ENT.MaxHealth = 175
-
 ENT.MaxVelocity = 1200
 
 ENT.EngineTorque = 100
