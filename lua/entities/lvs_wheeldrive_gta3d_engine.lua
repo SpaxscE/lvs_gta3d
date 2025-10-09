@@ -150,7 +150,14 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 		if not sound then return end
 
 		sound:ChangeVolume( self:GetEngineVolume(), 0.1 )
-		sound:ChangePitch( self.EngineSoundsSA.cruise.Pitch + self.EngineSoundsSA.cruise.PitchMul * speedMul, 0.5 )
+
+		if Gear == 0 then
+			local wheelSpinMul = 1 + math.Clamp( math.max( vehicle:GetWheelVelocity() - VelocityGeared, 0 ) / (vehicle.MaxVelocity / vehicle.TransGears), 0, 1 )
+
+			sound:ChangePitch( self.EngineSoundsSA.cruise.Pitch + self.EngineSoundsSA.cruise.PitchMul * wheelSpinMul, 0.5 )
+		else
+			sound:ChangePitch( self.EngineSoundsSA.cruise.Pitch + self.EngineSoundsSA.cruise.PitchMul * speedMul, 0.5 )
+		end
 	end
 end
 
