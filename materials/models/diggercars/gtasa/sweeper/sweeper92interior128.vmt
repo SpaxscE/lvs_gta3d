@@ -1,0 +1,7 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_mat.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/sweeper/sweeper92interior128"
+}

@@ -1,0 +1,7 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/alpha.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/quad/quadgrey32"
+}
