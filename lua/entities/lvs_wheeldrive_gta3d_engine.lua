@@ -112,8 +112,6 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 
 	self:SetRPM( self:GetRPM() + (TargetRPM - self:GetRPM()) * FrameTime() * 5 )
 
-	EntTable._ClutchActive = NextPlay < T
-
 	if NextGear <= (MaxGears + 1) and Gear ~= 0 then
 		if T < NextPlay then return end
 
