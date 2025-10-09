@@ -35,7 +35,7 @@ ENT.EngineTorque = 115
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.TransGears = 5
+ENT.TransGears = 4
 
 ENT.RandomColor = {
 	--SAN ANDREAS
