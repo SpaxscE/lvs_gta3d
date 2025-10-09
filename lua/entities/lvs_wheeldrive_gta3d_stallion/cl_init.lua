@@ -1,5 +1,10 @@
 include("shared.lua")
 
+function ENT:OnSpawn()
+	self:AddExhaustByAttachment( "exh1" )
+	self:AddExhaustByAttachment( "exh2" )
+end
+
 function ENT:CalcViewOverride( ply, pos, angles, fov, pod )
 	if pod:GetThirdPersonMode() then
 
@@ -39,7 +44,7 @@ function ENT:UpdatePoseParameters( steer, speed_kmh, engine_rpm, throttle, brake
 
 	self._smOldJiggle = self._smOldJiggle + math.Clamp(JiggleAdd - self._smOldJiggle,-FT * 1.5, FT * 10)
 
-	local Jiggle = math.Clamp( self._JiggleVel / 10,-0.3,0.3) + math.Clamp( math.cos( CurTime() * 10 + self:EntIndex() * 1.337 ) * self._smOldJiggle * 10, -0.3, 0.3 )
+	local Jiggle = math.Clamp( self._JiggleVel / 10,-0.7,0.7) + math.Clamp( math.cos( CurTime() * 10 + self:EntIndex() * 1.337 ) * self._smOldJiggle * 10, -0.3, 0.3 )
 
 	self._smJiggle = self._smJiggle + (Jiggle - self._smJiggle) * FT * 5
 	
