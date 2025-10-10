@@ -1,0 +1,7 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/secondary.vmt"
+	insert
+	{
+	"$colorfix" "{25 25 25}"
+}
