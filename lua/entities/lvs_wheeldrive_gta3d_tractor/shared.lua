@@ -36,7 +36,7 @@ ENT.EngineTorque = 100
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.TransGears = 4 -- 2?? incorrect
+ENT.TransGears = 4
 
 ENT.HornSound = "gta3d/horns/horn_006_112.wav"
 ENT.HornPos = Vector(30,0,30)
@@ -50,8 +50,8 @@ ENT.EngineSoundsSA = {
 	},
 	gears = {
 		sound = "gta3d/engines/tractor/gear.wav",
-		soundDuration = 3.93,
-		speed = { 1.2, 1.15, 1.0, 0.85 }, -- ENT.TransGears = 5 !!!!!
+		soundDuration = 2.9,
+		speed = { 1.2, 1.15, 1.0, 0.85 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
