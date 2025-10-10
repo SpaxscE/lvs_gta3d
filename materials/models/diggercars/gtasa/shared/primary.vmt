@@ -1,30 +1,23 @@
-"VertexlitGeneric"
+"VertexLitGeneric"
 {
+	
 	"$basetexture" "models/diggercars/gtasa/shared/vehiclegrunge256"
-	"$bumpmap" "models/diggercars/gtasa/shared/skin_nm"
-	"$nocull" "1"
-	"$phong" 1
-	"$phongexponent" 5
-	"$phongboost"	2
-	"$phongfresnelranges" "[1 1 1]"
-	"$rimlight" 1
-	"$rimlightboost" 0.5
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[0.07 0.07 0.07]"
-	"$normalmapalphaenvmapmask" 1
-	"$phongfix" "{1 1 1}"
-	Proxies
-	{
-		Equals
-		{
-			srcVar1	$color
-			resultVar	$phongtint
-		}
-		Add
-		{
-			srcVar1 $phongfix
-			srcVar2 $phongtint
-			resultVar $phongtint
-		}
-	}
+	"$bumpmap" "models/diggercars/gtasa/shared/vehiclegrunge256_test_nm"
+	
+	$nocull "1"
+	$halflambert "1"
+	$blendtintbybasealpha "1"
+	
+	$phong "1" 
+	$phongboost "0.06" 
+	$phongfresnelranges "[1 3 16]" 
+	
+	$envmap "env_cubemap"
+	$envmaptint "[0.001 0.001 0.001]"
+	$envmapfresnel "20"
+	$normalmapalphaenvmapmask "1"
+	
+	$rimlight "1"
+	$rimlightexponent "15"
+	$rimlightboost "0.3"
 }
