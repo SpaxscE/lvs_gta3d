@@ -4,7 +4,7 @@ ENT.Base = "lvs_wheeldrive_gta3d"
 ENT.PrintName = "Sabre"
 ENT.Author = "Digger"
 ENT.Information = ""
-ENT.Category = "[LVS] GTA3D - Lowriders/Tuners"
+ENT.Category = "[LVS] GTA3D - Coupes/Hatchbacks"
 
 ENT.VehicleCategory = "GTA3D"
 ENT.VehicleSubCategory = "Lowriders/Tuners"

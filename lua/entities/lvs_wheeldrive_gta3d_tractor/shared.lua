@@ -4,10 +4,10 @@ ENT.Base = "lvs_wheeldrive_gta3d"
 ENT.PrintName = "Tractor"
 ENT.Author = "Digger"
 ENT.Information = ""
-ENT.Category = "[LVS] GTA3D - Public Service"
+ENT.Category = "[LVS] GTA3D - Industrial"
 
 ENT.VehicleCategory = "GTA3D"
-ENT.VehicleSubCategory = "Public Service"
+ENT.VehicleSubCategory = "Industrial"
 
 ENT.Spawnable			= true
 ENT.AdminSpawnable		= false
