@@ -7,7 +7,7 @@ ENT.Information = ""
 ENT.Category = "[LVS] GTA3D - Coupes/Hatchbacks"
 
 ENT.VehicleCategory = "GTA3D"
-ENT.VehicleSubCategory = "Lowriders/Tuners"
+ENT.VehicleSubCategory = "Coupes/Hatchbacks"
 
 ENT.Spawnable			= true
 ENT.AdminSpawnable		= false
