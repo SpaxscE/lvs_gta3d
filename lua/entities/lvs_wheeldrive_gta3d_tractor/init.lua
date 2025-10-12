@@ -54,6 +54,11 @@ function ENT:OnSpawn( PObj )
 		Suspension = SuspensionSettings,
 	} )
 
+	-- no suspension on rear
+	SuspensionSettings.Height = 0
+	SuspensionSettings.MaxTravel = 0
+	SuspensionSettings.ControlArmLength = 0
+
 	local RearAxle = self:DefineAxle( {
 		Axle = {
 			ForwardAngle = Angle(0,0,0),
