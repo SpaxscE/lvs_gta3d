@@ -2,13 +2,27 @@ DEFINE_BASECLASS( "lvs_wheeldrive_gta3d" )
 
 function ENT:OnTick()
 
+	if not self._smHooker then self._smHooker = 0 end
+
 	local target = self._CurHookPos or 0
 	local rate =  FrameTime()
 	local delta = math.Clamp(target - self._smHooker,-rate,rate)
 
-	self._smHooker = self._smHooker and self._smHooker + delta or 0
+	self._smHooker = self._smHooker + delta
 
-	if delta == 0 then return end
+	local Moving = delta ~= 0
+
+	if self._oldHookMoving ~= Moving then
+		self._oldHookMoving = Moving
+
+		if Moving then
+			self:EmitSound("vehicles/tank_turret_start1.wav",75,45,0.3,CHAN_WEAPON)
+		else
+			self:EmitSound("items/ammocrate_close.wav",75,100,0.3,CHAN_WEAPON)
+		end
+	end
+
+	if not Moving then return end
 
 	self:SetPoseParameter( "control", self._smHooker )
 end
