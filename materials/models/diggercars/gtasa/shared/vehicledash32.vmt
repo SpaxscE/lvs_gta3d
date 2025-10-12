@@ -6,6 +6,4 @@
 $basetexture				"models/diggercars/gtasa/shared/vehicledash32"
 $allowalphatocoverage 0
 }
-
-
-
+}
