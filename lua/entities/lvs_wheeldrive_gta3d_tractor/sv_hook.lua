@@ -17,14 +17,27 @@ end
 function ENT:MoveHook( wheel )
 	if not self._CurHookPos then self._CurHookPos = 0 end
 
-	self._CurHookPos = math.Clamp( self._CurHookPos - wheel * 0.1,0,1)
+	local new = math.Clamp( self._CurHookPos - wheel * 0.1,0,1)
+	local old = self._CurHookPos
+
+	self._CurHookPos = new
+
+	local delta = old - new
+
+	if delta == 0 then return end
 
 	self:SetPoseParameter( "control", self._CurHookPos )
 
-	self:CheckHookCollision()
+	if delta > 0 then
+		self:OnHookMoveUp()
+
+		return
+	end
+
+	self:OnHookMoveDown()
 end
 
-function ENT:CheckHookCollision()
+function ENT:OnHookMoveUp()
 	local att = self:GetAttachment( self:LookupAttachment( "hook" ) )
 
 	if not att then return end
@@ -41,5 +54,9 @@ function ENT:CheckHookCollision()
 	--fb, rb
 	--Entity:LookupBone( string boneName )
 	--Vector, Angle Entity:GetBonePosition( number boneIndex )
-	PrintChat( trace.Entity )
+	--PrintChat("up")
+end
+
+function ENT:OnHookMoveDown()
+	--PrintChat("down")
 end
