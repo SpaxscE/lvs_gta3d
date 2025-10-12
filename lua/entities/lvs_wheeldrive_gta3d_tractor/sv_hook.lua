@@ -1,5 +1,18 @@
 DEFINE_BASECLASS( "lvs_wheeldrive_gta3d" )
 
+function ENT:OnTick()
+
+	local target = self._CurHookPos or 0
+	local rate =  FrameTime()
+	local delta = math.Clamp(target - self._smHooker,-rate,rate)
+
+	self._smHooker = self._smHooker and self._smHooker + delta or 0
+
+	if delta == 0 then return end
+
+	self:SetPoseParameter( "control", self._smHooker )
+end
+
 function ENT:StartCommand( ply, cmd )
 	BaseClass.StartCommand( self, ply, cmd )
 
@@ -25,8 +38,6 @@ function ENT:MoveHook( wheel )
 	local delta = old - new
 
 	if delta == 0 then return end
-
-	self:SetPoseParameter( "control", self._CurHookPos )
 
 	if delta > 0 then
 		self:OnHookMoveUp()
