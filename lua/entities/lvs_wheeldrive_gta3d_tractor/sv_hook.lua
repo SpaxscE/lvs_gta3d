@@ -83,7 +83,7 @@ function ENT:OnHookMoveUp( old, new )
 
 	if not self:HookEntityIsValid( trace.HitPos, target ) then return end
 
-	self:CreateHookCollider( startpos, target )
+	self:CreateHookCollider( att.Pos, att.Ang, target )
 end
 
 function ENT:OnHookMoveDown( old, new )
@@ -117,19 +117,15 @@ function ENT:HookEntityIsValid( pos, entity )
 	return isTargetValid
 end
 
-function ENT:CreateHookCollider( pos, target )
+function ENT:CreateHookCollider( pos, ang, target )
 	if not IsValid( target ) then return end
 
-	local collider = ents.Create( "prop_physics" )
-	collider:SetModel( "models/props_junk/PopCan01a.mdl" )
+	local collider = ents.Create( "lvs_wheeldrive_gta3d_physicsshadow" )
 	collider:SetPos( pos )
+	collider:SetAngles( ang )
 	collider:Spawn()
 	collider:Activate()
-	collider:SetCollisionGroup( COLLISION_GROUP_WORLD )
-	collider:SetNoDraw( true )
-	collider:DrawShadow( false )
 	collider.Target = target
-
 	collider:EmitSound("doors/door_metal_medium_open1.wav")
 
 	self:DeleteOnRemove( collider )
@@ -179,11 +175,21 @@ function ENT:UpdateHookCollider()
 	if not att or not IsValid( self._HookCollider ) then return end
 
 	local PhysObj = self._HookColliderPhysObj
-	if IsValid( PhysObj ) and PhysObj:IsMotionEnabled() then
-		PhysObj:EnableMotion( false )
+	if IsValid( PhysObj ) and not PhysObj:IsMotionEnabled() then
+		PhysObj:EnableMotion( true )
 	end
 
-	self._HookCollider:SetPos( att.Pos )
+	local Pos = att.Pos
+	local Ang = att.Ang
+
+	if self.HookPos then
+		Pos = self:LocalToWorld( self.HookPos )
+	end
+	if self.HookAng then
+		Ang = self:LocalToWorldAngles( self.HookAng )
+	end
+
+	self._HookCollider:PhysicsUpdateShadow( Pos, Ang )
 
 	local target = self._HookCollider.Target
 
@@ -200,8 +206,18 @@ end
 
 function ENT:HookColliderStartMoving()
 	self:EmitSound("vehicles/tank_turret_start1.wav",75,45,0.3,CHAN_WEAPON)
+
+	self.HookPos = nil
+	self.HookAng = nil
 end
 
 function ENT:HookColliderStopMoving()
 	self:EmitSound("items/ammocrate_close.wav",75,100,0.3,CHAN_WEAPON)
+
+	local att = self:GetAttachment( self:LookupAttachment( "hook" ) )
+
+	if not att then return end
+
+	self.HookPos = self:WorldToLocal( att.Pos )
+	self.HookAng = self:WorldToLocalAngles( att.Ang )
 end
