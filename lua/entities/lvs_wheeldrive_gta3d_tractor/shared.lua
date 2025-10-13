@@ -33,12 +33,10 @@ ENT.AITEAM = 0
 ENT.MaxVelocity = 500
 
 ENT.EngineTorque = 100
-ENT.EngineCurve = 1
-ENT.EngineCurveBoostLow = 2
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.PhysicsWeightScale = 3
+ENT.PhysicsWeightScale = 2
 
 ENT.TransGears = 3
 
