@@ -67,6 +67,8 @@ function ENT:OnSpawn( PObj )
 		Suspension = SuspensionSettings,
 	} )
 
+	SuspensionSettings.Height = 8.5
+
 	local RearAxle = self:DefineAxle( {
 		Axle = {
 			ForwardAngle = Angle(0,0,0),
