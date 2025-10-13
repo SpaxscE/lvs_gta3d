@@ -16,7 +16,7 @@ function ENT:Initialize()
 
 	if not IsValid( PhysObj ) then self:Remove() return end
 
-	PhysObj:SetMass( 50000 )
+	PhysObj:SetMass( 100 )
 	PhysObj:EnableMotion( true )
 
 	self.ShadowParams = {
