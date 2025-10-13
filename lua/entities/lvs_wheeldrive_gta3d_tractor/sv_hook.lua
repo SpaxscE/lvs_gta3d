@@ -130,6 +130,8 @@ function ENT:CreateHookCollider( pos, target )
 	collider:DrawShadow( false )
 	collider.Target = target
 
+	collider:EmitSound("doors/door_metal_medium_open1.wav")
+
 	self:DeleteOnRemove( collider )
 	self:TransferCPPI( collider )
 
@@ -141,18 +143,34 @@ function ENT:CreateHookCollider( pos, target )
 	if not ballsocket then return end
 
 	self:TransferCPPI( ballsocket )
+
+	local pod = self:GetDriverSeat()
+
+	if not IsValid( pod ) then return end
+
+	self._OldCameraDistance = pod:GetCameraDistance()
+
+	pod:SetCameraDistance( math.max( self._OldCameraDistance, 1.4 ) )
 end
 
 function ENT:RemoveHookCollider()
 	if not IsValid( self._HookCollider ) then return end
 
-	local Target = self._HookCollider.Target
-
-	if IsValid( Target ) then
-		Target:PhysWake()
+	local target = self._HookCollider.Target
+	if IsValid( target ) then
+		target:PhysWake()
 	end
 
+	self._HookCollider:EmitSound("ambient/machines/catapult_throw.wav")
 	self._HookCollider:Remove()
+
+	local pod = self:GetDriverSeat()
+
+	if not IsValid( pod ) or not self._OldCameraDistance then return end
+
+	pod:SetCameraDistance( self._OldCameraDistance )
+
+	self._OldCameraDistance = nil
 end
 
 function ENT:UpdateHookCollider()
@@ -167,11 +185,17 @@ function ENT:UpdateHookCollider()
 
 	self._HookCollider:SetPos( att.Pos )
 
-	local Target = self._HookCollider.Target
+	local target = self._HookCollider.Target
 
-	if IsValid( Target ) then
-		Target:PhysWake()
-	end
+	if not IsValid( target ) then return end
+
+	target:PhysWake()
+
+	if target.GetActive and target:GetActive() then return end
+
+	if not target.ReleaseHandbrake or not target.IsHandbrakeActive then return end
+
+	target:ReleaseHandbrake()
 end
 
 function ENT:HookColliderStartMoving()
