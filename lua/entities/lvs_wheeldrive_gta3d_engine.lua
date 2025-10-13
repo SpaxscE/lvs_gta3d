@@ -108,12 +108,7 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 	local LastDuration = EntTable.GearSoundDuration or 1
 	local LastPitch = EntTable.GearSoundPitch or 1
 
-	local CruiseMul = 1
-	if Gear == 0 or Gear > MaxGears then
-		CruiseMul = 0.3
-	end
-
-	local TargetRPM = vehicle.EngineIdleRPM + (vehicle.EngineMaxRPM - vehicle.EngineIdleRPM) * (math.max( LastPitch - 1, 0 ) + math.Clamp(1 - (NextPlay - T) / LastDuration,0,1)) * CruiseMul
+	local TargetRPM = vehicle.EngineIdleRPM + (vehicle.EngineMaxRPM - vehicle.EngineIdleRPM) * (math.max( LastPitch - 1, 0 ) + math.Clamp(1 - (NextPlay - T) / LastDuration,0,1))
 
 	self:SetRPM( self:GetRPM() + (TargetRPM - self:GetRPM()) * FrameTime() * 5 )
 
@@ -169,11 +164,13 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 		sound:ChangeVolume( self:GetEngineVolume(), 0.1 )
 
 		if Gear == 0 then
-			local wheelSpinMul = 1 + math.Clamp( math.max( vehicle:GetWheelVelocity() - VelocityGeared, 0 ) / (vehicle.MaxVelocity / vehicle.TransGears), 0, 1 ) * 0.5
+			local wheelSpinMul = 1 + math.Clamp( math.max( vehicle:GetWheelVelocity() - VelocityGeared, 0 ) / (vehicle.MaxVelocity / vehicle.TransGears), 0, 1 )
 
-			sound:ChangePitch( EntTable.EngineSoundsSA.cruise.Pitch + EntTable.EngineSoundsSA.cruise.PitchMul * wheelSpinMul, 0.5 )
+			EntTable._LastPitch = EntTable.EngineSoundsSA.cruise.Pitch + EntTable.EngineSoundsSA.cruise.PitchMul * wheelSpinMul
+			sound:ChangePitch( EntTable._LastPitch, 0.5 )
 		else
-			sound:ChangePitch( EntTable.EngineSoundsSA.cruise.Pitch + EntTable.EngineSoundsSA.cruise.PitchMul * speedMul, 0.5 )
+			EntTable._LastPitch = EntTable.EngineSoundsSA.cruise.Pitch + EntTable.EngineSoundsSA.cruise.PitchMul * speedMul
+			sound:ChangePitch( EntTable._LastPitch, 0.5 )
 		end
 	end
 end
@@ -187,7 +184,7 @@ function ENT:PlayThrottleOffSound()
 
 	self.NextThrottleOff = T + 0.5
 
-	self:EmitSound( self.EngineSoundsSA.throttle_off.sound, self.EngineSoundsSA.throttle_off.SoundLevel, 100, self:GetEngineVolume() )
+	self:EmitSound( self.EngineSoundsSA.throttle_off.sound, self.EngineSoundsSA.throttle_off.SoundLevel, self._LastPitch or 100, self:GetEngineVolume() )
 end
 
 function ENT:FadeOutGearSound( fadetime )
@@ -388,7 +385,8 @@ function ENT:HandleEngineSounds( vehicle )
 		self:FadeOutReverseOffSound()
 
 		if ThrottleActive then
-			local ForceCruise = vehicle:GetNWHandBrake() or vehVel / wheelVel <= 0.8
+
+			local ForceCruise = vehicle:GetNWHandBrake() or vehVel / wheelVel <= 0.6
 
 			if ForceCruise then
 				self.NextForceCruise = T + 0.26
