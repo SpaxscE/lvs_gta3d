@@ -79,11 +79,11 @@ function ENT:OnHookMoveUp( old, new )
 
 	if old ~= 1 then return end
 
-	if not self:HookEntityIsValid( trace.Entity ) then return end
+	local target = trace.Entity
 
-	local collider = self:CreateHookCollider( startpos )
+	if not self:HookEntityIsValid( trace.HitPos, target ) then return end
 
-	--constraint.Ballsocket( Entity ent1, Entity ent2, number bone1, number bone2, Vector localPos, number forcelimit = 0, number torquelimit = 0, number nocollide = 0 )
+	self:CreateHookCollider( startpos, target )
 end
 
 function ENT:OnHookMoveDown( old, new )
@@ -92,37 +92,65 @@ function ENT:OnHookMoveDown( old, new )
 	self:RemoveHookCollider()
 end
 
-function ENT:HookEntityIsValid( entity )
+function ENT:HookEntityIsValid( pos, entity )
 	if not IsValid( entity ) then return false end
 
-	local HasBone = false
+	local toTargetDist = 100
+	local isTargetValid = false
+
 	for _, boneName in pairs( {"fb","rb"} ) do
 		local boneIndex = entity:LookupBone( boneName )
 
 		if not boneIndex then continue end
 
-		HasBone = true
+		local bonePos, _ = entity:GetBonePosition( boneIndex )
+		local dist = (pos - bonePos):Length()
+
+		if dist > toTargetDist then continue end
+
+		isTargetValid = dist
+		hasBone = true
 
 		break
 	end
 
-	return HasBone
+	return isTargetValid
 end
 
-function ENT:CreateHookCollider( pos )
+function ENT:CreateHookCollider( pos, target )
+	if not IsValid( target ) then return end
+
 	local collider = ents.Create( "prop_physics" )
 	collider:SetModel( "models/props_junk/PopCan01a.mdl" )
 	collider:SetPos( pos )
 	collider:Spawn()
+	collider:Activate()
 	collider:SetCollisionGroup( COLLISION_GROUP_WORLD )
+	collider:SetNoDraw( true )
+	collider:DrawShadow( false )
+	collider.Target = target
+
 	self:DeleteOnRemove( collider )
+	self:TransferCPPI( collider )
 
 	self._HookColliderPhysObj = collider:GetPhysicsObject()
 	self._HookCollider = collider
+
+	local ballsocket = constraint.Ballsocket( target, collider, 0, 0, vector_origin )
+
+	if not ballsocket then return end
+
+	self:TransferCPPI( ballsocket )
 end
 
 function ENT:RemoveHookCollider()
 	if not IsValid( self._HookCollider ) then return end
+
+	local Target = self._HookCollider.Target
+
+	if IsValid( Target ) then
+		Target:PhysWake()
+	end
 
 	self._HookCollider:Remove()
 end
@@ -138,6 +166,12 @@ function ENT:UpdateHookCollider()
 	end
 
 	self._HookCollider:SetPos( att.Pos )
+
+	local Target = self._HookCollider.Target
+
+	if IsValid( Target ) then
+		Target:PhysWake()
+	end
 end
 
 function ENT:HookColliderStartMoving()
