@@ -4,5 +4,9 @@
 	insert
 	{
 $basetexture				"models/diggercars/gtasa/blade/blade92wheel64"
+$bumpmap "models/diggercars/gtasa/blade/blade92wheel64_nm"
+"$envmap" "env_cubemap"
+"$envmaptint" "[0.1 0.1 0.1]"
+$normalmapalphaenvmapmask "1"
 }
 }

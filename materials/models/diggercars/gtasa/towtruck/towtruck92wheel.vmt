@@ -1,6 +1,6 @@
 "patch"
 {
-	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_met.vmt"
+	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_mat.vmt"
 	insert
 	{
 $basetexture				"models/diggercars/gtasa/towtruck/towtruck92wheel"
