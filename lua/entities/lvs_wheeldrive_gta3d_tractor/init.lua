@@ -56,7 +56,7 @@ function ENT:OnSpawn( PObj )
 	} )
 
 	-- no suspension on rear
-	SuspensionSettings.Height = 10
+	SuspensionSettings.Height = 5
 	SuspensionSettings.MaxTravel = 20
 	SuspensionSettings.ControlArmLength = 150
 
