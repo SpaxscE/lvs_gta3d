@@ -2,6 +2,7 @@ AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
 include("sv_pds.lua")
+include("sv_hook.lua")
 
 function ENT:OnSpawn( PObj )
 	self:AddExhaustByAttachment( "exh" )
@@ -44,7 +45,7 @@ function ENT:OnSpawn( PObj )
 			ForwardAngle = Angle(0,0,0),
 			SteerType = LVS.WHEEL_STEER_FRONT,
 			SteerAngle = 30,
-			TorqueFactor = 0,
+			TorqueFactor = 0.5,
 			BrakeFactor = 1,
 		},
 		Wheels = {
@@ -55,9 +56,9 @@ function ENT:OnSpawn( PObj )
 	} )
 
 	-- no suspension on rear
-	SuspensionSettings.Height = 0
-	SuspensionSettings.MaxTravel = 0
-	SuspensionSettings.ControlArmLength = 0
+	SuspensionSettings.Height = 5
+	SuspensionSettings.MaxTravel = 20
+	SuspensionSettings.ControlArmLength = 150
 
 	local RearAxle = self:DefineAxle( {
 		Axle = {
