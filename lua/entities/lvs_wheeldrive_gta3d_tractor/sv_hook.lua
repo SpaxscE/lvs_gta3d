@@ -95,6 +95,7 @@ end
 function ENT:HookEntityIsValid( pos, entity )
 	if not IsValid( entity ) then return false end
 
+	local hasBone = false
 	local toTargetDist = 40
 	local isTargetValid = false
 
@@ -103,16 +104,20 @@ function ENT:HookEntityIsValid( pos, entity )
 
 		if not boneIndex then continue end
 
+		hasBone = true
+
 		local bonePos, _ = entity:GetBonePosition( boneIndex )
 		local dist = (pos - bonePos):Length()
 
 		if dist > toTargetDist then continue end
 
-		isTargetValid = dist
-		hasBone = true
+		toTargetDist = dist
+		isTargetValid = true
 
 		break
 	end
+
+	if not hasBone then return true end
 
 	return isTargetValid
 end
