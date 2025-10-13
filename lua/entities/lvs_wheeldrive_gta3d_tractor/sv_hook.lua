@@ -95,7 +95,7 @@ end
 function ENT:HookEntityIsValid( pos, entity )
 	if not IsValid( entity ) then return false end
 
-	local toTargetDist = 100
+	local toTargetDist = 40
 	local isTargetValid = false
 
 	for _, boneName in pairs( {"fb","rb"} ) do
