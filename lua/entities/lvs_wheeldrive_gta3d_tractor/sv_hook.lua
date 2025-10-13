@@ -1,6 +1,7 @@
 DEFINE_BASECLASS( "lvs_wheeldrive_gta3d" )
 
 function ENT:OnTick()
+	self:UpdateHookCollider()
 
 	if not self._smHooker then self._smHooker = 0 end
 
@@ -16,9 +17,9 @@ function ENT:OnTick()
 		self._oldHookMoving = Moving
 
 		if Moving then
-			self:EmitSound("vehicles/tank_turret_start1.wav",75,45,0.3,CHAN_WEAPON)
+			self:HookColliderStartMoving()
 		else
-			self:EmitSound("items/ammocrate_close.wav",75,100,0.3,CHAN_WEAPON)
+			self:HookColliderStopMoving()
 		end
 	end
 
@@ -54,15 +55,15 @@ function ENT:MoveHook( wheel )
 	if delta == 0 then return end
 
 	if delta > 0 then
-		self:OnHookMoveUp()
+		self:OnHookMoveUp( old, new )
 
 		return
 	end
 
-	self:OnHookMoveDown()
+	self:OnHookMoveDown( old, new )
 end
 
-function ENT:OnHookMoveUp()
+function ENT:OnHookMoveUp( old, new )
 	local att = self:GetAttachment( self:LookupAttachment( "hook" ) )
 
 	if not att then return end
@@ -76,12 +77,73 @@ function ENT:OnHookMoveUp()
 		filter = self:GetCrosshairFilterEnts(),
 	} )
 
-	--fb, rb
-	--Entity:LookupBone( string boneName )
-	--Vector, Angle Entity:GetBonePosition( number boneIndex )
-	--PrintChat("up")
+	if old ~= 1 then return end
+
+	if not self:HookEntityIsValid( trace.Entity ) then return end
+
+	local collider = self:CreateHookCollider( startpos )
+
+	--constraint.Ballsocket( Entity ent1, Entity ent2, number bone1, number bone2, Vector localPos, number forcelimit = 0, number torquelimit = 0, number nocollide = 0 )
 end
 
-function ENT:OnHookMoveDown()
-	--PrintChat("down")
+function ENT:OnHookMoveDown( old, new )
+	if new ~= 1 then return end
+
+	self:RemoveHookCollider()
+end
+
+function ENT:HookEntityIsValid( entity )
+	if not IsValid( entity ) then return false end
+
+	local HasBone = false
+	for _, boneName in pairs( {"fb","rb"} ) do
+		local boneIndex = entity:LookupBone( boneName )
+
+		if not boneIndex then continue end
+
+		HasBone = true
+
+		break
+	end
+
+	return HasBone
+end
+
+function ENT:CreateHookCollider( pos )
+	local collider = ents.Create( "prop_physics" )
+	collider:SetModel( "models/props_junk/PopCan01a.mdl" )
+	collider:SetPos( pos )
+	collider:Spawn()
+	collider:SetCollisionGroup( COLLISION_GROUP_WORLD )
+	self:DeleteOnRemove( collider )
+
+	self._HookColliderPhysObj = collider:GetPhysicsObject()
+	self._HookCollider = collider
+end
+
+function ENT:RemoveHookCollider()
+	if not IsValid( self._HookCollider ) then return end
+
+	self._HookCollider:Remove()
+end
+
+function ENT:UpdateHookCollider()
+	local att = self:GetAttachment( self:LookupAttachment( "hook" ) )
+
+	if not att or not IsValid( self._HookCollider ) then return end
+
+	local PhysObj = self._HookColliderPhysObj
+	if IsValid( PhysObj ) and PhysObj:IsMotionEnabled() then
+		PhysObj:EnableMotion( false )
+	end
+
+	self._HookCollider:SetPos( att.Pos )
+end
+
+function ENT:HookColliderStartMoving()
+	self:EmitSound("vehicles/tank_turret_start1.wav",75,45,0.3,CHAN_WEAPON)
+end
+
+function ENT:HookColliderStopMoving()
+	self:EmitSound("items/ammocrate_close.wav",75,100,0.3,CHAN_WEAPON)
 end
