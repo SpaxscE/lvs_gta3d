@@ -202,6 +202,12 @@ function ENT:UpdateHookCollider()
 
 	if not IsValid( target ) then return end
 
+	if target:GetUp().z <= 0 then
+		self:RemoveHookCollider()
+
+		return
+	end
+
 	target:PhysWake()
 
 	if target.GetActive and target:GetActive() then return end
