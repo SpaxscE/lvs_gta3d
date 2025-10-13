@@ -3,6 +3,9 @@ AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
 include("sv_pds.lua")
 
+include("entities/lvs_wheeldrive_gta3d_tractor/sv_hook.lua")
+ENT.CameraDistanceHooked = 0.5
+
 function ENT:OnSpawn( PObj )
 	self:AddExhaustByAttachment( "exh" )
 

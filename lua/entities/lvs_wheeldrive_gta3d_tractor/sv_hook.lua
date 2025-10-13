@@ -1,5 +1,7 @@
 DEFINE_BASECLASS( "lvs_wheeldrive_gta3d" )
 
+ENT.CameraDistanceHooked = 1.4
+
 function ENT:OnTick()
 	self:UpdateHookCollider()
 
@@ -151,7 +153,7 @@ function ENT:CreateHookCollider( pos, ang, target )
 
 	self._OldCameraDistance = pod:GetCameraDistance()
 
-	pod:SetCameraDistance( math.max( self._OldCameraDistance, 1.4 ) )
+	pod:SetCameraDistance( math.max( self._OldCameraDistance, self.CameraDistanceHooked ) )
 end
 
 function ENT:RemoveHookCollider()
