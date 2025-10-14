@@ -57,7 +57,7 @@ ENT.EngineSoundsSA = {
 	},
 	gears = {
 		sound = "gta3d/engines/i4_1/gear.wav",
-		soundDuration = 3.93,
+		soundDuration = 3.6,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
