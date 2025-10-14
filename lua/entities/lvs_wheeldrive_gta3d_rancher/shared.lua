@@ -1,7 +1,7 @@
 
 ENT.Base = "lvs_wheeldrive_gta3d"
 
-ENT.PrintName = "Yosemite"
+ENT.PrintName = "Rancher"
 ENT.Author = "Digger"
 ENT.Information = ""
 ENT.Category = "[LVS] GTA3D - SUVs/Pickups"
@@ -14,22 +14,22 @@ ENT.AdminSpawnable		= false
 
 ENT.SpawnNormalOffset = 40
 
-ENT.MDL = "models/diggercars/gtasa/yosemite/yosemite.mdl"
+ENT.MDL = "models/diggercars/gtasa/rancher/rancher.mdl"
 
 ENT.GibModels = {
-	"models/diggercars/gtasa/yosemite/bonnet_dam.mdl",
-	"models/diggercars/gtasa/yosemite/boot_dam.mdl",
-	"models/diggercars/gtasa/yosemite/bump_front_dam.mdl",
-	"models/diggercars/gtasa/yosemite/bump_rear_dam.mdl",
-	"models/diggercars/gtasa/yosemite/door_lf_dam.mdl",
-	"models/diggercars/gtasa/yosemite/door_rf_dam.mdl",
+	"models/diggercars/gtasa/rancher/bonnet_dam.mdl",
+	"models/diggercars/gtasa/rancher/boot_dam.mdl",
+	"models/diggercars/gtasa/rancher/bump_front_dam.mdl",
+	"models/diggercars/gtasa/rancher/bump_rear_dam.mdl",
+	"models/diggercars/gtasa/rancher/door_rlf_dam.mdl",
+	"models/diggercars/gtasa/rancher/door_rrf_dam.mdl",
 }
 
 ENT.AITEAM = 0
 
-ENT.MaxVelocity = 1775
-ENT.PhysicsWeightScale = 1.6
-ENT.EngineTorque = 175
+ENT.MaxVelocity = 2050
+ENT.PhysicsWeightScale = 1.4
+ENT.EngineTorque = 130
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
@@ -47,7 +47,7 @@ ENT.RandomColor = {
 	Color(122,117,96),
 }
 
-ENT.HornSound = "gta3d/horns/horn_006_112.wav"
+ENT.HornSound = "gta3d/horns/horn_009.wav"
 ENT.HornPos = Vector(70,0,20)
 
 ENT.EngineSoundsSA = {
@@ -88,10 +88,12 @@ ENT.EngineSoundsSA = {
 		SoundLevel = 65,
 	},
 }
+
+
 ENT.Lights = {
 	{
-		Trigger = "main",
-		SubMaterialID = 13,
+		Trigger = "main+high",
+		SubMaterialID = 18,
 		Sprites = {
 			{  pos = "a_fl", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
 			{  pos = "a_fr", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
@@ -102,48 +104,44 @@ ENT.Lights = {
 		},
 	},
 	{
-		Trigger = "main+brake+turnleft",
-		SubMaterialID = 16,
+		Trigger = "main+brake",
+		SubMaterialID = 19,
 		Sprites = {
-			{  pos = "a_rl", width = 80, height = 70, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
-		},
-	},
-	{
-		Trigger = "main+brake+turnright",
-		SubMaterialID = 15,
-		Sprites = {
-			{  pos = "a_rr", width = 80, height = 70, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
+			{  pos = "a_rl", width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
+			{  pos = "a_rr", width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
 	{
 		Trigger = "turnright",
-		SubMaterialID = 18,
+		SubMaterialID = 20,
 		Sprites = {
 			{  pos = "a_frt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_frt", active = { 0 } }, },
+			{  pos = "a_rrt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
 	{
 		Trigger = "turnleft",
-		SubMaterialID = 19,
+		SubMaterialID = 21,
 		Sprites = {
 			{  pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_flt", active = { 0 } }, },
+			{  pos = "a_rlt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
 		},
 	},	
-	
+	{
+		Trigger = "fog",
+		SubMaterialID = 15,
+		Sprites = {
+			{  pos = "a_flf", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "front_bumper", active = { 0 } }, },
+			{  pos = "a_frf", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "front_bumper", active = { 0 } }, },
+		},
+	},
+
 	{
 		Trigger = "high",
-		SubMaterialID = 17,
-		Sprites = {
-			{  pos = "a_flh", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_flh", active = { 0 } }, },
-			{  pos = "a_frh", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_frh", active = { 0 } }, },
-		},
 		ProjectedTextures = {
-			{  pos = "a_flh", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_flh", active = { 0 } }, },
-			{  pos = "a_frh", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_frh", active = { 0 } }, },
+			{  pos = "a_fl", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_fr", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
 		},
 	},	
 }
-
-
-
 

@@ -42,21 +42,23 @@ function ENT:OnSpawn( PObj )
 	local Engine = self:AddEngine( self:WorldToLocal( att_eng.Pos ) )
 	Engine:SetDoorHandler( DoorHandler )
 
-	local pos, ang, mins, maxs = self:GetBoneInfo( "boot" )
-	local TrunkHandler = self:AddDoorHandler( "trunk", pos, ang, mins, maxs, mins, maxs )
-	TrunkHandler:SetSoundOpen( "lvs/vehicles/generic/car_trunk_open.wav" )
-	TrunkHandler:SetSoundClose( "lvs/vehicles/generic/car_hood_close.wav" )
-	TrunkHandler:DisableOnBodyGroup( 2, 3 )
+	local LightsHandler = self:GetLightsHandler()
+	if IsValid( LightsHandler ) then
+		local DoorHandler = self:AddDoorHandler( "fuel_cap", Vector(58,0,26), Angle(0,0,0), Vector(-5,-25,-5), Vector(5,25,5) )
+		DoorHandler:SetRate( 4 )
+		DoorHandler:SetRateExponent( 1 )
+
+		LightsHandler:SetDoorHandler( DoorHandler )
+	end
 
 	self:AddFuelTank( self:WorldToLocal( att_fuel.Pos ), self:WorldToLocalAngles( att_fuel.Ang ) + Angle(0,0,90), 600, LVS.FUELTYPE_PETROL )
 
-	local WheelModel = "models/diggercars/gtasa/shared/wheel_yosemite.mdl"
-	local WheelModel2 = "models/diggercars/gtasa/shared/wheel_yosemite2.mdl"
+	local WheelModel = "models/diggercars/gtasa/shared/wheel_zr350.mdl"
 
 	local SuspensionSettings = {
 		Height = 6,
-		MaxTravel = 16,
-		ControlArmLength = 60,
+		MaxTravel = 7,
+		ControlArmLength = 25,
 		SpringConstant = 30000,
 		SpringDamping = 2000,
 		SpringRelativeDamping = 2000,
@@ -86,17 +88,10 @@ function ENT:OnSpawn( PObj )
 			UseHandbrake = true,
 		},
 		Wheels = {
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel2, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel2, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
 		},
-		Suspension = {
-		Height = 5,
-		MaxTravel = 16,
-		ControlArmLength = 60,
-		SpringConstant = 50000,
-		SpringDamping = 3000,
-		SpringRelativeDamping = 3000,
-		},
+		Suspension = SuspensionSettings,
 	} )
 
 	self:CreatePDS()

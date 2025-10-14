@@ -4,21 +4,24 @@ include("shared.lua")
 include("sv_pds.lua")
 
 function ENT:OnSpawn( PObj )
-	self:AddExhaustByAttachment( "exh" )
+	self:AddExhaustByAttachment( "exh1" )
+	self:AddExhaustByAttachment( "exh2" )
 
 	local att_eng = self:GetAttachment( self:LookupAttachment( "eng" ) )
 	local att_fuel = self:GetAttachment( self:LookupAttachment( "fuel" ) )
 
 	local att_seat1 = self:GetAttachment( self:LookupAttachment( "driver" ) )
 	local att_seat2 = self:GetAttachment( self:LookupAttachment( "pass_fr" ) )
+	local att_seat3 = self:GetAttachment( self:LookupAttachment( "pass_rl" ) )
+	local att_seat4 = self:GetAttachment( self:LookupAttachment( "pass_rr" ) )
 
 	local att_wheel_fl = self:GetAttachment( self:LookupAttachment( "w_fl" ) )
 	local att_wheel_fr = self:GetAttachment( self:LookupAttachment( "w_fr" ) )
 	local att_wheel_rl = self:GetAttachment( self:LookupAttachment( "w_rl" ) )
 	local att_wheel_rr = self:GetAttachment( self:LookupAttachment( "w_rr" ) )
 
-	local DriverSeat = self:AddDriverSeat( self:WorldToLocal( att_seat1.Pos ) + Vector(-15,0,-13), self:WorldToLocalAngles( att_seat1.Ang) + Angle(0,-90,-90) )
-	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(-5,0,-6), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-90) )
+	local DriverSeat = self:AddDriverSeat( self:WorldToLocal( att_seat1.Pos ) + Vector(-12,0,-13), self:WorldToLocalAngles( att_seat1.Ang) + Angle(0,-90,-90) )
+	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(-2,0,-6), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-90) )
 
 	local pos, ang, mins, maxs = self:GetBoneInfo( "dfl" )
 	local LFDoorHandler = self:AddDoorHandler( "left_door", pos, ang, mins, maxs, mins, maxs )
@@ -50,16 +53,15 @@ function ENT:OnSpawn( PObj )
 
 	self:AddFuelTank( self:WorldToLocal( att_fuel.Pos ), self:WorldToLocalAngles( att_fuel.Ang ) + Angle(0,0,90), 600, LVS.FUELTYPE_PETROL )
 
-	local WheelModel = "models/diggercars/gtasa/shared/wheel_yosemite.mdl"
-	local WheelModel2 = "models/diggercars/gtasa/shared/wheel_yosemite2.mdl"
+	local WheelModel = "models/diggercars/gtasa/shared/wheel_rancher.mdl"
 
 	local SuspensionSettings = {
-		Height = 6,
-		MaxTravel = 16,
-		ControlArmLength = 60,
-		SpringConstant = 30000,
-		SpringDamping = 2000,
-		SpringRelativeDamping = 2000,
+		Height = 5,
+		MaxTravel = 15,
+		ControlArmLength = 50,
+		SpringConstant = 42000,
+		SpringDamping = 2100,
+		SpringRelativeDamping = 2100,
 	}
 
 	local FrontAxle = self:DefineAxle( {
@@ -67,7 +69,7 @@ function ENT:OnSpawn( PObj )
 			ForwardAngle = Angle(0,0,0),
 			SteerType = LVS.WHEEL_STEER_FRONT,
 			SteerAngle = 30,
-			TorqueFactor = 0,
+			TorqueFactor = 0.4,
 			BrakeFactor = 1,
 		},
 		Wheels = {
@@ -81,24 +83,25 @@ function ENT:OnSpawn( PObj )
 		Axle = {
 			ForwardAngle = Angle(0,0,0),
 			SteerType = LVS.WHEEL_STEER_NONE,
-			TorqueFactor = 1,
+			TorqueFactor = 0.6,
 			BrakeFactor = 1,
 			UseHandbrake = true,
 		},
 		Wheels = {
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel2, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel2, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
 		},
 		Suspension = {
-		Height = 5,
-		MaxTravel = 16,
-		ControlArmLength = 60,
-		SpringConstant = 50000,
-		SpringDamping = 3000,
-		SpringRelativeDamping = 3000,
+		Height = 9,
+		MaxTravel = 15,
+		ControlArmLength = 50,
+		SpringConstant = 42000,
+		SpringDamping = 2100,
+		SpringRelativeDamping = 2100,
 		},
 	} )
-
+	self:SetBodygroup(7, 3)
+	self:SetBodygroup(8, 3)
 	self:CreatePDS()
 end
 

@@ -50,13 +50,12 @@ function ENT:OnSpawn( PObj )
 
 	self:AddFuelTank( self:WorldToLocal( att_fuel.Pos ), self:WorldToLocalAngles( att_fuel.Ang ) + Angle(0,0,90), 600, LVS.FUELTYPE_PETROL )
 
-	local WheelModel = "models/diggercars/gtasa/shared/wheel_yosemite.mdl"
-	local WheelModel2 = "models/diggercars/gtasa/shared/wheel_yosemite2.mdl"
+	local WheelModel = "models/diggercars/gtasa/shared/wheel_voodoo.mdl"
 
 	local SuspensionSettings = {
-		Height = 6,
-		MaxTravel = 16,
-		ControlArmLength = 60,
+		Height = 8,
+		MaxTravel = 7,
+		ControlArmLength = 25,
 		SpringConstant = 30000,
 		SpringDamping = 2000,
 		SpringRelativeDamping = 2000,
@@ -86,19 +85,11 @@ function ENT:OnSpawn( PObj )
 			UseHandbrake = true,
 		},
 		Wheels = {
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel2, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel2, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
 		},
-		Suspension = {
-		Height = 5,
-		MaxTravel = 16,
-		ControlArmLength = 60,
-		SpringConstant = 50000,
-		SpringDamping = 3000,
-		SpringRelativeDamping = 3000,
-		},
+		Suspension = SuspensionSettings,
 	} )
-
 	self:CreatePDS()
 end
 
