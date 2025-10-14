@@ -20,7 +20,6 @@ ENT.GibModels = {
 	"models/diggercars/gtasa/towtruck/bonnet_dam.mdl",
 	"models/diggercars/gtasa/towtruck/boot_dam.mdl",
 	"models/diggercars/gtasa/towtruck/bump_front_dam.mdl",
-	"models/diggercars/gtasa/towtruck/bump_rear_dam.mdl",
 	"models/diggercars/gtasa/towtruck/door_lf_dam.mdl",
 	"models/diggercars/gtasa/towtruck/door_rf_dam.mdl",
 }
