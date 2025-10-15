@@ -18,7 +18,7 @@ function ENT:OnSpawn( PObj )
 	local att_wheel_rr = self:GetAttachment( self:LookupAttachment( "w_rr" ) )
 
 	local DriverSeat = self:AddDriverSeat( self:WorldToLocal( att_seat1.Pos ) + Vector(-15,0,-13), self:WorldToLocalAngles( att_seat1.Ang) + Angle(0,-90,-90) )
-	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(-5,0,-6), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-90) )
+	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(0,0,-6), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-75) )
 
 	local pos, ang, mins, maxs = self:GetBoneInfo( "dfl" )
 	local LFDoorHandler = self:AddDoorHandler( "left_door", pos, ang, mins, maxs, mins, maxs )

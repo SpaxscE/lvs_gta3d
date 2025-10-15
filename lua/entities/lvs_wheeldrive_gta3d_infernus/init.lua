@@ -34,13 +34,13 @@ function ENT:OnSpawn( PObj )
 	self:AddFuelTank( Vector(-80,-41,4), Angle(0,0,0), 550, LVS.FUELTYPE_PETROL )
 
 
-	local WheelModel = "models/gta3d/simf/wheel_infernus.mdl"
+	local WheelModel = "models/diggercars/gtasa/shared/wheel_banshee.mdl"
 
-	local WheelFrontLeft = self:AddWheel( { pos = Vector(65.1,36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
-	local WheelFrontRight = self:AddWheel( { pos = Vector(65.1,-36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
+	local WheelFrontLeft = self:AddWheel( { pos = Vector(65.1,36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
+	local WheelFrontRight = self:AddWheel( { pos = Vector(65.1,-36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
 
-	local WheelRearLeft = self:AddWheel( { pos = Vector(-65.1,36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
-	local WheelRearRight = self:AddWheel( { pos = Vector(-65.1,-36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
+	local WheelRearLeft = self:AddWheel( { pos = Vector(-65.1,36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
+	local WheelRearRight = self:AddWheel( { pos = Vector(-65.1,-36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
 
 	local SuspensionSettings = {
 		Height = 6,

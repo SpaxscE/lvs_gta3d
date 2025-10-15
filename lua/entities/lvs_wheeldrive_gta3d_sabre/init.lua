@@ -12,14 +12,14 @@ function ENT:OnSpawn( PObj )
 	RFSeat.ExitPos = Vector(-5,-80,0)
 	
 	local LFDoorHandler = self:AddDoorHandler( "left_door", Vector(15,45,0), Angle(0,180,0), Vector(0,0,0), Vector(50,15,50), Vector(0,-40,0), Vector(50,15,50) )
-	LFDoorHandler:SetSoundOpen( "gta3d/doors/door_gen_open.wav" )
-	LFDoorHandler:SetSoundClose( "gta3d/doors/door_gen_close.wav" )
+	LFDoorHandler:SetSoundOpen( "gta3d/doors/door_old_open.wav" )
+	LFDoorHandler:SetSoundClose( "gta3d/doors/door_old_close.wav" )
 	LFDoorHandler:LinkToSeat( DriverSeat )
 	LFDoorHandler:DisableOnBodyGroup( 6, 3 )
 	
 	local RFDoorHandler = self:AddDoorHandler( "right_door", Vector(15,-45,0), Angle(0,180,0), Vector(0,-15,0), Vector(50,0,50), Vector(0,-15,0), Vector(50,40,50) )
-	RFDoorHandler:SetSoundOpen( "gta3d/doors/door_gen_open.wav" )
-	RFDoorHandler:SetSoundClose( "gta3d/doors/door_gen_close.wav" )
+	RFDoorHandler:SetSoundOpen( "gta3d/doors/door_old_open.wav" )
+	RFDoorHandler:SetSoundClose( "gta3d/doors/door_old_close.wav" )
 	RFDoorHandler:LinkToSeat( RFSeat )
 	RFDoorHandler:DisableOnBodyGroup( 5, 3 )
 	
