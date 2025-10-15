@@ -1,0 +1,13 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_met.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/banshee/banshee92wheel32"
+$bumpmap "models/diggercars/gtasa/banshee/banshee92wheel32_nm"
+"$envmap" "env_cubemap"
+"$envmaptint" "[0.1 0.1 0.1]"
+$normalmapalphaenvmapmask "1"
+}
+}
+

@@ -1,0 +1,8 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/primary_clean.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/majestic/grey"
+}
+}

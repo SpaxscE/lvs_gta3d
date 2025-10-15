@@ -1,0 +1,225 @@
+function ENT:CreatePDS()
+	-- hood
+	local pos, ang, mins, maxs = self:GetBoneInfo( "bonnet" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		stages = {
+			{ bodygroup = { [1] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [1] = 2 }, sound = "SA_Collision" },
+			{
+				sound = "SA_Collision",
+				bodygroup = { [1] = 3 },
+				gib = {
+					mdl = "models/diggercars/gtasa/banshee/bonnet_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
+				},
+			},
+		}
+	} )
+
+	-- trunk
+	local pos, ang, mins, maxs = self:GetBoneInfo( "boot" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		stages = {
+			{ bodygroup = { [2] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [2] = 2 }, sound = "SA_Collision" },
+			{
+				sound = "SA_Collision",
+				bodygroup = { [2] = 3 },
+				gib = {
+					mdl = "models/diggercars/gtasa/banshee/boot_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
+				},
+			},
+		}
+	} )
+
+	-- front bumper
+	local pos, ang, mins, maxs = self:GetBoneInfo( "fb" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		stages = {
+			{ bodygroup = { [3] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [3] = 2 }, sound = "SA_Collision" },
+			{
+				sound = "SA_Collision",
+				bodygroup = { [3] = 3 },
+				gib = {
+					mdl = "models/diggercars/gtasa/banshee/bump_front_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
+				},
+			},
+		}
+	} )
+
+	-- rear bumper
+	local pos, ang, mins, maxs = self:GetBoneInfo( "rb" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		stages = {
+			{ bodygroup = { [4] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [4] = 2 }, sound = "SA_Collision" },
+			{
+				sound = "SA_Collision",
+				bodygroup = { [4] = 3 },
+				gib = {
+					mdl = "models/diggercars/gtasa/banshee/bump_rear_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
+				},
+			},
+		}
+	} )
+
+	-- door front left
+	local pos, ang, mins, maxs = self:GetBoneInfo( "dfl" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		stages = {
+			{ bodygroup = { [6] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [6] = 2 }, sound = "SA_Collision" },
+			{
+				sound = "SA_Collision",
+				bodygroup = { [6] = 3 },
+				gib = {
+					mdl = "models/diggercars/gtasa/banshee/door_lf_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
+				},
+			},
+		}
+	} )
+
+	-- door front right
+	local pos, ang, mins, maxs = self:GetBoneInfo( "dfr" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		stages = {
+			{ bodygroup = { [5] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [5] = 2 }, sound = "SA_Collision" },
+			{
+				sound = "SA_Collision",
+				bodygroup = { [5] = 3 },
+				gib = {
+					mdl = "models/diggercars/gtasa/banshee/door_rf_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
+				},
+			},
+		}
+	} )
+
+	-- headlight left
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_fl" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [9] = 1 },
+				effect = "GlassImpact",
+				sound = "SA_Break_Light",
+			},
+		}
+	} )
+
+
+	-- headlight right
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_fr" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [8] = 1 },
+				effect = "GlassImpact",
+				sound = "SA_Break_Light",
+			},
+		}
+	} )
+
+	-- taillight left
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_rl" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [11] = 1 },
+				effect = "GlassImpact",
+				sound = "SA_Break_Light",
+			},
+		}
+	} )
+
+	-- taillight right
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_rr" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [10] = 1 },
+				effect = "GlassImpact",
+				sound = "SA_Break_Light",
+			},
+		}
+	} )
+
+	-- windshield
+	local pos, ang, mins, maxs = self:GetBoneInfo( "wind" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [7] = 1 },
+				effect = "GlassImpact",
+				sound = "physics/glass/glass_cup_break1.wav",
+			},
+			{
+				bodygroup = { [7] = 2 },
+				effect = "GlassImpact",
+				sound = "physics/glass/glass_largesheet_break1.wav",
+			},
+		}
+	} )
+
+end
