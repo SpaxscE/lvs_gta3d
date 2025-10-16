@@ -1,16 +1,4 @@
-"VertexlitGeneric"
+"patch"
 {
-"$basetexture" "models/gta3d/vehicle/vehiclelights128"
-
-"$halflambert" 1
-
-"$colorfix" "{255 255 255}"
-"Proxies"
-	{
-		"Equals"
-		{
-			srcVar1 $colorfix
-			resultVar $color
-		}
-	}
+	include "materials/models/diggercars/gtasa/shared/vehiclelights128.vmt"
 }

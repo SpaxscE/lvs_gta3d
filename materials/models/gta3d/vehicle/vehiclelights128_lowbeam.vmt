@@ -1,21 +1,38 @@
-"VertexlitGeneric"
+"VertexLitGeneric"
 {
-"$basetexture" "models/gta3d/vehicle/vehiclelights128"
+	
+	"$basetexture" "models/diggercars/gtasa/shared/vehiclelights128"
+	"$bumpmap" "models/diggercars/gtasa/shared/vehiclelights128_nm"
 
-"$halflambert" 1
-
-"$detail" "models/gta3d/vehicle/vehiclelightson128"
-"$detailscale" 1
-"$detailblendfactor" 0
-"$detailblendmode" 5
-
-"$colorfix" "{255 255 255}"
-"Proxies"
+"$detail" "models/diggercars/gtasa/shared/vehiclelightson128"
+"$detailscale" "1"
+"$detailblendfactor" "0"
+"$detailblendmode" "5"
+	
+	$nocull "1"
+	$halflambert "1"
+	
+	$phong "1" 
+	$phongboost "0.06" 
+	$phongfresnelranges "[1 3 16]" 
+	
+	$envmap "env_cubemap"
+	$envmaptint "[0.005 0.005 0.005]"
+	$envmapfresnel "20"
+	$normalmapalphaenvmapmask "1"
+	
+	$rimlight "1"
+	$rimlightexponent "15"
+	$rimlightboost "0.3"
+	"$colorfix" "{255 255 255}"
+	"Proxies"
 	{
 		"Equals"
 		{
 			srcVar1 $colorfix
-			resultVar $color
+			resultVar	$color
 		}
 	}
 }
+
+

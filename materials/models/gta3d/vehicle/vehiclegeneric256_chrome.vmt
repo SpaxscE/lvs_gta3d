@@ -1,21 +1,6 @@
-"VertexlitGeneric"
+"patch"
 {
-"$basetexture" "models/gta3d/vehicle/vehiclegeneric256"
-
-"$envmap" "env_cubemap"
-"$envmaptint" "[.5 .5 .5]"
-
-"$halflambert" 1
-
-"$nocull" 1
-
-"$colorfix" "{255 255 255}"
-"Proxies"
-	{
-		"Equals"
-		{
-			srcVar1 $colorfix
-			resultVar $color
-		}
-	}
+	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_met.vmt"
 }
+
+

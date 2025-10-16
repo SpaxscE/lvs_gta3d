@@ -1,21 +1,6 @@
-"VertexlitGeneric"
+"patch"
 {
-"$basetexture" "models/gta3d/vehicle/vehiclegeneric256"
-
-$bumpmap "models/gta3d/vehicle/blank_normal"
-$phong 1
-$phongexponent 3
-$phongboost 1
-$phongfresnelranges "[0 0.5 1]"
-
-"$halflambert" 1
-
-$nocull 1
-
-Proxies {
-    		ColorSlot1{
-			name "Primary Color"
-       			resultVar $color2
-           		}
-	}
+	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_paint.vmt"
 }
+
+

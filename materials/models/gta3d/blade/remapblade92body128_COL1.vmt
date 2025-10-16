@@ -1,0 +1,9 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/primary.vmt"
+	insert
+	{
+$basetexture				"models/gta3d/blade/remapblade92body128_COL1"
+$bumpmap "models/gta3d/blade/blade92body256_nm"
+}
+}
