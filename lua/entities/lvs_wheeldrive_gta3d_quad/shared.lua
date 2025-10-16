@@ -19,8 +19,8 @@ ENT.MDL = "models/diggercars/gtasa/quad/quad.mdl"
 ENT.AITEAM = 0
 
 ENT.MaxVelocity = 1200
-
-ENT.EngineTorque = 100
+ENT.PhysicsWeightScale = 0.4
+ENT.EngineTorque = 120
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
@@ -69,27 +69,27 @@ ENT.PlayerBoneManipulate = {
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/merc/idle.wav",
+		sound = "gta3d/engines/dritbike/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/merc/gear.wav",
+		sound = "gta3d/engines/dritbike/gear.wav",
 		soundDuration = 3.93,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/merc/cruise.wav",
+		sound = "gta3d/engines/dritbike/cruise.wav",
 		Pitch = 90,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/merc/throttleoff.wav",
+		sound = "gta3d/engines/dritbike/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {

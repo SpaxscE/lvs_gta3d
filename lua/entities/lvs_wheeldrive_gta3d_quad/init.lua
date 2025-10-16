@@ -41,12 +41,12 @@ function ENT:OnSpawn( PObj )
 		},
 		Wheels = { FLWheel, FRWheel },
 		Suspension = {
-			Height = 10,
-			MaxTravel = 7,
-			ControlArmLength = 25,
-			SpringConstant = 20000,
-			SpringDamping = 2000,
-			SpringRelativeDamping = 2000,
+			Height = 5,
+			MaxTravel = 15,
+			ControlArmLength = 40,
+			SpringConstant = 25000,
+			SpringDamping = 500,
+			SpringRelativeDamping = 500,
 		},
 	} )
 
@@ -60,12 +60,12 @@ function ENT:OnSpawn( PObj )
 		},
 		Wheels = { RLWheel, RRWheel },
 		Suspension = {
-			Height = 10,
-			MaxTravel = 7,
-			ControlArmLength = 25,
-			SpringConstant = 20000,
-			SpringDamping = 2000,
-			SpringRelativeDamping = 2000,
+			Height = 5,
+			MaxTravel = 15,
+			ControlArmLength = 40,
+			SpringConstant = 25000,
+			SpringDamping = 500,
+			SpringRelativeDamping = 500,
 		},
 	} )
 end
