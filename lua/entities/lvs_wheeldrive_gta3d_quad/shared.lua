@@ -43,22 +43,22 @@ ENT.HornPos = Vector(30,0,30)
 
 ENT.PlayerBoneManipulate = {
 	[1] = {
-		["ValveBiped.Bip01_Pelvis"] = Angle(0,0,23),
+		["ValveBiped.Bip01_Pelvis"] = Angle(0,0,5),
 		
-		["ValveBiped.Bip01_R_Thigh"] = Angle(20,-10,-15),
-		["ValveBiped.Bip01_L_Thigh"] = Angle(-20,-10,15),
+		["ValveBiped.Bip01_R_Thigh"] = Angle(20,-10,0),
+		["ValveBiped.Bip01_L_Thigh"] = Angle(-20,-10,0),
 
-		["ValveBiped.Bip01_R_Calf"] = Angle(0,40,0),
-		["ValveBiped.Bip01_L_Calf"] = Angle(0,40,0),
+		["ValveBiped.Bip01_R_Calf"] = Angle(0,30,0),
+		["ValveBiped.Bip01_L_Calf"] = Angle(0,30,0),
 		
-		["ValveBiped.Bip01_R_Foot"] = Angle(0,-20,0),
-		["ValveBiped.Bip01_L_Foot"] = Angle(0,-20,0),
+		["ValveBiped.Bip01_R_Foot"] = Angle(0,0,0),
+		["ValveBiped.Bip01_L_Foot"] = Angle(0,0,0),
 
-		["ValveBiped.Bip01_R_UpperArm"] = Angle(10,25,0),
-		["ValveBiped.Bip01_L_UpperArm"] = Angle(-5,25,0),
+		["ValveBiped.Bip01_R_UpperArm"] = Angle(0,10,0),
+		["ValveBiped.Bip01_L_UpperArm"] = Angle(0,10,0),
 
-		["ValveBiped.Bip01_R_Forearm"] = Angle(0,-10,0),
-		["ValveBiped.Bip01_L_Forearm"] = Angle(0,-10,0),
+		["ValveBiped.Bip01_R_Forearm"] = Angle(0,0,0),
+		["ValveBiped.Bip01_L_Forearm"] = Angle(0,0,0),
 	},
 	[2] = {
 		["ValveBiped.Bip01_R_Thigh"] = Angle(14,10,0),
@@ -76,7 +76,7 @@ ENT.EngineSoundsSA = {
 	},
 	gears = {
 		sound = "gta3d/engines/dritbike/gear.wav",
-		soundDuration = 3.93,
+		soundDuration = 1.8,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
@@ -142,4 +142,22 @@ ENT.Lights = {
 	},	
 
 }
+
+function ENT:CalcMainActivity( ply )
+	if ply ~= self:GetDriver() then return self:CalcMainActivityPassenger( ply ) end
+
+	if ply.m_bWasNoclipping then 
+		ply.m_bWasNoclipping = nil 
+		ply:AnimResetGestureSlot( GESTURE_SLOT_CUSTOM ) 
+		
+		if CLIENT then 
+			ply:SetIK( true )
+		end 
+	end 
+
+	ply.CalcIdeal = ACT_STAND
+	ply.CalcSeqOverride = ply:LookupSequence( "drive_airboat" )
+
+	return ply.CalcIdeal, ply.CalcSeqOverride
+end
 
