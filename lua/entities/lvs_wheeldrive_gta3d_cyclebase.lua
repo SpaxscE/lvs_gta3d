@@ -147,3 +147,31 @@ function ENT:TireSoundThink()
 		end
 	end
 end
+
+function ENT:CalcBikePedalPosition()
+	local EntTable = self:GetTable()
+
+	if not EntTable._PedalAngle then EntTable._PedalAngle = 0 end
+	if not EntTable._PedalAngleNext then EntTable._PedalAngleNext = 0 end
+
+	local T = CurTime()
+
+	if EntTable._PedalAngleNext < T then
+		EntTable._PedalAngleNext = T + 0.01
+
+		local Mul = self:GetVelocity():Length() / self.MaxVelocity
+		local Gear = math.max( (1 - Mul) ^ 2 * 60, 10 )
+
+		EntTable._PedalAngle = EntTable._PedalAngle + self:GetThrottle() * (self:GetReverse() and -1 or 1) * Mul * Gear
+	end
+
+	if EntTable._PedalAngle > 360 then
+		EntTable._PedalAngle = EntTable._PedalAngle - 360
+	end
+
+	if EntTable._PedalAngle < -360 then
+		EntTable._PedalAngle = EntTable._PedalAngle + 360
+	end
+
+	return math.Clamp(EntTable._PedalAngle - self:GetBrake() * 45,-360,360)
+end
