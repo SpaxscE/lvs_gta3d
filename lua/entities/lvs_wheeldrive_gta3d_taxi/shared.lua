@@ -2,7 +2,7 @@
 ENT.Base = "lvs_wheeldrive_gta3d"
 
 ENT.PrintName = "Taxi"
-ENT.Author = "Randy"
+ENT.Author = "Digger"
 ENT.Information = ""
 ENT.Category = "[LVS] GTA3D - Public Service"
 
@@ -14,23 +14,20 @@ ENT.AdminSpawnable		= false
 
 ENT.SpawnNormalOffset = 40
 
-ENT.MDL = "models/gta3d/simf/taxi.mdl"
-ENT.MDL_DESTROYED = "models/gta3d/gibs/premier/chassis_taxi.mdl"
+ENT.MDL = "models/diggercars/gtasa/copcapla/copcapla.mdl"
 
 ENT.GibModels = {
-	"models/gta3d/gibs/premier/bonnet_dam.mdl",
-	"models/gta3d/gibs/premier/boot_dam.mdl",
-	"models/gta3d/gibs/premier/bump_front_dam.mdl",
-	"models/gta3d/gibs/premier/bump_rear_dam.mdl",
-	"models/gta3d/gibs/premier/door_lf_dam.mdl",
-	"models/gta3d/gibs/premier/door_lr_dam.mdl",
-	"models/gta3d/gibs/premier/door_rf_dam.mdl",
-	"models/gta3d/gibs/premier/door_rr_dam.mdl",
+	"models/diggercars/gtasa/copcapla/bonnet_dam.mdl",
+	"models/diggercars/gtasa/copcapla/boot_dam.mdl",
+	"models/diggercars/gtasa/copcapla/bump_front_dam.mdl",
+	"models/diggercars/gtasa/copcapla/bump_rear_dam.mdl",
+	"models/diggercars/gtasa/copcapla/door_lf_dam.mdl",
+	"models/diggercars/gtasa/copcapla/door_rf_dam.mdl",
 }
 
 ENT.AITEAM = 0
 
-ENT.MaxVelocity = 2150
+ENT.MaxVelocity = 2050
 
 ENT.EngineTorque = 135
 ENT.EngineIdleRPM = 1000
@@ -39,35 +36,36 @@ ENT.EngineMaxRPM = 6000
 ENT.TransGears = 5
 
 ENT.RandomColor = {
-	Color(255,182,16),
+	--SAN ANDREAS
+	Color(214,167,39),
 }
 
-ENT.HornSound = "gta3d/horns/horn_006_112.wav"
-ENT.HornPos = Vector(45,0,20)
+ENT.HornSound = "gta3d/horns/horn_009.wav"
+ENT.HornPos = Vector(70,0,20)
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/merc/idle.wav",
+		sound = "gta3d/engines/i4_1/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/merc/gear.wav",
+		sound = "gta3d/engines/i4_1/gear.wav",
 		soundDuration = 3.93,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/merc/cruise.wav",
+		sound = "gta3d/engines/i4_1/cruise.wav",
 		Pitch = 90,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/merc/throttleoff.wav",
+		sound = "gta3d/engines/i4_1/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {
@@ -84,64 +82,66 @@ ENT.EngineSoundsSA = {
 	},
 }
 
-ENT.ExhaustPositions = {
-	{
-		pos = Vector(-103.22,-18.38,-20.18),
-		ang = Angle(0,180,0),
-	},
-}
-
-
 ENT.Lights = {
 	{
-		Trigger = "main",
-		SubMaterialID = 13,
+		Trigger = "main+high",
+		SubMaterialID = 15,
 		Sprites = {
-			{ pos = Vector(90,29,-1), width = 100, colorB = 200, colorA = 150, bodygroup = { name = "light_lf", active = { 0 } }, },
-			{ pos = Vector(90,-29,-1), width = 100, colorB = 200, colorA = 150, bodygroup = { name = "light_rf", active = { 0 } }, },
+			{  pos = "a_fl", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_fr", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
 		},
 		ProjectedTextures = {
-			{ pos = Vector(90,29,-1), ang = Angle(6,0,0), colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "light_lf", active = { 0 } }, },
-			{ pos = Vector(90,-29,-1), ang = Angle(2,0,0), colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "light_rf", active = { 0 } }, },
+			{  pos = "a_fl", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_fr", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
 		},
 	},
-	
+
 	{
 		Trigger = "main+brake",
 		SubMaterialID = 17,
 		Sprites = {
-			{ pos = Vector(-104,27,0), width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "light_lr", active = { 0 } }, },
-			{ pos = Vector(-104,-27,0), width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "light_rr", active = { 0 } }, },
+			{  pos = "a_rl", width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
+			{  pos = "a_rr", width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
-	
 	{
-		Trigger = "high",
+		Trigger = "main+brake+turnleft",
+		SubMaterialID = 20,
 		Sprites = {
-			{ pos = Vector(90,29,-1), width = 100, colorB = 200, colorA = 150, bodygroup = { name = "light_lf", active = { 0 } }, },
-			{ pos = Vector(90,-29,-1), width = 100, colorB = 200, colorA = 150, bodygroup = { name = "light_rf", active = { 0 } }, },
-		},
-		ProjectedTextures = {
-			{ pos = Vector(90,29,-1), ang = Angle(0,0,0), fov = 50, colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "light_lf", active = { 0 } }, },
-			{ pos = Vector(90,-29,-1), ang = Angle(0,0,0), fov = 50, colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "light_rf", active = { 0 } }, },
+			{  pos = "a_rl", width = 30, height = 30, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
+			{  pos = "a_rl2", width = 30, height = 30, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
 		},
 	},
-	
 	{
-		Trigger = "turnleft",
-		SubMaterialID = 15,
+		Trigger = "main+brake+turnright",
+		SubMaterialID = 19,
 		Sprites = {
-			{ pos = Vector(87,39,-1), colorG = 100, colorB = 0, colorA = 50, bodygroup = { name = "light_lf_ind", active = { 0 } }, },
-			{ pos = Vector(-102,39,0), colorG = 100, colorB = 0, colorA = 50, bodygroup = { name = "light_lr_ind", active = { 0 } }, },
+			{  pos = "a_rr", width = 30, height = 30, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
+			{  pos = "a_rr2", width = 30, height = 30, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
-	
 	{
 		Trigger = "turnright",
 		SubMaterialID = 16,
 		Sprites = {
-			{ pos = Vector(87,-39,-1), colorG = 100, colorB = 0, colorA = 50, bodygroup = { name = "light_rf_ind", active = { 0 } }, },
-			{ pos = Vector(-102,-39,0), colorG = 100, colorB = 0, colorA = 50, bodygroup = { name = "light_rr_ind", active = { 0 } }, },
+			{  pos = "a_frt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
 		},
 	},
+	{
+		Trigger = "turnleft",
+		SubMaterialID = 18,
+		Sprites = {
+			{  pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
+		},
+	},	
+	
+	{
+		Trigger = "high",
+		ProjectedTextures = {
+			{  pos = "a_fl", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_fr", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
+		},
+	},	
+	
 }
+

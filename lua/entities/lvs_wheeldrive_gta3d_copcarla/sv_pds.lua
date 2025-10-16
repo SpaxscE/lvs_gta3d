@@ -7,16 +7,15 @@ function ENT:CreatePDS()
 		mins = mins,
 		maxs = maxs,
 		stages = {
-			{ bodygroup = { [2] = 1 }, sound = "SA_Collision" },
-			{ bodygroup = { [2] = 2 }, sound = "SA_Collision" },
+			{ bodygroup = { [1] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [1] = 2 }, sound = "SA_Collision" },
 			{
 				sound = "SA_Collision",
-				bodygroup = { [2] = 3 },
+				bodygroup = { [1] = 3 },
 				gib = {
-					mdl = "models/gta3d/gibs/copcarla/bonnet_dam.mdl",
-					target = "placementOrigin",
-					--pos = Vector(64,0,14),
-					--ang = Angle(0,0,0),
+					mdl = "models/diggercars/gtasa/copcapla/bonnet_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
@@ -30,21 +29,44 @@ function ENT:CreatePDS()
 		mins = mins,
 		maxs = maxs,
 		stages = {
-			{ bodygroup = { [3] = 1 }, sound = "SA_Collision" },
-			{ bodygroup = { [3] = 2 }, sound = "SA_Collision" },
+			{ bodygroup = { [2] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [2] = 2 }, sound = "SA_Collision" },
 			{
 				sound = "SA_Collision",
-				bodygroup = { [3] = 3 },
+				bodygroup = { [2] = 3 },
 				gib = {
-					mdl = "models/gta3d/gibs/copcarla/boot_dam.mdl",
-					target = "placementOrigin",
+					mdl = "models/diggercars/gtasa/copcapla/boot_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
 	} )
 
 	-- front bumper
-	local pos, ang, mins, maxs = self:GetBoneInfo( "bump_front" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "fb" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		stages = {
+			{ bodygroup = { [3] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [3] = 2 }, sound = "SA_Collision" },
+			{
+				sound = "SA_Collision",
+				bodygroup = { [3] = 3 },
+				gib = {
+					mdl = "models/diggercars/gtasa/copcapla/bump_front_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
+				},
+			},
+		}
+	} )
+
+	-- rear bumper
+	local pos, ang, mins, maxs = self:GetBoneInfo( "rb" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
@@ -57,36 +79,16 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [4] = 3 },
 				gib = {
-					mdl = "models/gta3d/gibs/copcarla/bump_front_dam.mdl",
-					target = "placementOrigin",
-				},
-			},
-		}
-	} )
-
-	-- rear bumper
-	local pos, ang, mins, maxs = self:GetBoneInfo( "bump_rear" )
-	self:AddPDS( {
-		pos = pos,
-		ang = ang,
-		mins = mins,
-		maxs = maxs,
-		stages = {
-			{ bodygroup = { [5] = 1 }, sound = "SA_Collision" },
-			{ bodygroup = { [5] = 2 }, sound = "SA_Collision" },
-			{
-				sound = "SA_Collision",
-				bodygroup = { [5] = 3 },
-				gib = {
-					mdl = "models/gta3d/gibs/copcarla/bump_rear_dam.mdl",
-					target = "placementOrigin",
+					mdl = "models/diggercars/gtasa/copcapla/bump_rear_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
 	} )
 
 	-- door front left
-	local pos, ang, mins, maxs = self:GetBoneInfo( "door_lf" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "dfl" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
@@ -99,36 +101,38 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [6] = 3 },
 				gib = {
-					mdl = "models/gta3d/gibs/copcarla/door_lf_dam.mdl",
-					target = "placementOrigin",
+					mdl = "models/diggercars/gtasa/copcapla/door_lf_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
 	} )
 
 	-- door front right
-	local pos, ang, mins, maxs = self:GetBoneInfo( "door_rf" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "dfr" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
 		mins = mins,
 		maxs = maxs,
 		stages = {
-			{ bodygroup = { [7] = 1 }, sound = "SA_Collision" },
-			{ bodygroup = { [7] = 2 }, sound = "SA_Collision" },
+			{ bodygroup = { [5] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [5] = 2 }, sound = "SA_Collision" },
 			{
 				sound = "SA_Collision",
-				bodygroup = { [7] = 3 },
+				bodygroup = { [5] = 3 },
 				gib = {
-					mdl = "models/gta3d/gibs/copcarla/door_rf_dam.mdl",
-					target = "placementOrigin",
+					mdl = "models/diggercars/gtasa/copcapla/door_rf_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
 	} )
 
 	-- door rear left
-	local pos, ang, mins, maxs = self:GetBoneInfo( "door_lr" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "drl" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
@@ -141,105 +145,43 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [8] = 3 },
 				gib = {
-					mdl = "models/gta3d/gibs/copcarla/door_lr_dam.mdl",
-					target = "placementOrigin",
+					mdl = "models/diggercars/gtasa/copcapla/door_lr_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
 	} )
 
 	-- door rear right
-	local pos, ang, mins, maxs = self:GetBoneInfo( "door_rr" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "drr" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
 		mins = mins,
 		maxs = maxs,
 		stages = {
-			{ bodygroup = { [9] = 1 }, sound = "SA_Collision" },
-			{ bodygroup = { [9] = 2 }, sound = "SA_Collision" },
+			{ bodygroup = { [7] = 1 }, sound = "SA_Collision" },
+			{ bodygroup = { [7] = 2 }, sound = "SA_Collision" },
 			{
 				sound = "SA_Collision",
-				bodygroup = { [9] = 3 },
+				bodygroup = { [7] = 3 },
 				gib = {
-					mdl = "models/gta3d/gibs/copcarla/door_rr_dam.mdl",
-					target = "placementOrigin",
+					mdl = "models/diggercars/gtasa/copcapla/door_rr_dam.mdl",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
 	} )
 
 	-- headlight left
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_fl" )
 	self:AddPDS( {
-		pos = Vector(90,29,-1),
-		ang = Angle(0,0,0),
-		mins = Vector(-10,-10,-10),
-		maxs = Vector(10,10,10),
-		allow_damage = true,
-		stages = {
-			{
-				bodygroup = { [11] = 1 },
-				effect = "GlassImpact",
-				sound = "SA_Break_Light",
-			},
-		}
-	} )
-
-
-	-- headlight right
-	self:AddPDS( {
-		pos = Vector(90,-29,-1),
-		ang = Angle(0,0,0),
-		mins = Vector(-10,-10,-10),
-		maxs = Vector(10,10,10),
-		allow_damage = true,
-		stages = {
-			{
-				bodygroup = { [13] = 1 },
-				effect = "GlassImpact",
-				sound = "SA_Break_Light",
-			},
-		}
-	} )
-
-	-- taillight left
-	self:AddPDS( {
-		pos = Vector(-104,27,0),
-		ang = Angle(0,0,0),
-		mins = Vector(-10,-10,-10),
-		maxs = Vector(10,10,10),
-		allow_damage = true,
-		stages = {
-			{
-				bodygroup = { [15] = 1 },
-				effect = "GlassImpact",
-				sound = "SA_Break_Light",
-			},
-		}
-	} )
-
-	-- taillight right
-	self:AddPDS( {
-		pos = Vector(-104,-27,0),
-		ang = Angle(0,0,0),
-		mins = Vector(-10,-10,-10),
-		maxs = Vector(10,10,10),
-		allow_damage = true,
-		stages = {
-			{
-				bodygroup = { [17] = 1 },
-				effect = "GlassImpact",
-				sound = "SA_Break_Light",
-			},
-		}
-	} )
-
-	-- turn signal front left
-	self:AddPDS( {
-		pos = Vector(87,39,-1),
-		ang = Angle(0,0,0),
-		mins = Vector(-4,-4,-4),
-		maxs = Vector(4,4,4),
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
 		allow_damage = true,
 		stages = {
 			{
@@ -250,12 +192,31 @@ function ENT:CreatePDS()
 		}
 	} )
 
-	-- turn signal front right
+
+	-- headlight right
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_fr" )
 	self:AddPDS( {
-		pos = Vector(87,-39,-1),
-		ang = Angle(0,0,0),
-		mins = Vector(-4,-4,-4),
-		maxs = Vector(4,4,4),
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [11] = 1 },
+				effect = "GlassImpact",
+				sound = "SA_Break_Light",
+			},
+		}
+	} )
+
+	-- taillight left
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_rl" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
 		allow_damage = true,
 		stages = {
 			{
@@ -266,32 +227,17 @@ function ENT:CreatePDS()
 		}
 	} )
 
-	-- turn signal rear left
+	-- taillight right
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_rr" )
 	self:AddPDS( {
-		pos = Vector(-102,39,0),
-		ang = Angle(0,0,0),
-		mins = Vector(-4,-4,-4),
-		maxs = Vector(4,4,4),
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
 		allow_damage = true,
 		stages = {
 			{
-				bodygroup = { [16] = 1 },
-				effect = "GlassImpact",
-				sound = "SA_Break_Light",
-			},
-		}
-	} )
-
-	-- turn signal rear right
-	self:AddPDS( {
-		pos = Vector(-102,-39,0),
-		ang = Angle(0,0,0),
-		mins = Vector(-4,-4,-4),
-		maxs = Vector(4,4,4),
-		allow_damage = true,
-		stages = {
-			{
-				bodygroup = { [18] = 1 },
+				bodygroup = { [13] = 1 },
 				effect = "GlassImpact",
 				sound = "SA_Break_Light",
 			},
@@ -299,11 +245,78 @@ function ENT:CreatePDS()
 	} )
 
 	-- windshield
+	local pos, ang, mins, maxs = self:GetBoneInfo( "wind" )
 	self:AddPDS( {
-		pos = Vector(25.77,0,20.87),
-		ang = Angle(30,0,0),
-		mins = Vector(-15,-30,-5),
-		maxs = Vector(15,30,5),
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [9] = 1 },
+				effect = "GlassImpact",
+				sound = "physics/glass/glass_cup_break1.wav",
+			},
+			{
+				bodygroup = { [9] = 2 },
+				effect = "GlassImpact",
+				sound = "physics/glass/glass_largesheet_break1.wav",
+			},
+		}
+	} )
+
+	-- glass left
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_flh" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [16] = 1 },
+				effect = "GlassImpact",
+				sound = "physics/glass/glass_cup_break1.wav",
+			},
+			{
+				bodygroup = { [16] = 2 },
+				effect = "GlassImpact",
+				sound = "physics/glass/glass_largesheet_break1.wav",
+			},
+		}
+	} )
+
+	-- glass right
+	local pos, ang, mins, maxs = self:GetBoneInfo( "l_frh" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
+		allow_damage = true,
+		stages = {
+			{
+				bodygroup = { [15] = 1 },
+				effect = "GlassImpact",
+				sound = "physics/glass/glass_cup_break1.wav",
+			},
+			{
+				bodygroup = { [15] = 2 },
+				effect = "GlassImpact",
+				sound = "physics/glass/glass_largesheet_break1.wav",
+			},
+		}
+	} )
+
+	-- windshield rear
+	local pos, ang, mins, maxs = self:GetBoneInfo( "windr" )
+	self:AddPDS( {
+		pos = pos,
+		ang = ang,
+		mins = mins,
+		maxs = maxs,
 		allow_damage = true,
 		stages = {
 			{
