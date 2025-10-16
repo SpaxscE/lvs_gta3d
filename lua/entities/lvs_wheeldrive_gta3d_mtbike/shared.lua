@@ -23,9 +23,14 @@ ENT.MaxVelocityReverse = 50
 
 ENT.EngineTorque = 100
 ENT.EngineCurve = 1
+ENT.EngineCurveBoostLow = 3
 
-ENT.TransGears = 2
+ENT.TransGears = 3
 ENT.TransGearsReverse = 1
+ENT.TransShiftSpeed = 0
+ENT.TransWobbleTime = 0
+ENT.TransWobbleFrequencyMultiplier = 0
+ENT.TransShiftSound = "common/null.wav"
 
 ENT.lvsShowInSpawner = true
 
