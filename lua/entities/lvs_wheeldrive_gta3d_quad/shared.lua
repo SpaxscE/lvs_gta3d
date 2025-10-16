@@ -45,20 +45,20 @@ ENT.PlayerBoneManipulate = {
 	[1] = {
 		["ValveBiped.Bip01_Pelvis"] = Angle(0,0,5),
 		
-		["ValveBiped.Bip01_R_Thigh"] = Angle(20,-10,0),
-		["ValveBiped.Bip01_L_Thigh"] = Angle(-20,-10,0),
+		["ValveBiped.Bip01_R_Thigh"] = Angle(20,-8,-20),
+		["ValveBiped.Bip01_L_Thigh"] = Angle(-20,-8,20),
 
-		["ValveBiped.Bip01_R_Calf"] = Angle(0,30,0),
-		["ValveBiped.Bip01_L_Calf"] = Angle(0,30,0),
+		["ValveBiped.Bip01_R_Calf"] = Angle(0,60,0),
+		["ValveBiped.Bip01_L_Calf"] = Angle(0,60,0),
 		
-		["ValveBiped.Bip01_R_Foot"] = Angle(0,0,0),
-		["ValveBiped.Bip01_L_Foot"] = Angle(0,0,0),
+		["ValveBiped.Bip01_R_Foot"] = Angle(0,-20,0),
+		["ValveBiped.Bip01_L_Foot"] = Angle(0,-20,0),
 
-		["ValveBiped.Bip01_R_UpperArm"] = Angle(0,10,0),
-		["ValveBiped.Bip01_L_UpperArm"] = Angle(0,10,0),
+		["ValveBiped.Bip01_R_UpperArm"] = Angle(15,50,0),
+		["ValveBiped.Bip01_L_UpperArm"] = Angle(-0,50,0),
 
-		["ValveBiped.Bip01_R_Forearm"] = Angle(0,0,0),
-		["ValveBiped.Bip01_L_Forearm"] = Angle(0,0,0),
+		["ValveBiped.Bip01_R_Forearm"] = Angle(0,-60,0),
+		["ValveBiped.Bip01_L_Forearm"] = Angle(0,-52,0),
 	},
 	[2] = {
 		["ValveBiped.Bip01_R_Thigh"] = Angle(14,10,0),

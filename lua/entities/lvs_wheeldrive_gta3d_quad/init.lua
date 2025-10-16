@@ -11,7 +11,7 @@ function ENT:OnSpawn( PObj )
 	local att_seat1 = self:GetAttachment( self:LookupAttachment( "driver" ) )
 	local att_seat2 = self:GetAttachment( self:LookupAttachment( "pass_fr" ) )
 
-	local DriverSeat = self:AddDriverSeat( self:WorldToLocal( att_seat1.Pos ) + Vector(-10,0,-13), self:WorldToLocalAngles( att_seat1.Ang) + Angle(0,-90,-90) )
+	local DriverSeat = self:AddDriverSeat( self:WorldToLocal( att_seat1.Pos ) + Vector(0,0,-10), self:WorldToLocalAngles( att_seat1.Ang) + Angle(0,-90,-90) )
 	DriverSeat:SetCameraDistance( 1 )
 	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(0,0,-6), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-90) )
 
