@@ -36,12 +36,12 @@ ENT.lvsShowInSpawner = true
 
 ENT.KickStarter = false
 
-ENT.HornSound = "lvs/vehicles/bicycle/bicycle_horn.wav"
+ENT.HornSound = "gta3d/bicycle/bicycle_horn.wav"
 ENT.HornPos = Vector(40,0,35)
 
 ENT.EngineSounds = {
 	{
-		sound = "lvs/vehicles/bicycle/bicycle_revup.wav",
+		sound = "gta3d/bicycle/bicycle_revup.wav",
 		Volume = 1,
 		Pitch = 40,
 		PitchMul = 40,
@@ -50,7 +50,7 @@ ENT.EngineSounds = {
 		UseDoppler = true,
 	},
 	{
-		sound = "lvs/vehicles/bicycle/bicycle_revdown.wav",
+		sound = "gta3d/bicycle/bicycle_revdown.wav",
 		Volume = 1,
 		Pitch = 100,
 		PitchMul = 40,

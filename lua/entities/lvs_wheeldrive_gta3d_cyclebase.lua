@@ -106,12 +106,28 @@ if SERVER then
 		PhysObj:SetVelocity( self:GetVelocity() + Vector(math.random(-5,5),math.random(-5,5),math.random(150,250)) )
 	end
 
+	function ENT:CalcSiren( ply, T )
+		local EntTable = self:GetTable()
+
+		if not EntTable.HornSound or not IsValid( EntTable.HornSND ) then return end
+
+		local horn = ply:lvsKeyDown( "ATTACK" )
+
+		if EntTable._oldPlayHorn ~= horn then
+			EntTable._oldPlayHorn = horn
+
+			if horn then
+				EntTable.HornSND:PlayOnce()
+			end
+		end
+	end
+
 	return
 end
 
 ENT.TireSoundTypes = {
-	["roll"] = "lvs/vehicles/bicycle/bicycle_tire_loop.wav",
-	["roll_racing"] = "lvs/vehicles/bicycle/bicycle_tire_loop.wav",
+	["roll"] = "gta3d/bicycle/bicycle_tire_loop.wav",
+	["roll_racing"] = "gta3d/bicycle/bicycle_tire_loop.wav",
 }
 
 function ENT:TireSoundThink()
