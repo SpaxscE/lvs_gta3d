@@ -61,3 +61,28 @@ sound.Add( {
 		"gta3d/share/damage_light.wav",
 	},
 } )
+
+
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D", "icon16/lvs_gta3d.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Coupes/Hatchbacks", "icon16/lvs_cars.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Industrial", "icon16/lvs_cars.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Lowriders", "icon16/lvs_cars.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Misc", "icon16/lvs_civilian.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Motorcycles/Bicycles", "icon16/lvs_gta3d_bicycles.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Sedans/Wagons", "icon16/lvs_gta3d_lowrider.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - SUVs/Pickups", "icon16/lvs_gta3d_suvspickups.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Sports", "icon16/lvs_gta3d_sports.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Government", "icon16/lvs_gta3d_government.png" )
+list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Public Service", "icon16/lvs_gta3d_publicservice.png" )
+
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D", "icon16/lvs_gta3d.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Coupes/Hatchbacks", "icon16/lvs_cars.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Industrial", "icon16/lvs_cars.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Lowriders", "icon16/lvs_gta3d_lowrider.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Misc", "icon16/lvs_civilian.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Motorcycles/Bicycles", "icon16/lvs_gta3d_bicycles.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Sedans/Wagons", "icon16/lvs_cars.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - SUVs/Pickups", "icon16/lvs_gta3d_suvspickups.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Sports", "icon16/lvs_gta3d_sports.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Government", "icon16/lvs_gta3d_government.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Public Service", "icon16/lvs_gta3d_publicservice.png" )
