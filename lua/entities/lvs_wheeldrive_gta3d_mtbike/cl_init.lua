@@ -3,23 +3,47 @@ include("shared.lua")
 function ENT:UpdatePoseParameters( steer, brake )
 	self:SetPoseParameter( "vehicle_steer", steer )
 	self:SetPoseParameter( "brake_pedal", brake )
---	self._rpm = self._rpm and self._rpm + engine_rpm * FrameTime() or 0
-
---	self:SetPoseParameter( "vehicle_wheel_r_spin", -self._rpm )
+	self:SetPoseParameter( "vehicle_wheel_r_spin", 180 + (self._PedalAngle or 0) )
 end
-
 
 function ENT:OnEngineActiveChanged( Active )
 end
 
-local angle_zero = Angle(0,0,0)
+function ENT:CalcBikePedalPosition()
+	local EntTable = self:GetTable()
 
+	if not EntTable._PedalAngle then EntTable._PedalAngle = 0 end
+	if not EntTable._PedalAngleNext then EntTable._PedalAngleNext = 0 end
+
+	local T = CurTime()
+
+	if EntTable._PedalAngleNext < T then
+		EntTable._PedalAngleNext = T + 0.01
+
+		local Mul = self:GetVelocity():Length() / self.MaxVelocity
+		local Gear = math.max( (1 - Mul) ^ 2 * 60, 10 )
+
+		EntTable._PedalAngle = EntTable._PedalAngle + self:GetThrottle() * (self:GetReverse() and -1 or 1) * Mul * Gear
+	end
+
+	if EntTable._PedalAngle > 360 then
+		EntTable._PedalAngle = EntTable._PedalAngle - 360
+	end
+
+	if EntTable._PedalAngle < -360 then
+		EntTable._PedalAngle = EntTable._PedalAngle + 360
+	end
+
+	return EntTable._PedalAngle
+end
+
+local angle_zero = Angle(0,0,0)
 function ENT:GetPlayerBoneManipulation( ply, PodID )
 	if PodID ~= 1 then return self.PlayerBoneManipulate[ PodID ] or {} end
 
 	local Pose = table.Copy( self.PlayerBoneManipulate[ PodID ] or {} )
 
-	local PedalAngle = self:GetPoseParameter( "vehicle_wheel_rl_spin" ) * 360
+	local PedalAngle = self:CalcBikePedalPosition()
 
 	local StartValue = 0
 	while StartValue < PedalAngle do

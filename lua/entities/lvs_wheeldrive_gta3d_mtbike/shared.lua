@@ -1,5 +1,5 @@
 
-ENT.Base = "lvs_bike_wheeldrive"
+ENT.Base = "lvs_wheeldrive_gta3d_cyclebase"
 
 ENT.PrintName = "Mountain Bike"
 ENT.Author = "Digger"
@@ -24,7 +24,7 @@ ENT.MaxVelocityReverse = 50
 ENT.EngineTorque = 100
 ENT.EngineCurve = 1
 
-ENT.TransGears = 12
+ENT.TransGears = 2
 ENT.TransGearsReverse = 1
 
 ENT.lvsShowInSpawner = true
@@ -33,6 +33,27 @@ ENT.KickStarter = false
 
 ENT.HornSound = "lvs/vehicles/bicycle/bicycle_horn.wav"
 ENT.HornPos = Vector(40,0,35)
+
+ENT.EngineSounds = {
+	{
+		sound = "lvs/vehicles/bicycle/bicycle_revup.wav",
+		Volume = 1,
+		Pitch = 40,
+		PitchMul = 40,
+		SoundLevel = 75,
+		SoundType = LVS.SOUNDTYPE_REV_UP,
+		UseDoppler = true,
+	},
+	{
+		sound = "lvs/vehicles/bicycle/bicycle_revdown.wav",
+		Volume = 1,
+		Pitch = 100,
+		PitchMul = 40,
+		SoundLevel = 75,
+		SoundType = LVS.SOUNDTYPE_REV_DOWN,
+		UseDoppler = true,
+	},
+}
 
 ENT.DriverBoneManipulateIdle = {
 	["ValveBiped.Bip01_Pelvis"] = Angle(0,0,23),

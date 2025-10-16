@@ -1,33 +1,10 @@
 AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
-include("sv_no_comic_explosion.lua")
-
-ENT.LeanAngleIdle = -10
-ENT.LeanAnglePark = -10
-
-
--- autostart
-function ENT:HandleStart()
-	local Active = self:GetEngineActive()
-	local ShouldBeActive = self:GetActive()
-
-	if Active == ShouldBeActive then return end
-
-	if Active then
-		self:StopEngine()
-
-		return
-	end
-
-	self:StartEngine()
-end
-function ENT:IsEngineStartAllowed()
-	return true
-end
-
 
 function ENT:OnSpawn( PObj )
+	self:AddEngine( Vector(0,0,20), Angle(0,90,0) )
+
 	local DriverSeat = self:AddDriverSeat( Vector(-18.7,0,27.3), Angle(0,-90,-12) )
 
 	local WheelModel = "models/diggercars/gtasa/bikes/bmx_wh.mdl"
