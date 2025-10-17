@@ -65,6 +65,28 @@ function ENT:MoveHook( wheel )
 	self:OnHookMoveDown( old, new )
 end
 
+function ENT:FindHookSpot( pos, entity )
+	local toTargetDist = 70
+
+	for _, boneName in pairs( {"fb","rb"} ) do
+		local boneIndex = entity:LookupBone( boneName )
+
+		if not boneIndex then continue end
+
+		local bonePos, _ = entity:GetBonePosition( boneIndex )
+		local dist = (pos - bonePos):Length()
+
+		if dist > toTargetDist then continue end
+
+		toTargetDist = dist
+		pos = bonePos
+
+		break
+	end
+
+	return pos
+end
+
 function ENT:OnHookMoveUp( old, new )
 	local att = self:GetAttachment( self:LookupAttachment( "hook" ) )
 
@@ -81,47 +103,17 @@ function ENT:OnHookMoveUp( old, new )
 
 	if old ~= 1 then return end
 
-	local target = trace.Entity
+	local entity = trace.Entity
 
-	if not self:HookEntityIsValid( trace.HitPos, target ) then return end
+	if not IsValid( entity ) then return end
 
-	self:CreateHookCollider( att.Pos, att.Ang, target )
+	self:CreateHookCollider( self:FindHookSpot( att.Pos, entity ), att.Ang, entity )
 end
 
 function ENT:OnHookMoveDown( old, new )
 	if new ~= 1 then return end
 
 	self:RemoveHookCollider()
-end
-
-function ENT:HookEntityIsValid( pos, entity )
-	if not IsValid( entity ) then return false end
-
-	local hasBone = false
-	local toTargetDist = 20
-	local isTargetValid = false
-
-	for _, boneName in pairs( {"fb","rb"} ) do
-		local boneIndex = entity:LookupBone( boneName )
-
-		if not boneIndex then continue end
-
-		hasBone = true
-
-		local bonePos, _ = entity:GetBonePosition( boneIndex )
-		local dist = (pos - bonePos):Length()
-
-		if dist > toTargetDist then continue end
-
-		toTargetDist = dist
-		isTargetValid = true
-
-		break
-	end
-
-	if not hasBone then return true end
-
-	return isTargetValid
 end
 
 function ENT:CreateHookCollider( pos, ang, target )

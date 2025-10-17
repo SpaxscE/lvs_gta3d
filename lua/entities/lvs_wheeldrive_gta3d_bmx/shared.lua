@@ -1,5 +1,5 @@
 
-ENT.Base = "lvs_bike_wheeldrive"
+ENT.Base = "lvs_wheeldrive_gta3d_cyclebase"
 
 ENT.PrintName = "BMX"
 ENT.Author = "Digger"
@@ -33,8 +33,19 @@ ENT.lvsShowInSpawner = true
 
 ENT.KickStarter = false
 
-ENT.HornSound = "lvs/vehicles/bicycle/bicycle_horn.wav"
+ENT.HornSound = "gta3d/bicycle/bicycle_horn.wav"
 ENT.HornPos = Vector(40,0,35)
+
+ENT.EngineSounds = {
+	{
+		sound = "gta3d/bicycle/bicycle_revup.wav",
+		Volume = 1,
+		Pitch = 40,
+		PitchMul = 40,
+		SoundLevel = 75,
+		UseDoppler = true,
+	},
+}
 
 ENT.DriverBoneManipulateIdle = {
 	["ValveBiped.Bip01_Pelvis"] = Angle(0,0,23),

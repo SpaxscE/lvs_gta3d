@@ -1,0 +1,177 @@
+AddCSLuaFile()
+
+ENT.Base = "lvs_bike_wheeldrive"
+DEFINE_BASECLASS( "lvs_bike_wheeldrive" )
+
+if SERVER then
+	ENT.LeanAngleIdle = -10
+	ENT.LeanAnglePark = -10
+
+	-- autostart
+	function ENT:HandleStart()
+		local Active = self:GetEngineActive()
+		local ShouldBeActive = self:GetActive()
+
+		if Active == ShouldBeActive then return end
+
+		if Active then
+			self:StopEngine()
+
+			return
+		end
+
+		self:StartEngine()
+	end
+
+	function ENT:IsEngineStartAllowed()
+		return true
+	end
+
+	function ENT:OnStartExplosion()
+	end
+
+	function ENT:OnFinishExplosion()
+		local effectdata = EffectData()
+			effectdata:SetOrigin( self:LocalToWorld( self:OBBCenter() ) )
+		util.Effect( "lvs_trailer_explosion", effectdata, true, true )
+
+		self:EmitSound("physics/metal/metal_box_break"..math.random(1,2)..".wav",75,100,1)
+
+		self:SpawnGibs()
+	end
+
+	local gibs = {
+		"models/gibs/manhack_gib01.mdl",
+		"models/gibs/manhack_gib02.mdl",
+		"models/gibs/manhack_gib03.mdl",
+		"models/gibs/manhack_gib04.mdl",
+		"models/props_c17/canisterchunk01a.mdl",
+		"models/props_c17/canisterchunk01d.mdl",
+		"models/props_c17/oildrumchunk01a.mdl",
+		"models/props_c17/oildrumchunk01b.mdl",
+		"models/props_c17/oildrumchunk01c.mdl",
+		"models/props_c17/oildrumchunk01d.mdl",
+		"models/props_c17/oildrumchunk01e.mdl",
+	}
+
+	function ENT:SpawnGibs()
+		local pos = self:LocalToWorld( self:OBBCenter() )
+		local ang = self:GetAngles()
+
+		self.GibModels = istable( self.GibModels ) and self.GibModels or gibs
+
+		for _, v in pairs( self.GibModels ) do
+			local ent = ents.Create( "prop_physics" )
+
+			if not IsValid( ent ) then continue end
+
+			ent:SetPos( pos )
+			ent:SetAngles( ang )
+			ent:SetModel( v )
+			ent:Spawn()
+			ent:Activate()
+			ent:SetRenderMode( RENDERMODE_TRANSALPHA )
+			ent:SetCollisionGroup( COLLISION_GROUP_WORLD )
+
+			local PhysObj = ent:GetPhysicsObject()
+
+			if IsValid( PhysObj ) then
+				PhysObj:SetVelocityInstantaneous( Vector( math.Rand(-1,1), math.Rand(-1,1), 1.5 ):GetNormalized() * math.random(250,400)  )
+				PhysObj:AddAngleVelocity( VectorRand() * 500 ) 
+				PhysObj:EnableDrag( false ) 
+			end
+
+			timer.Simple( 4.5, function()
+				if not IsValid( ent ) then return end
+
+				ent:SetRenderFX( kRenderFxFadeFast  ) 
+			end)
+
+			timer.Simple( 5, function()
+				if not IsValid( ent ) then return end
+
+				ent:Remove()
+			end)
+		end
+	end
+
+	function ENT:OnStartFireTrail( PhysObj, ExplodeTime )
+	end
+
+	function ENT:OnExploded()
+		local PhysObj = self:GetPhysicsObject()
+
+		if not IsValid( PhysObj ) then return end
+
+		PhysObj:SetVelocity( self:GetVelocity() + Vector(math.random(-5,5),math.random(-5,5),math.random(150,250)) )
+	end
+
+	function ENT:CalcSiren( ply, T )
+		local EntTable = self:GetTable()
+
+		if not EntTable.HornSound or not IsValid( EntTable.HornSND ) then return end
+
+		local horn = ply:lvsKeyDown( "ATTACK" )
+
+		if EntTable._oldPlayHorn ~= horn then
+			EntTable._oldPlayHorn = horn
+
+			if horn then
+				EntTable.HornSND:PlayOnce()
+			end
+		end
+	end
+
+	return
+end
+
+ENT.TireSoundTypes = {
+	["roll"] = "gta3d/bicycle/bicycle_tire_loop.wav",
+	["roll_racing"] = "gta3d/bicycle/bicycle_tire_loop.wav",
+}
+
+function ENT:TireSoundThink()
+	for snd, _ in pairs( self.TireSoundTypes ) do
+		local T = self:GetTireSoundTime( snd )
+
+		if T > 0 then
+			local speed = self:GetVelocity():Length()
+			local sound = self:StartTireSound( snd )
+			local volume = math.min(speed / 200,1) ^ 2 * T
+			local pitch = 70 + (speed / self.MaxVelocity) * 60
+
+			sound:ChangeVolume( volume, 0 )
+			sound:ChangePitch( pitch, 0.5 ) 
+		else
+			self:StopTireSound( snd )
+		end
+	end
+end
+
+function ENT:CalcBikePedalPosition()
+	local EntTable = self:GetTable()
+
+	if not EntTable._PedalAngle then EntTable._PedalAngle = 0 end
+	if not EntTable._PedalAngleNext then EntTable._PedalAngleNext = 0 end
+
+	local T = CurTime()
+
+	if EntTable._PedalAngleNext < T then
+		EntTable._PedalAngleNext = T + 0.01
+
+		local Mul = self:GetVelocity():Length() / self.MaxVelocity
+		local Gear = math.max( (1 - Mul) ^ 2 * 60, 10 )
+
+		EntTable._PedalAngle = EntTable._PedalAngle + self:GetThrottle() * (self:GetReverse() and -1 or 1) * Mul * Gear
+	end
+
+	if EntTable._PedalAngle > 360 then
+		EntTable._PedalAngle = EntTable._PedalAngle - 360
+	end
+
+	if EntTable._PedalAngle < 0 then
+		EntTable._PedalAngle = EntTable._PedalAngle + 360
+	end
+
+	return math.Clamp(EntTable._PedalAngle - self:GetBrake() * 45,0,360)
+end
