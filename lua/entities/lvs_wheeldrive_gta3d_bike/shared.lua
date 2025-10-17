@@ -14,7 +14,7 @@ ENT.AdminSpawnable		= false
 
 ENT.MDL = "models/diggercars/gtasa/bikes/bike.mdl"
 
-ENT.AITEAM = 2
+ENT.AITEAM = 0
 
 ENT.MaxHealth = 100
 
@@ -43,6 +43,16 @@ ENT.EngineSounds = {
 		Pitch = 40,
 		PitchMul = 40,
 		SoundLevel = 75,
+		SoundType = LVS.SOUNDTYPE_REV_UP,
+		UseDoppler = true,
+	},
+	{
+		sound = "gta3d/bicycle/bicycle_revdown.wav",
+		Volume = 1,
+		Pitch = 100,
+		PitchMul = 40,
+		SoundLevel = 75,
+		SoundType = LVS.SOUNDTYPE_REV_DOWN,
 		UseDoppler = true,
 	},
 }

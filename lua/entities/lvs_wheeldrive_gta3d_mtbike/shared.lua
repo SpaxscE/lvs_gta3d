@@ -32,6 +32,8 @@ ENT.TransWobbleTime = 0
 ENT.TransWobbleFrequencyMultiplier = 0
 ENT.TransShiftSound = "common/null.wav"
 
+ENT.WheelDownForce = 100
+
 ENT.lvsShowInSpawner = true
 
 ENT.KickStarter = false

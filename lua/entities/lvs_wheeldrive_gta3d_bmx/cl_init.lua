@@ -3,6 +3,7 @@ include("shared.lua")
 function ENT:UpdatePoseParameters( steer, brake )
 	self:SetPoseParameter( "vehicle_steer", steer )
 	self:SetPoseParameter( "brake_pedal", brake )
+	self:SetPoseParameter( "vehicle_wheel_r_spin", 180 + (self._PedalAngle or 0) - self:GetBrake() * 45 )
 end
 
 function ENT:OnEngineActiveChanged( Active )
@@ -15,7 +16,7 @@ function ENT:GetPlayerBoneManipulation( ply, PodID )
 
 	local Pose = table.Copy( self.PlayerBoneManipulate[ PodID ] or {} )
 
-	local PedalAngle = self:GetPoseParameter( "vehicle_wheel_rl_spin" ) * 360
+	local PedalAngle = self:CalcBikePedalPosition( 10 )
 
 	local StartValue = 0
 	while StartValue < PedalAngle do
