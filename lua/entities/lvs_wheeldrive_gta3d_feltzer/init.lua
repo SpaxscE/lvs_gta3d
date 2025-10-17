@@ -55,7 +55,7 @@ function ENT:OnSpawn( PObj )
 	local WheelModel = "models/diggercars/gtasa/shared/wheel_fortune.mdl"
 
 	local SuspensionSettings = {
-		Height = 6,
+		Height = 5,
 		MaxTravel = 7,
 		ControlArmLength = 25,
 		SpringConstant = 30000,
