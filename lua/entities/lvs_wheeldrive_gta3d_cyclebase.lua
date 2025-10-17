@@ -169,9 +169,9 @@ function ENT:CalcBikePedalPosition()
 		EntTable._PedalAngle = EntTable._PedalAngle - 360
 	end
 
-	if EntTable._PedalAngle < -360 then
+	if EntTable._PedalAngle < 0 then
 		EntTable._PedalAngle = EntTable._PedalAngle + 360
 	end
 
-	return math.Clamp(EntTable._PedalAngle - self:GetBrake() * 45,-360,360)
+	return math.Clamp(EntTable._PedalAngle - self:GetBrake() * 45,0,360)
 end
