@@ -3,7 +3,7 @@ AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
 
 function ENT:OnSpawn( PObj )
-	self:AddEngine( Vector(0,0,20), Angle(0,90,0) )
+	self:AddEngine( Vector(0,0,20), Angle(0,0,0) )
 	local DriverSeat = self:AddDriverSeat( Vector(-21,0,31), Angle(0,-90,-12) )
 
 	local WheelModel = "models/diggercars/gtasa/bikes/mtbike_wh.mdl"
