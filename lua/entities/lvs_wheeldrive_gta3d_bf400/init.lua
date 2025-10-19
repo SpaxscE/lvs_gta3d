@@ -29,7 +29,7 @@ function ENT:OnSpawn( PObj )
 		},
 		Wheels = { FWheel },
 		Suspension = {
-			Height = 4,
+			Height = 6,
 			MaxTravel = 7,
 			ControlArmLength = 25,
 			SpringConstant = 10000,
@@ -47,7 +47,7 @@ function ENT:OnSpawn( PObj )
 		},
 		Wheels = { RWheel },
 		Suspension = {
-			Height = 3,
+			Height = 2,
 			MaxTravel = 7,
 			ControlArmLength = 25,
 			SpringConstant = 10000,

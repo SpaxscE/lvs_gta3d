@@ -4,5 +4,6 @@
 	insert
 	{
 $basetexture				"models/diggercars/gtasa/bikes/bmxtexpage"
+$bumpmap "models/diggercars/gtasa/shared/skin_nm"
 }
 }

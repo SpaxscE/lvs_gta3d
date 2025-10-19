@@ -2,7 +2,7 @@ include("shared.lua")
 
 function ENT:CalcViewOverride( ply, pos, angles, fov, pod )
 	if pod:GetThirdPersonMode() then
-		pos = self:LocalToWorld( Vector(0,0,30) )
+		pos = self:LocalToWorld( Vector(-30,0,40) )
 	end
 
 	return pos, angles, fov
