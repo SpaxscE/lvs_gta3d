@@ -35,6 +35,8 @@ ENT.EngineMaxRPM = 6000
 
 ENT.TransGears = 5
 
+ENT.PhysicsInertia = Vector(1500,1500,1000)
+
 ENT.RandomColor = {
 	--SAN ANDREAS
 	Color(100,100,100),
