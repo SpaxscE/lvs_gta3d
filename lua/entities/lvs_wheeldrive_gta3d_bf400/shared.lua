@@ -1,5 +1,5 @@
 
-ENT.Base = "lvs_bike_wheeldrive"
+ENT.Base = "lvs_wheeldrive_gta3d_motorbikebase"
 
 ENT.PrintName = "BF-400"
 ENT.Author = "Digger"
@@ -24,10 +24,12 @@ ENT.MaxVelocityReverse = 100
 ENT.EngineCurve = 0.9
 ENT.EngineTorque = 325
 
-ENT.TransGears = 4
+ENT.TransGears = 5
 ENT.TransGearsReverse = 1
 
 ENT.PhysicsInertia = Vector(500,500,350)
+
+ENT.KickStarter = false
 
 ENT.DriverBoneManipulateIdle = {
 	["ValveBiped.Bip01_R_Thigh"] = Angle(25,25,0),
@@ -62,22 +64,42 @@ ENT.PlayerBoneManipulate = {
 	},
 }
 
-ENT.EngineSounds = {
-	{
-		sound = "lvs/vehicles/bmw_r75/eng_idle.wav",
-		Volume = 0.7,
-		Pitch = 85,
-		PitchMul = 50,
-		SoundLevel = 75,
-		SoundType = LVS.SOUNDTYPE_IDLE_ONLY,
+ENT.EngineSoundsSA = {
+	idle = {
+		sound = "gta3d/engines/dritbike/idle.wav",
+		Pitch = 100,
+		PitchMul = 60,
+		SoundLevel = 65,
 	},
-	{
-		sound = "lvs/vehicles/bmw_r75/eng_loop.wav",
-		Volume = 1,
-		Pitch = 50,
-		PitchMul = 50,
+	gears = {
+		sound = "gta3d/engines/dritbike/gear.wav",
+		soundDuration = 1.8,
+		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
+	},
+	cruise = {
+		sound = "gta3d/engines/dritbike/cruise.wav",
+		Pitch = 90,
+		PitchMul = 40,
+		SoundLevel = 75,
+		UseDoppler = true,
+	},
+	throttle_off = {
+		sound = "gta3d/engines/dritbike/throttleoff.wav",
+		SoundLevel = 75,
+	},
+	reverse_on = {
+		sound = "gta3d/share/reverse_on.wav",
+		Pitch = 90,
+		PitchMul = 20,
+		SoundLevel = 65,
+	},
+	reverse_off = {
+		sound = "gta3d/share/reverse_off.wav",
+		Pitch = 80,
+		PitchMul = 20,
+		SoundLevel = 65,
 	},
 }
 
