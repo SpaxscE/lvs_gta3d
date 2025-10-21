@@ -2,7 +2,7 @@ AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
 
-ENT.LeanAngleIdle = 10
+ENT.LeanAngleIdle = -10
 ENT.LeanAnglePark = -10
 
 function ENT:OnSpawn( PObj )

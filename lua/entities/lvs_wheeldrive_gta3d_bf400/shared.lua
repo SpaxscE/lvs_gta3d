@@ -32,38 +32,45 @@ ENT.WheelDownForce = 50
 
 ENT.KickStarter = false
 
+ENT.HornSound = "gta3d/horns/horn_006_112.wav"
+ENT.HornPos = Vector(14,0,25)
+
 ENT.DriverBoneManipulateIdle = {
-	["ValveBiped.Bip01_R_Thigh"] = Angle(0,0,0),
-	["ValveBiped.Bip01_R_Calf"] = Angle(0,0,0),
-	["ValveBiped.Bip01_R_Foot"] = Angle(0,0,0),
+	["ValveBiped.Bip01_L_Thigh"] = Angle(-15,20,0),
+	["ValveBiped.Bip01_L_Calf"] = Angle(0,-15,0),
+	["ValveBiped.Bip01_L_Foot"] = Angle(0,-20,0),
 }
 
 ENT.DriverBoneManipulateParked = {
-	["ValveBiped.Bip01_L_Thigh"] = Angle(0,0,0),
-	["ValveBiped.Bip01_L_Calf"] = Angle(0,0,0),
-	["ValveBiped.Bip01_L_Foot"] = Angle(0,0,0),
+	["ValveBiped.Bip01_L_Thigh"] = Angle(-15,20,0),
+	["ValveBiped.Bip01_L_Calf"] = Angle(0,-15,0),
+	["ValveBiped.Bip01_L_Foot"] = Angle(0,-20,0),
 }
 
 ENT.PlayerBoneManipulate = {
 	[1] = {
-		["ValveBiped.Bip01_Spine"] = Angle(0,0,0),
+		["ValveBiped.Bip01_Pelvis"] = Angle(0,0,23),
+		
+		["ValveBiped.Bip01_R_Thigh"] = Angle(10,-6,-15),
+		["ValveBiped.Bip01_L_Thigh"] = Angle(-10,-6,15),
 
-		["ValveBiped.Bip01_R_Thigh"] = Angle(0,0,0),
-		["ValveBiped.Bip01_L_Thigh"] = Angle(0,0,0),
-
-		["ValveBiped.Bip01_R_Calf"] = Angle(0,0,0),
-		["ValveBiped.Bip01_L_Calf"] = Angle(0,0,0),
+		["ValveBiped.Bip01_R_Calf"] = Angle(0,60,0),
+		["ValveBiped.Bip01_L_Calf"] = Angle(0,60,0),
 		
 		["ValveBiped.Bip01_R_Foot"] = Angle(0,0,0),
-		["ValveBiped.Bip01_L_Foot"] = Angle(0,-0,0),
+		["ValveBiped.Bip01_L_Foot"] = Angle(0,0,0),
 
-		["ValveBiped.Bip01_R_UpperArm"] = Angle(0,0,0),
-		["ValveBiped.Bip01_L_UpperArm"] = Angle(0,0,0),
+		["ValveBiped.Bip01_R_UpperArm"] = Angle(25,0,0),
+		["ValveBiped.Bip01_L_UpperArm"] = Angle(-18,0,0),
 
-		["ValveBiped.Bip01_R_Forearm"] = Angle(0,0,0),
-		["ValveBiped.Bip01_L_Forearm"] = Angle(0,0,0),
+		["ValveBiped.Bip01_R_Forearm"] = Angle(0,-14,0),
+		["ValveBiped.Bip01_L_Forearm"] = Angle(-10,0,0),
+
+		["ValveBiped.Bip01_R_Hand"] = Angle(20,0,30),
+		["ValveBiped.Bip01_L_Hand"] = Angle(-20,0,-30),
 	},
 }
+
 
 ENT.EngineSoundsSA = {
 	idle = {
