@@ -133,7 +133,7 @@ function ENT:CreateHookCollider( pos, ang, target )
 	self._HookColliderPhysObj = collider:GetPhysicsObject()
 	self._HookCollider = collider
 
-	local ballsocket = constraint.Ballsocket( target, collider, 0, 0, vector_origin )
+	local ballsocket = constraint.AdvBallsocket( target, collider, 0, 0, target:WorldToLocal( pos ), vector_origin, 0, 0,-180, -180, -180, 180, 180, 180 )
 
 	if not ballsocket then return end
 
