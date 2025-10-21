@@ -14,6 +14,8 @@ ENT.TransShiftSound = "common/null.wav"
 ENT.PDSDamageVelocity = 25
 ENT.PDSDamageMultiplier = 0.075
 
+ENT.MouseSteerExponent = 1.25
+
 function ENT:AddExhaustByAttachment( name )
 	if not istable( self.ExhaustPositions ) then self.ExhaustPositions = {} end
 

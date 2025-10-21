@@ -16,13 +16,14 @@ ENT.MDL = "models/diggercars/gtasa/bikes/bf400.mdl"
 
 ENT.AITEAM = 0
 
-ENT.MaxHealth = 500
+ENT.MaxHealth = 200
 
-ENT.MaxVelocity = 2500
+ENT.MaxVelocity = 2400
 ENT.MaxVelocityReverse = 100
 
-ENT.EngineCurve = 0.4
-ENT.EngineTorque = 250
+ENT.EngineCurve = 0.75
+ENT.EngineCurveBoostLow = 3
+ENT.EngineTorque = 175
 
 ENT.TransGears = 5
 ENT.TransGearsReverse = 1
@@ -74,27 +75,27 @@ ENT.PlayerBoneManipulate = {
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/dritbike/idle.wav",
+		sound = "gta3d/engines/chopper/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/dritbike/gear.wav",
-		soundDuration = 1.8,
-		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
+		sound = "gta3d/engines/chopper/gear.wav",
+		soundDuration = 3.15,
+		speed = { 1.4, 1.3, 1.2, 1.1, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/dritbike/cruise.wav",
+		sound = "gta3d/engines/chopper/cruise.wav",
 		Pitch = 90,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/dritbike/throttleoff.wav",
+		sound = "gta3d/engines/chopper/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {

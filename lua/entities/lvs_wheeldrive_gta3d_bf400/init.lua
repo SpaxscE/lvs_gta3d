@@ -6,6 +6,8 @@ ENT.LeanAngleIdle = -10
 ENT.LeanAnglePark = -10
 
 function ENT:OnSpawn( PObj )
+	PObj:EnableDrag( false )
+
 	self:AddDriverSeat( Vector(-20,0,32), Angle(0,-90,-25) )
 	self:AddPassengerSeat( Vector(-25,0,24), Angle(0,-90,-5) )
 
@@ -25,7 +27,7 @@ function ENT:OnSpawn( PObj )
 		Axle = {
 			SteerType = LVS.WHEEL_STEER_FRONT,
 			SteerAngle = 30,
-			TorqueFactor = 0,
+			TorqueFactor = 0.6,
 			BrakeFactor = 1,
 		},
 		Wheels = { FWheel },
