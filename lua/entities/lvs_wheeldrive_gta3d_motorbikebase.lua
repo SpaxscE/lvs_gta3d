@@ -37,80 +37,10 @@ if CLIENT then
 		["skid"] = "gta3d/share/tireskid.wav",
 		["skid_dirt"] = "lvs/vehicles/generic/wheel_skid_dirt.wav",
 		["skid_wet"] = "lvs/vehicles/generic/wheel_skid_wet.wav",
+		["skid_racing"] = "gta3d/share/tireskid.wav",
 	}
 
 	return
-end
-
-function ENT:PhysicsSimulateOverride( ForceAngle, phys, deltatime, simulate )
-	local EntTable = self:GetTable()
-
-	if EntTable._IsDismounted then
-
-		local Pod = self:GetDriverSeat()
-
-		if IsValid( Pod ) then
-			local z = math.max( self:GetUp().z, 0 )
-
-			local Gravity = self:GetWorldUp() * self:GetWorldGravity() * phys:GetMass() * deltatime
-			phys:ApplyForceCenter( Gravity * 1.5 * EntTable.TippingForceMul * z )
-			phys:ApplyForceOffset( -Gravity * 3 * EntTable.TippingForceMul, Pod:GetPos() )
-		end
-
-		return vector_origin, vector_origin, SIM_NOTHING
-	end
-
-	local Steer = self:GetSteer()
-
-	local VelL = self:WorldToLocal( self:GetPos() + phys:GetVelocity() )
-
-	local ShouldIdle = self:ShouldPutFootDown()
-
-	if ShouldIdle then
-		Steer = self:GetEngineActive() and EntTable.LeanAngleIdle or EntTable.LeanAnglePark
-		VelL.x = EntTable.MaxVelocity
-	else
-		ForceAngle.y = (math.Clamp( VelL.x * self:GetBrake() * EntTable.PhysicsRollMul, -EntTable.WheelBrakeForce, EntTable.WheelBrakeForce ) - self:GetThrottle() * self:GetEngineTorque() * 0.01) * EntTable.PhysicsPitchInvertForceMul
-	end
-
-	local Mul = (self:GetUp().z > 0.5 and 1 or 0) * 50 * (math.min( math.abs( VelL.x ) / EntTable.PhysicsWheelGyroSpeed, 1 ) ^ 2) * EntTable.PhysicsWheelGyroMul
-	local Diff = (Steer - self:GetAngles().r)
-
-	ForceAngle.x = (Diff * 2.5 * EntTable.PhysicsRollMul - phys:GetAngleVelocity().x * EntTable.PhysicsDampingRollMul) * Mul
-
-	if ShouldIdle and math.abs( Diff ) > 1 then
-		simulate = SIM_GLOBAL_ACCELERATION
-	end
-
-	local WheelSideForce = EntTable.WheelSideForce * EntTable.ForceLinearMultiplier * 0.5
-	local ForceLinear = Vector(0,0,0)
-	local SpeedMul = math.Clamp( phys:GetVelocity():Length() / EntTable.MaxVelocity, 0, 1 )
-
-	for id, wheel in pairs( self:GetWheels() ) do
-		if wheel:IsHandbrakeActive() or not wheel:PhysicsOnGround() then continue end
-
-		local AxleAng = wheel:GetDirectionAngle()
-	
-		local Forward = AxleAng:Forward()
-		local Right = AxleAng:Right()
-		local Up = AxleAng:Up()
-
-		local wheelPos = wheel:GetPos()
-		local wheelVel = phys:GetVelocityAtPoint( wheelPos )
-		local wheelRadius = wheel:GetRadius()
-
-		local Slip = math.Clamp(1 - self:AngleBetweenNormal( Forward, wheelVel:GetNormalized() ) / 90,0,1)
-
-		local ForwardVel = self:VectorSplitNormal( Forward, wheelVel )
-
-		Force = -Right * self:VectorSplitNormal( Right, wheelVel ) * WheelSideForce * Slip
-		local wSideForce, wAngSideForce = phys:CalculateVelocityOffset( Force, wheelPos )
-
-		ForceAngle:Add( Vector(wAngSideForce.x * 8 * SpeedMul,0,wAngSideForce.z) )
-		ForceLinear:Add( wSideForce )
-	end
-
-	return ForceAngle, ForceLinear, simulate
 end
 
 function ENT:AddEngine( pos, ang, mins, maxs )

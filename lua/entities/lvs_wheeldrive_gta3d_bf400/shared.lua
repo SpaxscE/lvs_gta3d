@@ -21,46 +21,47 @@ ENT.MaxHealth = 500
 ENT.MaxVelocity = 2500
 ENT.MaxVelocityReverse = 100
 
-ENT.EngineCurve = 0.9
-ENT.EngineTorque = 325
+ENT.EngineCurve = 0.4
+ENT.EngineTorque = 250
 
 ENT.TransGears = 5
 ENT.TransGearsReverse = 1
 
-ENT.PhysicsInertia = Vector(500,500,350)
+ENT.WheelSideForce = 400
+ENT.WheelDownForce = 50
 
 ENT.KickStarter = false
 
 ENT.DriverBoneManipulateIdle = {
-	["ValveBiped.Bip01_R_Thigh"] = Angle(25,25,0),
+	["ValveBiped.Bip01_R_Thigh"] = Angle(0,0,0),
 	["ValveBiped.Bip01_R_Calf"] = Angle(0,0,0),
-	["ValveBiped.Bip01_R_Foot"] = Angle(0,-10,0),
+	["ValveBiped.Bip01_R_Foot"] = Angle(0,0,0),
 }
 
 ENT.DriverBoneManipulateParked = {
-	["ValveBiped.Bip01_L_Thigh"] = Angle(-25,25,0),
+	["ValveBiped.Bip01_L_Thigh"] = Angle(0,0,0),
 	["ValveBiped.Bip01_L_Calf"] = Angle(0,0,0),
-	["ValveBiped.Bip01_L_Foot"] = Angle(0,-10,0),
+	["ValveBiped.Bip01_L_Foot"] = Angle(0,0,0),
 }
 
 ENT.PlayerBoneManipulate = {
 	[1] = {
-		["ValveBiped.Bip01_Spine"] = Angle(0,20,0),
+		["ValveBiped.Bip01_Spine"] = Angle(0,0,0),
 
-		["ValveBiped.Bip01_R_Thigh"] = Angle(10,12,50),
-		["ValveBiped.Bip01_L_Thigh"] = Angle(-10,12,-50),
+		["ValveBiped.Bip01_R_Thigh"] = Angle(0,0,0),
+		["ValveBiped.Bip01_L_Thigh"] = Angle(0,0,0),
 
-		["ValveBiped.Bip01_R_Calf"] = Angle(90,15,-50),
-		["ValveBiped.Bip01_L_Calf"] = Angle(-90,15,50),
+		["ValveBiped.Bip01_R_Calf"] = Angle(0,0,0),
+		["ValveBiped.Bip01_L_Calf"] = Angle(0,0,0),
 		
-		["ValveBiped.Bip01_R_Foot"] = Angle(0,-20,0),
-		["ValveBiped.Bip01_L_Foot"] = Angle(0,-20,0),
+		["ValveBiped.Bip01_R_Foot"] = Angle(0,0,0),
+		["ValveBiped.Bip01_L_Foot"] = Angle(0,-0,0),
 
-		["ValveBiped.Bip01_R_UpperArm"] = Angle(25,-20,-20),
-		["ValveBiped.Bip01_L_UpperArm"] = Angle(-5,-20,20),
+		["ValveBiped.Bip01_R_UpperArm"] = Angle(0,0,0),
+		["ValveBiped.Bip01_L_UpperArm"] = Angle(0,0,0),
 
-		["ValveBiped.Bip01_R_Forearm"] = Angle(0,20,70),
-		["ValveBiped.Bip01_L_Forearm"] = Angle(-15,20,-30),
+		["ValveBiped.Bip01_R_Forearm"] = Angle(0,0,0),
+		["ValveBiped.Bip01_L_Forearm"] = Angle(0,0,0),
 	},
 }
 
