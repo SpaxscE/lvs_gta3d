@@ -34,6 +34,8 @@ ENT.TransShiftSound = "common/null.wav"
 
 ENT.WheelDownForce = 100
 
+ENT.WheelBrakeForce = 700
+
 ENT.lvsShowInSpawner = true
 
 ENT.KickStarter = false

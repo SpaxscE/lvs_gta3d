@@ -28,11 +28,6 @@ ENT.EngineTorque = 175
 ENT.TransGears = 5
 ENT.TransGearsReverse = 1
 
-ENT.WheelSideForce = 400
-ENT.WheelDownForce = 50
-
-ENT.KickStarter = false
-
 ENT.HornSound = "gta3d/horns/horn_006_112.wav"
 ENT.HornPos = Vector(14,0,25)
 

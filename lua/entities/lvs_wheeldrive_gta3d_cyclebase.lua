@@ -122,6 +122,16 @@ if SERVER then
 		end
 	end
 
+	function ENT:CalcHandbrake( ply )
+		if ply:lvsKeyDown( "CAR_HANDBRAKE" ) then
+			self.PhysicsPitchInvertForceMul = 5 * self:GetUp().z
+		else
+			self.PhysicsPitchInvertForceMul = 0.5
+		end
+
+		self:ReleaseHandbrake()
+	end
+
 	return
 end
 
