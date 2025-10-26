@@ -7,6 +7,28 @@ sound.Add( {
 } )
 
 sound.Add( {
+	name = "SA_SWITCH_RADIO",
+	channel = CHAN_STATIC,
+	volume = 1.0,
+	level = 95,
+	sound =  {
+		"gta3d/radio/change1.ogg",
+		"gta3d/radio/change2.ogg",
+		"gta3d/radio/change3.ogg",
+		"gta3d/radio/change4.ogg",
+		"gta3d/radio/change5.ogg",
+		"gta3d/radio/change6.ogg",
+		"gta3d/radio/change7.ogg",
+		"gta3d/radio/change8.ogg",
+		"gta3d/radio/change9.ogg",
+		"gta3d/radio/change10.ogg",
+		"gta3d/radio/change11.ogg",
+		"gta3d/radio/change12.ogg",
+	}
+} )
+
+
+sound.Add( {
 	name = "SA_Horn_05",
 	channel = CHAN_STATIC,
 	volume = 1.0,
