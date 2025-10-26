@@ -61,38 +61,56 @@ for id, radioname in ipairs( radio ) do
 	end
 end
 
---PrintChat( channel[ "bounce_fm" ].music )
+local Block = {}
+local BlockIndex = 0
 
---block
---[[
-	id
+local function CreateBlock( channelname )
+	table.Empty( Block )
+	BlockIndex = 0
 
-	dj
+	Block[1] = table.Random(  channel[ channelname ].id )
+	Block[2] = table.Random(  channel[ channelname ].dj )
 
-	intro1 or 2
-	mid
-	outro
+	local Song = table.Random( channel[ channelname ].music )
+	Block[3] = (math.random(1,2) == 1 and Song.intro1 or Song.intro1) or Song.intro
+	Block[4] = Song.mid
+	Block[5] = Song.outro
 
-	intro
-	mid
-	outro
+	Song = table.Random( channel[ channelname ].music )
+	Block[3] = Song.intro
+	Block[4] = Song.mid
+	Block[5] = Song.outro
 
-	intro
-	mid
-	outro1 or 2
+	Song = table.Random( channel[ channelname ].music )
+	Block[3] = Song.intro
+	Block[4] = Song.mid
+	Block[5] = (math.random(1,2) == 1 and Song.outro1 or Song.outro1) or Song.outro
 
-	dj
-]]
+	Block[6] = table.Random(  channel[ channelname ].dj )
 
---[[
-	sound.PlayFile( file, "noplay", function( station, errCode, errStr )
-		local data = {
-			path = file,
-			duration = station:GetLength(),
-		}
+	return Block
+end
 
-		adverts[ index ] = data
+local NextRun = 0
 
-		station:Stop()
+hook.Add( "Think", "LVSgta3dRadio", function()
+	local T = CurTime()
+
+	if NextRun > T then return end
+
+	if BlockIndex == 0 or #Block == 0 or BlockIndex >= #Block then
+		CreateBlock( "bounce_fm" )
+	end
+
+	BlockIndex = BlockIndex + 1
+
+	NextRun = T + 1
+
+	local file = Block[ BlockIndex ]
+
+	PrintChat( file )
+
+	sound.PlayFile( file, "", function( station, errCode, errStr )
+		NextRun = T + station:GetLength()
 	end )
-]]
+end )
