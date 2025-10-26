@@ -100,8 +100,8 @@ hook.Add( "Think", "LVSgta3dRadio", function()
 	if IsValid( LastSong ) then
 		local ply = LocalPlayer()
 
-		LastSong:SetPos( ply:GetShootPos() )
-		LastSong:SetVolume( ply:InVehicle() and 1 or 0 )
+		--LastSong:SetPos( ply:GetShootPos() )
+		LastSong:SetVolume( ply:InVehicle() and 0.5 or 0 )
 	end
 
 	local T = CurTime()
@@ -118,7 +118,7 @@ hook.Add( "Think", "LVSgta3dRadio", function()
 
 	local file = Block[ BlockIndex ]
 
-	sound.PlayFile( file, "3d", function( station, errCode, errStr )
+	sound.PlayFile( file, "", function( station, errCode, errStr )
 		if IsValid( LastSong ) then LastSong:Stop() end
 
 		LastSong = station
