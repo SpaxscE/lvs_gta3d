@@ -18,6 +18,14 @@ for id, radioname in ipairs( radio ) do
 		local isID = string.StartsWith( filename, "id_" )
 
 		if isDJ or isID then
+			if isDJ then
+				table.insert( channel[ radioname ].dj, filepath )
+			end
+
+			if isID then
+				table.insert( channel[ radioname ].id, filepath )
+			end
+
 			continue
 		end
 
@@ -54,6 +62,27 @@ for id, radioname in ipairs( radio ) do
 end
 
 --PrintChat( channel[ "bounce_fm" ].music )
+
+--block
+--[[
+	id
+
+	dj
+
+	intro1 or 2
+	mid
+	outro
+
+	intro
+	mid
+	outro
+
+	intro
+	mid
+	outro1 or 2
+
+	dj
+]]
 
 --[[
 	sound.PlayFile( file, "noplay", function( station, errCode, errStr )
