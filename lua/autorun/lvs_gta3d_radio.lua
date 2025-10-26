@@ -1,15 +1,33 @@
 
 if SERVER then return end
-if true then return end
 
 local channel = {}
 local _, radio = file.Find("sound/gta3d/radio/*", "GAME")
 for id, radioname in ipairs( radio ) do
-	channel[ radioname ] = {
-		music = {},
-		dj = {},
-		id = {}
-	}
+	if radioname == "adverts" then
+		channel[ radioname ] = {}
+
+		for songid, filename in ipairs( file.Find("sound/gta3d/radio/"..radioname.."/*.ogg", "GAME") ) do
+			local filepath = "sound/gta3d/radio/"..radioname.."/"..filename
+
+			sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+				local data = {
+					sound = filepath,
+					length = station:GetLength(),
+				}
+
+				table.insert( channel[ radioname ], data )
+			end )
+		end
+
+		continue
+	else
+		channel[ radioname ] = {
+			music = {},
+			dj = {},
+			id = {}
+		}
+	end
 
 	for songid, filename in ipairs( file.Find("sound/gta3d/radio/"..radioname.."/*.ogg", "GAME") ) do
 
@@ -20,11 +38,25 @@ for id, radioname in ipairs( radio ) do
 
 		if isDJ or isID then
 			if isDJ then
-				table.insert( channel[ radioname ].dj, filepath )
+				sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+					local data = {
+						sound = filepath,
+						length = station:GetLength(),
+					}
+
+					table.insert( channel[ radioname ].dj, data )
+				end )
 			end
 
 			if isID then
-				table.insert( channel[ radioname ].id, filepath )
+				sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+					local data = {
+						sound = filepath,
+						length = station:GetLength(),
+					}
+
+					table.insert( channel[ radioname ].id, data )
+				end )
 			end
 
 			continue
@@ -51,79 +83,75 @@ for id, radioname in ipairs( radio ) do
 
 		if not validsong then continue end
 
-		if not istable( channel[ radioname ].music[ index ] ) then channel[ radioname ].music[ index ] = {} end
-		if isSong then channel[ radioname ].music[ index ].mid = filepath end
+		if not istable( channel[ radioname ].music[ index ] ) then
+			channel[ radioname ].music[ index ] = {}
+		end
 
-		if isIntro then channel[ radioname ].music[ index ].intro = filepath end
-		if isIntroDJ1 then channel[ radioname ].music[ index ].intro1 = filepath end
-		if isIntroDJ2 then channel[ radioname ].music[ index ].intro2 = filepath end
+		if isSong then
+			sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+				channel[ radioname ].music[ index ].mid = {
+					sound = filepath,
+					length = station:GetLength(),
+				}
+			end )
+		end
 
-		if isOutro then channel[ radioname ].music[ index ].outro = filepath end
-		if isOutroDJ1 then channel[ radioname ].music[ index ].outro1 = filepath end
-		if isOutroDJ2 then channel[ radioname ].music[ index ].outro2 = filepath end
+		if isIntro then
+			sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+				channel[ radioname ].music[ index ].intro = {
+					sound = filepath,
+					length = station:GetLength(),
+				}
+			end )
+		end
+
+		if isIntroDJ1 then
+			sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+				channel[ radioname ].music[ index ].intro1 = {
+					sound = filepath,
+					length = station:GetLength(),
+				}
+			end )
+		end
+
+		if isIntroDJ2 then
+			sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+				channel[ radioname ].music[ index ].intro2 = {
+					sound = filepath,
+					length = station:GetLength(),
+				}
+			end )
+		end
+
+		if isOutro then
+			sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+				channel[ radioname ].music[ index ].outro = {
+					sound = filepath,
+					length = station:GetLength(),
+				}
+			end )
+		end
+
+		if isOutroDJ1 then
+			sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+				channel[ radioname ].music[ index ].outro1 = {
+					sound = filepath,
+					length = station:GetLength(),
+				}
+			end )
+		end
+
+		if isOutroDJ2 then
+			sound.PlayFile( filepath, "noplay", function( station, errCode, errStr )
+				channel[ radioname ].music[ index ].outro2 = {
+					sound = filepath,
+					length = station:GetLength(),
+				}
+			end )
+		end
 	end
 end
 
-local Block = {}
-local BlockIndex = 0
-
-local function CreateBlock( channelname )
-	table.Empty( Block )
-	BlockIndex = 0
-
-	Block[1] = table.Random(  channel[ channelname ].dj )
-
-	local Song = table.Random( channel[ channelname ].music )
-	Block[2] = (math.random(1,2) == 1 and Song.intro1 or Song.intro2) or Song.intro
-	Block[3] = Song.mid
-	Block[4] = Song.outro
-
-	Song = table.Random( channel[ channelname ].music )
-	Block[5] = Song.intro
-	Block[6] = Song.mid
-	Block[7] = Song.outro
-
-	Song = table.Random( channel[ channelname ].music )
-	Block[8] = Song.intro
-	Block[9] = Song.mid
-	Block[10] = (math.random(1,2) == 1 and Song.outro1 or Song.outro2) or Song.outro
-
-	Block[11] = table.Random( channel[ channelname ].dj )
-	Block[12] = table.Random(  channel[ channelname ].id )
-
-	return Block
-end
-
-local LastSong
-local NextRun = 0
-
-hook.Add( "Think", "LVSgta3dRadio", function()
-	if IsValid( LastSong ) then
-		local ply = LocalPlayer()
-
-		--LastSong:SetPos( ply:GetShootPos() )
-		LastSong:SetVolume( ply:InVehicle() and 0.5 or 0 )
-	end
-
-	local T = CurTime()
-
-	if NextRun > T then return end
-
-	if BlockIndex == 0 or #Block == 0 or BlockIndex >= #Block then
-		CreateBlock( "k_dst" )
-	end
-
-	BlockIndex = BlockIndex + 1
-
-	NextRun = T + 1
-
-	local file = Block[ BlockIndex ]
-
-	sound.PlayFile( file, "", function( station, errCode, errStr )
-		if IsValid( LastSong ) then LastSong:Stop() end
-
-		LastSong = station
-
-		NextRun = T + station:GetLength()
-	end )
-end )
+timer.Simple(1, function()
+	file.Write( "gta3d.txt", util.TableToJSON( channel, true ) )
+end)
