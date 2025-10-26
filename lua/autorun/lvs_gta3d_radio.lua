@@ -8,6 +8,22 @@ local channel = util.JSONToTable( data )
 if SERVER then return end
 if true then return end
 
+--[[
+RADIO OFF
+USER TRACK PLAYER
+WCTR
+MASTER SOUNDS 98.3
+K-JAH WEST
+CSR 103.9
+RADIO X
+RADIO LOS SANTOS
+SF-UR
+BOUNCE FM
+K-DST
+K ROSE
+PLAYBACK FM
+]]
+
 local Block = {}
 local BlockIndex = 0
 
