@@ -4,7 +4,8 @@ include("shared.lua")
 include("sv_pds.lua")
 
 function ENT:OnSpawn( PObj )
-	self:AddExhaustByAttachment( "exh" )
+	self:AddExhaustByAttachment( "exh1" )
+	self:AddExhaustByAttachment( "exh2" )
 
 	local att_eng = self:GetAttachment( self:LookupAttachment( "eng" ) )
 	local att_fuel = self:GetAttachment( self:LookupAttachment( "fuel" ) )

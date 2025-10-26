@@ -1,7 +1,8 @@
 include("shared.lua")
 
 function ENT:OnSpawn()
-	self:AddExhaustByAttachment( "exh" )
+	self:AddExhaustByAttachment( "exh1" )
+	self:AddExhaustByAttachment( "exh2" )
 end
 
 function ENT:CalcViewOverride( ply, pos, angles, fov, pod )
