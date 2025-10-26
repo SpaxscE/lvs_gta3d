@@ -36,3 +36,7 @@ function ENT:AddExhaustByAttachment( name )
 
 	table.insert( self.ExhaustPositions, data )
 end
+
+function ENT:OnSetupDataTables()
+	self:AddDT( "Int", "RadioChannel" )
+end

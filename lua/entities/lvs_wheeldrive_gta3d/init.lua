@@ -1,6 +1,7 @@
 AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
+include("sv_radio.lua")
 
 function ENT:AddEngine( pos, ang, mins, maxs )
 	if IsValid( self:GetEngine() ) then return end
