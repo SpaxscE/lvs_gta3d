@@ -1,0 +1,6282 @@
+{
+	"master_sounds": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_a_little_dude_wit_a_attitude.ogg",
+				"length": 10.117165532879818
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_dont_be_a_fool_and_be_defiant.ogg",
+				"length": 16.07673469387755
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_eye-level_with_your_kitty-cat.ogg",
+				"length": 20.29907029478458
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_gonna_end_up_in_the_hospital.ogg",
+				"length": 10.4137641723356
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_i_am_the_giant.ogg",
+				"length": 14.32235827664399
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_i_know_you_thinkin_girl.ogg",
+				"length": 13.083378684807256
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_im_about_to_suck_you_right_on_up.ogg",
+				"length": 9.40798185941043
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_its_all_pink_on_the_inside.ogg",
+				"length": 7.770725623582766
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_lovin_you_coz_you_my_bitch.ogg",
+				"length": 9.602222222222222
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_playing_it_for_keeps.ogg",
+				"length": 12.211156462585034
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_small_packages.ogg",
+				"length": 13.241972789115646
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_the_love_doctor.ogg",
+				"length": 9.746734693877551
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_the_master_of_the_rare_groove.ogg",
+				"length": 6.977800453514739
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_to_heaven_like_nineteen_times.ogg",
+				"length": 38.00131519274377
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_too_much_soul.ogg",
+				"length": 11.769319727891157
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_youre_tuned_into_who.ogg",
+				"length": 7.413877551020408
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_big_daddy.ogg",
+				"length": 21.980884353741498
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_keep_the_groove_groovin.ogg",
+				"length": 15.404603174603174
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_my_book.ogg",
+				"length": 13.638412698412699
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_right_in_your_earhole_3d_style.ogg",
+				"length": 6.779546485260771
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/dj_check_out_your_headlights.ogg",
+				"length": 6.220294784580499
+			}
+		],
+		"music": {
+			"smokin_cheeba_cheeba": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/smokin_cheeba_cheeba_outro.ogg",
+					"length": 31.36172335600907
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/smokin_cheeba_cheeba_outro_dj_2.ogg",
+					"length": 31.36172335600907
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/smokin_cheeba_cheeba_mid.ogg",
+					"length": 207.624693877551
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/smokin_cheeba_cheeba_outro_dj_1.ogg",
+					"length": 31.36172335600907
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/smokin_cheeba_cheeba_intro_dj_2.ogg",
+					"length": 21.168820861678004
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/smokin_cheeba_cheeba_intro.ogg",
+					"length": 21.168820861678004
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/smokin_cheeba_cheeba_intro_dj_1.ogg",
+					"length": 21.168820861678004
+				}
+			},
+			"nautilus": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/nautilus_outro.ogg",
+					"length": 25.02285714285714
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/nautilus_mid.ogg",
+					"length": 190.20011337868482
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/nautilus_outro_dj_1.ogg",
+					"length": 25.02285714285714
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/nautilus_intro_dj_2.ogg",
+					"length": 11.139070294784581
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/nautilus_intro.ogg",
+					"length": 11.139070294784581
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/nautilus_intro_dj_1.ogg",
+					"length": 11.139070294784581
+				}
+			},
+			"grunt": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/grunt_outro.ogg",
+					"length": 12.546802721088435
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/grunt_outro_dj_2.ogg",
+					"length": 12.546802721088435
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/grunt_mid.ogg",
+					"length": 142.27197278911564
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/grunt_outro_dj_1.ogg",
+					"length": 12.546802721088435
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/grunt_intro_dj_2.ogg",
+					"length": 6.385351473922903
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/grunt_intro.ogg",
+					"length": 6.385351473922903
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/grunt_intro_dj_1.ogg",
+					"length": 6.385351473922903
+				}
+			},
+			"the_payback": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/the_payback_outro.ogg",
+					"length": 22.373877551020406
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/the_payback_mid.ogg",
+					"length": 189.04453514739228
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/the_payback_intro_dj_2.ogg",
+					"length": 21.17079365079365
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/the_payback_intro.ogg",
+					"length": 21.17079365079365
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/the_payback_intro_dj_1.ogg",
+					"length": 21.17079365079365
+				}
+			},
+			"jungle_fever": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/jungle_fever_outro.ogg",
+					"length": 29.823174603174603
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/jungle_fever_outro_dj_2.ogg",
+					"length": 29.823174603174603
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/jungle_fever_mid.ogg",
+					"length": 164.80272108843536
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/jungle_fever_outro_dj_1.ogg",
+					"length": 29.823174603174603
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/jungle_fever_intro_dj_2.ogg",
+					"length": 20.321473922902495
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/jungle_fever_intro.ogg",
+					"length": 20.321473922902495
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/jungle_fever_intro_dj_1.ogg",
+					"length": 20.321473922902495
+				}
+			},
+			"rock_me_again_and_again": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_me_again_and_again_outro.ogg",
+					"length": 11.510816326530612
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_me_again_and_again_outro_dj_2.ogg",
+					"length": 11.510816326530612
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_me_again_and_again_mid.ogg",
+					"length": 169.32922902494332
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_me_again_and_again_outro_dj_1.ogg",
+					"length": 11.510816326530612
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_me_again_and_again_intro_dj_2.ogg",
+					"length": 19.49503401360544
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_me_again_and_again_intro.ogg",
+					"length": 19.49503401360544
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_me_again_and_again_intro_dj_1.ogg",
+					"length": 19.49503401360544
+				}
+			},
+			"green_onions": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/green_onions_outro.ogg",
+					"length": 15.897551020408164
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/green_onions_outro_dj_2.ogg",
+					"length": 15.897551020408164
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/green_onions_mid.ogg",
+					"length": 120.20038548752835
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/green_onions_outro_dj_1.ogg",
+					"length": 15.897551020408164
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/green_onions_intro_dj_2.ogg",
+					"length": 30.558662131519274
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/green_onions_intro.ogg",
+					"length": 30.558662131519274
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/green_onions_intro_dj_1.ogg",
+					"length": 30.558662131519274
+				}
+			},
+			"cross_the_tracks_we_better_go_back": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/cross_the_tracks_we_better_go_back_outro.ogg",
+					"length": 22.749410430839003
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/cross_the_tracks_we_better_go_back_outro_dj_2.ogg",
+					"length": 22.749410430839003
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/cross_the_tracks_we_better_go_back_mid.ogg",
+					"length": 157.95886621315194
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/cross_the_tracks_we_better_go_back_outro_dj_1.ogg",
+					"length": 22.749410430839003
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/cross_the_tracks_we_better_go_back_intro_dj_2.ogg",
+					"length": 12.827732426303855
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/cross_the_tracks_we_better_go_back_intro.ogg",
+					"length": 12.827732426303855
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/cross_the_tracks_we_better_go_back_intro_dj_1.ogg",
+					"length": 12.827732426303855
+				}
+			},
+			"rock_creek_park": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_creek_park_outro.ogg",
+					"length": 26.9878231292517
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_creek_park_outro_dj_2.ogg",
+					"length": 26.9878231292517
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_creek_park_mid.ogg",
+					"length": 163.11532879818594
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_creek_park_outro_dj_1.ogg",
+					"length": 26.9878231292517
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_creek_park_intro_dj_2.ogg",
+					"length": 18.25267573696145
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_creek_park_intro.ogg",
+					"length": 18.25267573696145
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/rock_creek_park_intro_dj_1.ogg",
+					"length": 18.25267573696145
+				}
+			},
+			"low_rider": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/low_rider_outro.ogg",
+					"length": 20.70809523809524
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/low_rider_outro_dj_2.ogg",
+					"length": 20.70809523809524
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/low_rider_mid.ogg",
+					"length": 137.18682539682538
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/low_rider_outro_dj_1.ogg",
+					"length": 20.70809523809524
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/low_rider_intro_dj_2.ogg",
+					"length": 7.75453514739229
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/low_rider_intro.ogg",
+					"length": 7.75453514739229
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/low_rider_intro_dj_1.ogg",
+					"length": 7.75453514739229
+				}
+			},
+			"tainted_love": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/tainted_love_outro.ogg",
+					"length": 9.248004535147393
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/tainted_love_intro.ogg",
+					"length": 8.516349206349206
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/tainted_love_mid.ogg",
+					"length": 103.2145351473923
+				}
+			},
+			"funky_president": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/funky_president_outro.ogg",
+					"length": 18.95231292517007
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/funky_president_outro_dj_2.ogg",
+					"length": 18.95231292517007
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/funky_president_mid.ogg",
+					"length": 197.0884580498866
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/funky_president_outro_dj_1.ogg",
+					"length": 18.95231292517007
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/funky_president_intro_dj_2.ogg",
+					"length": 16.513537414965988
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/funky_president_intro.ogg",
+					"length": 16.513537414965988
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/funky_president_intro_dj_1.ogg",
+					"length": 16.513537414965988
+				}
+			},
+			"think_about_it": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/think_about_it_outro.ogg",
+					"length": 18.956825396825398
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/think_about_it_outro_dj_2.ogg",
+					"length": 18.956825396825398
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/think_about_it_mid.ogg",
+					"length": 142.16990929705216
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/think_about_it_outro_dj_1.ogg",
+					"length": 18.956825396825398
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/think_about_it_intro_dj_2.ogg",
+					"length": 34.550544217687076
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/think_about_it_intro.ogg",
+					"length": 34.550544217687076
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/think_about_it_intro_dj_1.ogg",
+					"length": 34.550544217687076
+				}
+			},
+			"i_got_so_much_trouble_in_my_mind": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/i_got_so_much_trouble_in_my_mind_outro.ogg",
+					"length": 20.76151927437642
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/i_got_so_much_trouble_in_my_mind_mid.ogg",
+					"length": 185.1372335600907
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/i_got_so_much_trouble_in_my_mind_outro_dj_1.ogg",
+					"length": 20.76151927437642
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/i_got_so_much_trouble_in_my_mind_intro_dj_2.ogg",
+					"length": 24.873854875283445
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/i_got_so_much_trouble_in_my_mind_intro.ogg",
+					"length": 24.873854875283445
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/i_got_so_much_trouble_in_my_mind_intro_dj_1.ogg",
+					"length": 24.873854875283445
+				}
+			},
+			"i_know_you_got_soul": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/i_know_you_got_soul_outro.ogg",
+					"length": 17.692698412698412
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/i_know_you_got_soul_mid.ogg",
+					"length": 194.46172335600906
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/i_know_you_got_soul_outro_dj_1.ogg",
+					"length": 17.692698412698412
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/i_know_you_got_soul_intro_dj_2.ogg",
+					"length": 9.268095238095238
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/i_know_you_got_soul_intro.ogg",
+					"length": 9.268095238095238
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/i_know_you_got_soul_intro_dj_1.ogg",
+					"length": 9.268095238095238
+				}
+			},
+			"soul_power_74": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/soul_power_74_outro.ogg",
+					"length": 29.546303854875283
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/soul_power_74_mid.ogg",
+					"length": 183.4830158730159
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/soul_power_74_outro_dj_1.ogg",
+					"length": 29.546303854875283
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/soul_power_74_intro.ogg",
+					"length": 10.389115646258503
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/soul_power_74_intro_dj_1.ogg",
+					"length": 10.389115646258503
+				}
+			},
+			"hot_pants": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/hot_pants_outro.ogg",
+					"length": 18.01342403628118
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/hot_pants_outro_dj_2.ogg",
+					"length": 18.01342403628118
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/hot_pants_mid.ogg",
+					"length": 112.06412698412699
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/hot_pants_outro_dj_1.ogg",
+					"length": 18.01342403628118
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/hot_pants_intro_dj_2.ogg",
+					"length": 13.689727891156462
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/hot_pants_intro.ogg",
+					"length": 13.689727891156462
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/hot_pants_intro_dj_1.ogg",
+					"length": 13.689727891156462
+				}
+			},
+			"express_yourself": {
+				"outro": {
+					"sound": "sound/gta3d/radio/master_sounds/express_yourself_outro.ogg",
+					"length": 21.870113378684806
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/master_sounds/express_yourself_outro_dj_2.ogg",
+					"length": 21.870113378684806
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/master_sounds/express_yourself_mid.ogg",
+					"length": 183.02242630385487
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/master_sounds/express_yourself_outro_dj_1.ogg",
+					"length": 21.870113378684806
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/master_sounds/express_yourself_intro_dj_2.ogg",
+					"length": 11.220476190476191
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/master_sounds/express_yourself_intro.ogg",
+					"length": 11.220476190476191
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/master_sounds/express_yourself_intro_dj_1.ogg",
+					"length": 11.220476190476191
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/master_sounds/id_before_it_got_sampled.ogg",
+				"length": 18.598639455782312
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/id_big_daddys_back_in_town.ogg",
+				"length": 12.46467120181406
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/id_its_the_love_giant.ogg",
+				"length": 12.969478458049887
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/id_stop_listen_and_learn.ogg",
+				"length": 14.209886621315192
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/id_the_home_of_cool_rare_grooves.ogg",
+				"length": 14.841224489795918
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/id_were_bringing_it_back.ogg",
+				"length": 15.292539682539683
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/id_find_a_beat_to_steer_you.ogg",
+				"length": 11.658866213151928
+			},
+			{
+				"sound": "sound/gta3d/radio/master_sounds/id_when_the_rhythm_method_was_king.ogg",
+				"length": 11.854671201814059
+			}
+		]
+	},
+	"adverts": [
+		{
+			"sound": "sound/gta3d/radio/adverts/abiggo_brokerage_and_pawn.ogg",
+			"length": 47.91585034013605
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/american_bank_of_los_santos.ogg",
+			"length": 61.997414965986394
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/ammunation.ogg",
+			"length": 60.12859410430839
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/blottos_1_gold_plated_razorblades.ogg",
+			"length": 31.628480725623582
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/blottos_2_silver_straw.ogg",
+			"length": 20.103356009070296
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/blottos_3_tiny_spoon.ogg",
+			"length": 24.11875283446712
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/bouche_cologne.ogg",
+			"length": 25.74517006802721
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/carcer_city_vacations.ogg",
+			"length": 38.954625850340136
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/castradon_baldness_is_loneliness.ogg",
+			"length": 77.75673469387755
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/celebrate_with_cake_1_wife.ogg",
+			"length": 30.995532879818594
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/celebrate_with_cake_2_son.ogg",
+			"length": 26.63015873015873
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/cluckin_bell_1_were_psychotic_crazies.ogg",
+			"length": 48.64528344671202
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/cluckin_bell_2_all_you_protestors_can_go_to_hell.ogg",
+			"length": 47.999977324263035
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/commando_pest_eradication.ogg",
+			"length": 75.82718820861678
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/commemorative_miniatures.ogg",
+			"length": 84.28328798185942
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/creative_plastic_surgery.ogg",
+			"length": 74.4182993197279
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/crimson_executive_spouse_indemnity_services.ogg",
+			"length": 63.4434693877551
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/de_koch_diamonds.ogg",
+			"length": 46.841360544217686
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/dream_makers.ogg",
+			"length": 73.9354195011338
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/eris_shoes.ogg",
+			"length": 78.2259410430839
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/executive_intruder_extermination_service.ogg",
+			"length": 61.513015873015874
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/exsorbeo_handheld_gaming_system.ogg",
+			"length": 54.271972789115644
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/fokari_film.ogg",
+			"length": 42.80501133786848
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/grin_keeps_me_at_the_equator.ogg",
+			"length": 67.87197278911565
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/hampshire_nannies_ltd.ogg",
+			"length": 73.95619047619047
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/herr_grubers_spa.ogg",
+			"length": 50.96591836734694
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/intergalactic_wrestling_championship_on_weazel.ogg",
+			"length": 81.22378684807256
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/inversion_therapy.ogg",
+			"length": 59.87609977324263
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/janus_invent_the_new_you.ogg",
+			"length": 61.35988662131519
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/kilimanjaro_clothes_1_women_love_big_men.ogg",
+			"length": 49.89795918367347
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/kilimanjaro_clothes_2_youre_as_big_as_a_mountain.ogg",
+			"length": 61.02467120181406
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/law_on_weazel_1_gritty_new_show.ogg",
+			"length": 22.293378684807255
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/law_on_weazel_2_because_paperwork_is_dramatic.ogg",
+			"length": 22.269569160997733
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/law_on_weazel_3_the_real_life_fictional_drama.ogg",
+			"length": 24.77863945578231
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/logger_beer.ogg",
+			"length": 31.60528344671202
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/logger_light.ogg",
+			"length": 49.163378684807256
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/lustrious_1_there_she_was.ogg",
+			"length": 59.41541950113378
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/lustrious_2_how_you_get_your_hair_all_greasy.ogg",
+			"length": 48.01859410430839
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/mike_andrews_live_1_usa.ogg",
+			"length": 51.02929705215419
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/mike_andrews_live_2_enjoy_it.ogg",
+			"length": 55.180408163265305
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/my_five_uncles_on_lsbc.ogg",
+			"length": 56.547596371882086
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/proposition_421_outlaw_smoking_everywhere.ogg",
+			"length": 39.96575963718821
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/proposition_602_no_mass_transit.ogg",
+			"length": 40.16253968253968
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/proposition_832_ban_immigration_green_cards.ogg",
+			"length": 43.97385487528344
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/psa_cars_for_teenagers_instead_of_bicycles.ogg",
+			"length": 75.60528344671202
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/rapidite_the_do-it-yourself_sexual_realignment_kit.ogg",
+			"length": 48.49845804988662
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/redwood_cigarettes.ogg",
+			"length": 50.0692970521542
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/renegade_cologne.ogg",
+			"length": 47.70929705215419
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/san_andreas_telephone_1_orphan.ogg",
+			"length": 16.432358276643992
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/san_andreas_telephone_2_ex_husband.ogg",
+			"length": 23.7478231292517
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/san_andreas_telephone_3_new_father.ogg",
+			"length": 21.421632653061224
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/san_andreas_telephone_4_son.ogg",
+			"length": 19.935986394557823
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/shine_by_helmetshine.ogg",
+			"length": 43.06231292517007
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/sooth_cough_medicine.ogg",
+			"length": 55.52226757369615
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/sprunk.ogg",
+			"length": 47.08487528344671
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_cavern_of_sorrow_fantasy_game.ogg",
+			"length": 65.32807256235827
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_crazy_cock_gentlemans_club.ogg",
+			"length": 85.73160997732427
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_epsilon_program_1_do_you_want_answers.ogg",
+			"length": 46.60780045351474
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_epsilon_program_2_science_is_a_lie.ogg",
+			"length": 35.503854875283444
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_epsilon_program_3_do_you_worry_that_nobody_likes_you.ogg",
+			"length": 42.23498866213152
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_glory_hole_themepark_1_i_know_its_safe.ogg",
+			"length": 49.736009070294784
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_glory_hole_themepark_2_something_theyll_never_forget.ogg",
+			"length": 48.89598639455782
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_midlife_crisis_center.ogg",
+			"length": 70.12498866213151
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_military.ogg",
+			"length": 72.73061224489796
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/the_starfish_resort_and_casino.ogg",
+			"length": 64.12326530612245
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/tropicarcinoma.ogg",
+			"length": 62.28539682539682
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/ultimate_disc_in_the_dark.ogg",
+			"length": 65.85267573696144
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/zebra_bar_1_what_about_nuts.ogg",
+			"length": 31.649002267573696
+		},
+		{
+			"sound": "sound/gta3d/radio/adverts/zebra_bar_2_wow_its_enormous.ogg",
+			"length": 30.536984126984127
+		}
+	],
+	"k_jah": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_a_straight_man.ogg",
+				"length": 15.444353741496599
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_actor_johnny.ogg",
+				"length": 19.13047619047619
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_all_they_do_is_smoke.ogg",
+				"length": 24.89263038548753
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_beware_of_the_parlour_tricks.ogg",
+				"length": 6.476575963718821
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_caught_the_acting_bug.ogg",
+				"length": 9.630385487528345
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_dreadlocks_gonna_save_us_all.ogg",
+				"length": 8.335079365079364
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_hes_no_rockstar.ogg",
+				"length": 11.207301587301588
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_if_youre_working_quit.ogg",
+				"length": 8.799546485260771
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_mash_it_up.ogg",
+				"length": 10.372789115646258
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_more_smokin_reggae.ogg",
+				"length": 7.997165532879818
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_my_best_friend_got_stolen_away.ogg",
+				"length": 11.545238095238096
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_snow_in_jamaica.ogg",
+				"length": 22.625986394557824
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_that_sound_like_a_good_idea.ogg",
+				"length": 11.657845804988662
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_the_british.ogg",
+				"length": 21.85142857142857
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_they_just_lock_you_up.ogg",
+				"length": 29.172834467120182
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_to_all_you_scientists.ogg",
+				"length": 10.742947845804988
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_where_is_the_love_gone.ogg",
+				"length": 9.19392290249433
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_yeah_this_is_k-jah_west.ogg",
+				"length": 9.292471655328798
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_i_love_my_music.ogg",
+				"length": 27.821156462585034
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_ill_get_myself_in_line.ogg",
+				"length": 17.052108843537415
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_smoking_break.ogg",
+				"length": 24.13231292517007
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/dj_so_you_want_to_be_a_rude_boy.ogg",
+				"length": 7.3776643990929704
+			}
+		],
+		"music": {
+			"sidewalk_killer": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/sidewalk_killer_outro.ogg",
+					"length": 54.1024716553288
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/sidewalk_killer_outro_dj_2.ogg",
+					"length": 54.1024716553288
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/sidewalk_killer_mid.ogg",
+					"length": 147.517052154195
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/sidewalk_killer_outro_dj_1.ogg",
+					"length": 54.1024716553288
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/sidewalk_killer_intro_dj_2.ogg",
+					"length": 13.100770975056689
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/sidewalk_killer_intro.ogg",
+					"length": 13.100770975056689
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/sidewalk_killer_intro_dj_1.ogg",
+					"length": 13.100770975056689
+				}
+			},
+			"wicked_inna_bed": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/wicked_inna_bed_outro.ogg",
+					"length": 18.628979591836735
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/wicked_inna_bed_outro_dj_2.ogg",
+					"length": 18.628979591836735
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/wicked_inna_bed_mid.ogg",
+					"length": 159.53399092970523
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/wicked_inna_bed_outro_dj_1.ogg",
+					"length": 18.628979591836735
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/wicked_inna_bed_intro_dj_2.ogg",
+					"length": 15.322063492063492
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/wicked_inna_bed_intro.ogg",
+					"length": 15.322063492063492
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/wicked_inna_bed_intro_dj_1.ogg",
+					"length": 15.322063492063492
+				}
+			},
+			"pressure_drop": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/pressure_drop_outro.ogg",
+					"length": 21.085668934240363
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/pressure_drop_outro_dj_2.ogg",
+					"length": 21.085668934240363
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/pressure_drop_mid.ogg",
+					"length": 174.77358276643992
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/pressure_drop_outro_dj_1.ogg",
+					"length": 21.085668934240363
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/pressure_drop_intro_dj_2.ogg",
+					"length": 15.902380952380952
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/pressure_drop_intro.ogg",
+					"length": 15.902380952380952
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/pressure_drop_intro_dj_1.ogg",
+					"length": 15.902380952380952
+				}
+			},
+			"bam_bam": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/bam_bam_outro.ogg",
+					"length": 31.889637188208617
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/bam_bam_mid.ogg",
+					"length": 201.4045351473923
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/bam_bam_outro_dj_1.ogg",
+					"length": 31.889637188208617
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/bam_bam_intro_dj_2.ogg",
+					"length": 9.877256235827664
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/bam_bam_intro.ogg",
+					"length": 9.877256235827664
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/bam_bam_intro_dj_1.ogg",
+					"length": 9.877256235827664
+				}
+			},
+			"dont_let_it_go_to_your_head": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/dont_let_it_go_to_your_head_outro.ogg",
+					"length": 17.016439909297052
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/dont_let_it_go_to_your_head_outro_dj_2.ogg",
+					"length": 17.016439909297052
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/dont_let_it_go_to_your_head_mid.ogg",
+					"length": 193.95267573696145
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/dont_let_it_go_to_your_head_outro_dj_1.ogg",
+					"length": 17.016439909297052
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/dont_let_it_go_to_your_head_intro_dj_2.ogg",
+					"length": 13.230544217687076
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/dont_let_it_go_to_your_head_intro.ogg",
+					"length": 13.230544217687076
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/dont_let_it_go_to_your_head_intro_dj_1.ogg",
+					"length": 13.230544217687076
+				}
+			},
+			"funky_kingston": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/funky_kingston_outro.ogg",
+					"length": 15.7278231292517
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/funky_kingston_outro_dj_2.ogg",
+					"length": 15.7278231292517
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/funky_kingston_mid.ogg",
+					"length": 162.757052154195
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/funky_kingston_outro_dj_1.ogg",
+					"length": 15.7278231292517
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/funky_kingston_intro_dj_2.ogg",
+					"length": 26.871360544217687
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/funky_kingston_intro.ogg",
+					"length": 26.871360544217687
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/funky_kingston_intro_dj_1.ogg",
+					"length": 26.871360544217687
+				}
+			},
+			"great_train_robbery": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/great_train_robbery_outro.ogg",
+					"length": 24.69986394557823
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/great_train_robbery_outro_dj_2.ogg",
+					"length": 24.69986394557823
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/great_train_robbery_mid.ogg",
+					"length": 183.697052154195
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/great_train_robbery_outro_dj_1.ogg",
+					"length": 24.69986394557823
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/great_train_robbery_intro.ogg",
+					"length": 21.526303854875284
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/great_train_robbery_intro_dj_1.ogg",
+					"length": 21.526303854875284
+				}
+			},
+			"drum_pan_sound": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/drum_pan_sound_outro.ogg",
+					"length": 17.965691609977323
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/drum_pan_sound_outro_dj_2.ogg",
+					"length": 17.965691609977323
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/drum_pan_sound_mid.ogg",
+					"length": 157.6790022675737
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/drum_pan_sound_outro_dj_1.ogg",
+					"length": 17.965691609977323
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/drum_pan_sound_intro_dj_2.ogg",
+					"length": 16.637301587301586
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/drum_pan_sound_intro.ogg",
+					"length": 16.637301587301586
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/drum_pan_sound_intro_dj_1.ogg",
+					"length": 16.637301587301586
+				}
+			},
+			"armagideon_time": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/armagideon_time_outro.ogg",
+					"length": 24.876485260770973
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/armagideon_time_outro_dj_2.ogg",
+					"length": 24.876485260770973
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/armagideon_time_mid.ogg",
+					"length": 102.11253968253968
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/armagideon_time_outro_dj_1.ogg",
+					"length": 24.876485260770973
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/armagideon_time_intro_dj_2.ogg",
+					"length": 14.39326530612245
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/armagideon_time_intro.ogg",
+					"length": 14.39326530612245
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/armagideon_time_intro_dj_1.ogg",
+					"length": 14.39326530612245
+				}
+			},
+			"revolution": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/revolution_outro.ogg",
+					"length": 22.11417233560091
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/revolution_outro_dj_2.ogg",
+					"length": 22.11417233560091
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/revolution_mid.ogg",
+					"length": 192.5498185941043
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/revolution_outro_dj_1.ogg",
+					"length": 22.11417233560091
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/revolution_intro_dj_2.ogg",
+					"length": 14.125918367346939
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/revolution_intro.ogg",
+					"length": 14.125918367346939
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/revolution_intro_dj_1.ogg",
+					"length": 14.125918367346939
+				}
+			},
+			"batty_rider": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/batty_rider_outro.ogg",
+					"length": 25.091791383219956
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/batty_rider_outro_dj_2.ogg",
+					"length": 25.091791383219956
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/batty_rider_mid.ogg",
+					"length": 171.1105215419501
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/batty_rider_outro_dj_1.ogg",
+					"length": 25.091791383219956
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/batty_rider_intro_dj_2.ogg",
+					"length": 21.105850340136055
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/batty_rider_intro.ogg",
+					"length": 21.105850340136055
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/batty_rider_intro_dj_1.ogg",
+					"length": 21.105850340136055
+				}
+			},
+			"king_tubby_meets_the_rockers_uptown": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/king_tubby_meets_the_rockers_uptown_outro.ogg",
+					"length": 16.944104308390024
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/king_tubby_meets_the_rockers_uptown_outro_dj_2.ogg",
+					"length": 16.944104308390024
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/king_tubby_meets_the_rockers_uptown_mid.ogg",
+					"length": 116.40242630385488
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/king_tubby_meets_the_rockers_uptown_outro_dj_1.ogg",
+					"length": 16.944104308390024
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/king_tubby_meets_the_rockers_uptown_intro_dj_2.ogg",
+					"length": 16.720521541950113
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/king_tubby_meets_the_rockers_uptown_intro.ogg",
+					"length": 16.720521541950113
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/king_tubby_meets_the_rockers_uptown_intro_dj_1.ogg",
+					"length": 16.720521541950113
+				}
+			},
+			"cocaine_in_my_brain": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/cocaine_in_my_brain_outro.ogg",
+					"length": 17.32310657596372
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/cocaine_in_my_brain_outro_dj_2.ogg",
+					"length": 17.32310657596372
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/cocaine_in_my_brain_mid.ogg",
+					"length": 160.2041723356009
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/cocaine_in_my_brain_outro_dj_1.ogg",
+					"length": 17.32310657596372
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/cocaine_in_my_brain_intro_dj_2.ogg",
+					"length": 27.43566893424036
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/cocaine_in_my_brain_intro.ogg",
+					"length": 27.43566893424036
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/cocaine_in_my_brain_intro_dj_1.ogg",
+					"length": 27.43566893424036
+				}
+			},
+			"ring_my_bell": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/ring_my_bell_outro.ogg",
+					"length": 22.30392290249433
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/ring_my_bell_outro_dj_2.ogg",
+					"length": 22.30392290249433
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/ring_my_bell_mid.ogg",
+					"length": 173.48691609977325
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/ring_my_bell_outro_dj_1.ogg",
+					"length": 22.30392290249433
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/ring_my_bell_intro_dj_2.ogg",
+					"length": 16.61015873015873
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/ring_my_bell_intro.ogg",
+					"length": 16.61015873015873
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/ring_my_bell_intro_dj_1.ogg",
+					"length": 16.61015873015873
+				}
+			},
+			"chase_the_devil": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/chase_the_devil_outro.ogg",
+					"length": 35.83253968253968
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/chase_the_devil_mid.ogg",
+					"length": 141.56668934240363
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/chase_the_devil_outro_dj_1.ogg",
+					"length": 35.83253968253968
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/chase_the_devil_intro_dj_2.ogg",
+					"length": 21.20780045351474
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/chase_the_devil_intro.ogg",
+					"length": 21.20780045351474
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/chase_the_devil_intro_dj_1.ogg",
+					"length": 21.20780045351474
+				}
+			},
+			"here_i_come": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_jah/here_i_come_outro.ogg",
+					"length": 12.442312925170068
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_jah/here_i_come_outro_dj_2.ogg",
+					"length": 12.442312925170068
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_jah/here_i_come_mid.ogg",
+					"length": 178.39523809523808
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_jah/here_i_come_outro_dj_1.ogg",
+					"length": 12.442312925170068
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_jah/here_i_come_intro_dj_2.ogg",
+					"length": 17.593038548752833
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_jah/here_i_come_intro.ogg",
+					"length": 17.593038548752833
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_jah/here_i_come_intro_dj_1.ogg",
+					"length": 17.593038548752833
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_a_breath_of_fresh_air.ogg",
+				"length": 12.177414965986394
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_no_argument_now.ogg",
+				"length": 9.391972789115647
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_stop_working.ogg",
+				"length": 8.550861678004535
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_the_best_in_reggae.ogg",
+				"length": 9.609727891156462
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_we_are_pilgrims.ogg",
+				"length": 9.833356009070295
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_winners_dont_use_hard_drugs.ogg",
+				"length": 8.939160997732426
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_cool_out_with_k-jah.ogg",
+				"length": 13.682199546485261
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_k-jah_west.ogg",
+				"length": 6.716734693877551
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_that_aint_bass.ogg",
+				"length": 11.301043083900227
+			},
+			{
+				"sound": "sound/gta3d/radio/k_jah/id_put_your_guns_down.ogg",
+				"length": 11.227437641723355
+			}
+		]
+	},
+	"k_dst": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_1977_what_a_year.ogg",
+				"length": 8.266643990929705
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_get_to_the_clinic.ogg",
+				"length": 8.682199546485261
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_i_live_the_dream.ogg",
+				"length": 9.066734693877551
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_keeping_the_spirit_of_rock_alive.ogg",
+				"length": 19.89875283446712
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_music_may_not_be_the_food_of_love.ogg",
+				"length": 5.695079365079365
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_rock_n_roll_or_classical.ogg",
+				"length": 11.441609977324264
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_two_kinds_of_people.ogg",
+				"length": 6.321065759637189
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_werent_the_70s_great.ogg",
+				"length": 16.20294784580499
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/dj_whatever_happened_to_love_fist.ogg",
+				"length": 7.516825396825396
+			}
+		],
+		"music": {
+			"strutter": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/strutter_outro.ogg",
+					"length": 13.654489795918368
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/strutter_outro_dj_2.ogg",
+					"length": 13.654489795918368
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/strutter_mid.ogg",
+					"length": 157.06573696145125
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/strutter_outro_dj_1.ogg",
+					"length": 13.654489795918368
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/strutter_intro_dj_2.ogg",
+					"length": 18.341927437641722
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/strutter_intro.ogg",
+					"length": 18.341927437641722
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/strutter_intro_dj_1.ogg",
+					"length": 18.341927437641722
+				}
+			},
+			"smokin": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/smokin_outro.ogg",
+					"length": 11.708344671201814
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/smokin_outro_dj_2.ogg",
+					"length": 11.708344671201814
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/smokin_mid.ogg",
+					"length": 183.7377551020408
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/smokin_outro_dj_1.ogg",
+					"length": 11.708344671201814
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/smokin_intro_dj_2.ogg",
+					"length": 11.293265306122448
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/smokin_intro.ogg",
+					"length": 11.293265306122448
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/smokin_intro_dj_1.ogg",
+					"length": 11.293265306122448
+				}
+			},
+			"woman_to_woman": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/woman_to_woman_outro.ogg",
+					"length": 26.225238095238094
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/woman_to_woman_outro_dj_2.ogg",
+					"length": 26.225238095238094
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/woman_to_woman_mid.ogg",
+					"length": 183.3080725623583
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/woman_to_woman_outro_dj_1.ogg",
+					"length": 26.225238095238094
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/woman_to_woman_intro_dj_2.ogg",
+					"length": 11.219818594104309
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/woman_to_woman_intro.ogg",
+					"length": 11.219818594104309
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/woman_to_woman_intro_dj_1.ogg",
+					"length": 11.219818594104309
+				}
+			},
+			"get_down_to_it": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/get_down_to_it_outro.ogg",
+					"length": 13.728639455782313
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/get_down_to_it_outro_dj_2.ogg",
+					"length": 13.728639455782313
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/get_down_to_it_mid.ogg",
+					"length": 147.55104308390023
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/get_down_to_it_outro_dj_1.ogg",
+					"length": 13.728639455782313
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/get_down_to_it_intro_dj_2.ogg",
+					"length": 26.431360544217686
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/get_down_to_it_intro.ogg",
+					"length": 26.431360544217686
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/get_down_to_it_intro_dj_1.ogg",
+					"length": 26.431360544217686
+				}
+			},
+			"white_wedding": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/white_wedding_outro.ogg",
+					"length": 22.196825396825396
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/white_wedding_outro_dj_2.ogg",
+					"length": 22.196825396825396
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/white_wedding_mid.ogg",
+					"length": 191.4965759637188
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/white_wedding_outro_dj_1.ogg",
+					"length": 22.196825396825396
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/white_wedding_intro_dj_2.ogg",
+					"length": 7.063219954648526
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/white_wedding_intro.ogg",
+					"length": 7.063219954648526
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/white_wedding_intro_dj_1.ogg",
+					"length": 7.063219954648526
+				}
+			},
+			"green_river": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/green_river_outro.ogg",
+					"length": 13.288163265306123
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/green_river_mid.ogg",
+					"length": 109.15170068027211
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/green_river_outro_dj_1.ogg",
+					"length": 13.288163265306123
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/green_river_intro_dj_2.ogg",
+					"length": 14.094081632653062
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/green_river_intro.ogg",
+					"length": 14.094081632653062
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/green_river_intro_dj_1.ogg",
+					"length": 14.094081632653062
+				}
+			},
+			"eminence_front": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/eminence_front_outro.ogg",
+					"length": 18.835986394557825
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/eminence_front_outro_dj_2.ogg",
+					"length": 18.835986394557825
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/eminence_front_mid.ogg",
+					"length": 219.55798185941043
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/eminence_front_outro_dj_1.ogg",
+					"length": 18.835986394557825
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/eminence_front_intro_dj_2.ogg",
+					"length": 17.160566893424036
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/eminence_front_intro.ogg",
+					"length": 17.160566893424036
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/eminence_front_intro_dj_1.ogg",
+					"length": 17.160566893424036
+				}
+			},
+			"free_bird": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/free_bird_outro.ogg",
+					"length": 14.573854875283446
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/free_bird_outro_dj_2.ogg",
+					"length": 14.573854875283446
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/free_bird_mid.ogg",
+					"length": 313.58385487528346
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/free_bird_outro_dj_1.ogg",
+					"length": 14.573854875283446
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/free_bird_intro_dj_2.ogg",
+					"length": 18.066349206349205
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/free_bird_intro.ogg",
+					"length": 18.066349206349205
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/free_bird_intro_dj_1.ogg",
+					"length": 18.066349206349205
+				}
+			},
+			"hold_the_line": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/hold_the_line_outro.ogg",
+					"length": 17.341292517006803
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/hold_the_line_intro.ogg",
+					"length": 10.14997732426304
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/hold_the_line_mid.ogg",
+					"length": 182.10448979591837
+				}
+			},
+			"two_tickets_to_paradise": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/two_tickets_to_paradise_outro.ogg",
+					"length": 18.895986394557823
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/two_tickets_to_paradise_outro_dj_2.ogg",
+					"length": 18.895986394557823
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/two_tickets_to_paradise_mid.ogg",
+					"length": 175.9884126984127
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/two_tickets_to_paradise_outro_dj_1.ogg",
+					"length": 18.895986394557823
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/two_tickets_to_paradise_intro_dj_2.ogg",
+					"length": 16.90410430839002
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/two_tickets_to_paradise_intro.ogg",
+					"length": 16.90410430839002
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/two_tickets_to_paradise_intro_dj_1.ogg",
+					"length": 16.90410430839002
+				}
+			},
+			"running_down_a_dream": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/running_down_a_dream_outro.ogg",
+					"length": 11.777052154195012
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/running_down_a_dream_outro_dj_2.ogg",
+					"length": 11.777052154195012
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/running_down_a_dream_mid.ogg",
+					"length": 233.24204081632652
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/running_down_a_dream_outro_dj_1.ogg",
+					"length": 11.777052154195012
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/running_down_a_dream_intro_dj_2.ogg",
+					"length": 13.191700680272108
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/running_down_a_dream_intro.ogg",
+					"length": 13.191700680272108
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/running_down_a_dream_intro_dj_1.ogg",
+					"length": 13.191700680272108
+				}
+			},
+			"slow_ride": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/slow_ride_outro.ogg",
+					"length": 13.55079365079365
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/slow_ride_outro_dj_2.ogg",
+					"length": 13.55079365079365
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/slow_ride_mid.ogg",
+					"length": 160.64965986394557
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/slow_ride_outro_dj_1.ogg",
+					"length": 13.55079365079365
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/slow_ride_intro_dj_2.ogg",
+					"length": 15.872312925170068
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/slow_ride_intro.ogg",
+					"length": 15.872312925170068
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/slow_ride_intro_dj_1.ogg",
+					"length": 15.872312925170068
+				}
+			},
+			"young_turks": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/young_turks_outro.ogg",
+					"length": 20.921791383219954
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/young_turks_outro_dj_2.ogg",
+					"length": 20.921791383219954
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/young_turks_mid.ogg",
+					"length": 204.25873015873015
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/young_turks_outro_dj_1.ogg",
+					"length": 20.921791383219954
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/young_turks_intro_dj_2.ogg",
+					"length": 19.168662131519273
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/young_turks_intro.ogg",
+					"length": 19.168662131519273
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/young_turks_intro_dj_1.ogg",
+					"length": 19.168662131519273
+				}
+			},
+			"somebody_up_there_likes_me": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/somebody_up_there_likes_me_outro.ogg",
+					"length": 25.618798185941042
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/somebody_up_there_likes_me_mid.ogg",
+					"length": 199.15351473922902
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/somebody_up_there_likes_me_outro_dj_1.ogg",
+					"length": 25.618798185941042
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/somebody_up_there_likes_me_intro_dj_2.ogg",
+					"length": 12.220113378684808
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/somebody_up_there_likes_me_intro.ogg",
+					"length": 12.220113378684808
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/somebody_up_there_likes_me_intro_dj_1.ogg",
+					"length": 12.220113378684808
+				}
+			},
+			"barracuda": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/barracuda_outro.ogg",
+					"length": 22.375079365079365
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/barracuda_outro_dj_2.ogg",
+					"length": 22.375079365079365
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/barracuda_mid.ogg",
+					"length": 157.57015873015874
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/barracuda_outro_dj_1.ogg",
+					"length": 22.375079365079365
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/barracuda_intro_dj_2.ogg",
+					"length": 14.066802721088436
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/barracuda_intro.ogg",
+					"length": 14.066802721088436
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/barracuda_intro_dj_1.ogg",
+					"length": 14.066802721088436
+				}
+			},
+			"some_kind_of_wonderful": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/some_kind_of_wonderful_outro.ogg",
+					"length": 13.085079365079364
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/some_kind_of_wonderful_outro_dj_2.ogg",
+					"length": 13.085079365079364
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/some_kind_of_wonderful_mid.ogg",
+					"length": 165.49054421768707
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/some_kind_of_wonderful_outro_dj_1.ogg",
+					"length": 13.085079365079364
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/some_kind_of_wonderful_intro_dj_2.ogg",
+					"length": 8.447641723356009
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/some_kind_of_wonderful_intro.ogg",
+					"length": 8.447641723356009
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/some_kind_of_wonderful_intro_dj_1.ogg",
+					"length": 8.447641723356009
+				}
+			},
+			"a_horse_with_no_name": {
+				"outro": {
+					"sound": "sound/gta3d/radio/k_dst/a_horse_with_no_name_outro.ogg",
+					"length": 11.442199546485261
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/k_dst/a_horse_with_no_name_outro_dj_2.ogg",
+					"length": 11.442199546485261
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/k_dst/a_horse_with_no_name_mid.ogg",
+					"length": 188.73260770975057
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/k_dst/a_horse_with_no_name_outro_dj_1.ogg",
+					"length": 11.442199546485261
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/k_dst/a_horse_with_no_name_intro_dj_2.ogg",
+					"length": 7.562312925170068
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/k_dst/a_horse_with_no_name_intro.ogg",
+					"length": 7.562312925170068
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/k_dst/a_horse_with_no_name_intro_dj_1.ogg",
+					"length": 7.562312925170068
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_ashes_to_ashes_dust_to_dust.ogg",
+				"length": 9.447596371882087
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_gone_to_rehab.ogg",
+				"length": 11.310657596371883
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_if_the_police_cant_stop_you_1.ogg",
+				"length": 8.849160997732426
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_if_the_police_cant_stop_you_2.ogg",
+				"length": 8.849160997732426
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_ive_got_a_word_for_you_homey_dust.ogg",
+				"length": 9.674172335600908
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_k_dst_the_dust.ogg",
+				"length": 5.967845804988662
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_music_never_gets_old.ogg",
+				"length": 8.624104308390022
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_real_rockers_wear_leather_jackets.ogg",
+				"length": 8.853854875283446
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_songs_about_abusing_drugs_and_women.ogg",
+				"length": 13.833356009070295
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_the_way_it_was_meant_to_be_enjoyed.ogg",
+				"length": 6.7246938775510205
+			},
+			{
+				"sound": "sound/gta3d/radio/k_dst/id_tommy_the_nightmare_smith_on_the_dust.ogg",
+				"length": 6.261678004535147
+			}
+		]
+	},
+	"radio_x": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_people_over_thirty.ogg",
+				"length": 14.655986394557823
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_being_a_dj_is_so_hard.ogg",
+				"length": 6.325283446712018
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_god_i_love_crying.ogg",
+				"length": 12.15997732426304
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_guys_in_skirts.ogg",
+				"length": 7.6841043083900225
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_i_dont_want_a_real_job.ogg",
+				"length": 11.629546485260772
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_i_have_to_work_so_hard.ogg",
+				"length": 6.431950113378685
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_like_a_big_mix_tape.ogg",
+				"length": 17.346167800453514
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_one_must_always_go_forward.ogg",
+				"length": 10.237551020408164
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_sage.ogg",
+				"length": 11.519977324263039
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_yes_that_is_my_real_name.ogg",
+				"length": 7.426417233560091
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_bombarded_with_commercials.ogg",
+				"length": 14.570634920634921
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_no_tracers_yet.ogg",
+				"length": 6.665170068027211
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/dj_that_bitch_at_the_record_store.ogg",
+				"length": 10.538639455782313
+			}
+		],
+		"music": {
+			"movin_on_up": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/movin_on_up_outro.ogg",
+					"length": 16.136553287981858
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/movin_on_up_outro_dj_2.ogg",
+					"length": 16.136553287981858
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/movin_on_up_mid.ogg",
+					"length": 146.69278911564626
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/movin_on_up_outro_dj_1.ogg",
+					"length": 16.136553287981858
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/movin_on_up_intro_dj_2.ogg",
+					"length": 16.15485260770975
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/movin_on_up_intro.ogg",
+					"length": 16.15485260770975
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/movin_on_up_intro_dj_1.ogg",
+					"length": 16.15485260770975
+				}
+			},
+			"been_caught_stealing": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/been_caught_stealing_outro.ogg",
+					"length": 16.06136054421769
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/been_caught_stealing_outro_dj_2.ogg",
+					"length": 16.06136054421769
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/been_caught_stealing_mid.ogg",
+					"length": 164.21065759637187
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/been_caught_stealing_outro_dj_1.ogg",
+					"length": 16.06136054421769
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/been_caught_stealing_intro_dj_2.ogg",
+					"length": 20.62360544217687
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/been_caught_stealing_intro.ogg",
+					"length": 20.62360544217687
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/been_caught_stealing_intro_dj_1.ogg",
+					"length": 20.62360544217687
+				}
+			},
+			"rusty_cage": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/rusty_cage_outro.ogg",
+					"length": 22.210408163265306
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/rusty_cage_outro_dj_2.ogg",
+					"length": 22.210408163265306
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/rusty_cage_mid.ogg",
+					"length": 132.0063492063492
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/rusty_cage_outro_dj_1.ogg",
+					"length": 22.210408163265306
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/rusty_cage_intro_dj_2.ogg",
+					"length": 19.871111111111112
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/rusty_cage_intro.ogg",
+					"length": 19.871111111111112
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/rusty_cage_intro_dj_1.ogg",
+					"length": 19.871111111111112
+				}
+			},
+			"midlife_crisis": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/midlife_crisis_outro.ogg",
+					"length": 15.348979591836734
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/midlife_crisis_outro_dj_2.ogg",
+					"length": 15.348979591836734
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/midlife_crisis_mid.ogg",
+					"length": 152.41272108843538
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/midlife_crisis_outro_dj_1.ogg",
+					"length": 15.348979591836734
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/midlife_crisis_intro_dj_2.ogg",
+					"length": 19.317709750566895
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/midlife_crisis_intro.ogg",
+					"length": 19.317709750566895
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/midlife_crisis_intro_dj_1.ogg",
+					"length": 19.317709750566895
+				}
+			},
+			"killing_in_the_name": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/killing_in_the_name_outro.ogg",
+					"length": 18.508820861678004
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/killing_in_the_name_outro_dj_2.ogg",
+					"length": 18.508820861678004
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/killing_in_the_name_mid.ogg",
+					"length": 249.94873015873017
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/killing_in_the_name_outro_dj_1.ogg",
+					"length": 18.508820861678004
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/killing_in_the_name_intro_dj_2.ogg",
+					"length": 25.451632653061225
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/killing_in_the_name_intro.ogg",
+					"length": 25.451632653061225
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/killing_in_the_name_intro_dj_1.ogg",
+					"length": 25.451632653061225
+				}
+			},
+			"mother": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/mother_outro.ogg",
+					"length": 16.356009070294785
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/mother_outro_dj_2.ogg",
+					"length": 16.356009070294785
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/mother_mid.ogg",
+					"length": 152.38730158730158
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/mother_outro_dj_1.ogg",
+					"length": 16.356009070294785
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/mother_intro_dj_2.ogg",
+					"length": 15.800113378684808
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/mother_intro.ogg",
+					"length": 15.800113378684808
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/mother_intro_dj_1.ogg",
+					"length": 15.800113378684808
+				}
+			},
+			"pretend_were_dead": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/pretend_were_dead_outro.ogg",
+					"length": 19.088548752834466
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/pretend_were_dead_outro_dj_2.ogg",
+					"length": 19.088548752834466
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/pretend_were_dead_mid.ogg",
+					"length": 191.40990929705217
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/pretend_were_dead_outro_dj_1.ogg",
+					"length": 19.088548752834466
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/pretend_were_dead_intro_dj_2.ogg",
+					"length": 16.93473922902494
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/pretend_were_dead_intro.ogg",
+					"length": 16.93473922902494
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/pretend_were_dead_intro_dj_1.ogg",
+					"length": 16.93473922902494
+				}
+			},
+			"hellraiser": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/hellraiser_outro.ogg",
+					"length": 12.793628117913832
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/hellraiser_outro_dj_2.ogg",
+					"length": 12.793628117913832
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/hellraiser_mid.ogg",
+					"length": 165.7585941043084
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/hellraiser_outro_dj_1.ogg",
+					"length": 12.793628117913832
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/hellraiser_intro_dj_2.ogg",
+					"length": 26.219637188208615
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/hellraiser_intro.ogg",
+					"length": 26.219637188208615
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/hellraiser_intro_dj_1.ogg",
+					"length": 26.219637188208615
+				}
+			},
+			"unsung": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/unsung_outro.ogg",
+					"length": 14.645532879818594
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/unsung_outro_dj_2.ogg",
+					"length": 14.645532879818594
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/unsung_mid.ogg",
+					"length": 172.80185941043084
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/unsung_outro_dj_1.ogg",
+					"length": 14.645532879818594
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/unsung_intro_dj_2.ogg",
+					"length": 14.930045351473924
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/unsung_intro.ogg",
+					"length": 14.930045351473924
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/unsung_intro_dj_1.ogg",
+					"length": 14.930045351473924
+				}
+			},
+			"fools_gold": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/fools_gold_outro.ogg",
+					"length": 17.34269841269841
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/fools_gold_outro_dj_2.ogg",
+					"length": 17.34269841269841
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/fools_gold_mid.ogg",
+					"length": 213.2991156462585
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/fools_gold_outro_dj_1.ogg",
+					"length": 17.34269841269841
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/fools_gold_intro_dj_2.ogg",
+					"length": 17.09285714285714
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/fools_gold_intro.ogg",
+					"length": 17.09285714285714
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/fools_gold_intro_dj_1.ogg",
+					"length": 17.09285714285714
+				}
+			},
+			"them_bones": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/them_bones_outro.ogg",
+					"length": 15.651678004535148
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/them_bones_outro_dj_2.ogg",
+					"length": 15.651678004535148
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/them_bones_mid.ogg",
+					"length": 121.77510204081632
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/them_bones_outro_dj_1.ogg",
+					"length": 15.651678004535148
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/them_bones_intro_dj_2.ogg",
+					"length": 10.688458049886622
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/them_bones_intro.ogg",
+					"length": 10.688458049886622
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/them_bones_intro_dj_1.ogg",
+					"length": 10.688458049886622
+				}
+			},
+			"welcome_to_the_jungle": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/welcome_to_the_jungle_outro.ogg",
+					"length": 22.589251700680272
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/welcome_to_the_jungle_outro_dj_2.ogg",
+					"length": 22.589251700680272
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/welcome_to_the_jungle_mid.ogg",
+					"length": 187.36990929705215
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/welcome_to_the_jungle_outro_dj_1.ogg",
+					"length": 22.589251700680272
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/welcome_to_the_jungle_intro_dj_2.ogg",
+					"length": 32.15013605442177
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/welcome_to_the_jungle_intro.ogg",
+					"length": 32.15013605442177
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/welcome_to_the_jungle_intro_dj_1.ogg",
+					"length": 32.15013605442177
+				}
+			},
+			"cult_of_personality": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/cult_of_personality_outro.ogg",
+					"length": 16.644240362811793
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/cult_of_personality_outro_dj_2.ogg",
+					"length": 16.644240362811793
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/cult_of_personality_mid.ogg",
+					"length": 157.7059863945578
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/cult_of_personality_outro_dj_1.ogg",
+					"length": 16.644240362811793
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/cult_of_personality_intro_dj_2.ogg",
+					"length": 17.399795918367346
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/cult_of_personality_intro.ogg",
+					"length": 17.399795918367346
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/cult_of_personality_intro_dj_1.ogg",
+					"length": 17.399795918367346
+				}
+			},
+			"personal_jesus": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/personal_jesus_outro.ogg",
+					"length": 24.498163265306122
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_x/personal_jesus_outro_dj_2.ogg",
+					"length": 24.498163265306122
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/personal_jesus_mid.ogg",
+					"length": 171.3320634920635
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_x/personal_jesus_outro_dj_1.ogg",
+					"length": 24.498163265306122
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_x/personal_jesus_intro_dj_2.ogg",
+					"length": 17.782176870748298
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/personal_jesus_intro.ogg",
+					"length": 17.782176870748298
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_x/personal_jesus_intro_dj_1.ogg",
+					"length": 17.782176870748298
+				}
+			},
+			"plush": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_x/plush_outro.ogg",
+					"length": 7.5921768707482995
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_x/plush_mid.ogg",
+					"length": 201.04097505668935
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_x/plush_intro.ogg",
+					"length": 9.053718820861677
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_jump_off_a_bridge_and_die.ogg",
+				"length": 11.776031746031746
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_the_birthplace_of_modern_rock.ogg",
+				"length": 8.377981859410431
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_at_the_end_of_the_alphabet.ogg",
+				"length": 6.186145124716553
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_much_better_than_real_friends.ogg",
+				"length": 5.883877551020408
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_this_is_our_time.ogg",
+				"length": 10.791473922902494
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_trust_fund_babies.ogg",
+				"length": 7.7089569160997735
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_were_the_only_identity_youve_got.ogg",
+				"length": 9.250816326530613
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_who_cares_about_hunger.ogg",
+				"length": 6.764331065759637
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_self-important_nihilists.ogg",
+				"length": 8.58734693877551
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_they_dont_care_about_money.ogg",
+				"length": 8.366984126984127
+			}
+		]
+	},
+	"bounce_fm": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_a_b_c_d_me.ogg",
+				"length": 8.66814058956916
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_a_shitty_outlook_on_life.ogg",
+				"length": 8.095736961451248
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_back_up_into_something_wet.ogg",
+				"length": 12.073922902494331
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_blunted.ogg",
+				"length": 9.343990929705216
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_can_you_imagine_me_in_handcuffs.ogg",
+				"length": 8.621360544217687
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_do_fries_go_with_that_shake.ogg",
+				"length": 8.490634920634921
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_doing_it_to_you_in_your_earhole.ogg",
+				"length": 7.339002267573696
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_funk_is_the_dna_in_rap.ogg",
+				"length": 14.719977324263038
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_i_cant_believe_my_lyin_eyes.ogg",
+				"length": 9.17328798185941
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_i_know_all_about_that_prune.ogg",
+				"length": 9.045238095238096
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_if_i_look_back_ill_see_me_coming.ogg",
+				"length": 8.035895691609978
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_im_not_saying_please.ogg",
+				"length": 18.175986394557825
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_like_a_choo-choo.ogg",
+				"length": 7.454013605442177
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_no_mental_hospital_can_hold_me.ogg",
+				"length": 8.431972789115646
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_party_til_you_poop.ogg",
+				"length": 6.785147392290249
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_primordial_funk.ogg",
+				"length": 6.332222222222223
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_proper_preparation_prevent_piss_poor_performance.ogg",
+				"length": 9.816031746031745
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_shake_your_ass.ogg",
+				"length": 5.290634920634921
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_smelling_like_the_funk.ogg",
+				"length": 7.082630385487528
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_so_you_wanna_be_me.ogg",
+				"length": 13.394920634920634
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_stop_funking_around.ogg",
+				"length": 12.929365079365079
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_stop_towing_the_funktipus_mobile.ogg",
+				"length": 11.38172335600907
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_take_it_off_baby.ogg",
+				"length": 6.4800226757369614
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_the_funktapus_is_like_sushi.ogg",
+				"length": 10.61342403628118
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_theres_a_lot_of_stress_out_there.ogg",
+				"length": 5.717301587301587
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_those_casinos_is_getting_crazy.ogg",
+				"length": 6.911972789115646
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_what_have_you_been_smoking.ogg",
+				"length": 6.826643990929705
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_would_you_believe_theyre_paying_me_for_this.ogg",
+				"length": 6.840952380952381
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_you_know_you_want_it.ogg",
+				"length": 6.0915419501133785
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/dj_you_lost_the_funk.ogg",
+				"length": 7.445283446712018
+			}
+		],
+		"music": {
+			"let_it_whip": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/let_it_whip_outro.ogg",
+					"length": 13.043673469387755
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/let_it_whip_outro_dj_2.ogg",
+					"length": 13.043673469387755
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/let_it_whip_mid.ogg",
+					"length": 174.98278911564626
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/let_it_whip_outro_dj_1.ogg",
+					"length": 13.043673469387755
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/let_it_whip_intro_dj_2.ogg",
+					"length": 22.078208616780046
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/let_it_whip_intro.ogg",
+					"length": 22.078208616780046
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/let_it_whip_intro_dj_1.ogg",
+					"length": 22.078208616780046
+				}
+			},
+			"west_coast_poplock": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/west_coast_poplock_outro.ogg",
+					"length": 14.013537414965986
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/west_coast_poplock_outro_dj_2.ogg",
+					"length": 14.013537414965986
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/west_coast_poplock_mid.ogg",
+					"length": 195.84517006802722
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/west_coast_poplock_outro_dj_1.ogg",
+					"length": 14.013537414965986
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/west_coast_poplock_intro_dj_2.ogg",
+					"length": 18.055986394557824
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/west_coast_poplock_intro.ogg",
+					"length": 18.055986394557824
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/west_coast_poplock_intro_dj_1.ogg",
+					"length": 18.055986394557824
+				}
+			},
+			"twilight": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/twilight_outro.ogg",
+					"length": 13.812448979591837
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/twilight_outro_dj_2.ogg",
+					"length": 13.812448979591837
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/twilight_mid.ogg",
+					"length": 171.8272335600907
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/twilight_outro_dj_1.ogg",
+					"length": 13.812448979591837
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/twilight_intro_dj_2.ogg",
+					"length": 29.6618820861678
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/twilight_intro.ogg",
+					"length": 29.6618820861678
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/twilight_intro_dj_1.ogg",
+					"length": 29.6618820861678
+				}
+			},
+			"between_the_sheets": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/between_the_sheets_outro.ogg",
+					"length": 18.356598639455783
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/between_the_sheets_outro_dj_2.ogg",
+					"length": 18.356598639455783
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/between_the_sheets_mid.ogg",
+					"length": 178.302358276644
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/between_the_sheets_outro_dj_1.ogg",
+					"length": 18.356598639455783
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/between_the_sheets_intro_dj_2.ogg",
+					"length": 20.91097505668934
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/between_the_sheets_intro.ogg",
+					"length": 20.91097505668934
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/between_the_sheets_intro_dj_1.ogg",
+					"length": 20.91097505668934
+				}
+			},
+			"cold_blooded": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/cold_blooded_outro.ogg",
+					"length": 16.276326530612245
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/cold_blooded_outro_dj_2.ogg",
+					"length": 16.276326530612245
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/cold_blooded_mid.ogg",
+					"length": 203.12156462585034
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/cold_blooded_outro_dj_1.ogg",
+					"length": 16.276326530612245
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/cold_blooded_intro_dj_2.ogg",
+					"length": 25.69185941043084
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/cold_blooded_intro.ogg",
+					"length": 25.69185941043084
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/cold_blooded_intro_dj_1.ogg",
+					"length": 25.69185941043084
+				}
+			},
+			"yum_yum": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/yum_yum_outro.ogg",
+					"length": 19.608730158730157
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/yum_yum_outro_dj_2.ogg",
+					"length": 19.608730158730157
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/yum_yum_mid.ogg",
+					"length": 155.53673469387755
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/yum_yum_outro_dj_1.ogg",
+					"length": 19.608730158730157
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/yum_yum_intro_dj_2.ogg",
+					"length": 17.685238095238095
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/yum_yum_intro.ogg",
+					"length": 17.685238095238095
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/yum_yum_intro_dj_1.ogg",
+					"length": 17.685238095238095
+				}
+			},
+			"loopzilla": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/loopzilla_outro.ogg",
+					"length": 12.617732426303855
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/loopzilla_outro_dj_2.ogg",
+					"length": 12.617732426303855
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/loopzilla_mid.ogg",
+					"length": 188.50097505668936
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/loopzilla_outro_dj_1.ogg",
+					"length": 12.617732426303855
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/loopzilla_intro_dj_2.ogg",
+					"length": 14.73015873015873
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/loopzilla_intro.ogg",
+					"length": 14.73015873015873
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/loopzilla_intro_dj_1.ogg",
+					"length": 14.73015873015873
+				}
+			},
+			"you_dropped_a_bomb_on_me": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/you_dropped_a_bomb_on_me_outro.ogg",
+					"length": 12.134761904761906
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/you_dropped_a_bomb_on_me_outro_dj_2.ogg",
+					"length": 12.134761904761906
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/you_dropped_a_bomb_on_me_mid.ogg",
+					"length": 207.66204081632654
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/you_dropped_a_bomb_on_me_outro_dj_1.ogg",
+					"length": 12.134761904761906
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/you_dropped_a_bomb_on_me_intro_dj_2.ogg",
+					"length": 16.09170068027211
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/you_dropped_a_bomb_on_me_intro.ogg",
+					"length": 16.09170068027211
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/you_dropped_a_bomb_on_me_intro_dj_1.ogg",
+					"length": 16.09170068027211
+				}
+			},
+			"hollywood_swingin": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/hollywood_swingin_outro.ogg",
+					"length": 13.276077097505668
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/hollywood_swingin_outro_dj_2.ogg",
+					"length": 13.276077097505668
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/hollywood_swingin_mid.ogg",
+					"length": 170.03990929705216
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/hollywood_swingin_outro_dj_1.ogg",
+					"length": 13.276077097505668
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/hollywood_swingin_intro_dj_2.ogg",
+					"length": 18.79079365079365
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/hollywood_swingin_intro.ogg",
+					"length": 18.79079365079365
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/hollywood_swingin_intro_dj_1.ogg",
+					"length": 18.79079365079365
+				}
+			},
+			"funky_worm": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/funky_worm_outro.ogg",
+					"length": 10.35154195011338
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/funky_worm_outro_dj_2.ogg",
+					"length": 10.35154195011338
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/funky_worm_mid.ogg",
+					"length": 133.69451247165532
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/funky_worm_outro_dj_1.ogg",
+					"length": 10.35154195011338
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/funky_worm_intro_dj_2.ogg",
+					"length": 13.919229024943311
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/funky_worm_intro.ogg",
+					"length": 13.919229024943311
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/funky_worm_intro_dj_1.ogg",
+					"length": 13.919229024943311
+				}
+			},
+			"i_can_make_you_dance": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/i_can_make_you_dance_outro.ogg",
+					"length": 19.20750566893424
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/i_can_make_you_dance_outro_dj_2.ogg",
+					"length": 19.20750566893424
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/i_can_make_you_dance_mid.ogg",
+					"length": 178.84036281179138
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/i_can_make_you_dance_outro_dj_1.ogg",
+					"length": 19.20750566893424
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/i_can_make_you_dance_intro_dj_2.ogg",
+					"length": 17.566303854875283
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/i_can_make_you_dance_intro.ogg",
+					"length": 17.566303854875283
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/i_can_make_you_dance_intro_dj_1.ogg",
+					"length": 17.566303854875283
+				}
+			},
+			"love_rollercoaster": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_rollercoaster_outro.ogg",
+					"length": 15.9702947845805
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_rollercoaster_outro_dj_2.ogg",
+					"length": 15.9702947845805
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_rollercoaster_mid.ogg",
+					"length": 144.2102267573696
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_rollercoaster_outro_dj_1.ogg",
+					"length": 15.9702947845805
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_rollercoaster_intro_dj_2.ogg",
+					"length": 17.236802721088434
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_rollercoaster_intro.ogg",
+					"length": 17.236802721088434
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_rollercoaster_intro_dj_1.ogg",
+					"length": 17.236802721088434
+				}
+			},
+			"love_is_the_message": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_is_the_message_outro.ogg",
+					"length": 16.305850340136054
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_is_the_message_outro_dj_2.ogg",
+					"length": 16.305850340136054
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_is_the_message_mid.ogg",
+					"length": 181.7855328798186
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_is_the_message_outro_dj_1.ogg",
+					"length": 16.305850340136054
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_is_the_message_intro_dj_2.ogg",
+					"length": 10.769977324263039
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_is_the_message_intro.ogg",
+					"length": 10.769977324263039
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/love_is_the_message_intro_dj_1.ogg",
+					"length": 10.769977324263039
+				}
+			},
+			"candy": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/candy_outro.ogg",
+					"length": 14.150158730158731
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/candy_outro_dj_2.ogg",
+					"length": 14.150158730158731
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/candy_mid.ogg",
+					"length": 169.69204081632654
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/candy_outro_dj_1.ogg",
+					"length": 14.150158730158731
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/candy_intro_dj_2.ogg",
+					"length": 18.14591836734694
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/candy_intro.ogg",
+					"length": 18.14591836734694
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/candy_intro_dj_1.ogg",
+					"length": 18.14591836734694
+				}
+			},
+			"running_away": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/running_away_outro.ogg",
+					"length": 19.277324263038548
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/running_away_outro_dj_2.ogg",
+					"length": 19.277324263038548
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/running_away_mid.ogg",
+					"length": 162.23578231292518
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/running_away_outro_dj_1.ogg",
+					"length": 19.277324263038548
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/running_away_intro_dj_2.ogg",
+					"length": 10.55297052154195
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/running_away_intro.ogg",
+					"length": 10.55297052154195
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/running_away_intro_dj_1.ogg",
+					"length": 10.55297052154195
+				}
+			},
+			"odyssey": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/odyssey_outro.ogg",
+					"length": 18.86172335600907
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/odyssey_outro_dj_2.ogg",
+					"length": 18.86172335600907
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/odyssey_mid.ogg",
+					"length": 235.1831746031746
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/odyssey_outro_dj_1.ogg",
+					"length": 18.86172335600907
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/odyssey_intro_dj_2.ogg",
+					"length": 21.96904761904762
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/odyssey_intro.ogg",
+					"length": 21.96904761904762
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/odyssey_intro_dj_1.ogg",
+					"length": 21.96904761904762
+				}
+			},
+			"fantastic_voyage": {
+				"outro": {
+					"sound": "sound/gta3d/radio/bounce_fm/fantastic_voyage_outro.ogg",
+					"length": 19.88972789115646
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/fantastic_voyage_outro_dj_2.ogg",
+					"length": 19.88972789115646
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/bounce_fm/fantastic_voyage_mid.ogg",
+					"length": 188.91086167800452
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/fantastic_voyage_outro_dj_1.ogg",
+					"length": 19.88972789115646
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/bounce_fm/fantastic_voyage_intro_dj_2.ogg",
+					"length": 16.647301587301587
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/bounce_fm/fantastic_voyage_intro.ogg",
+					"length": 16.647301587301587
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/bounce_fm/fantastic_voyage_intro_dj_1.ogg",
+					"length": 16.647301587301587
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/id_nobodys_sober_at_the_party.ogg",
+				"length": 8.532471655328798
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/id_party_ships_crash_landed.ogg",
+				"length": 8.460136054421769
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/id_ready_to_fly_into_space.ogg",
+				"length": 11.570884353741496
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/id_share_your_stash_with_everyone_baby.ogg",
+				"length": 9.314603174603175
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/id_the_party_never_stops.ogg",
+				"length": 10.899818594104309
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/id_until_everyones_pregnant.ogg",
+				"length": 7.679977324263039
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/id_what_did_i_do_last_night.ogg",
+				"length": 11.81655328798186
+			},
+			{
+				"sound": "sound/gta3d/radio/bounce_fm/id_whos_next_on_my_wife.ogg",
+				"length": 7.402426303854876
+			}
+		]
+	},
+	"wctr": {
+		"dj": [],
+		"music": {
+			"news_episode_11": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_11_outro.ogg",
+					"length": 6.8579818594104305
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_11_intro.ogg",
+					"length": 9.880385487528345
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_11_mid.ogg",
+					"length": 161.09510204081633
+				}
+			},
+			"news_episode_01": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_01_outro.ogg",
+					"length": 6.821473922902494
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_01_intro.ogg",
+					"length": 6.524784580498866
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_01_mid.ogg",
+					"length": 126.65655328798186
+				}
+			},
+			"news_episode_06": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_06_outro.ogg",
+					"length": 7.8093877551020405
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_06_intro.ogg",
+					"length": 7.374036281179138
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_06_mid.ogg",
+					"length": 126.24231292517007
+				}
+			},
+			"the_tight_end_zone_episode_1": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/the_tight_end_zone_episode_1_outro.ogg",
+					"length": 7.269659863945578
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/the_tight_end_zone_episode_1_intro.ogg",
+					"length": 10.603174603174603
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/the_tight_end_zone_episode_1_mid.ogg",
+					"length": 350.0844217687075
+				}
+			},
+			"entertaining_america_episode_2": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_2_outro.ogg",
+					"length": 6.746303854875284
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_2_intro.ogg",
+					"length": 7.341224489795918
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_2_mid.ogg",
+					"length": 280.0973469387755
+				}
+			},
+			"entertaining_america_teaser": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_teaser_outro.ogg",
+					"length": 9.655578231292518
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_teaser_mid.ogg",
+					"length": 18.59954648526077
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_teaser_intro.ogg",
+					"length": 5.737165532879819
+				}
+			},
+			"the_wild_traveler_episode_1": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/the_wild_traveler_episode_1_outro.ogg",
+					"length": 8.1637641723356
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/the_wild_traveler_episode_1_intro.ogg",
+					"length": 7.2569160997732425
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/the_wild_traveler_episode_1_mid.ogg",
+					"length": 321.9439229024943
+				}
+			},
+			"the_tight_end_zone_episode_2": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/the_tight_end_zone_episode_2_outro.ogg",
+					"length": 7.870952380952381
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/the_tight_end_zone_episode_2_intro.ogg",
+					"length": 8.363718820861678
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/the_tight_end_zone_episode_2_mid.ogg",
+					"length": 238.92156462585035
+				}
+			},
+			"news_episode_05": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_05_outro.ogg",
+					"length": 7.353922902494331
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_05_intro.ogg",
+					"length": 7.064421768707483
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_05_mid.ogg",
+					"length": 138.93192743764172
+				}
+			},
+			"the_wild_traveler_episode_2": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/the_wild_traveler_episode_2_outro.ogg",
+					"length": 6.950294784580499
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/the_wild_traveler_episode_2_intro.ogg",
+					"length": 7.9419274376417235
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/the_wild_traveler_episode_2_mid.ogg",
+					"length": 348.74031746031744
+				}
+			},
+			"gardening_with_maurice_teaser_1": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_teaser_1_outro.ogg",
+					"length": 7.1289115646258505
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_teaser_1_intro.ogg",
+					"length": 6.936190476190476
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_teaser_1_mid.ogg",
+					"length": 56.20410430839002
+				}
+			},
+			"news_episode_10": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_10_outro.ogg",
+					"length": 14.375668934240363
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_10_intro.ogg",
+					"length": 7.33766439909297
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_10_mid.ogg",
+					"length": 48.588798185941044
+				}
+			},
+			"news_episode_04": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_04_outro.ogg",
+					"length": 7.802290249433106
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_04_intro.ogg",
+					"length": 8.809909297052155
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_04_mid.ogg",
+					"length": 107.83179138321995
+				}
+			},
+			"area_53_episode_2": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_2_outro.ogg",
+					"length": 15.935600907029478
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_2_intro.ogg",
+					"length": 6.695736961451247
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_2_mid.ogg",
+					"length": 156.41578231292516
+				}
+			},
+			"entertaining_america_episode_1": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_1_outro.ogg",
+					"length": 9.539750566893424
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_1_intro.ogg",
+					"length": 8.484784580498866
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_1_mid.ogg",
+					"length": 350.5092290249433
+				}
+			},
+			"news_episode_09": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_09_outro.ogg",
+					"length": 8.265487528344671
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_09_intro.ogg",
+					"length": 6.7464172335600905
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_09_mid.ogg",
+					"length": 43.79485260770975
+				}
+			},
+			"gardening_with_maurice_episode_2": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_episode_2_outro.ogg",
+					"length": 10.209002267573696
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_episode_2_intro.ogg",
+					"length": 8.398095238095237
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_episode_2_mid.ogg",
+					"length": 344.6460997732426
+				}
+			},
+			"entertaining_america_episode_3": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_3_outro.ogg",
+					"length": 10.063922902494332
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_3_intro.ogg",
+					"length": 9.035578231292517
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/entertaining_america_episode_3_mid.ogg",
+					"length": 393.6470975056689
+				}
+			},
+			"gardening_with_maurice_episode_1": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_episode_1_outro.ogg",
+					"length": 11.435668934240363
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_episode_1_intro.ogg",
+					"length": 7.482698412698412
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_episode_1_mid.ogg",
+					"length": 234.1908843537415
+				}
+			},
+			"area_53_episode_3": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_3_outro.ogg",
+					"length": 9.045260770975057
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_3_intro.ogg",
+					"length": 8.214036281179139
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_3_mid.ogg",
+					"length": 173.3694557823129
+				}
+			},
+			"lonely_hearts_episode_2": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_2_outro.ogg",
+					"length": 7.326734693877551
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_2_intro.ogg",
+					"length": 7.014920634920635
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_2_mid.ogg",
+					"length": 176.21673469387756
+				}
+			},
+			"news_episode_08": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_08_outro.ogg",
+					"length": 6.58172335600907
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_08_mid.ogg",
+					"length": 118.82773242630385
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_08_intro.ogg",
+					"length": 7.012448979591837
+				}
+			},
+			"lonely_hearts_episode_3": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_3_outro.ogg",
+					"length": 8.534126984126985
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_3_intro.ogg",
+					"length": 8.534240362811792
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_3_mid.ogg",
+					"length": 313.38680272108843
+				}
+			},
+			"gardening_with_maurice_teaser_2": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_teaser_2_outro.ogg",
+					"length": 6.489909297052154
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_teaser_2_intro.ogg",
+					"length": 7.004421768707483
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/gardening_with_maurice_teaser_2_mid.ogg",
+					"length": 79.28426303854876
+				}
+			},
+			"news_episode_03": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_03_outro.ogg",
+					"length": 9.387732426303854
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_03_intro.ogg",
+					"length": 5.984353741496599
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_03_mid.ogg",
+					"length": 96.88478458049886
+				}
+			},
+			"news_episode_02": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_02_outro.ogg",
+					"length": 8.855351473922903
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_02_intro.ogg",
+					"length": 12.185600907029478
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_02_mid.ogg",
+					"length": 119.48072562358277
+				}
+			},
+			"lonely_hearts_episode_1": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_1_outro.ogg",
+					"length": 6.829637188208617
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_1_intro.ogg",
+					"length": 7.303038548752834
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/lonely_hearts_episode_1_mid.ogg",
+					"length": 217.3348752834467
+				}
+			},
+			"area_53_episode_1": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_1_outro.ogg",
+					"length": 6.077800453514739
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_1_mid.ogg",
+					"length": 156.40086167800453
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/area_53_episode_1_intro.ogg",
+					"length": 6.393287981859411
+				}
+			},
+			"news_episode_07": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_07_outro.ogg",
+					"length": 7.084081632653061
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_07_intro.ogg",
+					"length": 6.86297052154195
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/news_episode_07_mid.ogg",
+					"length": 127.88975056689343
+				}
+			},
+			"i_say_you_say_episode_1": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/i_say_you_say_episode_1_outro.ogg",
+					"length": 8.029909297052154
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/i_say_you_say_episode_1_intro.ogg",
+					"length": 6.867664399092971
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/i_say_you_say_episode_1_mid.ogg",
+					"length": 331.39566893424035
+				}
+			},
+			"i_say_you_say_episode_2": {
+				"outro": {
+					"sound": "sound/gta3d/radio/wctr/i_say_you_say_episode_2_outro.ogg",
+					"length": 7.386848072562358
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/wctr/i_say_you_say_episode_2_intro.ogg",
+					"length": 8.073219954648525
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/wctr/i_say_you_say_episode_2_mid.ogg",
+					"length": 268.8757823129252
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/wctr/id_all_the_news.ogg",
+				"length": 6.665328798185941
+			},
+			{
+				"sound": "sound/gta3d/radio/wctr/id_at_home_at_work_or_in_rehab.ogg",
+				"length": 7.167845804988662
+			},
+			{
+				"sound": "sound/gta3d/radio/wctr/id_deal_with_your_ignorance.ogg",
+				"length": 8.370657596371881
+			},
+			{
+				"sound": "sound/gta3d/radio/wctr/id_if_you_crave_news.ogg",
+				"length": 6.008412698412698
+			},
+			{
+				"sound": "sound/gta3d/radio/wctr/id_people_dying_and_explosions.ogg",
+				"length": 14.625668934240363
+			},
+			{
+				"sound": "sound/gta3d/radio/wctr/id_sensationalist_bullshit.ogg",
+				"length": 7.015600907029478
+			},
+			{
+				"sound": "sound/gta3d/radio/wctr/id_talk_is_cheap.ogg",
+				"length": 9.904739229024944
+			},
+			{
+				"sound": "sound/gta3d/radio/wctr/id_opinions_are_free.ogg",
+				"length": 11.262131519274377
+			}
+		]
+	},
+	"sfur": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_i_went_to_liberty_city_once.ogg",
+				"length": 8.379909297052155
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_dont_make_me_go_to_rehab.ogg",
+				"length": 9.642630385487529
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_european_style_shaved.ogg",
+				"length": 6.101292517006803
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_harder_faster_deeper.ogg",
+				"length": 6.6617913832199545
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_has_anyone_got_any_cigarette_papers.ogg",
+				"length": 5.989047619047619
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_has_that_dealer_turned_up_yet.ogg",
+				"length": 5.503990929705216
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_i_am_a_rebel.ogg",
+				"length": 9.13063492063492
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_i_am_communing_with_you.ogg",
+				"length": 5.97047619047619
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_i_come_to_america.ogg",
+				"length": 8.792380952380952
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_i_love_complete_strangers.ogg",
+				"length": 6.058639455782313
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_i_love_you_san_fierro.ogg",
+				"length": 5.631972789115646
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_i_want_to_cry.ogg",
+				"length": 5.975283446712018
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_keep_the_party_moving_in_here.ogg",
+				"length": 5.452857142857143
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_lets_party.ogg",
+				"length": 6.826643990929705
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_living_in_a_digital_future.ogg",
+				"length": 11.326802721088436
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_people_cry_when_they_see_my_record_collection.ogg",
+				"length": 8.815238095238096
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_the_computers_have_taken_over.ogg",
+				"length": 5.973287981859411
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_we_are_like_dolphins_clicking.ogg",
+				"length": 7.391972789115647
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_would_you_like_a_pillow.ogg",
+				"length": 7.679977324263039
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_keeping_it_on_a_housey_tip_now.ogg",
+				"length": 10.356349206349206
+			},
+			{
+				"sound": "sound/gta3d/radio/sfur/dj_shut_up_and_dance_you_fools.ogg",
+				"length": 7.765283446712018
+			}
+		],
+		"music": {
+			"someday": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/someday_outro_dj_2.ogg",
+					"length": 8.179705215419501
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/someday_mid.ogg",
+					"length": 235.5538321995465
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/someday_outro_dj_1.ogg",
+					"length": 8.179705215419501
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/someday_intro_dj_2.ogg",
+					"length": 16.403333333333332
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/someday_intro_dj_1.ogg",
+					"length": 16.403333333333332
+				}
+			},
+			"your_love": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/your_love_outro_dj_2.ogg",
+					"length": 18.90641723356009
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/your_love_mid.ogg",
+					"length": 207.2622902494331
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/your_love_outro_dj_1.ogg",
+					"length": 18.90641723356009
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/your_love_intro_dj_2.ogg",
+					"length": 42.18167800453515
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/your_love_intro_dj_1.ogg",
+					"length": 42.18167800453515
+				}
+			},
+			"weekend": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/weekend_outro_dj_2.ogg",
+					"length": 5.460362811791383
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/weekend_mid.ogg",
+					"length": 215.3257596371882
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/weekend_outro_dj_1.ogg",
+					"length": 5.460362811791383
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/weekend_intro_dj_2.ogg",
+					"length": 14.33920634920635
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/weekend_intro_dj_1.ogg",
+					"length": 14.33920634920635
+				}
+			},
+			"pacific": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/pacific_outro_dj_2.ogg",
+					"length": 7.350861678004535
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/pacific_mid.ogg",
+					"length": 150.00219954648526
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/pacific_outro_dj_1.ogg",
+					"length": 7.350861678004535
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/pacific_intro_dj_2.ogg",
+					"length": 24.22045351473923
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/pacific_intro_dj_1.ogg",
+					"length": 24.22045351473923
+				}
+			},
+			"voodoo_ray": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/voodoo_ray_outro_dj_2.ogg",
+					"length": 11.166394557823129
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/voodoo_ray_mid.ogg",
+					"length": 198.52090702947845
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/voodoo_ray_outro_dj_1.ogg",
+					"length": 11.166394557823129
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/voodoo_ray_intro_dj_2.ogg",
+					"length": 17.505986394557823
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/voodoo_ray_intro_dj_1.ogg",
+					"length": 17.505986394557823
+				}
+			},
+			"can_you_feel_it": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/can_you_feel_it_outro_dj_2.ogg",
+					"length": 11.917959183673469
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/can_you_feel_it_mid.ogg",
+					"length": 220.6468253968254
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/can_you_feel_it_outro_dj_1.ogg",
+					"length": 11.917959183673469
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/can_you_feel_it_intro_dj_2.ogg",
+					"length": 6.55453514739229
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/can_you_feel_it_intro_dj_1.ogg",
+					"length": 6.55453514739229
+				}
+			},
+			"this_is_acid": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/this_is_acid_outro_dj_2.ogg",
+					"length": 12.29310657596372
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/this_is_acid_mid.ogg",
+					"length": 178.7992970521542
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/this_is_acid_outro_dj_1.ogg",
+					"length": 12.29310657596372
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/this_is_acid_intro_dj_2.ogg",
+					"length": 16.534195011337868
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/this_is_acid_intro_dj_1.ogg",
+					"length": 16.534195011337868
+				}
+			},
+			"ma_foom_bey": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/ma_foom_bey_outro_dj_2.ogg",
+					"length": 16.402290249433108
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/ma_foom_bey_mid.ogg",
+					"length": 201.78086167800453
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/ma_foom_bey_outro_dj_1.ogg",
+					"length": 16.402290249433108
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/ma_foom_bey_intro_dj_2.ogg",
+					"length": 15.831360544217688
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/ma_foom_bey_intro_dj_1.ogg",
+					"length": 15.831360544217688
+				}
+			},
+			"let_the_music_use_you": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/let_the_music_use_you_outro_dj_2.ogg",
+					"length": 14.450566893424035
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/let_the_music_use_you_mid.ogg",
+					"length": 255.14090702947846
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/let_the_music_use_you_outro_dj_1.ogg",
+					"length": 14.450566893424035
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/let_the_music_use_you_intro_dj_2.ogg",
+					"length": 16.358072562358277
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/let_the_music_use_you_intro_dj_1.ogg",
+					"length": 16.358072562358277
+				}
+			},
+			"ill_be_your_friend": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/ill_be_your_friend_outro_dj_2.ogg",
+					"length": 7.4982993197278915
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/ill_be_your_friend_mid.ogg",
+					"length": 240.04707482993197
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/ill_be_your_friend_outro_dj_1.ogg",
+					"length": 7.4982993197278915
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/ill_be_your_friend_intro_dj_2.ogg",
+					"length": 31.841360544217686
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/ill_be_your_friend_intro_dj_1.ogg",
+					"length": 31.841360544217686
+				}
+			},
+			"break_4_love": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/break_4_love_outro_dj_2.ogg",
+					"length": 12.978480725623582
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/break_4_love_mid.ogg",
+					"length": 199.21342403628117
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/break_4_love_outro_dj_1.ogg",
+					"length": 12.978480725623582
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/break_4_love_intro_dj_2.ogg",
+					"length": 17.044535147392292
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/break_4_love_intro_dj_1.ogg",
+					"length": 17.044535147392292
+				}
+			},
+			"move_your_body": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/move_your_body_outro_dj_2.ogg",
+					"length": 6.877052154195011
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/move_your_body_mid.ogg",
+					"length": 221.9963492063492
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/move_your_body_outro_dj_1.ogg",
+					"length": 6.877052154195011
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/move_your_body_intro_dj_2.ogg",
+					"length": 14.79829931972789
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/move_your_body_intro_dj_1.ogg",
+					"length": 14.79829931972789
+				}
+			},
+			"promised_land": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/promised_land_outro_dj_2.ogg",
+					"length": 13.029637188208616
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/promised_land_mid.ogg",
+					"length": 151.91344671201813
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/promised_land_outro_dj_1.ogg",
+					"length": 13.029637188208616
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/promised_land_intro_dj_2.ogg",
+					"length": 16.909727891156464
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/promised_land_intro_dj_1.ogg",
+					"length": 16.909727891156464
+				}
+			},
+			"make_my_body_rock": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/make_my_body_rock_outro_dj_2.ogg",
+					"length": 13.593990929705216
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/make_my_body_rock_mid.ogg",
+					"length": 216.0055782312925
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/make_my_body_rock_outro_dj_1.ogg",
+					"length": 13.593990929705216
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/make_my_body_rock_intro_dj_2.ogg",
+					"length": 16.91668934240363
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/make_my_body_rock_intro_dj_1.ogg",
+					"length": 16.91668934240363
+				}
+			},
+			"the_morning_after": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/the_morning_after_outro_dj_2.ogg",
+					"length": 6.336553287981859
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/the_morning_after_mid.ogg",
+					"length": 211.91238095238094
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/the_morning_after_outro_dj_1.ogg",
+					"length": 6.336553287981859
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/the_morning_after_intro_dj_2.ogg",
+					"length": 37.82498866213152
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/the_morning_after_intro_dj_1.ogg",
+					"length": 37.82498866213152
+				}
+			},
+			"i_need_a_rhythm": {
+				"outro2": {
+					"sound": "sound/gta3d/radio/sfur/i_need_a_rhythm_outro_dj_2.ogg",
+					"length": 5.653424036281179
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/sfur/i_need_a_rhythm_mid.ogg",
+					"length": 210.4331746031746
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/sfur/i_need_a_rhythm_outro_dj_1.ogg",
+					"length": 5.653424036281179
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/sfur/i_need_a_rhythm_intro_dj_2.ogg",
+					"length": 22.037256235827666
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/sfur/i_need_a_rhythm_intro_dj_1.ogg",
+					"length": 22.037256235827666
+				}
+			}
+		},
+		"id": []
+	},
+	"playback_fm": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_ready_for_your_training_wheels.ogg",
+				"length": 12.394625850340136
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_be_educated_on_the_sounds_that_brung_ya.ogg",
+				"length": 15.617301587301588
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_cavern_of_sorrow_marathon.ogg",
+				"length": 17.663990929705214
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_get_back_to_the_burbs_you_fools.ogg",
+				"length": 9.115600907029478
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_help_aint_no_charity.ogg",
+				"length": 10.108911564625851
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_i_got_seven_digits_as_it_is.ogg",
+				"length": 9.507165532879819
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_los_santos_police.ogg",
+				"length": 8.191156462585035
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_propaganda.ogg",
+				"length": 13.589297052154196
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_shoulda_paid_more_attention_in_school.ogg",
+				"length": 7.732925170068027
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_theres_a_party_over_here.ogg",
+				"length": 14.240861678004535
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_this_goes_out_to_my_man_the_iceman.ogg",
+				"length": 9.898639455782313
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_ugly_like_yo_momma.ogg",
+				"length": 7.722630385487529
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_west_coast_radio_suckers.ogg",
+				"length": 8.816439909297053
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_you_dont_last_a_minute.ogg",
+				"length": 9.191043083900226
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_ill_go_speed_of_light_on_yall.ogg",
+				"length": 12.714829931972789
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/dj_small-minded_robots.ogg",
+				"length": 12.074625850340135
+			}
+		],
+		"music": {
+			"the_vapors": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/the_vapors_outro.ogg",
+					"length": 27.935260770975056
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/the_vapors_outro_dj_2.ogg",
+					"length": 27.935260770975056
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/the_vapors_mid.ogg",
+					"length": 174.58916099773242
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/the_vapors_outro_dj_1.ogg",
+					"length": 27.935260770975056
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/the_vapors_intro_dj_2.ogg",
+					"length": 20.694920634920635
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/the_vapors_intro.ogg",
+					"length": 20.694920634920635
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/the_vapors_intro_dj_1.ogg",
+					"length": 20.694920634920635
+				}
+			},
+			"brand_nubian": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/brand_nubian_outro.ogg",
+					"length": 20.315600907029477
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/brand_nubian_outro_dj_2.ogg",
+					"length": 20.315600907029477
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/brand_nubian_mid.ogg",
+					"length": 145.41807256235828
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/brand_nubian_outro_dj_1.ogg",
+					"length": 20.315600907029477
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/brand_nubian_intro_dj_2.ogg",
+					"length": 22.935578231292517
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/brand_nubian_intro.ogg",
+					"length": 22.935578231292517
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/brand_nubian_intro_dj_1.ogg",
+					"length": 22.935578231292517
+				}
+			},
+			"childrens_story": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/childrens_story_outro.ogg",
+					"length": 13.629659863945578
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/childrens_story_outro_dj_2.ogg",
+					"length": 13.629659863945578
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/childrens_story_mid.ogg",
+					"length": 203.52451247165533
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/childrens_story_outro_dj_1.ogg",
+					"length": 13.629659863945578
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/childrens_story_intro_dj_2.ogg",
+					"length": 17.557755102040815
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/childrens_story_intro.ogg",
+					"length": 17.557755102040815
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/childrens_story_intro_dj_1.ogg",
+					"length": 17.557755102040815
+				}
+			},
+			"me_the_biz": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/me_the_biz_outro.ogg",
+					"length": 18.268049886621316
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/me_the_biz_outro_dj_2.ogg",
+					"length": 18.268049886621316
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/me_the_biz_mid.ogg",
+					"length": 183.60904761904763
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/me_the_biz_outro_dj_1.ogg",
+					"length": 18.268049886621316
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/me_the_biz_intro_dj_2.ogg",
+					"length": 11.514013605442177
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/me_the_biz_intro.ogg",
+					"length": 11.514013605442177
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/me_the_biz_intro_dj_1.ogg",
+					"length": 11.514013605442177
+				}
+			},
+			"it_takes_two": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/it_takes_two_outro.ogg",
+					"length": 14.653922902494331
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/it_takes_two_outro_dj_2.ogg",
+					"length": 14.653922902494331
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/it_takes_two_mid.ogg",
+					"length": 180.79714285714286
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/it_takes_two_outro_dj_1.ogg",
+					"length": 14.653922902494331
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/it_takes_two_intro_dj_2.ogg",
+					"length": 19.837392290249433
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/it_takes_two_intro.ogg",
+					"length": 19.837392290249433
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/it_takes_two_intro_dj_1.ogg",
+					"length": 19.837392290249433
+				}
+			},
+			"i_know_you_got_soul": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/i_know_you_got_soul_outro.ogg",
+					"length": 10.7859410430839
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/i_know_you_got_soul_outro_dj_2.ogg",
+					"length": 10.7859410430839
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/i_know_you_got_soul_mid.ogg",
+					"length": 171.982358276644
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/i_know_you_got_soul_outro_dj_1.ogg",
+					"length": 10.7859410430839
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/i_know_you_got_soul_intro_dj_2.ogg",
+					"length": 21.142108843537414
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/i_know_you_got_soul_intro.ogg",
+					"length": 21.142108843537414
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/i_know_you_got_soul_intro_dj_1.ogg",
+					"length": 21.142108843537414
+				}
+			},
+			"warm_it_up_kane": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/warm_it_up_kane_outro.ogg",
+					"length": 10.378979591836735
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/warm_it_up_kane_outro_dj_2.ogg",
+					"length": 10.378979591836735
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/warm_it_up_kane_mid.ogg",
+					"length": 159.82204081632653
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/warm_it_up_kane_outro_dj_1.ogg",
+					"length": 10.378979591836735
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/warm_it_up_kane_intro_dj_2.ogg",
+					"length": 17.131451247165533
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/warm_it_up_kane_intro.ogg",
+					"length": 17.131451247165533
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/warm_it_up_kane_intro_dj_1.ogg",
+					"length": 17.131451247165533
+				}
+			},
+			"critical_beatdown": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/critical_beatdown_outro.ogg",
+					"length": 19.22517006802721
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/critical_beatdown_outro_dj_2.ogg",
+					"length": 19.22517006802721
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/critical_beatdown_mid.ogg",
+					"length": 159.25503401360544
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/critical_beatdown_outro_dj_1.ogg",
+					"length": 19.22517006802721
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/critical_beatdown_intro_dj_2.ogg",
+					"length": 17.808208616780046
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/critical_beatdown_intro.ogg",
+					"length": 17.808208616780046
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/critical_beatdown_intro_dj_1.ogg",
+					"length": 17.808208616780046
+				}
+			},
+			"the_godfather": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/the_godfather_outro.ogg",
+					"length": 10.921020408163265
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/the_godfather_outro_dj_2.ogg",
+					"length": 10.921020408163265
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/the_godfather_mid.ogg",
+					"length": 176.28015873015872
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/the_godfather_outro_dj_1.ogg",
+					"length": 10.921020408163265
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/the_godfather_intro_dj_2.ogg",
+					"length": 18.887233560090703
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/the_godfather_intro.ogg",
+					"length": 18.887233560090703
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/the_godfather_intro_dj_1.ogg",
+					"length": 18.887233560090703
+				}
+			},
+			"road_to_the_riches": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/road_to_the_riches_outro.ogg",
+					"length": 14.22453514739229
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/road_to_the_riches_outro_dj_2.ogg",
+					"length": 14.22453514739229
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/road_to_the_riches_mid.ogg",
+					"length": 187.4855328798186
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/road_to_the_riches_outro_dj_1.ogg",
+					"length": 14.22453514739229
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/road_to_the_riches_intro_dj_2.ogg",
+					"length": 19.726349206349205
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/road_to_the_riches_intro.ogg",
+					"length": 19.726349206349205
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/road_to_the_riches_intro_dj_1.ogg",
+					"length": 19.726349206349205
+				}
+			},
+			"rebel_without_a_pause": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/rebel_without_a_pause_outro.ogg",
+					"length": 13.253605442176871
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/rebel_without_a_pause_outro_dj_2.ogg",
+					"length": 13.253605442176871
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/rebel_without_a_pause_mid.ogg",
+					"length": 199.2934693877551
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/rebel_without_a_pause_outro_dj_1.ogg",
+					"length": 13.253605442176871
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/rebel_without_a_pause_intro_dj_2.ogg",
+					"length": 13.682108843537415
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/rebel_without_a_pause_intro.ogg",
+					"length": 13.682108843537415
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/rebel_without_a_pause_intro_dj_1.ogg",
+					"length": 13.682108843537415
+				}
+			},
+			"bys": {
+				"outro": {
+					"sound": "sound/gta3d/radio/playback_fm/bys_outro.ogg",
+					"length": 28.533219954648526
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/playback_fm/bys_outro_dj_2.ogg",
+					"length": 28.533219954648526
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/playback_fm/bys_mid.ogg",
+					"length": 142.05031746031747
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/playback_fm/bys_outro_dj_1.ogg",
+					"length": 28.533219954648526
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/playback_fm/bys_intro_dj_2.ogg",
+					"length": 11.627732426303854
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/playback_fm/bys_intro.ogg",
+					"length": 11.627732426303854
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/playback_fm/bys_intro_dj_1.ogg",
+					"length": 11.627732426303854
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_doper_than_anyone_else.ogg",
+				"length": 11.154240362811791
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_drop_out_of_that_whack-ass_school.ogg",
+				"length": 9.717755102040817
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_givin_it_to_ya_straight_up_homeboy.ogg",
+				"length": 7.65297052154195
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_layin_it_down_old_skool.ogg",
+				"length": 7.878412698412698
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_skills_on_the_mic.ogg",
+				"length": 8.272675736961451
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_the_home_of_classic_hiphop.ogg",
+				"length": 7.613786848072563
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_the_man_with_an_opinion_on_everything.ogg",
+				"length": 10.903174603174604
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_the_reason_you_put_that_subwoofer_in_your_car.ogg",
+				"length": 11.664285714285715
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_word_to_your_mamma.ogg",
+				"length": 5.76766439909297
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_word_up.ogg",
+				"length": 8.048503401360545
+			},
+			{
+				"sound": "sound/gta3d/radio/playback_fm/id_while_you_suckers_were_wearing_diapers.ogg",
+				"length": 10.728979591836735
+			}
+		]
+	},
+	"radio_los_santos": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_my_man_les_in_the_north.ogg",
+				"length": 13.141292517006804
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_your_man_julio_g.ogg",
+				"length": 12.458639455782313
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_burglary_and_carjacking_is_both_up.ogg",
+				"length": 25.941292517006804
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_denise_is_desperate.ogg",
+				"length": 16.402630385487527
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_difference_between_a_rapper_and_a_gangster.ogg",
+				"length": 17.685283446712017
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_i_get_it_first_the_others_get_it_last.ogg",
+				"length": 7.983786848072563
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_not_the_home_of_gangster_fools.ogg",
+				"length": 13.406190476190476
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_original_home_of_the_drive-by.ogg",
+				"length": 19.455986394557822
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_ruling_the_airwaves.ogg",
+				"length": 8.733945578231292
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_sam_and_the_boys_from_liberty_city.ogg",
+				"length": 11.946643990929704
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_self_styled_audio_boys.ogg",
+				"length": 14.634625850340136
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_the_home_of_gangsta_rap.ogg",
+				"length": 15.352925170068028
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_the_hottest_shit_around.ogg",
+				"length": 12.586643990929705
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_the_rest_of_the_world_can_follow.ogg",
+				"length": 8.15936507936508
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_we_play_the_real_shit.ogg",
+				"length": 7.599977324263039
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_dont_touch_that_dial.ogg",
+				"length": 6.928390022675737
+			}
+		],
+		"music": {
+			"guerillas_in_tha_mist": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/guerillas_in_tha_mist_outro.ogg",
+					"length": 10.862380952380953
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/guerillas_in_tha_mist_outro_dj_2.ogg",
+					"length": 10.862380952380953
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/guerillas_in_tha_mist_mid.ogg",
+					"length": 163.33807256235826
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/guerillas_in_tha_mist_outro_dj_1.ogg",
+					"length": 10.862380952380953
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/guerillas_in_tha_mist_intro_dj_2.ogg",
+					"length": 20.640408163265306
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/guerillas_in_tha_mist_intro.ogg",
+					"length": 20.640408163265306
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/guerillas_in_tha_mist_intro_dj_1.ogg",
+					"length": 20.640408163265306
+				}
+			},
+			"the_ghetto": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/the_ghetto_outro.ogg",
+					"length": 26.216938775510204
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/the_ghetto_outro_dj_2.ogg",
+					"length": 26.216938775510204
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/the_ghetto_mid.ogg",
+					"length": 179.47603174603174
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/the_ghetto_outro_dj_1.ogg",
+					"length": 26.216938775510204
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/the_ghetto_intro.ogg",
+					"length": 14.805850340136054
+				}
+			},
+			"alwayz_into_somethin": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/alwayz_into_somethin_outro.ogg",
+					"length": 24.128004535147394
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/alwayz_into_somethin_mid.ogg",
+					"length": 169.9984580498866
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/alwayz_into_somethin_outro_dj_1.ogg",
+					"length": 24.128004535147394
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/alwayz_into_somethin_intro_dj_2.ogg",
+					"length": 14.173356009070295
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/alwayz_into_somethin_intro.ogg",
+					"length": 14.173356009070295
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/alwayz_into_somethin_intro_dj_1.ogg",
+					"length": 14.173356009070295
+				}
+			},
+			"murder_rap": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/murder_rap_outro.ogg",
+					"length": 15.748004535147393
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/murder_rap_outro_dj_2.ogg",
+					"length": 15.748004535147393
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/murder_rap_mid.ogg",
+					"length": 216.50766439909296
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/murder_rap_outro_dj_1.ogg",
+					"length": 15.748004535147393
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/murder_rap_intro_dj_2.ogg",
+					"length": 20.223696145124716
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/murder_rap_intro.ogg",
+					"length": 20.223696145124716
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/murder_rap_intro_dj_1.ogg",
+					"length": 20.223696145124716
+				}
+			},
+			"it_was_a_good_day": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/it_was_a_good_day_outro.ogg",
+					"length": 24.14154195011338
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/it_was_a_good_day_mid.ogg",
+					"length": 152.67156462585035
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/it_was_a_good_day_outro_dj_1.ogg",
+					"length": 24.14154195011338
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/it_was_a_good_day_intro.ogg",
+					"length": 23.887913832199548
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/it_was_a_good_day_intro_dj_1.ogg",
+					"length": 23.887913832199548
+				}
+			},
+			"check_yo_self_the_message_remix": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/check_yo_self_the_message_remix_outro.ogg",
+					"length": 25.158231292517005
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/check_yo_self_the_message_remix_outro_dj_2.ogg",
+					"length": 25.158231292517005
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/check_yo_self_the_message_remix_mid.ogg",
+					"length": 158.34709750566893
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/check_yo_self_the_message_remix_outro_dj_1.ogg",
+					"length": 25.158231292517005
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/check_yo_self_the_message_remix_intro_dj_2.ogg",
+					"length": 19.508344671201815
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/check_yo_self_the_message_remix_intro.ogg",
+					"length": 19.508344671201815
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/check_yo_self_the_message_remix_intro_dj_1.ogg",
+					"length": 19.508344671201815
+				}
+			},
+			"nuthin_but_a_g_thang": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/nuthin_but_a_g_thang_outro.ogg",
+					"length": 17.67689342403628
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/nuthin_but_a_g_thang_outro_dj_2.ogg",
+					"length": 17.67689342403628
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/nuthin_but_a_g_thang_mid.ogg",
+					"length": 187.232947845805
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/nuthin_but_a_g_thang_outro_dj_1.ogg",
+					"length": 17.67689342403628
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/nuthin_but_a_g_thang_intro_dj_2.ogg",
+					"length": 10.62718820861678
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/nuthin_but_a_g_thang_intro.ogg",
+					"length": 10.62718820861678
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/nuthin_but_a_g_thang_intro_dj_1.ogg",
+					"length": 10.62718820861678
+				}
+			},
+			"la_raza": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/la_raza_outro.ogg",
+					"length": 18.768321995464852
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/la_raza_mid.ogg",
+					"length": 169.3420634920635
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/la_raza_outro_dj_1.ogg",
+					"length": 18.768321995464852
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/la_raza_intro_dj_2.ogg",
+					"length": 9.777596371882087
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/la_raza_intro.ogg",
+					"length": 9.777596371882087
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/la_raza_intro_dj_1.ogg",
+					"length": 9.777596371882087
+				}
+			},
+			"deep_cover": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/deep_cover_outro.ogg",
+					"length": 16.418049886621315
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/deep_cover_outro_dj_2.ogg",
+					"length": 16.418049886621315
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/deep_cover_mid.ogg",
+					"length": 199.4104761904762
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/deep_cover_outro_dj_1.ogg",
+					"length": 16.418049886621315
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/deep_cover_intro.ogg",
+					"length": 10.985668934240362
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/deep_cover_intro_dj_1.ogg",
+					"length": 10.985668934240362
+				}
+			},
+			"i_dont_give_a_fuck": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/i_dont_give_a_fuck_outro.ogg",
+					"length": 17.929795918367347
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/i_dont_give_a_fuck_outro_dj_2.ogg",
+					"length": 17.929795918367347
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/i_dont_give_a_fuck_mid.ogg",
+					"length": 198.32367346938776
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/i_dont_give_a_fuck_outro_dj_1.ogg",
+					"length": 17.929795918367347
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/i_dont_give_a_fuck_intro_dj_2.ogg",
+					"length": 29.060725623582766
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/i_dont_give_a_fuck_intro.ogg",
+					"length": 29.060725623582766
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/i_dont_give_a_fuck_intro_dj_1.ogg",
+					"length": 29.060725623582766
+				}
+			},
+			"eazyer_said_than_dunn": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/eazyer_said_than_dunn_outro.ogg",
+					"length": 21.099478458049887
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/eazyer_said_than_dunn_outro_dj_2.ogg",
+					"length": 21.099478458049887
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/eazyer_said_than_dunn_mid.ogg",
+					"length": 173.62603174603174
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/eazyer_said_than_dunn_outro_dj_1.ogg",
+					"length": 21.099478458049887
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/eazyer_said_than_dunn_intro_dj_2.ogg",
+					"length": 24.434285714285714
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/eazyer_said_than_dunn_intro.ogg",
+					"length": 24.434285714285714
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/eazyer_said_than_dunn_intro_dj_1.ogg",
+					"length": 24.434285714285714
+				}
+			},
+			"how_i_could_just_kill_a_man": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/how_i_could_just_kill_a_man_outro.ogg",
+					"length": 17.504920634920634
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/how_i_could_just_kill_a_man_mid.ogg",
+					"length": 199.39895691609976
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/how_i_could_just_kill_a_man_outro_dj_1.ogg",
+					"length": 17.504920634920634
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/how_i_could_just_kill_a_man_intro.ogg",
+					"length": 19.126326530612246
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/how_i_could_just_kill_a_man_intro_dj_1.ogg",
+					"length": 19.126326530612246
+				}
+			},
+			"its_funky_enough": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/its_funky_enough_outro.ogg",
+					"length": 17.70453514739229
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/its_funky_enough_outro_dj_2.ogg",
+					"length": 17.70453514739229
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/its_funky_enough_mid.ogg",
+					"length": 199.48342403628118
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/its_funky_enough_outro_dj_1.ogg",
+					"length": 17.70453514739229
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/its_funky_enough_intro_dj_2.ogg",
+					"length": 12.810408163265306
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/its_funky_enough_intro.ogg",
+					"length": 12.810408163265306
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/its_funky_enough_intro_dj_1.ogg",
+					"length": 12.810408163265306
+				}
+			},
+			"hood_took_me_under": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/hood_took_me_under_outro.ogg",
+					"length": 22.063333333333333
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/hood_took_me_under_outro_dj_2.ogg",
+					"length": 22.063333333333333
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/hood_took_me_under_mid.ogg",
+					"length": 170.18498866213153
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/hood_took_me_under_outro_dj_1.ogg",
+					"length": 22.063333333333333
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/hood_took_me_under_intro_dj_2.ogg",
+					"length": 13.936507936507937
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/hood_took_me_under_intro.ogg",
+					"length": 13.936507936507937
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/hood_took_me_under_intro_dj_1.ogg",
+					"length": 13.936507936507937
+				}
+			},
+			"fuck_wit_dre_day": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/fuck_wit_dre_day_outro.ogg",
+					"length": 25.479365079365078
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/fuck_wit_dre_day_outro_dj_2.ogg",
+					"length": 25.479365079365078
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/fuck_wit_dre_day_mid.ogg",
+					"length": 188.06371882086168
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/fuck_wit_dre_day_outro_dj_1.ogg",
+					"length": 25.479365079365078
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/fuck_wit_dre_day_intro_dj_2.ogg",
+					"length": 20.798049886621314
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/fuck_wit_dre_day_intro.ogg",
+					"length": 20.798049886621314
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/fuck_wit_dre_day_intro_dj_1.ogg",
+					"length": 20.798049886621314
+				}
+			},
+			"express_yourself": {
+				"outro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/express_yourself_outro.ogg",
+					"length": 22.40875283446712
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/radio_los_santos/express_yourself_mid.ogg",
+					"length": 186.29111111111112
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/express_yourself_outro_dj_1.ogg",
+					"length": 22.40875283446712
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/radio_los_santos/express_yourself_intro_dj_2.ogg",
+					"length": 28.84002267573696
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/radio_los_santos/express_yourself_intro.ogg",
+					"length": 28.84002267573696
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/radio_los_santos/express_yourself_intro_dj_1.ogg",
+					"length": 28.84002267573696
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_can_i_have_a_t_shirt.ogg",
+				"length": 14.703673469387756
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_doin_it_evolution_style.ogg",
+				"length": 9.152789115646259
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_fool_gave_me_the_clap.ogg",
+				"length": 10.937755102040816
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_i_sent_you_my_demo_nine_times.ogg",
+				"length": 9.41705215419501
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_julios_the_man.ogg",
+				"length": 8.031519274376418
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_madd_dogg.ogg",
+				"length": 13.716303854875283
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_og_loc.ogg",
+				"length": 10.370861678004536
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_shout_outs.ogg",
+				"length": 11.88453514739229
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_the_home_of_gansta_rap_and_gangsta_bitches.ogg",
+				"length": 13.600861678004534
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_your_voice_is_sooo_sexy.ogg",
+				"length": 8.242834467120181
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_los_santos/id_b-real_of_cypress_hill.ogg",
+				"length": 11.416734693877551
+			}
+		]
+	},
+	"csr": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/csr/dj_buying_a_cane.ogg",
+				"length": 8.341292517006803
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_contemporary_soul_radio.ogg",
+				"length": 9.301292517006802
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_get_off_your_fat_ass_and_dance.ogg",
+				"length": 8.746643990929705
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_get_ready_to_get_down.ogg",
+				"length": 7.338639455782313
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_momentum.ogg",
+				"length": 5.587959183673469
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_never_trust_a_big_butt_and_a_smile.ogg",
+				"length": 11.547641723356008
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_one_is_music_the_other_belongs_in_therapy.ogg",
+				"length": 7.560476190476191
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_people_that_can_really_sing.ogg",
+				"length": 5.5724716553287985
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_sing_my_name.ogg",
+				"length": 5.887981859410431
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_swing_with_your_wife.ogg",
+				"length": 6.619410430839002
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_the_home_of_modern_soul.ogg",
+				"length": 6.758321995464852
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/dj_with_a_good_voice_and_some_music.ogg",
+				"length": 7.790612244897959
+			}
+		],
+		"music": {
+			"motownphilly": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/motownphilly_outro.ogg",
+					"length": 17.059569160997732
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/motownphilly_outro_dj_2.ogg",
+					"length": 17.059569160997732
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/motownphilly_mid.ogg",
+					"length": 162.52925170068028
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/motownphilly_outro_dj_1.ogg",
+					"length": 17.059569160997732
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/motownphilly_intro_dj_2.ogg",
+					"length": 22.16485260770975
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/motownphilly_intro.ogg",
+					"length": 22.16485260770975
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/motownphilly_intro_dj_1.ogg",
+					"length": 22.16485260770975
+				}
+			},
+			"new_jack_swing": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/new_jack_swing_outro.ogg",
+					"length": 19.27285714285714
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/new_jack_swing_outro_dj_2.ogg",
+					"length": 19.27285714285714
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/new_jack_swing_mid.ogg",
+					"length": 168.69684807256235
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/new_jack_swing_outro_dj_1.ogg",
+					"length": 19.27285714285714
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/new_jack_swing_intro_dj_2.ogg",
+					"length": 9.74625850340136
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/new_jack_swing_intro.ogg",
+					"length": 9.74625850340136
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/new_jack_swing_intro_dj_1.ogg",
+					"length": 9.74625850340136
+				}
+			},
+			"rub_you_the_right_way": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/rub_you_the_right_way_outro.ogg",
+					"length": 23.48111111111111
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/rub_you_the_right_way_outro_dj_2.ogg",
+					"length": 23.48111111111111
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/rub_you_the_right_way_mid.ogg",
+					"length": 149.79192743764173
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/rub_you_the_right_way_outro_dj_1.ogg",
+					"length": 23.48111111111111
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/rub_you_the_right_way_intro_dj_2.ogg",
+					"length": 18.252721088435376
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/rub_you_the_right_way_intro.ogg",
+					"length": 18.252721088435376
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/rub_you_the_right_way_intro_dj_1.ogg",
+					"length": 18.252721088435376
+				}
+			},
+			"im_so_into_you": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/im_so_into_you_outro.ogg",
+					"length": 10.561428571428571
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/im_so_into_you_outro_dj_2.ogg",
+					"length": 10.561428571428571
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/im_so_into_you_mid.ogg",
+					"length": 177.77469387755102
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/im_so_into_you_outro_dj_1.ogg",
+					"length": 10.561428571428571
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/im_so_into_you_intro_dj_2.ogg",
+					"length": 19.858049886621316
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/im_so_into_you_intro.ogg",
+					"length": 19.858049886621316
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/im_so_into_you_intro_dj_1.ogg",
+					"length": 19.858049886621316
+				}
+			},
+			"dont_be_afraid": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/dont_be_afraid_outro.ogg",
+					"length": 21.754943310657595
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/dont_be_afraid_outro_dj_2.ogg",
+					"length": 21.754943310657595
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/dont_be_afraid_mid.ogg",
+					"length": 158.05260770975056
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/dont_be_afraid_outro_dj_1.ogg",
+					"length": 21.754943310657595
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/dont_be_afraid_intro_dj_2.ogg",
+					"length": 19.538049886621316
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/dont_be_afraid_intro.ogg",
+					"length": 19.538049886621316
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/dont_be_afraid_intro_dj_1.ogg",
+					"length": 19.538049886621316
+				}
+			},
+			"keep_on_movin": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/keep_on_movin_outro.ogg",
+					"length": 23.336689342403627
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/keep_on_movin_outro_dj_2.ogg",
+					"length": 23.336689342403627
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/keep_on_movin_mid.ogg",
+					"length": 172.9080498866213
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/keep_on_movin_outro_dj_1.ogg",
+					"length": 23.336689342403627
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/keep_on_movin_intro_dj_2.ogg",
+					"length": 7.823446712018141
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/keep_on_movin_intro.ogg",
+					"length": 7.823446712018141
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/keep_on_movin_intro_dj_1.ogg",
+					"length": 7.823446712018141
+				}
+			},
+			"so_you_like_what_you_see": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/so_you_like_what_you_see_outro.ogg",
+					"length": 16.197437641723354
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/so_you_like_what_you_see_outro_dj_2.ogg",
+					"length": 16.197437641723354
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/so_you_like_what_you_see_mid.ogg",
+					"length": 129.72743764172336
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/so_you_like_what_you_see_outro_dj_1.ogg",
+					"length": 16.197437641723354
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/so_you_like_what_you_see_intro_dj_2.ogg",
+					"length": 24.503673469387756
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/so_you_like_what_you_see_intro.ogg",
+					"length": 24.503673469387756
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/so_you_like_what_you_see_intro_dj_1.ogg",
+					"length": 24.503673469387756
+				}
+			},
+			"poison": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/poison_outro.ogg",
+					"length": 19.260362811791385
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/poison_outro_dj_2.ogg",
+					"length": 19.260362811791385
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/poison_mid.ogg",
+					"length": 158.15310657596373
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/poison_outro_dj_1.ogg",
+					"length": 19.260362811791385
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/poison_intro_dj_2.ogg",
+					"length": 19.98641723356009
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/poison_intro.ogg",
+					"length": 19.98641723356009
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/poison_intro_dj_1.ogg",
+					"length": 19.98641723356009
+				}
+			},
+			"groove_me": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/groove_me_outro.ogg",
+					"length": 12.003514739229026
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/groove_me_outro_dj_2.ogg",
+					"length": 12.003514739229026
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/groove_me_mid.ogg",
+					"length": 171.68780045351474
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/groove_me_outro_dj_1.ogg",
+					"length": 12.003514739229026
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/groove_me_intro_dj_2.ogg",
+					"length": 18.245600907029477
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/groove_me_intro.ogg",
+					"length": 18.245600907029477
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/groove_me_intro_dj_1.ogg",
+					"length": 18.245600907029477
+				}
+			},
+			"dont_be_cruel": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/dont_be_cruel_outro.ogg",
+					"length": 22.41859410430839
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/dont_be_cruel_outro_dj_2.ogg",
+					"length": 22.41859410430839
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/dont_be_cruel_mid.ogg",
+					"length": 157.5104081632653
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/dont_be_cruel_outro_dj_1.ogg",
+					"length": 22.41859410430839
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/dont_be_cruel_intro_dj_2.ogg",
+					"length": 19.90598639455782
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/dont_be_cruel_intro.ogg",
+					"length": 19.90598639455782
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/dont_be_cruel_intro_dj_1.ogg",
+					"length": 19.90598639455782
+				}
+			},
+			"sensitivity": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/sensitivity_outro.ogg",
+					"length": 13.77453514739229
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/sensitivity_outro_dj_2.ogg",
+					"length": 13.77453514739229
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/sensitivity_mid.ogg",
+					"length": 149.01718820861677
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/sensitivity_outro_dj_1.ogg",
+					"length": 13.77453514739229
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/sensitivity_intro_dj_2.ogg",
+					"length": 25.187596371882087
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/sensitivity_intro.ogg",
+					"length": 25.187596371882087
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/sensitivity_intro_dj_1.ogg",
+					"length": 25.187596371882087
+				}
+			},
+			"i_got_the_feeling": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/i_got_the_feeling_outro.ogg",
+					"length": 13.879659863945578
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/i_got_the_feeling_outro_dj_2.ogg",
+					"length": 13.879659863945578
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/i_got_the_feeling_mid.ogg",
+					"length": 194.7438775510204
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/i_got_the_feeling_outro_dj_1.ogg",
+					"length": 13.879659863945578
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/i_got_the_feeling_intro_dj_2.ogg",
+					"length": 15.50156462585034
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/i_got_the_feeling_intro.ogg",
+					"length": 15.50156462585034
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/i_got_the_feeling_intro_dj_1.ogg",
+					"length": 15.50156462585034
+				}
+			},
+			"my_lovin_never_gonna_get_it": {
+				"outro": {
+					"sound": "sound/gta3d/radio/csr/my_lovin_never_gonna_get_it_outro.ogg",
+					"length": 12.510907029478458
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/csr/my_lovin_never_gonna_get_it_outro_dj_2.ogg",
+					"length": 12.510907029478458
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/csr/my_lovin_never_gonna_get_it_mid.ogg",
+					"length": 191.56047619047618
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/csr/my_lovin_never_gonna_get_it_outro_dj_1.ogg",
+					"length": 12.510907029478458
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/csr/my_lovin_never_gonna_get_it_intro_dj_2.ogg",
+					"length": 23.35126984126984
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/csr/my_lovin_never_gonna_get_it_intro.ogg",
+					"length": 23.35126984126984
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/csr/my_lovin_never_gonna_get_it_intro_dj_1.ogg",
+					"length": 23.35126984126984
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/csr/id_old_jack_we_killed_his_old_ass.ogg",
+				"length": 9.652925170068027
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/id_sold_my_soul_to_the_devil.ogg",
+				"length": 13.053922902494332
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/id_soul_has_to_have_integrity.ogg",
+				"length": 13.085578231292518
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/id_swing_on_this_baby.ogg",
+				"length": 16.823174603174603
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/id_the_home_of_new_jack_swing.ogg",
+				"length": 9.205396825396825
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/id_what_do_you_call_it.ogg",
+				"length": 10.633922902494332
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/id_what_happens_when_you_mix.ogg",
+				"length": 18.541201814058958
+			},
+			{
+				"sound": "sound/gta3d/radio/csr/id_why_are_you_dressed_like_a_preppie.ogg",
+				"length": 9.727414965986394
+			}
+		]
+	},
+	"krose": {
+		"dj": [
+			{
+				"sound": "sound/gta3d/radio/krose/dj_darwinism.ogg",
+				"length": 7.415578231292517
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_downstairs_harmonica_talents.ogg",
+				"length": 14.084421768707482
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_euthanasia_is_a_beautiful_thing.ogg",
+				"length": 6.634489795918367
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_harmonica_down_south_again.ogg",
+				"length": 18.944013605442176
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_harmonica_in_my_pants.ogg",
+				"length": 11.434625850340137
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_i_am_shit-faced.ogg",
+				"length": 11.135986394557824
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_i_might_start_to_cry.ogg",
+				"length": 6.037301587301587
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_it_aint_easy_raising_nine_kids.ogg",
+				"length": 11.64798185941043
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_its_like_kant_said.ogg",
+				"length": 9.337482993197279
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_latte.ogg",
+				"length": 16.148163265306124
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_like_the_plug_but_a_musical_version.ogg",
+				"length": 11.142426303854876
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_love_everyone_like_myself.ogg",
+				"length": 15.538662131519274
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_make_you_want_to_square_dance.ogg",
+				"length": 5.491678004535148
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_on_the_prairie.ogg",
+				"length": 8.149297052154195
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_play_a_harmonica_and_sing_at_the_same_time.ogg",
+				"length": 17.749297052154194
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_you_know_what_war_im_talking_about.ogg",
+				"length": 12.202630385487529
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_belt_buckles.ogg",
+				"length": 12.607981859410431
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_hurts_a_little_when_i_try_to_put_it_in.ogg",
+				"length": 21.269614512471655
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_i_keep_moving_on.ogg",
+				"length": 7.679977324263039
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/dj_legs_akimbo.ogg",
+				"length": 7.258548752834467
+			}
+		],
+		"music": {
+			"three_cigarettes_in_the_ashtray": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/three_cigarettes_in_the_ashtray_outro.ogg",
+					"length": 17.16061224489796
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/three_cigarettes_in_the_ashtray_outro_dj_2.ogg",
+					"length": 17.16061224489796
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/three_cigarettes_in_the_ashtray_mid.ogg",
+					"length": 103.79798185941043
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/three_cigarettes_in_the_ashtray_outro_dj_1.ogg",
+					"length": 17.16061224489796
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/three_cigarettes_in_the_ashtray_intro_dj_2.ogg",
+					"length": 11.11922902494331
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/three_cigarettes_in_the_ashtray_intro.ogg",
+					"length": 11.11922902494331
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/three_cigarettes_in_the_ashtray_intro_dj_1.ogg",
+					"length": 11.11922902494331
+				}
+			},
+			"all_my_exes_live_in_texas": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/all_my_exes_live_in_texas_outro.ogg",
+					"length": 21.222607709750566
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/all_my_exes_live_in_texas_outro_dj_2.ogg",
+					"length": 21.222607709750566
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/all_my_exes_live_in_texas_mid.ogg",
+					"length": 156.86639455782313
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/all_my_exes_live_in_texas_outro_dj_1.ogg",
+					"length": 21.222607709750566
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/all_my_exes_live_in_texas_intro_dj_2.ogg",
+					"length": 17.694331065759638
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/all_my_exes_live_in_texas_intro.ogg",
+					"length": 17.694331065759638
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/all_my_exes_live_in_texas_intro_dj_1.ogg",
+					"length": 17.694331065759638
+				}
+			},
+			"queen_of_hearts": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/queen_of_hearts_outro.ogg",
+					"length": 20.138344671201814
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/queen_of_hearts_outro_dj_2.ogg",
+					"length": 20.138344671201814
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/queen_of_hearts_mid.ogg",
+					"length": 153.49938775510205
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/queen_of_hearts_outro_dj_1.ogg",
+					"length": 20.138344671201814
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/queen_of_hearts_intro_dj_2.ogg",
+					"length": 14.296507936507936
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/queen_of_hearts_intro.ogg",
+					"length": 14.296507936507936
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/queen_of_hearts_intro_dj_1.ogg",
+					"length": 14.296507936507936
+				}
+			},
+			"the_letter_that_johnny_walker_read": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/the_letter_that_johnny_walker_read_outro.ogg",
+					"length": 14.432675736961452
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/the_letter_that_johnny_walker_read_outro_dj_2.ogg",
+					"length": 14.432675736961452
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/the_letter_that_johnny_walker_read_mid.ogg",
+					"length": 146.30038548752833
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/the_letter_that_johnny_walker_read_outro_dj_1.ogg",
+					"length": 14.432675736961452
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/the_letter_that_johnny_walker_read_intro_dj_2.ogg",
+					"length": 22.150022675736963
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/the_letter_that_johnny_walker_read_intro.ogg",
+					"length": 22.150022675736963
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/the_letter_that_johnny_walker_read_intro_dj_1.ogg",
+					"length": 22.150022675736963
+				}
+			},
+			"one_step_forward": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/one_step_forward_outro.ogg",
+					"length": 0.048798185941043085
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/one_step_forward_outro_dj_2.ogg",
+					"length": 0.048798185941043085
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/one_step_forward_mid.ogg",
+					"length": 0.048798185941043085
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/one_step_forward_outro_dj_1.ogg",
+					"length": 0.048798185941043085
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/one_step_forward_intro_dj_2.ogg",
+					"length": 0.048798185941043085
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/one_step_forward_intro.ogg",
+					"length": 0.048798185941043085
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/one_step_forward_intro_dj_1.ogg",
+					"length": 0.048798185941043085
+				}
+			},
+			"new_york_city": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/new_york_city_outro.ogg",
+					"length": 19.006326530612245
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/new_york_city_outro_dj_2.ogg",
+					"length": 19.006326530612245
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/new_york_city_mid.ogg",
+					"length": 135.87192743764172
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/new_york_city_outro_dj_1.ogg",
+					"length": 19.006326530612245
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/new_york_city_intro_dj_2.ogg",
+					"length": 9.903696145124716
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/new_york_city_intro.ogg",
+					"length": 9.903696145124716
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/new_york_city_intro_dj_1.ogg",
+					"length": 9.903696145124716
+				}
+			},
+			"amos_moses": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/amos_moses_outro.ogg",
+					"length": 16.086984126984127
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/amos_moses_outro_dj_2.ogg",
+					"length": 16.086984126984127
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/amos_moses_mid.ogg",
+					"length": 108.46975056689342
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/amos_moses_outro_dj_1.ogg",
+					"length": 16.086984126984127
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/amos_moses_intro_dj_2.ogg",
+					"length": 8.541791383219955
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/amos_moses_intro.ogg",
+					"length": 8.541791383219955
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/amos_moses_intro_dj_1.ogg",
+					"length": 8.541791383219955
+				}
+			},
+			"louisiana_woman_mississippi_man": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/louisiana_woman_mississippi_man_outro.ogg",
+					"length": 17.222517006802722
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/louisiana_woman_mississippi_man_outro_dj_2.ogg",
+					"length": 17.222517006802722
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/louisiana_woman_mississippi_man_mid.ogg",
+					"length": 109.93848072562358
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/louisiana_woman_mississippi_man_outro_dj_1.ogg",
+					"length": 17.222517006802722
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/louisiana_woman_mississippi_man_intro_dj_2.ogg",
+					"length": 12.232448979591837
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/louisiana_woman_mississippi_man_intro.ogg",
+					"length": 12.232448979591837
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/louisiana_woman_mississippi_man_intro_dj_1.ogg",
+					"length": 12.232448979591837
+				}
+			},
+			"crazy": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/crazy_outro.ogg",
+					"length": 21.72578231292517
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/crazy_outro_dj_2.ogg",
+					"length": 21.72578231292517
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/crazy_mid.ogg",
+					"length": 198.27891156462584
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/crazy_outro_dj_1.ogg",
+					"length": 21.72578231292517
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/crazy_intro_dj_2.ogg",
+					"length": 15.315351473922902
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/crazy_intro.ogg",
+					"length": 15.315351473922902
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/crazy_intro_dj_1.ogg",
+					"length": 15.315351473922902
+				}
+			},
+			"bed_of_roses": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/bed_of_roses_outro.ogg",
+					"length": 21.49730158730159
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/bed_of_roses_outro_dj_2.ogg",
+					"length": 21.49730158730159
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/bed_of_roses_mid.ogg",
+					"length": 97.68882086167801
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/bed_of_roses_outro_dj_1.ogg",
+					"length": 21.49730158730159
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/bed_of_roses_intro_dj_2.ogg",
+					"length": 23.808163265306124
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/bed_of_roses_intro.ogg",
+					"length": 23.808163265306124
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/bed_of_roses_intro_dj_1.ogg",
+					"length": 23.808163265306124
+				}
+			},
+			"mammas_dont_let_your_babies_grow_up_to_be_cowboys": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/mammas_dont_let_your_babies_grow_up_to_be_cowboys_outro.ogg",
+					"length": 19.024739229024945
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/mammas_dont_let_your_babies_grow_up_to_be_cowboys_outro_dj_2.ogg",
+					"length": 19.024739229024945
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/mammas_dont_let_your_babies_grow_up_to_be_cowboys_mid.ogg",
+					"length": 148.9233560090703
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/mammas_dont_let_your_babies_grow_up_to_be_cowboys_outro_dj_1.ogg",
+					"length": 19.024739229024945
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/mammas_dont_let_your_babies_grow_up_to_be_cowboys_intro_dj_2.ogg",
+					"length": 20.451201814058958
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/mammas_dont_let_your_babies_grow_up_to_be_cowboys_intro.ogg",
+					"length": 20.451201814058958
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/mammas_dont_let_your_babies_grow_up_to_be_cowboys_intro_dj_1.ogg",
+					"length": 20.451201814058958
+				}
+			},
+			"always_wanting_you": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/always_wanting_you_outro.ogg",
+					"length": 18.92151927437642
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/always_wanting_you_outro_dj_2.ogg",
+					"length": 18.92151927437642
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/always_wanting_you_mid.ogg",
+					"length": 141.54560090702947
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/always_wanting_you_outro_dj_1.ogg",
+					"length": 18.92151927437642
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/always_wanting_you_intro_dj_2.ogg",
+					"length": 22.03167800453515
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/always_wanting_you_intro.ogg",
+					"length": 22.03167800453515
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/always_wanting_you_intro_dj_1.ogg",
+					"length": 22.03167800453515
+				}
+			},
+			"make_the_world_go_away": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/make_the_world_go_away_outro.ogg",
+					"length": 19.074104308390023
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/make_the_world_go_away_outro_dj_2.ogg",
+					"length": 19.074104308390023
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/make_the_world_go_away_mid.ogg",
+					"length": 118.82689342403629
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/make_the_world_go_away_outro_dj_1.ogg",
+					"length": 19.074104308390023
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/make_the_world_go_away_intro_dj_2.ogg",
+					"length": 20.395238095238096
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/make_the_world_go_away_intro.ogg",
+					"length": 20.395238095238096
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/make_the_world_go_away_intro_dj_1.ogg",
+					"length": 20.395238095238096
+				}
+			},
+			"hey_good_lookin": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/hey_good_lookin_outro.ogg",
+					"length": 15.050975056689342
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/hey_good_lookin_outro_dj_2.ogg",
+					"length": 15.050975056689342
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/hey_good_lookin_mid.ogg",
+					"length": 146.659410430839
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/hey_good_lookin_outro_dj_1.ogg",
+					"length": 15.050975056689342
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/hey_good_lookin_intro_dj_2.ogg",
+					"length": 9.847551020408163
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/hey_good_lookin_intro.ogg",
+					"length": 9.847551020408163
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/hey_good_lookin_intro_dj_1.ogg",
+					"length": 9.847551020408163
+				}
+			},
+			"i_love_a_rainy_night": {
+				"outro": {
+					"sound": "sound/gta3d/radio/krose/i_love_a_rainy_night_outro.ogg",
+					"length": 24.109160997732427
+				},
+				"outro2": {
+					"sound": "sound/gta3d/radio/krose/i_love_a_rainy_night_outro_dj_2.ogg",
+					"length": 24.109160997732427
+				},
+				"mid": {
+					"sound": "sound/gta3d/radio/krose/i_love_a_rainy_night_mid.ogg",
+					"length": 121.28979591836735
+				},
+				"outro1": {
+					"sound": "sound/gta3d/radio/krose/i_love_a_rainy_night_outro_dj_1.ogg",
+					"length": 24.109160997732427
+				},
+				"intro2": {
+					"sound": "sound/gta3d/radio/krose/i_love_a_rainy_night_intro_dj_2.ogg",
+					"length": 7.50578231292517
+				},
+				"intro": {
+					"sound": "sound/gta3d/radio/krose/i_love_a_rainy_night_intro.ogg",
+					"length": 7.50578231292517
+				},
+				"intro1": {
+					"sound": "sound/gta3d/radio/krose/i_love_a_rainy_night_intro_dj_1.ogg",
+					"length": 7.50578231292517
+				}
+			}
+		},
+		"id": [
+			{
+				"sound": "sound/gta3d/radio/krose/id_all_america_loves_a_cowboy.ogg",
+				"length": 6.767981859410431
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/id_barefoot_and_pregnant_again.ogg",
+				"length": 6.759002267573696
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/id_farm_animals.ogg",
+				"length": 10.975759637188208
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/id_invented_the_electric_guitar.ogg",
+				"length": 8.644943310657597
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/id_iron_horse_with_a_drinking_problem.ogg",
+				"length": 7.309047619047619
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/id_when_love_shoots_you_in_the_back.ogg",
+				"length": 7.739478458049887
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/id_whistle_on_a_lonely_night.ogg",
+				"length": 10.23997732426304
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/id_from_cow_poking_to_cow-tipping.ogg",
+				"length": 8.431972789115646
+			},
+			{
+				"sound": "sound/gta3d/radio/krose/id_it_takes_a_cowboy_to_know_when_to_shoot.ogg",
+				"length": 11.707732426303854
+			}
+		]
+	}
+}

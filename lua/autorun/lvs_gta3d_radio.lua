@@ -1,5 +1,6 @@
 
 if SERVER then return end
+if true then return end
 
 local channel = {}
 local _, radio = file.Find("sound/gta3d/radio/*", "GAME")
