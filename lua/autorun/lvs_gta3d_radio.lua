@@ -8,19 +8,54 @@ if not data then return end
 local channel = util.JSONToTable( data )
 
 LVSGTA3D.Channel = {
-	[0] = { name = "RADIO OFF" },
-	--[1] = { name = "USER TRACK PLAYER" },
-	[1] = { name = "WCTR" },
-	[2] = { name = "MASTER SOUNDS 98.3" },
-	[3] = { name = "K-JAH WEST" },
-	[4] = { name = "CSR 103.9" },
-	[5] = { name = "RADIO X" },
-	[6] = { name = "RADIO LOS SANTOS" },
-	[7] = { name = "SF-UR" },
-	[8] = { name = "BOUNCE FM" },
-	[9] = { name = "K-DST" },
-	[10] = { name = "K ROSE" },
-	[11] = { name = "PLAYBACK FM" },
+	[0] = {
+		name = "RADIO OFF",
+		channel = "",
+	},
+	[1] = {
+		name = "WCTR",
+		channel = "wctr",
+	},
+	[2] = {
+		name = "MASTER SOUNDS 98.3",
+		channel = "master_sounds",
+	},
+	[3] = {
+		name = "K-JAH WEST",
+		channel = "k_jah",
+	},
+	[4] = {
+		name = "CSR 103.9",
+		channel = "csr",
+	},
+	[5] = {
+		name = "RADIO X",
+		channel = "radio_x",
+	},
+	[6] = {
+		name = "RADIO LOS SANTOS",
+		channel = "radio_los_santos",
+	},
+	[7] = {
+		name = "SF-UR",
+		channel = "sfur",
+	},
+	[8] = {
+		name = "BOUNCE FM",
+		channel = "bounce_fm",
+	},
+	[9] = {
+		name = "K-DST",
+		channel = "k_dst",
+	},
+	[10] = {
+		name = "K ROSE",
+		channel = "krose",
+	},
+	[11] = {
+		name = "PLAYBACK FM",
+		channel = "playback_fm",
+	},
 }
 
 function LVSGTA3D:GetChannel( id )
@@ -28,3 +63,207 @@ function LVSGTA3D:GetChannel( id )
 
 	return LVSGTA3D.Channel[ id ]
 end
+
+if SERVER then return end
+
+local ActiveChannel = {}
+
+local CNL = {}
+CNL.__index = CNL
+function CNL:Initialize( name )
+	self._name = name
+
+	local T = CurTime()
+
+	self.PlayList = {}
+	self._StartTime = T
+	self:SetFinishTime( T )
+
+	self:Reset()
+end
+function CNL:SetFinishTime( time )
+	self._FinishTime = time
+end
+function CNL:GetFinishTime()
+	return self._FinishTime
+end
+function CNL:GetStartTime()
+	return self._StartTime
+end
+function CNL:GetName()
+	return self._name
+end
+function CNL:GetPlayList()
+	return self.PlayList
+end
+function CNL:GetProgression()
+	return (self._FinishTime - self._StartTime - (self._FinishTime - CurTime()))
+end
+function CNL:ClearPlayList()
+	local T = CurTime()
+
+	self._StartTime = T
+	self:SetFinishTime( T )
+
+	table.Empty( self.PlayList )
+end
+function CNL:Reset()
+	self:ClearPlayList()
+	self:AddType( "dj" )
+	self:AddType( "music", "intro"..math.random(1,2), "outro" )
+	self:AddType( "id" )
+	self:AddType( "music", "intro", "outro"..math.random(1,2) )
+end
+function CNL:AddFile( sound, length )
+	local data = {
+		sound = sound,
+		starttime = self:GetFinishTime(),
+		finishtime = self:GetFinishTime() + length,
+	}
+
+	table.insert( self.PlayList, data )
+
+	self:SetFinishTime( self:GetFinishTime() + length )
+end
+function CNL:AddType( type, starttype, endtype )
+	if type == "dj" then
+		local song = table.Random( channel[ self:GetName() ].dj )
+		if not song then song = table.Random( channel[ self:GetName() ].id ) end
+
+		self:AddFile( song.sound, song.length )
+
+		return
+	end
+
+	if type == "id" then
+		local song = table.Random( channel[ self:GetName() ].id )
+		if not song then song = table.Random( channel[ self:GetName() ].dj ) end
+
+		self:AddFile( song.sound, song.length )
+
+		return
+	end
+
+	local song = table.Random( channel[ self:GetName() ].music )
+
+	if song[starttype] then
+		self:AddFile( song[starttype].sound, song[starttype].length )
+	else
+		if starttype == "intro" then
+			if song["intro1"] then
+				self:AddFile( song.intro1.sound, song.intro1.length )
+			else
+				self:AddFile( song.intro2.sound, song.intro2.length )
+			end
+		else
+			self:AddFile( song.intro.sound, song.intro.length )
+		end
+	end
+
+	self:AddFile( song.mid.sound, song.mid.length )
+
+	if song[endtype] then
+		self:AddFile( song[endtype].sound, song[endtype].length )
+	else
+		if endtype == "outro" then
+			if song["outro1"] then
+				self:AddFile( song.outro1.sound, song.outro1.length )
+			else
+				self:AddFile( song.outro2.sound, song.outro2.length )
+			end
+		else
+			self:AddFile( song.outro.sound, song.outro.length )
+		end
+	end
+end
+
+local function ChannelGetAll()
+	return ActiveChannel
+end
+
+local function ChannelCreate( name )
+	local channel = {}
+
+	setmetatable( channel, CNL )
+
+	channel:Initialize( name )
+
+	ActiveChannel[ name ] = channel
+
+	return channel
+end
+
+for _, data in pairs( LVSGTA3D.Channel ) do
+	local name = data.channel
+
+	if name == "" then continue end
+
+	ChannelCreate( name )
+end
+
+local CurFile
+local DesiredFile
+local DesiredFileStartTime = 0
+
+local SoundHandler
+
+hook.Add( "Think", "LVSGTA3Dradio", function()
+	local ply = LocalPlayer()
+
+	local T = CurTime()
+
+	local DesiredChannel = ""
+
+	if IsValid( ply ) and ply:InVehicle() then
+		local vehicle = ply:lvsGetVehicle()
+
+		if IsValid( vehicle ) and vehicle.useGta3dRadio then
+			if vehicle:IsRadioEnabled() then
+				DesiredChannel = LVSGTA3D.Channel[ vehicle:GetRadioChannel() ].channel
+			else
+				DesiredFile = nil
+			end
+		else
+			DesiredFile = nil
+		end
+	else
+		DesiredFile = nil
+	end
+
+	if CurFile ~= DesiredFile then
+		CurFile = DesiredFile
+
+		if IsValid( SoundHandler ) then
+			SoundHandler:Stop()
+			SoundHandler = nil
+		end
+
+		if CurFile then
+			sound.PlayFile( CurFile, "", function( station, errCode, errStr )
+				if not IsValid( station ) then return end
+
+				SoundHandler = station
+				station:SetTime( DesiredFileStartTime )
+			end )
+		end
+	end
+
+	for id, channel in pairs( ChannelGetAll() ) do
+		if channel:GetFinishTime() < T then
+			channel:Reset()
+		end
+		if channel:GetName() == DesiredChannel then
+			for index, data in ipairs( channel:GetPlayList() ) do
+				if data.starttime < T and data.finishtime > T then
+
+					if PlayFile ~= data.sound then
+						DesiredFile = data.sound
+						DesiredFileStartTime = T - data.starttime
+					end
+
+					break
+				end
+			end
+		end
+	end
+end )
