@@ -10,7 +10,7 @@
 				"length": 16.07673469387755
 			},
 			{
-				"sound": "sound/gta3d/radio/master_sounds/dj_eye-level_with_your_kitty-cat.ogg",
+				"sound": "sound/gta3d/radio/master_sounds/dj_eye_level_with_your_kitty_cat.ogg",
 				"length": 20.29907029478458
 			},
 			{
@@ -801,7 +801,7 @@
 			"length": 75.60528344671202
 		},
 		{
-			"sound": "sound/gta3d/radio/adverts/rapidite_the_do-it-yourself_sexual_realignment_kit.ogg",
+			"sound": "sound/gta3d/radio/adverts/rapidite_the_do_it_yourself_sexual_realignment_kit.ogg",
 			"length": 48.49845804988662
 		},
 		{
@@ -968,7 +968,7 @@
 				"length": 9.19392290249433
 			},
 			{
-				"sound": "sound/gta3d/radio/k_jah/dj_yeah_this_is_k-jah_west.ogg",
+				"sound": "sound/gta3d/radio/k_jah/dj_yeah_this_is_k_jah_west.ogg",
 				"length": 9.292471655328798
 			},
 			{
@@ -1484,11 +1484,11 @@
 				"length": 8.939160997732426
 			},
 			{
-				"sound": "sound/gta3d/radio/k_jah/id_cool_out_with_k-jah.ogg",
+				"sound": "sound/gta3d/radio/k_jah/id_cool_out_with_k_jah.ogg",
 				"length": 13.682199546485261
 			},
 			{
-				"sound": "sound/gta3d/radio/k_jah/id_k-jah_west.ogg",
+				"sound": "sound/gta3d/radio/k_jah/id_k_jah_west.ogg",
 				"length": 6.716734693877551
 			},
 			{
@@ -2600,7 +2600,7 @@
 				"length": 6.764331065759637
 			},
 			{
-				"sound": "sound/gta3d/radio/radio_x/id_self-important_nihilists.ogg",
+				"sound": "sound/gta3d/radio/radio_x/id_self_important_nihilists.ogg",
 				"length": 8.58734693877551
 			},
 			{
@@ -2660,7 +2660,7 @@
 				"length": 18.175986394557825
 			},
 			{
-				"sound": "sound/gta3d/radio/bounce_fm/dj_like_a_choo-choo.ogg",
+				"sound": "sound/gta3d/radio/bounce_fm/dj_like_a_choo_choo.ogg",
 				"length": 7.454013605442177
 			},
 			{
@@ -4258,7 +4258,7 @@
 				"length": 12.714829931972789
 			},
 			{
-				"sound": "sound/gta3d/radio/playback_fm/dj_small-minded_robots.ogg",
+				"sound": "sound/gta3d/radio/playback_fm/dj_small_minded_robots.ogg",
 				"length": 12.074625850340135
 			}
 		],
@@ -4630,7 +4630,7 @@
 				"length": 11.154240362811791
 			},
 			{
-				"sound": "sound/gta3d/radio/playback_fm/id_drop_out_of_that_whack-ass_school.ogg",
+				"sound": "sound/gta3d/radio/playback_fm/id_drop_out_of_that_whack_ass_school.ogg",
 				"length": 9.717755102040817
 			},
 			{
@@ -4702,7 +4702,7 @@
 				"length": 13.406190476190476
 			},
 			{
-				"sound": "sound/gta3d/radio/radio_los_santos/dj_original_home_of_the_drive-by.ogg",
+				"sound": "sound/gta3d/radio/radio_los_santos/dj_original_home_of_the_drive_by.ogg",
 				"length": 19.455986394557822
 			},
 			{
@@ -5222,7 +5222,7 @@
 				"length": 8.242834467120181
 			},
 			{
-				"sound": "sound/gta3d/radio/radio_los_santos/id_b-real_of_cypress_hill.ogg",
+				"sound": "sound/gta3d/radio/radio_los_santos/id_b_real_of_cypress_hill.ogg",
 				"length": 11.416734693877551
 			}
 		]
@@ -5728,7 +5728,7 @@
 				"length": 11.434625850340137
 			},
 			{
-				"sound": "sound/gta3d/radio/krose/dj_i_am_shit-faced.ogg",
+				"sound": "sound/gta3d/radio/krose/dj_i_am_shit_faced.ogg",
 				"length": 11.135986394557824
 			},
 			{
@@ -6270,7 +6270,7 @@
 				"length": 10.23997732426304
 			},
 			{
-				"sound": "sound/gta3d/radio/krose/id_from_cow_poking_to_cow-tipping.ogg",
+				"sound": "sound/gta3d/radio/krose/id_from_cow_poking_to_cow_tipping.ogg",
 				"length": 8.431972789115646
 			},
 			{
