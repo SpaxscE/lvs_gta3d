@@ -31,7 +31,7 @@ if CLIENT then
 				surface.PlaySound( "SA_SWITCH_RADIO" )
 			end
 
-			EntTable._ChannelVisible = T + 0.5
+			EntTable._ChannelVisible = T + 1
 			EntTable._oldChannel = Channel
 		end
 
@@ -59,7 +59,7 @@ if CLIENT then
 	function ENT:IsRadioEnabled()
 		local T = CurTime()
 
-		return self:GetRadioChannel() ~= 0 and self._ChannelVisibleColor < T and self._ChannelVisible < T
+		return self:GetRadioChannel() ~= 0 and self._ChannelVisible < T
 	end
 
 	return
