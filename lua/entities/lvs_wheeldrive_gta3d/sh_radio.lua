@@ -31,7 +31,7 @@ if CLIENT then
 				surface.PlaySound( "SA_SWITCH_RADIO" )
 			end
 
-			EntTable._ChannelVisible = T + 1
+			EntTable._ChannelVisible = T + 0.5
 			EntTable._oldChannel = Channel
 		end
 
