@@ -96,11 +96,12 @@ end
 DEFINE_BASECLASS( "lvs_base_wheeldrive" )
 
 function ENT:OnDriverChanged( Old, New, VehicleIsActive )
+
+	if self:GetBrake() ~= 0 then
+		self:SetRadioChannel( 0 )
+	end
+
 	BaseClass.OnDriverChanged( self, Old, New, VehicleIsActive )
-
-	if self:GetBrake() == 0 then return end
-
-	self:SetRadioChannel( 0 )
 end
 
 function ENT:StartCommand( ply, cmd )
