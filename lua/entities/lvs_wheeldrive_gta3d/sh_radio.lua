@@ -2,7 +2,11 @@
 ENT.useGta3dRadio = true
 ENT.Gta3dRadioDefaultChannel = 0
 
-function ENT:OnSetupDataTables()
+DEFINE_BASECLASS( "lvs_base_wheeldrive" )
+
+function ENT:SetupDataTables()
+	BaseClass.SetupDataTables( self )
+
 	self:AddDT( "Int", "RadioChannel" )
 
 	if SERVER then
@@ -92,8 +96,6 @@ if CLIENT then
 
 	return
 end
-
-DEFINE_BASECLASS( "lvs_base_wheeldrive" )
 
 function ENT:OnDriverChanged( Old, New, VehicleIsActive )
 
