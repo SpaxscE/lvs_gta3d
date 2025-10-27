@@ -358,7 +358,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 				station:SetTime( DesiredFileStartTime )
 
 				if SoundFlags == "3d" then
-					station:SetVolume( 0.2 )
+					station:SetVolume( 0.4 )
 				end
 			end )
 		end
