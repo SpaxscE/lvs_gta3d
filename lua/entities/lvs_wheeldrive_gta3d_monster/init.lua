@@ -56,6 +56,7 @@ function ENT:OnSpawn( PObj )
 			SteerAngle = 15,
 			TorqueFactor = 0.4,
 			BrakeFactor = 1,
+			UseHandbrake = true,
 		},
 		Wheels = {FL,FR},
 		Suspension = {
