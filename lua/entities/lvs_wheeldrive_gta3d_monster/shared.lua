@@ -28,17 +28,18 @@ ENT.EngineCurveBoostLow = 3
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.WheelBrakeForce = 600
+ENT.WheelBrakeForce = 800
 
-ENT.WheelBrakeLockupRPM = 6
+ENT.WheelBrakeLockupRPM = 18
 
 ENT.PhysicsInertia = Vector(3000,3000,1500)
-
-ENT.PhysicsDampingSpeed = 1500
 
 ENT.WheelPhysicsMass = 100
 ENT.WheelPhysicsInertia = Vector(14,10,14)
 ENT.WheelPhysicsTireHeight = 10
+
+ENT.WheelSideForce = 800
+ENT.WheelDownForce = 4000
 
 ENT.TransGears = 5
 
