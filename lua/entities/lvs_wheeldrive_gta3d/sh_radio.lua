@@ -27,7 +27,7 @@ if CLIENT then
 		local Channel = self:GetRadioChannel()
 
 		if Channel ~= EntTable._oldChannel then
-			if EntTable._ChannelVisible < T then
+			if (EntTable._ChannelVisible - 0.75) < T then
 				surface.PlaySound( "SA_SWITCH_RADIO" )
 			end
 

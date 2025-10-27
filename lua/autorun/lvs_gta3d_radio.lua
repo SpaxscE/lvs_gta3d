@@ -5,6 +5,10 @@ local data = file.Read( "data_static/gta3d_sanandreas_radio.txt", "GAME" )
 
 if not data then return end
 
+if SERVER then
+	util.AddNetworkString( "lvsgta3dradio" )
+end
+
 local channel = util.JSONToTable( data )
 
 LVSGTA3D.Channel = {
@@ -64,8 +68,6 @@ function LVSGTA3D:GetChannel( id )
 	return LVSGTA3D.Channel[ id ]
 end
 
-if SERVER then return end
-
 local ActiveChannel = {}
 
 local CNL = {}
@@ -109,6 +111,18 @@ function CNL:ClearPlayList()
 end
 function CNL:Reset()
 	self:ClearPlayList()
+
+	if CLIENT then return end
+
+	local name = self:GetName()
+
+	timer.Simple(0, function()
+		net.Start( "lvsgta3dradio" )
+			net.WriteString( name )
+			net.WriteBool( true )
+		net.Broadcast()
+	end)
+
 	self:AddType( "dj" )
 	self:AddType( "music", "intro"..math.random(1,2), "outro" )
 	self:AddType( "id" )
@@ -124,6 +138,19 @@ function CNL:AddFile( sound, length )
 	table.insert( self.PlayList, data )
 
 	self:SetFinishTime( self:GetFinishTime() + length )
+
+	if CLIENT then return end
+
+	local name = self:GetName()
+
+	timer.Simple(0, function()
+		net.Start( "lvsgta3dradio" )
+			net.WriteString( name )
+			net.WriteBool( false )
+			net.WriteString( sound )
+			net.WriteFloat( length )
+		net.Broadcast()
+	end)
 end
 function CNL:AddType( type, starttype, endtype )
 	if type == "dj" then
@@ -177,6 +204,14 @@ function CNL:AddType( type, starttype, endtype )
 	end
 end
 
+local function ChannelGet( name )
+	if not ActiveChannel[ name ] then
+		return ChannelCreate( name )
+	end
+
+	return ActiveChannel[ name ]
+end
+
 local function ChannelGetAll()
 	return ActiveChannel
 end
@@ -200,6 +235,34 @@ for _, data in pairs( LVSGTA3D.Channel ) do
 
 	ChannelCreate( name )
 end
+
+if SERVER then
+	hook.Add( "Think", "LVSGTA3Dradio", function()
+		local T = CurTime()
+
+		for id, channel in pairs( ChannelGetAll() ) do
+			if channel:GetFinishTime() < T then
+				channel:Reset()
+			end
+		end
+	end )
+
+	return
+end
+
+net.Receive( "lvsgta3dradio", function( len, ply )
+	local name = net.ReadString()
+	local shouldReset = net.ReadBool()
+
+	local channel = ChannelGet( name )
+
+	if shouldReset then channel:Reset() return end
+
+	local sound = net.ReadString()
+	local length = net.ReadFloat()
+
+	channel:AddFile( sound, length )
+end )
 
 local CurFile
 local DesiredFile
@@ -250,19 +313,20 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 
 	for id, channel in pairs( ChannelGetAll() ) do
 		if channel:GetFinishTime() < T then
-			channel:Reset()
+			continue
 		end
-		if channel:GetName() == DesiredChannel then
-			for index, data in ipairs( channel:GetPlayList() ) do
-				if data.starttime < T and data.finishtime > T then
 
-					if PlayFile ~= data.sound then
-						DesiredFile = data.sound
-						DesiredFileStartTime = T - data.starttime
-					end
+		if channel:GetName() ~= DesiredChannel then continue end
 
-					break
+		for index, data in ipairs( channel:GetPlayList() ) do
+			if data.starttime < T and data.finishtime > T then
+
+				if DesiredFile ~= data.sound then
+					DesiredFile = data.sound
+					DesiredFileStartTime = T - data.starttime
 				end
+
+				break
 			end
 		end
 	end
