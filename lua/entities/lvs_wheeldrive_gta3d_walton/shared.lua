@@ -106,28 +106,28 @@ ENT.Lights = {
 		Trigger = "main+brake+turnleft",
 		SubMaterialID = 16,
 		Sprites = {
-			{  pos = "a_rl", width = 80, height = 70, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "rear_bumper", active = { 0 } }, },
+			{  pos = "a_rl", width = 80, height = 70, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
 		},
 	},
 	{
 		Trigger = "main+brake+turnright",
 		SubMaterialID = 15,
 		Sprites = {
-			{  pos = "a_rr", width = 80, height = 70, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "rear_bumper", active = { 0 } }, },
+			{  pos = "a_rr", width = 80, height = 70, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
 	{
 		Trigger = "turnright",
 		SubMaterialID = 18,
 		Sprites = {
-			{ width = 20, height = 20, pos = "a_frt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "front_bumper", active = { 0 } }, },
+			{ width = 20, height = 20, pos = "a_frt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_frt", active = { 0 } }, },
 		},
 	},
 	{
 		Trigger = "turnleft",
 		SubMaterialID = 19,
 		Sprites = {
-			{ width = 20, height = 20, pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "front_bumper", active = { 0 } }, },
+			{ width = 20, height = 20, pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_flt", active = { 0 } }, },
 		},
 	},		
 	{
