@@ -20,9 +20,25 @@ ENT.AITEAM = 0
 
 ENT.MaxVelocity = 1200
 ENT.PhysicsWeightScale = 1.8
+
 ENT.EngineTorque = 180
+ENT.EngineCurve = 0.1
+ENT.EngineCurveBoostLow = 3
+
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
+
+ENT.WheelBrakeForce = 600
+
+ENT.WheelBrakeLockupRPM = 6
+
+ENT.PhysicsInertia = Vector(3000,3000,1500)
+
+ENT.PhysicsDampingSpeed = 1500
+
+ENT.WheelPhysicsMass = 100
+ENT.WheelPhysicsInertia = Vector(14,10,14)
+ENT.WheelPhysicsTireHeight = 10
 
 ENT.TransGears = 5
 
