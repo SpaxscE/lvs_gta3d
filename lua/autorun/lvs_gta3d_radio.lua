@@ -19,46 +19,57 @@ LVSGTA3D.Channel = {
 	[1] = {
 		name = "WCTR",
 		channel = "wctr",
+		icon = Material("lvs/gta3d/wctr.png"),
 	},
 	[2] = {
 		name = "MASTER SOUNDS 98.3",
 		channel = "master_sounds",
+		icon = Material("lvs/gta3d/mastersounds.png"),
 	},
 	[3] = {
 		name = "K-JAH WEST",
 		channel = "k_jah",
+		icon = Material("lvs/gta3d/kjah.png"),
 	},
 	[4] = {
 		name = "CSR 103.9",
 		channel = "csr",
+		icon = Material("lvs/gta3d/csr.png"),
 	},
 	[5] = {
 		name = "RADIO X",
 		channel = "radio_x",
+		icon = Material("lvs/gta3d/radiox.png"),
 	},
 	[6] = {
 		name = "RADIO LOS SANTOS",
 		channel = "radio_los_santos",
+		icon = Material("lvs/gta3d/radio_los_santos.png"),
 	},
 	[7] = {
 		name = "SF-UR",
 		channel = "sfur",
+		icon = Material("lvs/gta3d/sfur.png"),
 	},
 	[8] = {
 		name = "BOUNCE FM",
 		channel = "bounce_fm",
+		icon = Material("lvs/gta3d/bounce.png"),
 	},
 	[9] = {
 		name = "K-DST",
 		channel = "k_dst",
+		icon = Material("lvs/gta3d/kdst.png"),
 	},
 	[10] = {
 		name = "K ROSE",
 		channel = "krose",
+		icon = Material("lvs/gta3d/krose.png"),
 	},
 	[11] = {
 		name = "PLAYBACK FM",
 		channel = "playback_fm",
+		icon = Material("lvs/gta3d/playback.png"),
 	},
 }
 

@@ -6,6 +6,8 @@ function ENT:OnSetupDataTables()
 end
 
 if CLIENT then
+	local Frame = Material("lvs/3d2dmats/frame.png")
+
 	function ENT:LVSHudPaint( X, Y, ply )
 		if not self:LVSPreHudPaint( X, Y, ply ) then return end
 
@@ -45,15 +47,36 @@ if CLIENT then
 			end
 		end
 
+		local channelData = LVSGTA3D:GetChannel( Channel )
+
 		if not ChannelVisible then
 			if EntTable._ChannelVisibleColor < T then return end
 
-			draw.DrawText( LVSGTA3D:GetChannel( Channel ).name, "LVS_FONT_HUD_LARGE", X * 0.5, Y * 0.15, Color2, TEXT_ALIGN_CENTER )
+			if channelData.icon then
+				surface.SetDrawColor( color_white )
+				surface.SetMaterial( channelData.icon )
+				surface.DrawTexturedRect( X * 0.5 - 64, 4 + 64, 128, 128 )
+
+				surface.SetDrawColor( Color2 )
+				surface.SetMaterial( Frame )
+				surface.DrawTexturedRect( X * 0.5 - 68, 64, 136, 136 )
+			end
+
+			draw.DrawText( channelData.name, "LVS_FONT_HUD_LARGE", X * 0.5, 215, Color2, TEXT_ALIGN_CENTER )
 
 			return
 		end
 
-		draw.DrawText( LVSGTA3D:GetChannel( Channel ).name, "LVS_FONT_HUD_LARGE", X * 0.5, Y * 0.15, Color1, TEXT_ALIGN_CENTER )
+		if channelData.icon then
+			surface.SetDrawColor( Color1 )
+
+			surface.SetMaterial( channelData.icon )
+			surface.DrawTexturedRect( X * 0.5 - 64, 4 + 64, 128, 128 )
+			surface.SetMaterial( Frame )
+			surface.DrawTexturedRect( X * 0.5 - 68, 64, 136, 136 )
+		end
+
+		draw.DrawText( channelData.name, "LVS_FONT_HUD_LARGE", X * 0.5, 215, Color1, TEXT_ALIGN_CENTER )
 	end
 
 	function ENT:IsRadioEnabled()
