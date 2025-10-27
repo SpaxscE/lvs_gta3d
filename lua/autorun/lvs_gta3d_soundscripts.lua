@@ -11,7 +11,7 @@ sound.Add( {
 	name = "SA_SWITCH_RADIO",
 	channel = CHAN_STATIC,
 	volume = 1.0,
-	level = 95,
+	level = 75,
 	sound =  {
 		"gta3d/radio/change1.ogg",
 		"gta3d/radio/change2.ogg",
