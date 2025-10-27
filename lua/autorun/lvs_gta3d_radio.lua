@@ -159,16 +159,8 @@ function CNL:Reset()
 	self:AddType( "music", "intro"..math.random(1,2), "outro" )
 	self:AddType( "id" )
 	self:AddType( "music", "intro", "outro"..math.random(1,2) )
-
-	local num = math.random(0,3)
-
-	if num > 0 then
-		for i = 1, num do
-			self:AddType( "adverts" )
-		end
-
-		self:AddType( "id" )
-	end
+	self:AddType( "adverts" )
+	self:AddType( "id" )
 end
 function CNL:AddFile( sound, length )
 
