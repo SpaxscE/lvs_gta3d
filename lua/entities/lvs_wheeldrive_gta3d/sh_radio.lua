@@ -1,8 +1,13 @@
 
 ENT.useGta3dRadio = true
+ENT.Gta3dRadioDefaultChannel = 0
 
 function ENT:OnSetupDataTables()
 	self:AddDT( "Int", "RadioChannel" )
+
+	if SERVER then
+		self:SetRadioChannel( math.Clamp( self.Gta3dRadioDefaultChannel, 0, 11 ) )
+	end
 end
 
 if CLIENT then
