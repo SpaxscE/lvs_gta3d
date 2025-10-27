@@ -81,27 +81,35 @@ end
 
 local ActiveChannel = {}
 local OptionCache = {}
-local function GetRandomOption( RandomOptions )
+local function GetRandomOption( RandomOptions, seperatorID )
 	if not istable( RandomOptions ) or table.Count( RandomOptions ) <= 0 then return end
+
+	if not seperatorID then seperatorID = "" end
 
 	local MinValue
 	local TrueOptions = {}
 
 	for index, _ in pairs( RandomOptions ) do
-		if not OptionCache[ index ] then OptionCache[ index ] = 0 end
+		local internalIndex = index..seperatorID
 
-		if not MinValue or MinValue > OptionCache[ index ] then MinValue = OptionCache[ index ] end
+		if not OptionCache[ internalIndex ] then OptionCache[ internalIndex ] = 0 end
+
+		if not MinValue or MinValue > OptionCache[ internalIndex ] then MinValue = OptionCache[ internalIndex ] end
 	end
 
 	for index, _ in pairs( RandomOptions ) do
-		if OptionCache[ index ] > MinValue then continue end
+		local internalIndex = index..seperatorID
+
+		if OptionCache[ internalIndex ] > MinValue then continue end
 
 		table.insert( TrueOptions, index )
 	end
 
 	local SelectedOption = TrueOptions[ math.random( 1, #TrueOptions ) ]
 
-	OptionCache[ SelectedOption ] = OptionCache[ SelectedOption ] + 1
+	local internalIndex = SelectedOption..seperatorID
+
+	OptionCache[ internalIndex ] = OptionCache[ internalIndex ] + 1
 
 	return RandomOptions[ SelectedOption ]
 end
@@ -194,8 +202,10 @@ function CNL:AddFile( sound, length )
 	net.Broadcast()
 end
 function CNL:AddType( type, starttype, endtype )
+	local name = self:GetName()
+
 	if type == "adverts" then
-		local song = GetRandomOption( channel[ "adverts" ] )
+		local song = GetRandomOption( channel[ "adverts" ], "adverts" )
 
 		self:AddFile( song.sound, song.length )
 
@@ -203,8 +213,8 @@ function CNL:AddType( type, starttype, endtype )
 	end
 
 	if type == "dj" then
-		local song = GetRandomOption( channel[ self:GetName() ].dj )
-		if not song then song = GetRandomOption( channel[ self:GetName() ].id ) end
+		local song = GetRandomOption( channel[ name ].dj, name.."dj" )
+		if not song then song = GetRandomOption( channel[ name ].id, name.."dj" ) end
 
 		self:AddFile( song.sound, song.length )
 
@@ -212,15 +222,15 @@ function CNL:AddType( type, starttype, endtype )
 	end
 
 	if type == "id" then
-		local song = GetRandomOption( channel[ self:GetName() ].id )
-		if not song then song = GetRandomOption( channel[ self:GetName() ].dj ) end
+		local song = GetRandomOption( channel[ name ].id, name.."id" )
+		if not song then song = GetRandomOption( channel[ name ].dj, name.."id" ) end
 
 		self:AddFile( song.sound, song.length )
 
 		return
 	end
 
-	local song = GetRandomOption( channel[ self:GetName() ].music )
+	local song = GetRandomOption( channel[ name ].music, name.."music" )
 
 	if song[starttype] then
 		self:AddFile( song[starttype].sound, song[starttype].length )
