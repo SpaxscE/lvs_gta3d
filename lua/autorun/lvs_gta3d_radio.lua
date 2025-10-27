@@ -114,14 +114,10 @@ function CNL:Reset()
 
 	if CLIENT then return end
 
-	local name = self:GetName()
-
-	timer.Simple(0, function()
-		net.Start( "lvsgta3dradio" )
-			net.WriteString( name )
-			net.WriteBool( true )
-		net.Broadcast()
-	end)
+	net.Start( "lvsgta3dradio" )
+		net.WriteString( self:GetName() )
+		net.WriteBool( true )
+	net.Broadcast()
 
 	self:AddType( "dj" )
 	self:AddType( "music", "intro"..math.random(1,2), "outro" )
@@ -139,28 +135,35 @@ function CNL:Reset()
 	end
 end
 function CNL:AddFile( sound, length )
+
+	if CLIENT then
+		table.insert( self.PlayList, sound )
+
+		self:SetFinishTime( sound.finishtime )
+
+		return
+	end
+
+	local start = self:GetFinishTime()
+	local finish = self:GetFinishTime() + length
+
 	local data = {
 		sound = sound,
-		starttime = self:GetFinishTime(),
-		finishtime = self:GetFinishTime() + length,
+		starttime = start,
+		finishtime = finish,
 	}
 
 	table.insert( self.PlayList, data )
 
-	self:SetFinishTime( self:GetFinishTime() + length )
+	self:SetFinishTime( finish )
 
-	if CLIENT then return end
-
-	local name = self:GetName()
-
-	timer.Simple(0, function()
-		net.Start( "lvsgta3dradio" )
-			net.WriteString( name )
-			net.WriteBool( false )
-			net.WriteString( sound )
-			net.WriteFloat( length )
-		net.Broadcast()
-	end)
+	net.Start( "lvsgta3dradio" )
+		net.WriteString( self:GetName() )
+		net.WriteBool( false )
+		net.WriteString( sound )
+		net.WriteFloat( start )
+		net.WriteFloat( finish )
+	net.Broadcast()
 end
 function CNL:AddType( type, starttype, endtype )
 	if type == "adverts" then
@@ -265,8 +268,38 @@ if SERVER then
 		end
 	end )
 
+	net.Receive( "lvsgta3dradio", function( len, ply )
+		if ply.lvsRadioAntiMinge then return end
+
+		ply.lvsRadioAntiMinge = true
+
+		for id, channel in pairs( ChannelGetAll() ) do
+			local name = channel:GetName()
+
+			net.Start( "lvsgta3dradio" )
+				net.WriteString( name )
+				net.WriteBool( true )
+			net.Send( ply )
+
+			for index, data in ipairs( channel:GetPlayList() ) do
+				net.Start( "lvsgta3dradio" )
+					net.WriteString( name )
+					net.WriteBool( false )
+					net.WriteString( data.sound )
+					net.WriteFloat( data.starttime )
+					net.WriteFloat( data.finishtime )
+				net.Send( ply )
+			end
+		end
+	end )
+
 	return
 end
+
+hook.Add( "InitPostEntity", "LVSGTA3dRadioRequestSync", function()
+	net.Start( "lvsgta3dradio" )
+	net.SendToServer()
+end )
 
 net.Receive( "lvsgta3dradio", function( len, ply )
 	local name = net.ReadString()
@@ -276,10 +309,13 @@ net.Receive( "lvsgta3dradio", function( len, ply )
 
 	if shouldReset then channel:Reset() return end
 
-	local sound = net.ReadString()
-	local length = net.ReadFloat()
+	local data = {
+		sound = net.ReadString(),
+		starttime = net.ReadFloat(),
+		finishtime = net.ReadFloat(),
+	}
 
-	channel:AddFile( sound, length )
+	channel:AddFile( data )
 end )
 
 local CurFile
@@ -336,7 +372,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 
 		if Should3D ~= Is3D then
 			SoundHandler:Stop()
-			soundHandler = nil
+			SoundHandler = nil
 			CurFile = nil
 		end
 	end
