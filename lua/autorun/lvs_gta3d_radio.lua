@@ -80,6 +80,31 @@ function LVSGTA3D:GetChannel( id )
 end
 
 local ActiveChannel = {}
+local OptionCache = {}
+local function GetRandomOption( RandomOptions )
+	if not istable( RandomOptions ) or table.Count( RandomOptions ) <= 0 then return end
+
+	local MinValue
+	local TrueOptions = {}
+
+	for index, _ in pairs( RandomOptions ) do
+		if not OptionCache[ index ] then OptionCache[ index ] = 0 end
+
+		if not MinValue or MinValue > OptionCache[ index ] then MinValue = OptionCache[ index ] end
+	end
+
+	for index, _ in pairs( RandomOptions ) do
+		if OptionCache[ index ] > MinValue then continue end
+
+		table.insert( TrueOptions, index )
+	end
+
+	local SelectedOption = TrueOptions[ math.random( 1, #TrueOptions ) ]
+
+	OptionCache[ SelectedOption ] = OptionCache[ SelectedOption ] + 1
+
+	return RandomOptions[ SelectedOption ]
+end
 
 local CNL = {}
 CNL.__index = CNL
@@ -178,7 +203,7 @@ function CNL:AddFile( sound, length )
 end
 function CNL:AddType( type, starttype, endtype )
 	if type == "adverts" then
-		local song = table.Random( channel[ "adverts" ] )
+		local song = GetRandomOption( channel[ "adverts" ] )
 
 		self:AddFile( song.sound, song.length )
 
@@ -186,8 +211,8 @@ function CNL:AddType( type, starttype, endtype )
 	end
 
 	if type == "dj" then
-		local song = table.Random( channel[ self:GetName() ].dj )
-		if not song then song = table.Random( channel[ self:GetName() ].id ) end
+		local song = GetRandomOption( channel[ self:GetName() ].dj )
+		if not song then song = GetRandomOption( channel[ self:GetName() ].id ) end
 
 		self:AddFile( song.sound, song.length )
 
@@ -195,15 +220,15 @@ function CNL:AddType( type, starttype, endtype )
 	end
 
 	if type == "id" then
-		local song = table.Random( channel[ self:GetName() ].id )
-		if not song then song = table.Random( channel[ self:GetName() ].dj ) end
+		local song = GetRandomOption( channel[ self:GetName() ].id )
+		if not song then song = GetRandomOption( channel[ self:GetName() ].dj ) end
 
 		self:AddFile( song.sound, song.length )
 
 		return
 	end
 
-	local song = table.Random( channel[ self:GetName() ].music )
+	local song = GetRandomOption( channel[ self:GetName() ].music )
 
 	if song[starttype] then
 		self:AddFile( song[starttype].sound, song[starttype].length )
