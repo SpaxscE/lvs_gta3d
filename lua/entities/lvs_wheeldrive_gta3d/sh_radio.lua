@@ -96,8 +96,7 @@ end
 DEFINE_BASECLASS( "lvs_base_wheeldrive" )
 
 function ENT:OnDriverChanged( Old, New, VehicleIsActive )
-
-	BaseClass.StartCommand( self, Old, New, VehicleIsActive )
+	BaseClass.OnDriverChanged( self, Old, New, VehicleIsActive )
 
 	if self:GetBrake() == 0 then return end
 
