@@ -334,8 +334,6 @@ if SERVER then
 	return
 end
 
-local cVarVolume = CreateClientConVar("lvs_radiovolume", "1", true, false)
-
 hook.Add( "InitPostEntity", "LVSGTA3dRadioRequestSync", function()
 	net.Start( "lvsgta3dradio" )
 	net.SendToServer()
@@ -435,8 +433,6 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 
 				if SoundFlags == "3d" then
 					station:SetVolume( 0.2 )
-				else
-					station:SetVolume( math.Clamp( cVarVolume:GetFloat(), 0.2, 1) )
 				end
 			end )
 		end
