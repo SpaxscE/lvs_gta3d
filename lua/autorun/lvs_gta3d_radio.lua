@@ -127,6 +127,16 @@ function CNL:Reset()
 	self:AddType( "music", "intro"..math.random(1,2), "outro" )
 	self:AddType( "id" )
 	self:AddType( "music", "intro", "outro"..math.random(1,2) )
+
+	local num = math.random(0,3)
+
+	if num > 0 then
+		for i = 1, num do
+			self:AddType( "adverts" )
+		end
+
+		self:AddType( "id" )
+	end
 end
 function CNL:AddFile( sound, length )
 	local data = {
@@ -153,6 +163,14 @@ function CNL:AddFile( sound, length )
 	end)
 end
 function CNL:AddType( type, starttype, endtype )
+	if type == "adverts" then
+		local song = table.Random( channel[ "adverts" ] )
+
+		self:AddFile( song.sound, song.length )
+
+		return
+	end
+
 	if type == "dj" then
 		local song = table.Random( channel[ self:GetName() ].dj )
 		if not song then song = table.Random( channel[ self:GetName() ].id ) end
