@@ -1,0 +1,12 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_met.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/monster/monster92wheel64"
+$bumpmap "models/diggercars/gtasa/monster/monster92wheel64_nm"
+"$envmap" "env_cubemap"
+"$envmaptint" "[0.1 0.1 0.1]"
+$normalmapalphaenvmapmask "1"
+}
+}
