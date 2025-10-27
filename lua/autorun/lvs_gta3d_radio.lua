@@ -270,19 +270,28 @@ local DesiredFileStartTime = 0
 
 local SoundHandler
 
+local LastVehicle
+
 hook.Add( "Think", "LVSGTA3Dradio", function()
 	local ply = LocalPlayer()
+
+	if not IsValid( ply ) then return end
 
 	local T = CurTime()
 
 	local DesiredChannel = ""
+	local SoundFlags = ""
 
-	if IsValid( ply ) and ply:InVehicle() then
+	if ply:InVehicle() then
 		local vehicle = ply:lvsGetVehicle()
 
 		if IsValid( vehicle ) and vehicle.useGta3dRadio then
 			if vehicle:IsRadioEnabled() then
 				DesiredChannel = LVSGTA3D.Channel[ vehicle:GetRadioChannel() ].channel
+
+				LastVehicle = vehicle
+				LastChannel = DesiredChannel
+
 			else
 				DesiredFile = nil
 			end
@@ -290,7 +299,28 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 			DesiredFile = nil
 		end
 	else
-		DesiredFile = nil
+		if IsValid( LastVehicle ) and LastVehicle:IsRadioEnabled() then
+			DesiredChannel = LVSGTA3D.Channel[ LastVehicle:GetRadioChannel() ].channel
+
+			SoundFlags = "3d"
+
+			if IsValid( SoundHandler ) then
+				SoundHandler:SetPos( LastVehicle:LocalToWorld( LastVehicle:OBBCenter() ) )
+			end
+		else
+			DesiredFile = nil
+		end
+	end
+
+	if IsValid( SoundHandler ) then
+		local Should3D = SoundFlags == "3d"
+		local Is3D = SoundHandler:Get3DEnabled()
+
+		if Should3D ~= Is3D then
+			SoundHandler:Stop()
+			soundHandler = nil
+			CurFile = nil
+		end
 	end
 
 	if CurFile ~= DesiredFile then
@@ -302,11 +332,16 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 		end
 
 		if CurFile then
-			sound.PlayFile( CurFile, "", function( station, errCode, errStr )
+			sound.PlayFile( CurFile, SoundFlags, function( station, errCode, errStr )
 				if not IsValid( station ) then return end
 
 				SoundHandler = station
+
 				station:SetTime( DesiredFileStartTime )
+
+				if SoundFlags == "3d" then
+					station:SetVolume( 0.2 )
+				end
 			end )
 		end
 	end
@@ -321,10 +356,8 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 		for index, data in ipairs( channel:GetPlayList() ) do
 			if data.starttime < T and data.finishtime > T then
 
-				if DesiredFile ~= data.sound then
-					DesiredFile = data.sound
-					DesiredFileStartTime = T - data.starttime
-				end
+				DesiredFile = data.sound
+				DesiredFileStartTime = T - data.starttime
 
 				break
 			end
