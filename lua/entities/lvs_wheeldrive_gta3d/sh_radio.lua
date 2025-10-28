@@ -38,11 +38,18 @@ if CLIENT then
 		local Channel = self:GetRadioChannel()
 
 		if Channel ~= EntTable._oldChannel then
-			if (EntTable._ChannelVisible - 0.75) < T then
-				surface.PlaySound( "SA_SWITCH_RADIO" )
+			if Channel > 1 then
+				if (EntTable._ChannelVisible - 0.75) < T then
+					surface.PlaySound( "SA_SWITCH_RADIO" )
+				end
+
+				EntTable._ChannelVisible = T + 1
+			else
+				surface.PlaySound("gta3d/radio/turnoff.ogg")
+
+				EntTable._ChannelVisible = T + 0.1
 			end
 
-			EntTable._ChannelVisible = T + 1
 			EntTable._oldChannel = Channel
 		end
 
