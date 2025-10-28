@@ -9,7 +9,7 @@ if SERVER then
 	util.AddNetworkString( "lvsgta3dradio" )
 end
 
-local channel = util.JSONToTable( data )
+LVSGTA3D.Content = util.JSONToTable( data )
 
 LVSGTA3D.Channel = {
 	[0] = {
@@ -205,7 +205,7 @@ function CNL:AddType( type, starttype, endtype )
 	local name = self:GetName()
 
 	if type == "adverts" then
-		local song = GetRandomOption( channel[ "adverts" ], "adverts" )
+		local song = GetRandomOption( LVSGTA3D.Content[ "adverts" ], "adverts" )
 
 		self:AddFile( song.sound, song.length )
 
@@ -213,8 +213,8 @@ function CNL:AddType( type, starttype, endtype )
 	end
 
 	if type == "dj" then
-		local song = GetRandomOption( channel[ name ].dj, name.."dj" )
-		if not song then song = GetRandomOption( channel[ name ].id, name.."dj" ) end
+		local song = GetRandomOption( LVSGTA3D.Content[ name ].dj, name.."dj" )
+		if not song then song = GetRandomOption( LVSGTA3D.Content[ name ].id, name.."dj" ) end
 
 		self:AddFile( song.sound, song.length )
 
@@ -222,15 +222,15 @@ function CNL:AddType( type, starttype, endtype )
 	end
 
 	if type == "id" then
-		local song = GetRandomOption( channel[ name ].id, name.."id" )
-		if not song then song = GetRandomOption( channel[ name ].dj, name.."id" ) end
+		local song = GetRandomOption( LVSGTA3D.Content[ name ].id, name.."id" )
+		if not song then song = GetRandomOption( LVSGTA3D.Content[ name ].dj, name.."id" ) end
 
 		self:AddFile( song.sound, song.length )
 
 		return
 	end
 
-	local song = GetRandomOption( channel[ name ].music, name.."music" )
+	local song = GetRandomOption( LVSGTA3D.Content[ name ].music, name.."music" )
 
 	if song[starttype] then
 		self:AddFile( song[starttype].sound, song[starttype].length )

@@ -133,11 +133,11 @@ end
 function ENT:NextChannel()
 	self:SetRadioChannel( self:GetRadioChannel() + 1 )
 
-	if self:GetRadioChannel() > 11 then self:SetRadioChannel( 0 ) end
+	if self:GetRadioChannel() > #LVSGTA3D.Channel then self:SetRadioChannel( 0 ) end
 end
 
 function ENT:PrevChannel()
 	self:SetRadioChannel( self:GetRadioChannel() - 1 )
 
-	if self:GetRadioChannel() < 0 then self:SetRadioChannel( 11 ) end
+	if self:GetRadioChannel() < 0 then self:SetRadioChannel( #LVSGTA3D.Channel ) end
 end
