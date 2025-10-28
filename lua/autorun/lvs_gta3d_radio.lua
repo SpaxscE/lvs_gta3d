@@ -77,6 +77,17 @@ LVSGTA3D.Channel = {
 		channel = "playback_fm",
 		icon = Material("lvs/gta3d/playback.png"),
 	},
+--[[
+Wildstyle
+Flash FM
+K-Chat
+Fever 105
+V-Rock
+VCPR
+Radio Espantoso
+Emotion 98.3
+Wave 103
+]]
 }
 
 function LVSGTA3D:GetChannel( id )
