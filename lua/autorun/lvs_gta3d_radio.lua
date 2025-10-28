@@ -460,7 +460,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 			SoundHandler = nil
 		end
 
-		if CurFile then
+		if CurFile and LVSGTA3D.Volume > 0 then
 			sound.PlayFile( CurFile, "noplay "..SoundFlags, function( station, errCode, errStr )
 				if not IsValid( station ) then return end
 
