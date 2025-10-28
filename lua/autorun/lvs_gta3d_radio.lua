@@ -173,10 +173,6 @@ function CNL:Reset()
 
 	if name == "usertrack" then
 		self:AddType( "adverts" )
-		self:AddType( "adverts" )
-		self:AddType( "adverts" )
-		self:AddType( "adverts" )
-		self:AddType( "adverts" )
 
 		return
 	end
