@@ -364,6 +364,17 @@ local SoundHandler
 
 local LastVehicle
 
+local cvarVolume = CreateClientConVar( "lvs_volume_radio", 0.5, true, false)
+LVSGTA3D.Volume = cvarVolume and cvarVolume:GetFloat() or 0.5
+cvars.AddChangeCallback( "lvs_volume_radio", function( convar, oldValue, newValue ) 
+
+	LVSGTA3D.Volume = math.Clamp( tonumber( newValue ), 0, 1 )
+
+	if not IsValid( SoundHandler ) or SoundHandler:Get3DEnabled() then return end
+
+	SoundHandler:SetVolume( LVSGTA3D.Volume )
+end)
+
 hook.Add( "Think", "LVSGTA3Dradio", function()
 	local ply = LocalPlayer()
 
@@ -424,7 +435,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 		end
 
 		if CurFile then
-			sound.PlayFile( CurFile, SoundFlags, function( station, errCode, errStr )
+			sound.PlayFile( CurFile, "noplay "..SoundFlags, function( station, errCode, errStr )
 				if not IsValid( station ) then return end
 
 				SoundHandler = station
@@ -432,8 +443,12 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 				station:SetTime( DesiredFileStartTime )
 
 				if SoundFlags == "3d" then
-					station:SetVolume( 0.4 )
+					station:SetVolume( 0.25 )
+				else
+					station:SetVolume( LVSGTA3D.Volume )
 				end
+
+				station:Play()
 			end )
 		end
 	end
