@@ -200,16 +200,16 @@ end
 function CNL:GetProgression()
 	return (self._FinishTime - self._StartTime - (self._FinishTime - CurTime()))
 end
-function CNL:ClearPlayList()
-	local T = CurTime()
+function CNL:ClearPlayList( T )
+	if not T then T = CurTime() end
 
 	self._StartTime = T
 	self:SetFinishTime( T )
 
 	table.Empty( self.PlayList )
 end
-function CNL:Reset()
-	self:ClearPlayList()
+function CNL:Reset( time )
+	self:ClearPlayList( time )
 
 	local name = self:GetName()
 
@@ -218,11 +218,21 @@ function CNL:Reset()
 	net.Start( "lvsgta3dradio" )
 		net.WriteString( name )
 		net.WriteBool( true )
+		net.WriteFloat( self._StartTime )
 	net.Broadcast()
 
 	if self.sequential then
 		for _, data in ipairs( LVSGTA3D.Content[ name ] ) do
-			self:AddFile( data.sound, data.length )
+
+			local offset = 0
+			if not self.FirstTimeLoaded then
+				offset = math.random( 0, data.length )
+
+				self.FirstTimeLoaded = true
+			end
+
+			self:AddFile( data.sound, data.length, offset )
+
 		end
 
 		return
@@ -235,7 +245,8 @@ function CNL:Reset()
 	self:AddType( "adverts" )
 	self:AddType( "id" )
 end
-function CNL:AddFile( sound, length )
+function CNL:AddFile( sound, length, offset )
+	if not offset then offset = 0 end
 
 	if CLIENT then
 		table.insert( self.PlayList, sound )
@@ -245,8 +256,8 @@ function CNL:AddFile( sound, length )
 		return
 	end
 
-	local start = self:GetFinishTime()
-	local finish = self:GetFinishTime() + length
+	local start = self:GetFinishTime() - offset
+	local finish = self:GetFinishTime() - offset + length
 
 	local data = {
 		sound = sound,
@@ -412,7 +423,7 @@ net.Receive( "lvsgta3dradio", function( len, ply )
 
 	local channel = ChannelGet( name )
 
-	if shouldReset then channel:Reset() return end
+	if shouldReset then channel:Reset( net.ReadFloat() ) return end
 
 	local data = {
 		sound = net.ReadString(),
@@ -512,7 +523,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 
 					SoundHandler = station
 
-					station:SetTime( DesiredFileStartTime )
+					station:SetTime( DesiredFileStartTime, true )
 
 					if SoundFlags == "3d" then
 						station:SetVolume( 0.25 )
