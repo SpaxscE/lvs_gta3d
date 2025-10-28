@@ -72,17 +72,60 @@ LVSGTA3D.Channel = {
 		channel = "playback_fm",
 		icon = Material("lvs/gta3d/playback.png"),
 	},
---[[
-Wildstyle
-Flash FM
-K-Chat
-Fever 105
-V-Rock
-VCPR
-Radio Espantoso
-Emotion 98.3
-Wave 103
-]]
+	[12] = {
+		name = "Wildstyle",
+		channel = "wildstyle",
+		icon = Material("lvs/gta3d/wildstyle.png"),
+		sequential = true,
+	},
+	[13] = {
+		name = "Flash FM",
+		channel = "flash",
+		icon = Material("lvs/gta3d/flash.png"),
+		sequential = true,
+	},
+	[14] = {
+		name = "K-Chat",
+		channel = "kchat",
+		icon = Material("lvs/gta3d/kchat.png"),
+		sequential = true,
+	},
+	[15] = {
+		name = "Fever 105",
+		channel = "fever",
+		icon = Material("lvs/gta3d/fever.png"),
+		sequential = true,
+	},
+	[16] = {
+		name = "V-Rock",
+		channel = "vrock",
+		icon = Material("lvs/gta3d/vrock.png"),
+		sequential = true,
+	},
+	[17] = {
+		name = "VCPR",
+		channel = "vcpr",
+		icon = Material("lvs/gta3d/vcpr.png"),
+		sequential = true,
+	},
+	[18] = {
+		name = "Radio Espantoso",
+		channel = "espantoso",
+		icon = Material("lvs/gta3d/espantoso.png"),
+		sequential = true,
+	},
+	[19] = {
+		name = "Emotion 98.3",
+		channel = "emotion",
+		icon = Material("lvs/gta3d/emotion.png"),
+		sequential = true,
+	},
+	[20] = {
+		name = "Wave 103",
+		channel = "wave",
+		icon = Material("lvs/gta3d/wave103.png"),
+		sequential = true,
+	},
 }
 
 function LVSGTA3D:GetChannel( id )
@@ -176,6 +219,14 @@ function CNL:Reset()
 		net.WriteString( name )
 		net.WriteBool( true )
 	net.Broadcast()
+
+	if self.sequential then
+		for _, data in ipairs( LVSGTA3D.Content[ name ] ) do
+			self:AddFile( data.sound, data.length )
+		end
+
+		return
+	end
 
 	self:AddType( "dj" )
 	self:AddType( "music", "intro"..math.random(1,2), "outro" )
@@ -289,10 +340,12 @@ local function ChannelGetAll()
 	return ActiveChannel
 end
 
-local function ChannelCreate( name )
+local function ChannelCreate( name, sequential )
 	local channel = {}
 
 	setmetatable( channel, CNL )
+
+	channel.sequential = sequential
 
 	channel:Initialize( name )
 
@@ -306,7 +359,7 @@ for _, data in pairs( LVSGTA3D.Channel ) do
 
 	if name == "" then continue end
 
-	ChannelCreate( name )
+	ChannelCreate( name, data.sequential == true )
 end
 
 if SERVER then
