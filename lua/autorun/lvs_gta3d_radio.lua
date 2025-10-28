@@ -395,6 +395,7 @@ if SERVER then
 			net.Start( "lvsgta3dradio" )
 				net.WriteString( name )
 				net.WriteBool( true )
+				net.WriteFloat( channel._StartTime )
 			net.Send( ply )
 
 			for index, data in ipairs( channel:GetPlayList() ) do
