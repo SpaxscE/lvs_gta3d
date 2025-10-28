@@ -145,7 +145,7 @@ function CNL:Finish()
 	local finishTime = startTime + soundDuration
 
 	local data = {
-		sound = soundName,
+		sound = "sound/"..soundName,
 		starttime = startTime,
 		finishtime = finishTime,
 	}
@@ -482,6 +482,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 	for id, channel in pairs( ChannelGetAll() ) do
 		if channel:GetFinishTime() < T then
 			channel:Finish()
+
 			continue
 		end
 
