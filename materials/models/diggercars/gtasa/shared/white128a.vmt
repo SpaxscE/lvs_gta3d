@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models/diggercars/gtavc/shared/white128a"
-	"$bumpmap" "models/diggercars/gtavc/shared/skin_nm"
+	"$basetexture" "models/diggercars/gtasa/shared/white128a"
+	"$bumpmap" "models/diggercars/gtasa/shared/skin_nm"
 	"$nocull" "1"
 	"$alphatest" "1"
 	"$allowalphatocoverage" "1"
