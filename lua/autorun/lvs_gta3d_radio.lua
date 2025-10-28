@@ -133,6 +133,24 @@ function CNL:Initialize( name )
 
 	self:Reset()
 end
+function CNL:Finish()
+	if SERVER or self:GetName() ~= "usertrack" then return end
+
+	self:ClearPlayList()
+
+	local soundName = "gta3d/radio/gtavc/emotion.mp3"
+	local soundDuration = SoundDuration( soundName )
+
+	local startTime = CurTime()
+	local finishTime = startTime + soundDuration
+
+	local data = {
+		sound = soundName,
+		starttime = startTime,
+		finishtime = finishTime,
+	}
+	self:AddFile( data )
+end
 function CNL:SetFinishTime( time )
 	self._FinishTime = time
 end
@@ -162,20 +180,14 @@ end
 function CNL:Reset()
 	self:ClearPlayList()
 
-	if CLIENT then return end
-
 	local name = self:GetName()
+
+	if CLIENT or name == "usertrack" then return end
 
 	net.Start( "lvsgta3dradio" )
 		net.WriteString( name )
 		net.WriteBool( true )
 	net.Broadcast()
-
-	if name == "usertrack" then
-		self:AddType( "adverts" )
-
-		return
-	end
 
 	self:AddType( "dj" )
 	self:AddType( "music", "intro"..math.random(1,2), "outro" )
@@ -469,6 +481,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 
 	for id, channel in pairs( ChannelGetAll() ) do
 		if channel:GetFinishTime() < T then
+			channel:Finish()
 			continue
 		end
 
