@@ -200,16 +200,16 @@ end
 function CNL:GetProgression()
 	return (self._FinishTime - self._StartTime - (self._FinishTime - CurTime()))
 end
-function CNL:ClearPlayList( T )
-	if not T then T = CurTime() end
+function CNL:ClearPlayList()
+	local T = CurTime()
 
 	self._StartTime = T
 	self:SetFinishTime( T )
 
 	table.Empty( self.PlayList )
 end
-function CNL:Reset( time )
-	self:ClearPlayList( time )
+function CNL:Reset()
+	self:ClearPlayList()
 
 	local name = self:GetName()
 
@@ -218,7 +218,6 @@ function CNL:Reset( time )
 	net.Start( "lvsgta3dradio" )
 		net.WriteString( name )
 		net.WriteBool( true )
-		net.WriteFloat( self._StartTime )
 	net.Broadcast()
 
 	if self.sequential then
@@ -413,7 +412,7 @@ net.Receive( "lvsgta3dradio", function( len, ply )
 
 	local channel = ChannelGet( name )
 
-	if shouldReset then channel:Reset( net.ReadFloat() ) return end
+	if shouldReset then channel:Reset() return end
 
 	local data = {
 		sound = net.ReadString(),
@@ -513,7 +512,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 
 					SoundHandler = station
 
-					station:SetTime( DesiredFileStartTime )
+					station:SetTime( DesiredFileStartTime, true )
 
 					if SoundFlags == "3d" then
 						station:SetVolume( 0.25 )
