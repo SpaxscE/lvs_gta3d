@@ -65,6 +65,8 @@ if CLIENT then
 
 		local channelData = LVSGTA3D:GetChannel( Channel )
 
+		if not channelData then return end
+
 		if not ChannelVisible then
 			if EntTable._ChannelVisibleColor < T then return end
 
