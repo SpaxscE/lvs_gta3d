@@ -453,29 +453,31 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 	end
 
 	if CurFile ~= DesiredFile then
-		CurFile = DesiredFile
-
 		if IsValid( SoundHandler ) then
 			SoundHandler:Stop()
 			SoundHandler = nil
 		end
 
-		if CurFile and LVSGTA3D.Volume > 0 then
-			sound.PlayFile( CurFile, "noplay "..SoundFlags, function( station, errCode, errStr )
-				if not IsValid( station ) then return end
+		if LVSGTA3D.Volume > 0 then
+			CurFile = DesiredFile
 
-				SoundHandler = station
+			if CurFile then
+				sound.PlayFile( CurFile, "noplay "..SoundFlags, function( station, errCode, errStr )
+					if not IsValid( station ) then return end
 
-				station:SetTime( DesiredFileStartTime )
+					SoundHandler = station
 
-				if SoundFlags == "3d" then
-					station:SetVolume( 0.25 )
-				else
-					station:SetVolume( LVSGTA3D.Volume )
-				end
+					station:SetTime( DesiredFileStartTime )
 
-				station:Play()
-			end )
+					if SoundFlags == "3d" then
+						station:SetVolume( 0.25 )
+					else
+						station:SetVolume( LVSGTA3D.Volume )
+					end
+
+					station:Play()
+				end )
+			end
 		end
 	end
 
