@@ -153,10 +153,10 @@ function ENT:CreatePDS()
 		maxs = maxs,
 		stages = {
 			{ bodygroup = { [11] = 1 }, sound = "SA_Collision" },
-			{ bodygroup = { [11] = 2 }, sound = "SA_Collision" },
+			{ bodygroup = { [11] = 1 }, sound = "SA_Collision" },
 			{
 				sound = "SA_Collision",
-				bodygroup = { [11] = 3 },
+				bodygroup = { [11] = 2 },
 				gib = {
 					mdl = "models/diggercars/gtasa/vc/deluxo/l_rl_dam.mdl",
 					pos = Vector(0,0,0),
@@ -175,10 +175,10 @@ function ENT:CreatePDS()
 		maxs = maxs,
 		stages = {
 			{ bodygroup = { [10] = 1 }, sound = "SA_Collision" },
-			{ bodygroup = { [10] = 2 }, sound = "SA_Collision" },
+			{ bodygroup = { [10] = 1 }, sound = "SA_Collision" },
 			{
 				sound = "SA_Collision",
-				bodygroup = { [10] = 3 },
+				bodygroup = { [10] = 2 },
 				gib = {
 					mdl = "models/diggercars/gtasa/vc/deluxo/l_rr_dam.mdl",
 					pos = Vector(0,0,0),
