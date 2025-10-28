@@ -224,7 +224,12 @@ function CNL:Reset( time )
 	if self.sequential then
 		for _, data in ipairs( LVSGTA3D.Content[ name ] ) do
 
-			local offset = math.random( 0, data.length )
+			local offset = 0
+			if not self.FirstTimeLoaded then
+				offset = math.random( 0, data.length )
+
+				self.FirstTimeLoaded = true
+			end
 
 			self:AddFile( data.sound, data.length, offset )
 
