@@ -1,0 +1,10 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/primary.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/vc/deluxo_primary"
+$bumpmap "models/diggercars/gtasa/vc/deluxo_primary_nm"
+}
+}
+
