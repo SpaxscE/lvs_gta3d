@@ -2660,7 +2660,11 @@
 			{
 				"sound": "sound/gta3d/radio/radio_x/id_they_dont_care_about_money.ogg",
 				"length": 8.366984126984127
-			}
+			},
+			{
+				"sound": "sound/gta3d/radio/radio_x/id_the_id_the_ego.ogg",
+				"length": 7.57
+			},
 		]
 	},
 	"bounce_fm": {
