@@ -175,6 +175,10 @@
 			"length": 300
 		},
 		{
+			"sound": "sound/gta3d/radio_vc/espantoso/espantoso1.ogg",
+			"length": 300
+		},
+		{
 			"sound": "sound/gta3d/radio_vc/espantoso/espantoso2.ogg",
 			"length": 300
 		},
