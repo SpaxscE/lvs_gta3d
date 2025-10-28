@@ -989,52 +989,480 @@
 	],
 	"emotion": [
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion1.ogg",
-			"length": 299.9997505668934
+			"sound": "sound/gta3d/radio_vc/emotion/001.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion2.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/002.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion3.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/003.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion4.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/004.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion5.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/005.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion6.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/006.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion7.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/007.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion8.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/008.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion9.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/009.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion10.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/010.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion11.ogg",
-			"length": 300
+			"sound": "sound/gta3d/radio_vc/emotion/011.ogg",
+			"length": 30
 		},
 		{
-			"sound": "sound/gta3d/radio_vc/emotion/emotion12.ogg",
-			"length": 246.81578231292517
+			"sound": "sound/gta3d/radio_vc/emotion/012.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/013.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/014.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/015.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/016.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/017.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/018.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/019.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/020.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/021.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/022.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/023.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/024.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/025.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/026.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/027.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/028.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/029.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/030.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/031.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/032.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/033.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/034.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/035.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/036.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/037.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/038.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/039.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/040.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/041.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/042.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/043.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/044.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/045.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/046.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/047.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/048.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/049.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/050.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/051.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/052.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/053.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/054.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/055.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/056.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/057.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/058.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/059.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/060.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/061.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/062.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/063.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/064.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/065.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/066.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/067.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/068.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/069.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/070.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/071.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/072.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/073.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/074.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/075.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/076.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/077.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/078.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/079.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/080.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/081.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/082.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/083.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/084.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/085.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/086.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/087.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/088.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/089.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/090.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/091.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/092.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/093.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/094.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/095.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/096.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/097.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/098.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/099.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/100.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/101.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/102.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/103.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/104.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/105.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/106.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/107.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/108.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/109.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/110.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/111.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/112.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/113.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/114.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/115.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/116.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/117.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/118.ogg",
+			"length": 30
+		},
+		{
+			"sound": "sound/gta3d/radio_vc/emotion/119.ogg",
+			"length": 6.8277551020408165
 		}
 	],
 	"vcpr": [
