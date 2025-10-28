@@ -401,6 +401,10 @@ cvars.AddChangeCallback( "lvs_volume_radio", function( convar, oldValue, newValu
 	SoundHandler:SetVolume( LVSGTA3D.Volume )
 end)
 
+function LVSGTA3D:GetSoundHandler()
+	return SoundHandler
+end 
+
 hook.Add( "Think", "LVSGTA3Dradio", function()
 	local ply = LocalPlayer()
 
