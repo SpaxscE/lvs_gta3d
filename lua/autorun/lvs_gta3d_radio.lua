@@ -507,7 +507,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 			CurFile = DesiredFile
 
 			if CurFile then
-				sound.PlayFile( CurFile, "noplay "..SoundFlags, function( station, errCode, errStr )
+				sound.PlayFile( CurFile, "noblock noplay "..SoundFlags, function( station, errCode, errStr )
 					if not IsValid( station ) then return end
 
 					SoundHandler = station
