@@ -1,7 +1,7 @@
 
 LVSGTA3D = LVSGTA3D or {}
 
-local data = file.Read( "data_static/gta3d_sanandreas_radio.txt", "GAME" )
+local data = file.Read( "data_static/lvs_gta3d_radio.txt", "GAME" )
 
 if not data then return end
 
@@ -18,76 +18,114 @@ LVSGTA3D.Channel = {
 		icon = Material("lvs/gta3d/z_radio_off.png"),
 	},
 	[1] = {
-		name = "USER TRACK PLAYER",
-		channel = "usertrack",
-		icon = Material("lvs/gta3d/trackplayer.png"),
-	},
-	[2] = {
 		name = "WCTR",
 		channel = "wctr",
 		icon = Material("lvs/gta3d/wctr.png"),
 	},
-	[3] = {
+	[2] = {
 		name = "MASTER SOUNDS 98.3",
 		channel = "master_sounds",
 		icon = Material("lvs/gta3d/mastersounds.png"),
 	},
-	[4] = {
+	[3] = {
 		name = "K-JAH WEST",
 		channel = "k_jah",
 		icon = Material("lvs/gta3d/kjah.png"),
 	},
-	[5] = {
+	[4] = {
 		name = "CSR 103.9",
 		channel = "csr",
 		icon = Material("lvs/gta3d/csr.png"),
 	},
-	[6] = {
+	[5] = {
 		name = "RADIO X",
 		channel = "radio_x",
 		icon = Material("lvs/gta3d/radiox.png"),
 	},
-	[7] = {
+	[6] = {
 		name = "RADIO LOS SANTOS",
 		channel = "radio_los_santos",
 		icon = Material("lvs/gta3d/radio_los_santos.png"),
 	},
-	[8] = {
+	[7] = {
 		name = "SF-UR",
 		channel = "sfur",
 		icon = Material("lvs/gta3d/sfur.png"),
 	},
-	[9] = {
+	[8] = {
 		name = "BOUNCE FM",
 		channel = "bounce_fm",
 		icon = Material("lvs/gta3d/bounce.png"),
 	},
-	[10] = {
+	[9] = {
 		name = "K-DST",
 		channel = "k_dst",
 		icon = Material("lvs/gta3d/kdst.png"),
 	},
-	[11] = {
+	[10] = {
 		name = "K ROSE",
 		channel = "krose",
 		icon = Material("lvs/gta3d/krose.png"),
 	},
-	[12] = {
+	[11] = {
 		name = "PLAYBACK FM",
 		channel = "playback_fm",
 		icon = Material("lvs/gta3d/playback.png"),
 	},
---[[
-Wildstyle
-Flash FM
-K-Chat
-Fever 105
-V-Rock
-VCPR
-Radio Espantoso
-Emotion 98.3
-Wave 103
-]]
+	[12] = {
+		name = "Wildstyle",
+		channel = "wildstyle",
+		icon = Material("lvs/gta3d/wildstyle.png"),
+		sequential = true,
+	},
+	[13] = {
+		name = "Flash FM",
+		channel = "flash",
+		icon = Material("lvs/gta3d/flash.png"),
+		sequential = true,
+	},
+	[14] = {
+		name = "K-Chat",
+		channel = "kchat",
+		icon = Material("lvs/gta3d/kchat.png"),
+		sequential = true,
+	},
+	[15] = {
+		name = "Fever 105",
+		channel = "fever",
+		icon = Material("lvs/gta3d/fever.png"),
+		sequential = true,
+	},
+	[16] = {
+		name = "V-Rock",
+		channel = "vrock",
+		icon = Material("lvs/gta3d/vrock.png"),
+		sequential = true,
+	},
+	[17] = {
+		name = "VCPR",
+		channel = "vcpr",
+		icon = Material("lvs/gta3d/vcpr.png"),
+		sequential = true,
+	},
+	[18] = {
+		name = "Radio Espantoso",
+		channel = "espantoso",
+		icon = Material("lvs/gta3d/espantoso.png"),
+		sequential = true,
+	},
+	[19] = {
+		name = "Emotion 98.3",
+		channel = "emotion",
+		icon = Material("lvs/gta3d/emotion.png"),
+		sequential = true,
+	},
+	[20] = {
+		name = "Wave 103",
+		channel = "wave",
+		icon = Material("lvs/gta3d/wave103.png"),
+		sequential = true,
+	},
 }
 
 function LVSGTA3D:GetChannel( id )
@@ -144,24 +182,6 @@ function CNL:Initialize( name )
 
 	self:Reset()
 end
-function CNL:Finish()
-	if SERVER or self:GetName() ~= "usertrack" then return end
-
-	self:ClearPlayList()
-
-	local soundName = "gta3d/radio/gtavc/emotion.mp3"
-	local soundDuration = SoundDuration( soundName )
-
-	local startTime = CurTime()
-	local finishTime = startTime + soundDuration
-
-	local data = {
-		sound = "sound/"..soundName,
-		starttime = startTime,
-		finishtime = finishTime,
-	}
-	self:AddFile( data )
-end
 function CNL:SetFinishTime( time )
 	self._FinishTime = time
 end
@@ -193,12 +213,20 @@ function CNL:Reset()
 
 	local name = self:GetName()
 
-	if CLIENT or name == "usertrack" then return end
+	if CLIENT then return end
 
 	net.Start( "lvsgta3dradio" )
 		net.WriteString( name )
 		net.WriteBool( true )
 	net.Broadcast()
+
+	if self.sequential then
+		for _, data in ipairs( LVSGTA3D.Content[ name ] ) do
+			self:AddFile( data.sound, data.length )
+		end
+
+		return
+	end
 
 	self:AddType( "dj" )
 	self:AddType( "music", "intro"..math.random(1,2), "outro" )
@@ -312,10 +340,12 @@ local function ChannelGetAll()
 	return ActiveChannel
 end
 
-local function ChannelCreate( name )
+local function ChannelCreate( name, sequential )
 	local channel = {}
 
 	setmetatable( channel, CNL )
+
+	channel.sequential = sequential
 
 	channel:Initialize( name )
 
@@ -329,7 +359,7 @@ for _, data in pairs( LVSGTA3D.Channel ) do
 
 	if name == "" then continue end
 
-	ChannelCreate( name )
+	ChannelCreate( name, data.sequential == true )
 end
 
 if SERVER then
@@ -498,8 +528,6 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 
 	for id, channel in pairs( ChannelGetAll() ) do
 		if channel:GetFinishTime() < T then
-			channel:Finish()
-
 			continue
 		end
 
