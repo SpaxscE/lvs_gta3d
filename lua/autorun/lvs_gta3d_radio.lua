@@ -374,7 +374,7 @@ for _, data in pairs( LVSGTA3D.Channel ) do
 end
 
 if SERVER then
-	hook.Add( "Think", "LVSGTA3Dradio", function()
+	hook.Add( "Tick", "LVSGTA3Dradio", function()
 		local T = CurTime()
 
 		for id, channel in pairs( ChannelGetAll() ) do
@@ -485,7 +485,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 			DesiredFile = nil
 		end
 	else
-		if IsValid( LastVehicle ) and LastVehicle:IsRadioEnabled() then
+		if IsValid( LastVehicle ) and LastVehicle.useGta3dRadio and LastVehicle:IsRadioEnabled() then
 			DesiredChannel = LVSGTA3D.Channel[ LastVehicle:GetRadioChannel() ].channel
 
 			SoundFlags = "3d"
