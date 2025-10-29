@@ -161,7 +161,7 @@ function ENT:CreatePDS()
 		}
 	} )
 	-- rear bumper
-	local pos, ang, mins, maxs = self:GetBoneInfo( "fb" )
+	local pos, ang, mins, maxs = self:GetBoneInfo( "rb" )
 	self:AddPDS( {
 		pos = pos,
 		ang = ang,
