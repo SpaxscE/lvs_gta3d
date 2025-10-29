@@ -1,15 +1,15 @@
 
 LVSGTA3D = LVSGTA3D or {}
 
-local data = file.Read( "data_static/lvs_gta3d_radio.txt", "GAME" )
-
-if not data then return end
-
 if SERVER then
 	util.AddNetworkString( "lvsgta3dradio" )
-end
 
-LVSGTA3D.Content = util.JSONToTable( data )
+	local data = file.Read( "data_static/lvs_gta3d_radio.txt", "GAME" )
+
+	if not data then return end
+
+	LVSGTA3D.Content = util.JSONToTable( data )
+end
 
 LVSGTA3D.Channel = {
 	[0] = {
