@@ -56,8 +56,8 @@ if CLIENT then
 
 			local A,B = Handler:GetLevel()
 
-			local indexActive1 = math.Round( (CurTime() * 160) % 360 )
-			local indexActive2 = math.Round( (CurTime() * 160 + 180) % 360 )
+			local indexActive1 = math.Round( (CurTime() * 120) % 360 )
+			local indexActive2 = math.Round( (CurTime() * 120 + 180) % 360 )
 
 			local MaxR = 0
 			for iCur = 1, 360 do
@@ -67,16 +67,16 @@ if CLIENT then
 				local cur = Circle[ iCur ]
 				local prev = Circle[ iPrev ]
 
-				local radius = 100
+				local radius = 200
 
 				if iCur == indexActive1 then
-					cur.R = 25 + radius * A
+					cur.R = 5 + radius * A
 				end
 				if iCur == indexActive2 then
-					cur.R = 25 + radius * B
+					cur.R = 5 + radius * B
 				end
 
-				cur.R = cur.R + (25 - cur.R) * FT * 4
+				cur.R = cur.R + (5 - cur.R) * FT
 
 				if cur.R > MaxR then
 					MaxR = cur.R
@@ -91,7 +91,6 @@ if CLIENT then
 				--surface.DrawLine( startX, startY, endX, endY )
 			end
 
-			local MaxR = 0
 			for iCur = 1, 360 do
 				local iPrev = iCur - 1
 				if iPrev == 0 then iPrev = 360 end
@@ -104,8 +103,9 @@ if CLIENT then
 				local endX = centerX + cur.X * (MaxR + cur.R)
 				local endY = centerY + cur.Y * (MaxR + cur.R)
 
-				local R = math.min( cur.R * 2, 255 )
-				local G = 255 - math.min( cur.R * 2, 255 )
+				local R = math.min( MaxR * 4, 255 )
+				local G = 255 - math.min( MaxR * 4, 255 )
+	
 				surface.SetDrawColor( R, G, 0, 255 )
 				surface.DrawLine( startX, startY, endX, endY )
 			end
