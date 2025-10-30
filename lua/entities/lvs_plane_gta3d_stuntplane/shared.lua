@@ -16,7 +16,7 @@ ENT.MDL = "models/diggercars/gtasa/planes/stuntplane.mdl"
 
 ENT.AITEAM = 0
 
-ENT.MaxVelocity = 1400
+ENT.MaxVelocity = 1650
 ENT.MaxPerfVelocity = 600
 ENT.MaxThrust = 800
 
@@ -67,9 +67,37 @@ ENT.EngineSounds = {
 	},
 }
 
-ENT.ExhaustPositions = {
+ENT.RandomColor = {
 	{
-		pos = Vector(65.04,-14.93,19.46),
-		ang = Angle(145,-90,0),
+		Skin = 1,
+		Color = Color(96,26,35),
+	},
+	{
+		Skin = 1,
+		Color = Color(62,36,40),
+	},
+	{
+		Skin = 2,
+		Color = Color(32,44,82),
+	},
+	{
+		Skin = 3,
+		Color = Color(55,68,63),
+	},
+	{
+		Skin = 4,
+		Color = Color(105,30,59),
+	},
+	{
+		Skin = 5,
+		Color = Color(59,78,120),
+	},
+	{
+		Skin = 6,
+		Color = Color(94,112,114),
+	},
+	{
+		Skin = 7,
+		Color = Color(20,20,20),
 	},
 }

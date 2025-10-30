@@ -5,6 +5,8 @@ function ENT:OnSpawn()
 	self:RegisterTrail( Vector(-27.46,169.65,-21.44), 0, 20, 2, 600, 200 )
 	self:RegisterTrail( Vector(-5.43,-170.35,26.66), 0, 20, 2, 600, 200 )
 	self:RegisterTrail( Vector(-27.46,-169.65,-21.44), 0, 20, 2, 600, 200 )
+
+	self:CreateBonePoseParameter( "cabin", 1, Angle(0,0,0), Angle(120,0,0), Vector(0,0,0), Vector(0,0,-20) )
 end
 
 function ENT:OnFrame()
@@ -22,7 +24,7 @@ function ENT:AnimRotor( frametime )
 
 	self._rRPM = self._rRPM and (self._rRPM + self.RotorRPM *  frametime * 4) or 0
 
-	local Rot = Angle(0,self._rRPM,0)
+	local Rot = Angle(0,-self._rRPM,0)
 	Rot:Normalize() 
 	self:ManipulateBoneAngles( 9, Rot )
 
