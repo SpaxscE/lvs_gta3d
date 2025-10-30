@@ -9,7 +9,7 @@ function ENT:OnSpawn( PObj )
 	self:AddExhaustByAttachment( "exh3" )
 	self:AddExhaustByAttachment( "exh4" )
 
-	self:AddEngine( Vector(78,0,58), Angle(0,90,0) )
+	self:AddEngine( Vector(78,0,58), Angle(0,0,0) )
 	local att_fuel = self:GetAttachment( self:LookupAttachment( "fuel" ) )
 
 	local att_seat1 = self:GetAttachment( self:LookupAttachment( "driver" ) )
