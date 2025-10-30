@@ -39,14 +39,14 @@ ENT.PhysicsInertia = Vector(1500,1500,1000)
 
 ENT.RandomColor = {
 	-- VICE CITY
-	Color(201,189,125),
-	Color(29,55,63),
-	Color(28,55,111),
-	Color(52,57,65),
-	Color(76,117,183),
+	Color(134,68,110),
+	Color(255,182,16),
 	Color(49,0,0),
-	Color(90,33,36),
-	Color(138,58,66),
+	Color(255,156,16),
+	Color(145,138,61),
+	Color(189,190,198),
+	Color(42,119,161),
+	Color(132,4,16),
 }
 
 ENT.HornSound = "gta3d/horns/horn_006_112.wav"

@@ -38,14 +38,10 @@ ENT.TransGears = 5
 
 ENT.RandomColor = {
 	-- VICE CITY
-	Color(201,189,125),
-	Color(29,55,63),
-	Color(28,55,111),
-	Color(52,57,65),
-	Color(76,117,183),
-	Color(49,0,0),
-	Color(90,33,36),
-	Color(138,58,66),
+	Color(245,245,245),
+	Color(132,4,16),
+	Color(255,182,16),
+	Color(45,104,62),
 }
 
 ENT.HornSound = "gta3d/horns/horn_003_105.wav"
@@ -93,7 +89,7 @@ ENT.EngineSoundsSA = {
 ENT.Lights = {
 	{
 		Trigger = "main",
-		SubMaterialID = 14,
+		SubMaterialID = 16,
 		Sprites = {
 			{  pos = "a_fl", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
 			{  pos = "a_fr", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
@@ -106,7 +102,7 @@ ENT.Lights = {
 
 	{
 		Trigger = "main+brake",
-		SubMaterialID = 6,
+		SubMaterialID = 5,
 		Sprites = {
 			{  pos = "a_rl", width = 100, colorG = 0, colorB = 0, colorA = 100 },
 			{  pos = "a_rr", width = 100, colorG = 0, colorB = 0, colorA = 100 },
@@ -115,7 +111,7 @@ ENT.Lights = {
 
 	{
 		Trigger = "turnright",
-		SubMaterialID = 7,
+		SubMaterialID = 6,
 		Sprites = {
 			{  pos = "a_frt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "front_bumper", active = { 0 } }, },
 			{  pos = "a_rrt", colorG = 100, colorB = 0, colorA = 150 },
@@ -123,7 +119,7 @@ ENT.Lights = {
 	},
 	{
 		Trigger = "turnleft",
-		SubMaterialID = 5,
+		SubMaterialID = 4,
 		Sprites = {
 			{  pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "front_bumper", active = { 0 } }, },
 			{  pos = "a_rlt", colorG = 100, colorB = 0, colorA = 150 },
@@ -131,7 +127,7 @@ ENT.Lights = {
 	},	
 	{
 		Trigger = "reverse",
-		SubMaterialID = 8,
+		SubMaterialID = 7,
 		Sprites = {
 
 			{ pos = "a_rrr", width = 25, height = 25, colorA = 150 },
@@ -141,7 +137,7 @@ ENT.Lights = {
 	},		
 	{
 		Trigger = "high",
-		SubMaterialID = 15,
+		SubMaterialID = 17,
 		Sprites = {
 			{  pos = "a_flh", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
 			{  pos = "a_frh", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },

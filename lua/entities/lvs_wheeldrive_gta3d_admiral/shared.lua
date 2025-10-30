@@ -49,14 +49,14 @@ ENT.RandomColor = {
 	Color(93,27,32),
 	Color(122,117,96),
 	-- VICE CITY
-	Color(201,189,125),
-	Color(29,55,63),
-	Color(28,55,111),
-	Color(52,57,65),
-	Color(76,117,183),
-	Color(49,0,0),
-	Color(90,33,36),
-	Color(138,58,66),
+--	Color(201,189,125),
+--	Color(29,55,63),
+--	Color(28,55,111),
+--	Color(52,57,65),
+--	Color(76,117,183),
+--	Color(49,0,0),
+--	Color(90,33,36),
+--	Color(138,58,66),
 }
 
 ENT.HornSound = "gta3d/horns/horn_004HD.wav"
