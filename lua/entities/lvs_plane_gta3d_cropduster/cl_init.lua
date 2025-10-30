@@ -1,19 +1,18 @@
 include("shared.lua")
 
 function ENT:OnSpawn()
-	self:RegisterTrail( Vector(-5.43,170.35,26.66), 0, 20, 2, 600, 200 )
-	self:RegisterTrail( Vector(-27.46,169.65,-21.44), 0, 20, 2, 600, 200 )
-	self:RegisterTrail( Vector(-5.43,-170.35,26.66), 0, 20, 2, 600, 200 )
-	self:RegisterTrail( Vector(-27.46,-169.65,-21.44), 0, 20, 2, 600, 200 )
+	self:RegisterTrail( Vector(21.87,219.02,48.38), 0, 20, 2, 600, 200 )
+	self:RegisterTrail( Vector(-3.56,206.39,-12.43), 0, 20, 2, 600, 200 )
+	self:RegisterTrail( Vector(21.87,-219.02,48.38), 0, 20, 2, 600, 200 )
+	self:RegisterTrail( Vector(-3.56,-206.39,-12.43), 0, 20, 2, 600, 200 )
 
-	self:CreateBonePoseParameter( "cabin", 1, Angle(0,0,0), Angle(120,0,0), Vector(0,0,0), Vector(0,0,-20) )
+	self:CreateBonePoseParameter( "cabin", 1, Angle(0,0,0), Angle(120,0,0), Vector(0,0,0), Vector(0,0,0) )
 end
 
 function ENT:OnFrame()
 	local FT = RealFrameTime()
 
 	self:AnimControlSurfaces( FT )
-	self:AnimLandingGear( FT )
 	self:AnimRotor( FT )
 end
 
@@ -26,7 +25,7 @@ function ENT:AnimRotor( frametime )
 
 	local Rot = Angle(0,-self._rRPM,0)
 	Rot:Normalize() 
-	self:ManipulateBoneAngles( 9, Rot )
+	self:ManipulateBoneAngles( 7, Rot )
 
 	self:SetBodygroup( 1, PhysRot and 0 or 1 ) 
 end
@@ -51,13 +50,6 @@ function ENT:AnimControlSurfaces( frametime )
 	self:ManipulateBoneAngles( 4, Angle(self.smPitch,0,0) )
 
 	self:ManipulateBoneAngles( 2, Angle( self.smYaw,0,0 ) )
-end
-
-function ENT:AnimLandingGear( frametime )
-	self._smLandingGear = self._smLandingGear and self._smLandingGear + (30 *  (1 - self:GetLandingGear()) - self._smLandingGear) * frametime * 8 or 0
-
-	self:ManipulateBoneAngles( 8, Angle(30 - self._smLandingGear,0,0) )
-	self:ManipulateBoneAngles( 7, Angle(-(30 - self._smLandingGear),0,0) )
 end
 
 function ENT:OnRemoved()

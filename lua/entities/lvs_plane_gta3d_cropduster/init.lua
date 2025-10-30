@@ -9,7 +9,7 @@ ENT.DriverActiveSound = "common/null.wav"
 ENT.DriverInActiveSound = "common/null.wav"
 
 function ENT:OnSpawn( PObj )
-	local DriverSeat = self:AddDriverSeat( Vector(-40,0,-20), Angle(0,-90,0) )
+	local DriverSeat = self:AddDriverSeat( Vector(-5,0,-2), Angle(0,-90,0) )
 	DriverSeat:SetCameraHeight( -0.12 )
 
 	local DoorHandler = self:AddDoorHandler( "!cabin" )
@@ -17,12 +17,12 @@ function ENT:OnSpawn( PObj )
 	DoorHandler:SetSoundClose( "vehicles/atv_ammo_close.wav"  )
 	DoorHandler:LinkToSeat( DriverSeat )
 
-	self:AddWheel( Vector(37,35,-52), 12, 40 )
-	self:AddWheel( Vector(37,-35,-52), 12, 40 )
-	self:AddWheel( Vector(-173,0,-5), 12, 40, LVS.WHEEL_STEER_REAR )
+	self:AddWheel( Vector(79.6,40.06,-43.96), 12, 40 )
+	self:AddWheel( Vector(79.6,-40.06,-43.96), 12, 40 )
+	self:AddWheel( Vector(-101.6,0,-18), 12, 40, LVS.WHEEL_STEER_REAR )
 
-	self:AddEngine( Vector(45,0,0) )
-	self:AddRotor( Vector(60,0,0) )
+	self:AddEngine( Vector(50,0,0) )
+	self:AddRotor( Vector(110,0,0) )
 
 	if not istable( self.RandomColor ) then return end
 
