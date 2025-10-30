@@ -16,7 +16,7 @@ ENT.MDL = "models/diggercars/gtasa/planes/stuntplane.mdl"
 
 ENT.AITEAM = 0
 
-ENT.MaxVelocity = 1400
+ENT.MaxVelocity = 1650
 ENT.MaxPerfVelocity = 600
 ENT.MaxThrust = 800
 
@@ -64,13 +64,6 @@ ENT.EngineSounds = {
 		VolumeMin = 0,
 		VolumeMax = 0.35,
 		SoundLevel = 110,
-	},
-}
-
-ENT.ExhaustPositions = {
-	{
-		pos = Vector(65.04,-14.93,19.46),
-		ang = Angle(145,-90,0),
 	},
 }
 
