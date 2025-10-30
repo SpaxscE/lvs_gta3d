@@ -1,0 +1,10 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/primary.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/planes/cropduster/cropdustbody256"
+$bumpmap "models/diggercars/gtasa/planes/cropduster/cropdustbody256_nm"
+}
+}
+

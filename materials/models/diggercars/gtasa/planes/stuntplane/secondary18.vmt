@@ -1,0 +1,10 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/secondary.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/planes/stuntplane/stunt256"
+$bumpmap "models/diggercars/gtasa/planes/stuntplane/stunt256_nm"
+	"$colorfix" "{123 10 42}"
+}
+}
