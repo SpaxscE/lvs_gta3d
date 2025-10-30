@@ -3,6 +3,6 @@
 	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_mat.vmt"
 	insert
 	{
-	"$colorfix" "{215 142 16}"
+$basetexture				"models/diggercars/gtasa/greenwood/greenwood92interior128"
 }
 }

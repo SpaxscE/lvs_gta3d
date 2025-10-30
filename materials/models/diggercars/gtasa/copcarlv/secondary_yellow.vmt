@@ -3,6 +3,6 @@
 	include "materials/models/diggercars/gtasa/shared/secondary.vmt"
 	insert
 	{
-	"$colorfix" "{214 167 39}"
+	"$colorfix" "{215 142 16}"
 }
 }

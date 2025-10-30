@@ -1,44 +1,39 @@
 
 ENT.Base = "lvs_wheeldrive_gta3d"
 
-ENT.PrintName = "Taxi"
+ENT.PrintName = "Elegant"
 ENT.Author = "Digger"
 ENT.Information = ""
-ENT.Category = "[LVS] GTA3D - Public Service"
+ENT.Category = "[LVS] GTA3D - Sedans/Wagons"
 
 ENT.VehicleCategory = "GTA3D"
-ENT.VehicleSubCategory = "Public Service"
+ENT.VehicleSubCategory = "Sedans/Wagons"
 
 ENT.Spawnable			= true
 ENT.AdminSpawnable		= false
 
 ENT.SpawnNormalOffset = 40
 
-ENT.MDL = "models/diggercars/gtasa/copcapla/copcapla.mdl"
+ENT.MDL = "models/diggercars/gtasa/elegant/elegant.mdl"
 
 ENT.GibModels = {
-	"models/diggercars/gtasa/copcapla/bonnet_dam.mdl",
-	"models/diggercars/gtasa/copcapla/boot_dam.mdl",
-	"models/diggercars/gtasa/copcapla/bump_front_dam.mdl",
-	"models/diggercars/gtasa/copcapla/bump_rear_dam.mdl",
-	"models/diggercars/gtasa/copcapla/door_lf_dam.mdl",
-	"models/diggercars/gtasa/copcapla/door_rf_dam.mdl",
+	"models/diggercars/gtasa/elegant/bonnet_dam.mdl",
+	"models/diggercars/gtasa/elegant/boot_dam.mdl",
+	"models/diggercars/gtasa/elegant/bump_front_dam.mdl",
+	"models/diggercars/gtasa/elegant/bump_rear_dam.mdl",
+	"models/diggercars/gtasa/elegant/door_lf_dam.mdl",
+	"models/diggercars/gtasa/elegant/door_rf_dam.mdl",
 }
 
 ENT.AITEAM = 0
 
 ENT.MaxVelocity = 2050
 
-ENT.EngineTorque = 135
+ENT.EngineTorque = 130
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
 ENT.TransGears = 5
-
-ENT.RandomColor = {
-	--SAN ANDREAS
-	Color(215,142,16),
-}
 
 ENT.HornSound = "gta3d/horns/horn_009.wav"
 ENT.HornPos = Vector(70,0,20)
@@ -48,34 +43,45 @@ ENT.BodyWobbleBone = "axle"
 
 ENT.BodyWobbleAngleMulPitch = 1
 ENT.BodyWobbleAngleMulRoll = 1
-ENT.BodyWobbleAngleMax = 0.3
+ENT.BodyWobbleAngleMax = 0.5
 
 ENT.BodyWobbleConstant = 1
 ENT.BodyWobbleDamping = 4
 
+ENT.RandomColor = {
+	Color(45,58,53),
+	Color(124,28,42),
+	Color(22,34,72),
+	Color(102,28,38),
+	Color(215,142,16),
+	Color(70,89,122),
+	Color(101,106,121),
+	Color(156,161,163),
+}
+
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/i4_1/idle.wav",
+		sound = "gta3d/engines/merc/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/i4_1/gear.wav",
-		soundDuration = 3.6,
+		sound = "gta3d/engines/merc/gear.wav",
+		soundDuration = 3.93,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/i4_1/cruise.wav",
+		sound = "gta3d/engines/merc/cruise.wav",
 		Pitch = 90,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/i4_1/throttleoff.wav",
+		sound = "gta3d/engines/merc/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {
@@ -92,10 +98,12 @@ ENT.EngineSoundsSA = {
 	},
 }
 
+
 ENT.Lights = {
+
 	{
 		Trigger = "main+high",
-		SubMaterialID = 15,
+		SubMaterialID = 13,
 		Sprites = {
 			{  pos = "a_fl", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
 			{  pos = "a_fr", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
@@ -112,36 +120,25 @@ ENT.Lights = {
 		Sprites = {
 			{  pos = "a_rl", width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
 			{  pos = "a_rr", width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
+			{  pos = "a_rl2", width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
+			{  pos = "a_rr2", width = 100, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
-	{
-		Trigger = "main+brake+turnleft",
-		SubMaterialID = 20,
-		Sprites = {
-			{  pos = "a_rl", width = 30, height = 30, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
-			{  pos = "a_rl2", width = 30, height = 30, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
-		},
-	},
-	{
-		Trigger = "main+brake+turnright",
-		SubMaterialID = 19,
-		Sprites = {
-			{  pos = "a_rr", width = 30, height = 30, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
-			{  pos = "a_rr2", width = 30, height = 30, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
-		},
-	},
+
 	{
 		Trigger = "turnright",
-		SubMaterialID = 16,
+		SubMaterialID = 14,
 		Sprites = {
 			{  pos = "a_frt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
+			{  pos = "a_rrt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
 	{
 		Trigger = "turnleft",
-		SubMaterialID = 18,
+		SubMaterialID = 16,
 		Sprites = {
 			{  pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_rlt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
 		},
 	},	
 	
@@ -151,7 +148,6 @@ ENT.Lights = {
 			{  pos = "a_fl", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fl", active = { 0 } }, },
 			{  pos = "a_fr", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
 		},
-	},	
-	
+	},
 }
 
