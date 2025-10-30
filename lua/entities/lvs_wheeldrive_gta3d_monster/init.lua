@@ -63,9 +63,9 @@ function ENT:OnSpawn( PObj )
 		Height = -10,
 		MaxTravel = 40,
 		ControlArmLength = 250,
-		SpringConstant = 32000,
-		SpringDamping = 1100,
-		SpringRelativeDamping = 1100,
+		SpringConstant = 50000,
+		SpringDamping = 1800,
+		SpringRelativeDamping = 1800,
 		},
 	} )
 
@@ -83,9 +83,9 @@ function ENT:OnSpawn( PObj )
 		Height = -10,
 		MaxTravel = 40,
 		ControlArmLength = 250,
-		SpringConstant = 32000,
-		SpringDamping = 1100,
-		SpringRelativeDamping = 1100,
+		SpringConstant = 50000,
+		SpringDamping = 1800,
+		SpringRelativeDamping = 1800,
 		},
 	} )
 	self:CreatePDS()
