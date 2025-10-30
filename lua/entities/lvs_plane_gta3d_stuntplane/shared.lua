@@ -73,3 +73,38 @@ ENT.ExhaustPositions = {
 		ang = Angle(145,-90,0),
 	},
 }
+
+ENT.RandomColor = {
+	{
+		Skin = 1,
+		Color = Color(96,26,35),
+	},
+	{
+		Skin = 1,
+		Color = Color(62,36,40),
+	},
+	{
+		Skin = 2,
+		Color = Color(32,44,82),
+	},
+	{
+		Skin = 3,
+		Color = Color(55,68,63),
+	},
+	{
+		Skin = 4,
+		Color = Color(105,30,59),
+	},
+	{
+		Skin = 5,
+		Color = Color(59,78,120),
+	},
+	{
+		Skin = 6,
+		Color = Color(94,112,114),
+	},
+	{
+		Skin = 7,
+		Color = Color(20,20,20),
+	},
+}

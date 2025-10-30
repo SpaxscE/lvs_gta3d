@@ -16,6 +16,16 @@ function ENT:OnSpawn( PObj )
 	self:AddEngine( Vector(45,0,0) )
 	self:AddRotor( Vector(60,0,0) )
 
+	if not istable( self.RandomColor ) then return end
+
+	local data = self.RandomColor[ math.random( #self.RandomColor ) ]
+
+	if IsColor( data ) then
+		self:SetColor( data )
+	else
+		self:SetSkin( data.Skin or 0 )
+		self:SetColor( data.Color or color_white )
+	end
 end
 
 function ENT:OnEngineActiveChanged( Active )
