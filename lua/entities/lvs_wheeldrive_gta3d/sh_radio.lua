@@ -25,7 +25,8 @@ if CLIENT then
 	end
 
 	local Color1 = Color(150,150,150)
-	local Color2 = Color(255,191,0)
+	local Color2 = Color(255,255,255)
+	local Color3 = Color(0,0,0)
 
 	ENT._oldChannel = 0
 	ENT._oldChannelVisible = false
@@ -75,9 +76,13 @@ if CLIENT then
 				surface.SetMaterial( channelData.icon )
 				surface.DrawTexturedRect( X * 0.5 - 64, 4 + 64, 128, 128 )
 
+				surface.SetMaterial( Frame )
+				surface.SetDrawColor( Color3 )
+				surface.DrawTexturedRect( X * 0.5 - 69, 63, 138, 138 )
 				surface.SetDrawColor( Color2 )
 				surface.SetMaterial( Frame )
 				surface.DrawTexturedRect( X * 0.5 - 68, 64, 136, 136 )
+
 			end
 
 			draw.DrawText( channelData.name, "LVS_FONT_HUD_LARGE", X * 0.5, 215, Color2, TEXT_ALIGN_CENTER )

@@ -73,6 +73,16 @@ ENT.RandomColor = {
 ENT.HornSound = "gta3d/horns/horn_006_112.wav"
 ENT.HornPos = Vector(70,0,20)
 
+ENT.BodyWobbleEnabled = true
+ENT.BodyWobbleBone = "axle"
+
+ENT.BodyWobbleAngleMulPitch = 1
+ENT.BodyWobbleAngleMulRoll = 1
+ENT.BodyWobbleAngleMax = 0.7
+
+ENT.BodyWobbleConstant = 1
+ENT.BodyWobbleDamping = 4
+
 ENT.EngineSoundsSA = {
 	idle = {
 		sound = "gta3d/engines/pathfinder/idle.wav",

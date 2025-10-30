@@ -22,6 +22,16 @@ ENT.PDSDamageMultiplier = 0.075
 
 ENT.MaxVelocityReverse = 350
 
+ENT.BodyWobbleEnabled = false
+ENT.BodyWobbleBone = "axle"
+
+ENT.BodyWobbleAngleMulPitch = 1
+ENT.BodyWobbleAngleMulRoll = 1
+ENT.BodyWobbleAngleMax = 0.5
+
+ENT.BodyWobbleConstant = 1
+ENT.BodyWobbleDamping = 4
+
 function ENT:AddExhaustByAttachment( name )
 	if not istable( self.ExhaustPositions ) then self.ExhaustPositions = {} end
 
