@@ -14,7 +14,7 @@ ENT.PhysicsSounds = true
 ENT.Editable = true
 
 function ENT:SetupDataTables()
-	self:NetworkVar( "Int",1, "RadioChannel", { KeyName = "radiochannel", Edit = { type = "Int", order = 1,min = 0, max = #LVSGTA3D.Channel, category = "Settings"} } )
+	self:NetworkVar( "Int",1, "RadioChannel" )
 	self:NetworkVar( "Float",1, "Volume", { KeyName = "volume", Edit = { type = "Float", order = 2,min = 0, max = 1, category = "Settings"} } )
 
 	if SERVER then
