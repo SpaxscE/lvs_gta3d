@@ -103,7 +103,6 @@ function ENT:OnSpawn( PObj )
 	self:SetBodygroup(20, 1)
 	self:SetBodygroup(5, 3)
 	self:SetBodygroup(6, 3)
-	self:SetSkin(1)
 	self:CreatePDS()
 end
 

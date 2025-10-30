@@ -17,15 +17,12 @@ ENT.SpawnNormalOffset = 40
 ENT.MDL = "models/diggercars/gtasa/tractor/tractor.mdl"
 
 ENT.RandomColor = {
-	--SAN ANDREAS
-	Color(100,100,100),
-	Color(90,87,82),
-	Color(45,58,53),
-	Color(109,122,136),
-	Color(111,103,95),
-	Color(95,10,21),
-	Color(93,27,32),
-	Color(122,117,96),
+	Color(42,119,161),
+	Color(47,47,49),
+	Color(48,79,69),
+	Color(54,65,95),
+	Color(101,106,121),
+	Color(44,35,34),
 }
 
 ENT.AITEAM = 0

@@ -38,16 +38,40 @@ ENT.EngineMaxRPM = 6000
 ENT.TransGears = 4
 
 ENT.RandomColor = {
-	--SAN ANDREAS
-	Color(100,100,100),
-	Color(90,87,82),
-	Color(45,58,53),
-	Color(109,122,136),
-	Color(111,103,95),
-	Color(95,10,21),
-	Color(93,27,32),
-	Color(122,117,96),
+	{
+		Skin = 1,
+		Color = Color(106,122,140),
+	},
+	{
+		Skin = 1,
+		Color = Color(170,173,142),
+	},
+	{
+		Skin = 1,
+		Color = Color(120,34,43),
+	},
+	{
+		Skin = 1,
+		Color = Color(42,119,161),
+	},
+	{
+		Skin = 1,
+		Color = Color(51,95,63),
+	},
+	{
+		Skin = 1,
+		Color = Color(133,20,52),
+	},
+	{
+		Skin = 1,
+		Color = Color(73,72,79),
+	},
+	{
+		Skin = 2,
+		Color = Color(103,37,42),
+	},
 }
+
 
 ENT.HornSound = "gta3d/horns/horn_003_118.wav"
 ENT.HornPos = Vector(70,0,20)
