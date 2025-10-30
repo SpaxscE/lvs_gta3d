@@ -28,7 +28,7 @@ ENT.EngineCurveBoostLow = 3
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.WheelBrakeForce = 800
+ENT.WheelBrakeForce = 600
 
 ENT.WheelBrakeLockupRPM = 18
 
