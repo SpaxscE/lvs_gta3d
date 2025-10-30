@@ -93,7 +93,7 @@ else
 
 		if not channelData or not channelData.icon then return end
 
-		cam.Start3D2D( self:LocalToWorld( Vector(6.4,-3.85,0.1) ), self:LocalToWorldAngles( Angle(0,90,90) ), 0.035 )
+		cam.Start3D2D( self:LocalToWorld( Vector(6.6,-3.85,0.1) ), self:LocalToWorldAngles( Angle(0,90,90) ), 0.035 )
 			surface.SetDrawColor( color_white )
 			surface.SetMaterial( channelData.icon )
 			surface.DrawTexturedRect( -64, -64, 128, 128 )
