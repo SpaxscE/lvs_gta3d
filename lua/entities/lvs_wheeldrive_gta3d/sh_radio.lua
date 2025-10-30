@@ -10,7 +10,7 @@ function ENT:SetupDataTables()
 	self:AddDT( "Int", "RadioChannel" )
 
 	if SERVER then
-		self:SetRadioChannel( math.Clamp( self.Gta3dRadioDefaultChannel, 0, 11 ) )
+		self:SetRadioChannel( self.Gta3dRadioDefaultChannel )
 	end
 end
 

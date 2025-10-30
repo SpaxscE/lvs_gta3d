@@ -339,7 +339,7 @@ function CNL:AddType( type, starttype, endtype )
 	end
 end
 
-local function ChannelGet( name )
+function LVSGTA3D:ChannelGet( name )
 	if not ActiveChannel[ name ] then
 		return ChannelCreate( name )
 	end
@@ -347,11 +347,11 @@ local function ChannelGet( name )
 	return ActiveChannel[ name ]
 end
 
-local function ChannelGetAll()
+function LVSGTA3D:ChannelGetAll()
 	return ActiveChannel
 end
 
-local function ChannelCreate( name, sequential )
+function LVSGTA3D:ChannelCreate( name, sequential )
 	local channel = {}
 
 	setmetatable( channel, CNL )
@@ -370,14 +370,14 @@ for _, data in pairs( LVSGTA3D.Channel ) do
 
 	if name == "" then continue end
 
-	ChannelCreate( name, data.sequential == true )
+	LVSGTA3D:ChannelCreate( name, data.sequential == true )
 end
 
 if SERVER then
 	hook.Add( "Tick", "LVSGTA3Dradio", function()
 		local T = CurTime()
 
-		for id, channel in pairs( ChannelGetAll() ) do
+		for id, channel in pairs( LVSGTA3D:ChannelGetAll() ) do
 			if channel:GetFinishTime() < T then
 				channel:Reset()
 			end
@@ -389,7 +389,7 @@ if SERVER then
 
 		ply.lvsRadioAntiMinge = true
 
-		for id, channel in pairs( ChannelGetAll() ) do
+		for id, channel in pairs( LVSGTA3D:ChannelGetAll() ) do
 			local name = channel:GetName()
 
 			net.Start( "lvsgta3dradio" )
@@ -422,7 +422,7 @@ net.Receive( "lvsgta3dradio", function( len, ply )
 	local name = net.ReadString()
 	local shouldReset = net.ReadBool()
 
-	local channel = ChannelGet( name )
+	local channel = LVSGTA3D:ChannelGet( name )
 
 	if shouldReset then channel:Reset( net.ReadFloat() ) return end
 
@@ -538,7 +538,7 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 		end
 	end
 
-	for id, channel in pairs( ChannelGetAll() ) do
+	for id, channel in pairs( LVSGTA3D:ChannelGetAll() ) do
 		if channel:GetFinishTime() < T then
 			continue
 		end
