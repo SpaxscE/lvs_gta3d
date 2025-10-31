@@ -70,9 +70,9 @@ function HYD:OnStart()
 	if not IsValid( self._BaseEntity ) then return end
 
 	if self:GetHeight() > 0.5 then
-		self._BaseEntity:EmitSound("gta3d/share/vehicle_hydraulic_down.ogg", 75, 100, 1, CHAN_WEAPON)
+		self._BaseEntity:EmitSound("gta3d/share/vehicle_hydraulic_down.ogg", 75, 100, 0.5, CHAN_WEAPON)
 	else
-		self._BaseEntity:EmitSound("gta3d/share/vehicle_hydraulic_up.ogg", 75, 100, 1, CHAN_WEAPON)
+		self._BaseEntity:EmitSound("gta3d/share/vehicle_hydraulic_up.ogg", 75, 100, 0.5, CHAN_WEAPON)
 	end
 end
 function HYD:OnFinish()
