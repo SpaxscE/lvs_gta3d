@@ -34,15 +34,15 @@ function ENT:UpdateHydraulics( ply, cmd )
 		["rr"] = HeightAll + RR,
 	}
 
-	local FT = FrameTime() * 10
+	local Rate = FrameTime() * 10
 
 	for _, control in ipairs( self._HydraulicControlers ) do
 		local curHeight = control:GetHeight()
 		local desHeight = HeightType[ control:GetType() ]
 
-		if curHeight == desHeight then continue end
+		if curHeight == desHeight then control:OnFinish() continue end
 
-		control:SetHeight( curHeight + (desHeight - curHeight) * FT )
+		control:SetHeight( curHeight + math.Clamp(desHeight - curHeight,-Rate,Rate) )
 	end
 end
 
@@ -58,7 +58,31 @@ end
 function HYD:SetHeight( new )
 	if not IsValid( self._WheelEntity ) then return end
 
+	self:OnStart()
+
 	self._WheelEntity:SetSuspensionHeight( new )
+end
+function HYD:OnStart()
+	if self.IsUpdatingHeight then return end
+
+	self.IsUpdatingHeight = true
+
+	if not IsValid( self._WheelEntity ) then return end
+
+	if self:GetHeight() > 0.5 then
+		self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_down.ogg")
+	else
+		self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_up.ogg")
+	end
+end
+function HYD:OnFinish()
+	if not self.IsUpdatingHeight then return end
+
+	self.IsUpdatingHeight = nil
+
+	if not IsValid( self._WheelEntity ) then return end
+
+	self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_collide"..math.random(1,2)..".ogg")
 end
 function HYD:GetType()
 	return self._WheelType
