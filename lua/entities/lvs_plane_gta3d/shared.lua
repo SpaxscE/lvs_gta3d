@@ -25,7 +25,7 @@ ENT.MaxSlipAngleYaw = 8
 
 ENT.MaxHealth = 250
 
-ENT.FlyByAdvance = 2.7
+ENT.FlyByAdvance = 1.1
 ENT.FlyBySound = "gta3d/engines/stuntplane/flyby.wav" 
 ENT.DeathSound = "lvs/vehicles/generic/crash.wav"
 

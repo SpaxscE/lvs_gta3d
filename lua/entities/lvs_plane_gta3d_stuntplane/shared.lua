@@ -42,7 +42,7 @@ ENT.EngineSounds = {
 		FadeSpeed = 1.5,
 		UseDoppler = true,
 		VolumeMin = 0,
-		VolumeMax = 0.35,
+		VolumeMax = 0.15,
 		SoundLevel = 110,
 	},
 }
