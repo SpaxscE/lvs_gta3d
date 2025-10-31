@@ -41,7 +41,7 @@ ENT.HornPos = Vector(70,0,20)
 ENT.BodyWobbleEnabled = true
 ENT.BodyWobbleBone = "axle"
 
-ENT.BodyWobbleAngleMulPitch = 1
+ENT.BodyWobbleAngleMulPitch = 0.7
 ENT.BodyWobbleAngleMulRoll = 1
 ENT.BodyWobbleAngleMax = 0.5
 
