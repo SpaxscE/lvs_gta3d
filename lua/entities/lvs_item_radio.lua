@@ -71,8 +71,9 @@ if SERVER then
 		local MaxChannel = #LVSGTA3D.Channel
 		local CurChannel = self:GetRadioChannel()
 
-		local NextChannel = CurChannel + 1
+		local NextChannel = CurChannel + ((ply:KeyDown( IN_SPEED ) or ply:KeyDown( IN_WALK )) and -1 or 1)
 
+		if NextChannel < 0 then NextChannel = MaxChannel end
 		if NextChannel > MaxChannel then NextChannel = 0 end
 
 		self:SetRadioChannel( NextChannel )
