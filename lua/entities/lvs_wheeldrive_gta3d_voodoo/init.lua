@@ -67,10 +67,15 @@ function ENT:OnSpawn( PObj )
 	self:CreateRigControler( "rl", RLWheel, -14, 6 )
 	self:CreateRigControler( "rr", RRWheel, -14, 6 )
 
+	self:CreateHydraulicControler( "fl", FLWheel )
+	self:CreateHydraulicControler( "fr", FRWheel )
+	self:CreateHydraulicControler( "rl", RLWheel )
+	self:CreateHydraulicControler( "rr", RRWheel )
+
 	local SuspensionSettings = {
-		Height = 20,
-		MaxTravel = 20,
-		ControlArmLength = 25,
+		Height = 8,
+		MaxTravel = 15,
+		ControlArmLength = 250,
 		SpringConstant = 30000,
 		SpringDamping = 2000,
 		SpringRelativeDamping = 2000,

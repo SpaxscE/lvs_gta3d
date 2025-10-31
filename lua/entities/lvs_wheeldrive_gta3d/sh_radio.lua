@@ -120,9 +120,7 @@ function ENT:OnDriverChanged( Old, New, VehicleIsActive )
 	BaseClass.OnDriverChanged( self, Old, New, VehicleIsActive )
 end
 
-function ENT:StartCommand( ply, cmd )
-	BaseClass.StartCommand( self, ply, cmd )
-
+function ENT:UpdateChannel( ply, cmd )
 	local wheel = cmd:GetMouseWheel()
 
 	if wheel == 0 then return end

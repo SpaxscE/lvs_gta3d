@@ -3,6 +3,19 @@ AddCSLuaFile( "sh_radio.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
 include("sh_radio.lua")
+include("sv_hydraulics.lua")
+
+DEFINE_BASECLASS( "lvs_base_wheeldrive" )
+
+function ENT:StartCommand( ply, cmd )
+	BaseClass.StartCommand( self, ply, cmd )
+
+	self:UpdateChannel( ply, cmd )
+
+	if ply ~= self:GetDriver() then return end
+
+	self:UpdateHydraulics( ply, cmd )
+end
 
 function ENT:AddEngine( pos, ang, mins, maxs )
 	if IsValid( self:GetEngine() ) then return end
