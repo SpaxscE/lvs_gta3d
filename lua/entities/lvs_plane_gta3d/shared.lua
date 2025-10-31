@@ -34,3 +34,7 @@ ENT.GravityTurnRateYaw = 4
 
 ENT.ThrottleRateUp = 1
 ENT.ThrottleRateDown = 0.6
+
+ENT.StallVelocity = 10
+ENT.StallForceMultiplier = 10
+ENT.StallForceMax = 1000
