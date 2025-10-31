@@ -34,13 +34,15 @@ function ENT:UpdateHydraulics( ply, cmd )
 		["rr"] = HeightAll + RR,
 	}
 
+	local FT = FrameTime() * 10
+
 	for _, control in ipairs( self._HydraulicControlers ) do
 		local curHeight = control:GetHeight()
 		local desHeight = HeightType[ control:GetType() ]
 
 		if curHeight == desHeight then continue end
 
-		control:SetHeight( desHeight )
+		control:SetHeight( curHeight + (desHeight - curHeight) * FT )
 	end
 end
 

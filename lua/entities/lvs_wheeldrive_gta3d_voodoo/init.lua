@@ -73,7 +73,7 @@ function ENT:OnSpawn( PObj )
 	self:CreateHydraulicControler( "rr", RRWheel )
 
 	local SuspensionSettings = {
-		Height = 8,
+		Height = 5,
 		MaxTravel = 15,
 		ControlArmLength = 250,
 		SpringConstant = 30000,
