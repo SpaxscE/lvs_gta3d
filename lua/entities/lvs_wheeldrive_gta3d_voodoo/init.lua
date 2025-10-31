@@ -11,6 +11,8 @@ function ENT:OnSpawn( PObj )
 
 	local att_seat1 = self:GetAttachment( self:LookupAttachment( "driver" ) )
 	local att_seat2 = self:GetAttachment( self:LookupAttachment( "pass_fr" ) )
+	local att_seat3 = self:GetAttachment( self:LookupAttachment( "pass_rl" ) )
+	local att_seat4 = self:GetAttachment( self:LookupAttachment( "pass_rr" ) )
 
 	local att_wheel_fl = self:GetAttachment( self:LookupAttachment( "w_fl" ) )
 	local att_wheel_fr = self:GetAttachment( self:LookupAttachment( "w_fr" ) )
@@ -18,7 +20,10 @@ function ENT:OnSpawn( PObj )
 	local att_wheel_rr = self:GetAttachment( self:LookupAttachment( "w_rr" ) )
 
 	local DriverSeat = self:AddDriverSeat( self:WorldToLocal( att_seat1.Pos ) + Vector(-8,0,-13), self:WorldToLocalAngles( att_seat1.Ang) + Angle(0,-90,-85) )
-	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(4,0,-4), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-75) )
+	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(2,0,-6), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-75) )
+	local RRSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat3.Pos ) + Vector(2,0,-6), self:WorldToLocalAngles( att_seat3.Ang ) + Angle(0,-90,-77) )
+	local LRSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat4.Pos ) + Vector(2,0,-6), self:WorldToLocalAngles( att_seat4.Ang ) + Angle(0,-90,-77) )
+
 
 	local pos, ang, mins, maxs = self:GetBoneInfo( "dfl" )
 	local LFDoorHandler = self:AddDoorHandler( "left_door", pos, ang, mins, maxs, mins, maxs )
