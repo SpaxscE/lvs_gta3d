@@ -67,12 +67,12 @@ function HYD:OnStart()
 
 	self.IsUpdatingHeight = true
 
-	if not IsValid( self._WheelEntity ) then return end
+	if not IsValid( self._BaseEntity ) then return end
 
 	if self:GetHeight() > 0.5 then
-		self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_down.ogg")
+		self._BaseEntity:EmitSound("gta3d/share/vehicle_hydraulic_down.ogg", 75, 100, 1, CHAN_WEAPON)
 	else
-		self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_up.ogg")
+		self._BaseEntity:EmitSound("gta3d/share/vehicle_hydraulic_up.ogg", 75, 100, 1, CHAN_WEAPON)
 	end
 end
 function HYD:OnFinish()
@@ -82,7 +82,7 @@ function HYD:OnFinish()
 
 	if not IsValid( self._WheelEntity ) then return end
 
-	self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_collide"..math.random(1,2)..".ogg")
+	self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_collide"..math.random(1,2)..".ogg", 75, 100, 0.5 )
 end
 function HYD:GetType()
 	return self._WheelType
