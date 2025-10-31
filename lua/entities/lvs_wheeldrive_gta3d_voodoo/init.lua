@@ -52,9 +52,19 @@ function ENT:OnSpawn( PObj )
 
 	local WheelModel = "models/diggercars/gtasa/shared/wheel_voodoo.mdl"
 
+	local FLWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_fl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fl.Ang ) + Angle(90,-90,0), width = 8 } )
+	local FRWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_fr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fr.Ang ) + Angle(90,-90,0), width = 8 } )
+	local RLWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0), width = 8 } )
+	local RRWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0), width = 8 } )
+
+	self:CreateRigControler( "fl", FLWheel, -14, 6 )
+	self:CreateRigControler( "fr", FRWheel, -14, 6 )
+	self:CreateRigControler( "rl", RLWheel, -14, 6 )
+	self:CreateRigControler( "rr", RRWheel, -14, 6 )
+
 	local SuspensionSettings = {
-		Height = 8,
-		MaxTravel = 7,
+		Height = 20,
+		MaxTravel = 20,
 		ControlArmLength = 25,
 		SpringConstant = 30000,
 		SpringDamping = 2000,
@@ -69,10 +79,7 @@ function ENT:OnSpawn( PObj )
 			TorqueFactor = 0,
 			BrakeFactor = 1,
 		},
-		Wheels = {
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_fl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fl.Ang ) + Angle(90,-90,0) } ),
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_fr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fr.Ang ) + Angle(90,-90,0) } ),
-		},
+		Wheels = { FLWheel, FRWheel },
 		Suspension = SuspensionSettings,
 	} )
 
@@ -84,10 +91,7 @@ function ENT:OnSpawn( PObj )
 			BrakeFactor = 1,
 			UseHandbrake = true,
 		},
-		Wheels = {
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
-		},
+		Wheels = { RLWheel, RRWheel },
 		Suspension = SuspensionSettings,
 	} )
 	self:CreatePDS()
