@@ -31,3 +31,6 @@ ENT.DeathSound = "lvs/vehicles/generic/crash.wav"
 
 ENT.GravityTurnRatePitch = 1
 ENT.GravityTurnRateYaw = 4
+
+ENT.ThrottleRateUp = 1
+ENT.ThrottleRateDown = 0.6
