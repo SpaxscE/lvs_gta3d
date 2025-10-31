@@ -43,8 +43,8 @@ function ENT:AnimControlSurfaces( frametime )
 	self.smYaw = self.smYaw and self.smYaw + (Yaw - self.smYaw) * FT or 0
 	self.smRoll = self.smRoll and self.smRoll + (Roll - self.smRoll) * FT or 0
 
-	self:ManipulateBoneAngles( 5, Angle(-self.smRoll,0,0) )
-	self:ManipulateBoneAngles( 6, Angle(-self.smRoll,0,0) )
+	self:ManipulateBoneAngles( 5, Angle(self.smRoll,0,0) )
+	self:ManipulateBoneAngles( 6, Angle(self.smRoll,0,0) )
 
 	self:ManipulateBoneAngles( 3, Angle(self.smPitch,0,0) )
 	self:ManipulateBoneAngles( 4, Angle(self.smPitch,0,0) )
