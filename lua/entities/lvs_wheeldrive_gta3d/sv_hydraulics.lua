@@ -81,7 +81,7 @@ function HYD:OnFinish()
 
 	if not IsValid( self._WheelEntity ) then return end
 
-	self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_collide"..math.random(1,2)..".ogg", 75, 100, 0.5 )
+	self._WheelEntity:EmitSound("gta3d/share/vehicle_hydraulic_collide"..math.random(1,2)..".ogg", 75, 100, 0.5)
 end
 function HYD:GetType()
 	return self._WheelType
