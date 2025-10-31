@@ -46,10 +46,15 @@ function ENT:OnSpawn( PObj )
 	local WheelRearLeft = self:AddWheel( { pos = Vector(-65.7,34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
 	local WheelRearRight = self:AddWheel( { pos = Vector(-65.7,-34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
 
+	self:CreateHydraulicControler( "fl", WheelFrontLeft )
+	self:CreateHydraulicControler( "fr", WheelFrontRight )
+	self:CreateHydraulicControler( "rl", WheelRearLeft )
+	self:CreateHydraulicControler( "rr", WheelRearRight )
+
 	local SuspensionSettings = {
 		Height = 6,
 		MaxTravel = 7,
-		ControlArmLength = 25,
+		ControlArmLength = 250,
 		SpringConstant = 30000,
 		SpringDamping = 2000,
 		SpringRelativeDamping = 2000,
