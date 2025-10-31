@@ -2,7 +2,6 @@
 function ENT:UpdateHydraulics( ply, cmd )
 	if not self._HydraulicControlers then return end
 
-	
 	local all = ply:lvsKeyDown( "GTA3D_HYDRAULIC" )
 
 	if self._HydToggleAll ~= all then
