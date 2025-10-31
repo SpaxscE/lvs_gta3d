@@ -1,5 +1,5 @@
 
-ENT.Base = "lvs_base_fighterplane"
+ENT.Base = "lvs_plane_gta3d"
 
 ENT.PrintName = "Crop Duster"
 ENT.Author = "Luna"
@@ -14,29 +14,9 @@ ENT.AdminSpawnable		= false
 
 ENT.MDL = "models/diggercars/gtasa/planes/cropduster.mdl"
 
-ENT.AITEAM = 0
-
 ENT.MaxVelocity = 1300
 ENT.MaxPerfVelocity = 600
 ENT.MaxThrust = 800
-
-ENT.TurnRatePitch = 1.25
-ENT.TurnRateYaw = 2.5
-ENT.TurnRateRoll = 0.5
-
-ENT.ForceLinearMultiplier = 1
-
-ENT.ForceAngleMultiplier = 1
-ENT.ForceAngleDampingMultiplier = 1
-
-ENT.MaxSlipAnglePitch = 30
-ENT.MaxSlipAngleYaw = 15
-
-ENT.MaxHealth = 250
-
-ENT.FlyByAdvance = 2.7
-ENT.FlyBySound = "gta3d/engines/stuntplane/flyby.wav" 
-ENT.DeathSound = "lvs/vehicles/generic/crash.wav"
 
 ENT.EngineSounds = {
 	{
