@@ -70,34 +70,34 @@ ENT.EngineSounds = {
 ENT.RandomColor = {
 	{
 		Skin = 1,
-		Color = Color(96,26,35),
-	},
-	{
-		Skin = 1,
-		Color = Color(62,36,40),
+		Color = Color(147,163,150),
 	},
 	{
 		Skin = 2,
-		Color = Color(32,44,82),
+		Color = Color(115,46,62),
 	},
 	{
 		Skin = 3,
-		Color = Color(55,68,63),
+		Color = Color(115,46,62),
+	},
+	{
+		Skin = 3,
+		Color = Color(76,41,43),
+	},
+	{
+		Skin = 3,
+		Color = Color(49,57,85),
 	},
 	{
 		Skin = 4,
-		Color = Color(105,30,59),
+		Color = Color(125,98,86),
 	},
 	{
 		Skin = 5,
-		Color = Color(59,78,120),
+		Color = Color(152,149,134),
 	},
 	{
 		Skin = 6,
-		Color = Color(94,112,114),
-	},
-	{
-		Skin = 7,
-		Color = Color(20,20,20),
+		Color = Color(58,89,79),
 	},
 }
