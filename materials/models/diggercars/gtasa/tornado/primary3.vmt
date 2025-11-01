@@ -1,0 +1,9 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/primary.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/tornado/primary3"
+$bumpmap "models/diggercars/gtasa/tornado/primary_nm"
+}
+}
