@@ -7,6 +7,7 @@ DEFINE_BASECLASS( "lvs_base_fighterplane" )
 function ENT:SetupDataTables()
 	BaseClass.SetupDataTables( self )
 
+	self:AddDT( "Bool", "RadioDisable", { KeyName = "radiodisable", Edit = { type = "Boolean", order = 5, category = "Misc"} } )
 	self:AddDT( "Int", "RadioChannel" )
 
 	if SERVER then
@@ -134,6 +135,14 @@ function ENT:StartCommand( ply, cmd )
 	local pod = ply:GetVehicle()
 
 	if not IsValid( pod ) or pod:lvsGetPodIndex() > 2 then return end
+
+	if self:GetRadioDisable() then
+		if self:GetRadioChannel() ~= 0 then
+			self:SetRadioChannel( 0 )
+		end
+
+		return
+	end
 
 	if wheel > 0 then
 		self:PrevChannel()
