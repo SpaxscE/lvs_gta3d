@@ -23,7 +23,7 @@ ENT.ForceAngleDampingMultiplier = 1
 ENT.MaxSlipAnglePitch = 20
 ENT.MaxSlipAngleYaw = 8
 
-ENT.MaxHealth = 250
+ENT.MaxHealth = 300
 
 ENT.FlyByAdvance = 1.1
 ENT.FlyBySound = "gta3d/engines/stuntplane/flyby.wav" 
