@@ -304,6 +304,10 @@ function ENT:StopSounds()
 end
 
 function ENT:CalcGear( vehicle, VelocityGeared )
+	if vehicle:IsManualTransmission() then
+		return vehicle:GetGear()
+	end
+
 	local NumGears = vehicle.TransGears
 
 	local DesiredGear = 1
