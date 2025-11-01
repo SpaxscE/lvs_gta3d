@@ -1,41 +1,38 @@
 
 ENT.Base = "lvs_wheeldrive_gta3d"
 
-ENT.PrintName = "Oceanic"
+ENT.PrintName = "Bullet"
 ENT.Author = "Digger"
 ENT.Information = ""
-ENT.Category = "[LVS] GTA3D - Sedans/Wagons"
+ENT.Category = "[LVS] GTA3D - Sports"
 
 ENT.VehicleCategory = "GTA3D"
-ENT.VehicleSubCategory = "Sedans/Wagons"
+ENT.VehicleSubCategory = "Sports"
 
 ENT.Spawnable			= true
 ENT.AdminSpawnable		= false
 
 ENT.SpawnNormalOffset = 40
 
-ENT.MDL = "models/diggercars/gtasa/oceanic/oceanic.mdl"
+ENT.MDL = "models/diggercars/gtasa/bullet/bullet.mdl"
 
 ENT.GibModels = {
-	"models/diggercars/gtasa/oceanic/bonnet_dam.mdl",
-	"models/diggercars/gtasa/oceanic/boot_dam.mdl",
-	"models/diggercars/gtasa/oceanic/bump_front_dam.mdl",
-	"models/diggercars/gtasa/oceanic/bump_rear_dam.mdl",
-	"models/diggercars/gtasa/oceanic/door_lf_dam.mdl",
-	"models/diggercars/gtasa/oceanic/door_lr_dam.mdl",
-	"models/diggercars/gtasa/oceanic/door_rf_dam.mdl",
-	"models/diggercars/gtasa/oceanic/door_rr_dam.mdl",
+	"models/diggercars/gtasa/bullet/boot_dam.mdl",
+	"models/diggercars/gtasa/bullet/bump_front_dam.mdl",
+	"models/diggercars/gtasa/bullet/bump_rear_dam.mdl",
+	"models/diggercars/gtasa/bullet/door_lf_dam.mdl",
+	"models/diggercars/gtasa/bullet/door_rf_dam.mdl",
 }
 
 ENT.AITEAM = 0
 
-ENT.MaxVelocity = 1775
+ENT.MaxVelocity = 2600
 
-ENT.EngineTorque = 115
+ENT.EngineTorque = 160
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.TransGears = 4
+ENT.TransGears = 5
 
 ENT.RandomColor = {
 	{
@@ -72,7 +69,8 @@ ENT.RandomColor = {
 	},
 }
 
-ENT.HornSound = "gta3d/horns/horn_003_118.wav"
+
+ENT.HornSound = "gta3d/horns/horn_006_112.wav"
 ENT.HornPos = Vector(70,0,20)
 
 ENT.BodyWobbleEnabled = true
@@ -80,7 +78,7 @@ ENT.BodyWobbleBone = "axle"
 
 ENT.BodyWobbleAngleMulPitch = 1
 ENT.BodyWobbleAngleMulRoll = 1
-ENT.BodyWobbleAngleMax = 0.3
+ENT.BodyWobbleAngleMax = 0.5
 
 ENT.BodyWobbleConstant = 1
 ENT.BodyWobbleDamping = 4
@@ -124,18 +122,11 @@ ENT.EngineSoundsSA = {
 	},
 }
 
-ENT.ExhaustPositions = {
-	{
-		pos = Vector(-116.46,-19.32,0.82),
-		ang = Angle(0,180,0),
-	},
-}
-
 
 ENT.Lights = {
 	{
 		Trigger = "main",
-		SubMaterialID = 12,
+		SubMaterialID = 13,
 		Sprites = {
 			{  pos = "a_fl", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
 			{  pos = "a_fr", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
@@ -145,28 +136,36 @@ ENT.Lights = {
 			{  pos = "a_fr", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
 		},
 	},
-	
+
 	{
 		Trigger = "main+brake",
-		SubMaterialID = 14,
+		SubMaterialID = 16,
 		Sprites = {
-			{  pos = "a_rl", width = 50, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
-			{  pos = "a_rr", width = 50, colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
+			{  pos = "a_rl", colorG = 0, colorB = 0, colorA = 50, bodygroup = { name = "l_rl", active = { 0 } }, },
+			{  pos = "a_rr", colorG = 0, colorB = 0, colorA = 50, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
 	
 	{
-		Trigger = "high",
-		SubMaterialID = 15,
+		Trigger = "fog",
+		SubMaterialID = 17,
 		Sprites = {
-			{  pos = "a_flh", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_flh", active = { 0 } }, },
-			{  pos = "a_frh", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_frh", active = { 0 } }, },
-		},
-		ProjectedTextures = {
-			{  pos = "a_flh", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_flh", active = { 0 } }, },
-			{  pos = "a_frh", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_frh", active = { 0 } }, },
+			{  pos = "a_flf", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_flt", active = { 0 } }, },
+			{  pos = "a_frf", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_frf", active = { 0 } }, },
 		},
 	},
-	
+
+	{
+		Trigger = "high",
+		SubMaterialID = 14,
+		Sprites = {
+			{  pos = "a_flh", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_frh", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
+		},
+		ProjectedTextures = {
+			{  pos = "a_flh", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_frh", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
+		},
+	},		
 }
 
