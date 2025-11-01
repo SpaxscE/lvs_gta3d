@@ -103,9 +103,22 @@ else
 
 	function ENT:Think()
 		if IsValid( self.SoundHandler ) then
-			self.SoundHandler:SetPos( self:GetPos() )
+			local Pos = self:GetPos()
 
-			local Volume = self:GetVolume()
+			self.SoundHandler:SetPos( Pos )
+
+			local DistMul = 1
+
+			local ply = LocalPlayer()
+			if IsValid( ply ) then
+				local ViewEnt = ply:GetViewEntity()
+
+				if IsValid( ViewEnt ) then ply = ViewEnt end
+
+				DistMul = math.max(12000000 - (ply:GetPos() - Pos):LengthSqr(),0) / 12000000
+			end
+
+			local Volume = self:GetVolume() * DistMul
 
 			if self.SoundHandler:GetVolume() ~= Volume then
 				self.SoundHandler:SetVolume( Volume )
