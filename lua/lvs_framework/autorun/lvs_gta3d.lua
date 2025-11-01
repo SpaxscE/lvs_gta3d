@@ -1,49 +1,4 @@
 
-
-hook.Add( "LVS:Initialize", "lvs_gta3d", function()
-	local KEYS = {
-		{
-			name = "GTA3D_HYDRAULIC",
-			category = "GTA3d",
-			name_menu = "Hydraulic",
-			default = KEY_PAD_5,
-			cmd = "lvs_gta3d_hydraulic"
-		},
-		{
-			name = "GTA3D_HYDRAULIC_FRONT",
-			category = "GTA3d",
-			name_menu = "Hydraulic Front",
-			default = KEY_PAD_8,
-			cmd = "lvs_gta3d_hydraulic_front"
-		},
-		{
-			name = "GTA3D_HYDRAULIC_REAR",
-			category = "GTA3d",
-			name_menu = "Hydraulic Rear",
-			default = KEY_PAD_2,
-			cmd = "lvs_gta3d_hydraulic_rear"
-		},
-		{
-			name = "GTA3D_HYDRAULIC_LEFT",
-			category = "GTA3d",
-			name_menu = "Hydraulic Left",
-			default = KEY_PAD_4,
-			cmd = "lvs_gta3d_hydraulic_left"
-		},
-		{
-			name = "GTA3D_HYDRAULIC_RIGHT",
-			category = "GTA3d",
-			name_menu = "Hydraulic Right",
-			default = KEY_PAD_6,
-			cmd = "lvs_gta3d_hydraulic_right"
-		},
-	}
-
-	for _, v in pairs( KEYS ) do
-		LVS:AddKey( v.name, v.category, v.name_menu, v.cmd, v.default )
-	end
-end )
-
 sound.Add( {
 	name = "SA_Horn_10",
 	channel = CHAN_STATIC,
