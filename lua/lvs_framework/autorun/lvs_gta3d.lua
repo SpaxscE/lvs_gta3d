@@ -89,6 +89,8 @@ list.Set( "ContentCategoryIcons", "[LVS] - Planes", "icon16/lvs_planes.png" )
 
 list.Set( "ContentCategoryIcons", "[LVS] - GTA3D", "icon16/lvs_gta3d.png" )
 list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Planes", "icon16/lvs_planes.png" )
+--list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Boats", "icon16/lvs_boats.png" )
+--list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Tuners", "icon16/lvs_tuners.png" )
 list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Coupes/Hatchbacks", "icon16/lvs_cars.png" )
 list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Industrial", "icon16/lvs_gta3d_tractor.png" )
 list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Lowriders", "icon16/lvs_gta3d_lowrider.png" )
@@ -102,6 +104,8 @@ list.Set( "ContentCategoryIcons", "[LVS] - GTA3D - Public Service", "icon16/lvs_
 
 list.Set( "ContentCategoryIcons", "[LVS] GTA3D", "icon16/lvs_gta3d.png" )
 list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Planes", "icon16/lvs_gta3d.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Boats", "icon16/lvs_gta3d.png" )
+list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Tuners", "icon16/lvs_gta3d.png" )
 list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Coupes/Hatchbacks", "icon16/lvs_gta3d.png" )
 list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Industrial", "icon16/lvs_gta3d.png" )
 list.Set( "ContentCategoryIcons", "[LVS] GTA3D - Lowriders", "icon16/lvs_gta3d.png" )
