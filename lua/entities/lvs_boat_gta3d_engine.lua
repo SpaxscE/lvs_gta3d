@@ -264,9 +264,9 @@ function ENT:EngineFX( vehicle )
 
 	local particle = emitter:Add( "effects/splash4", pos )
 
-	local dir = self:LocalToWorldAngles( Angle(-30,180 - vehicle:GetSteer() * 45,0) ):Forward()
+	local dir = self:LocalToWorldAngles( Angle(-30,180 - vehicle:GetSteer() * 30,0) ):Forward()
 
-	local vel = VectorRand() * 150 + dir * 500
+	local vel = VectorRand() * 200 + dir * 500
 
 	particle:SetVelocity( vel )
 	particle:SetDieTime( 1 )
