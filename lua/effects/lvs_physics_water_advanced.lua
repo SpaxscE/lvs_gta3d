@@ -17,6 +17,7 @@ function EFFECT:Init( data )
 	if Speed < 10 then return end
 
 	local ShouldPlaySound = false
+	local EngineActive = Ent:GetEngineActive()
 
 	local T = CurTime()
 
@@ -102,9 +103,11 @@ function EFFECT:Init( data )
 					local pitch = math.Rand(95,105) * math.Clamp( 1.5 - volume * 0.9,0.5,1)
 
 					if pitch < 58 then
-						sound.Play( "vehicles/airboat/pontoon_splash"..math.random(1,2)..".wav", startpos, 75, math.Rand(95,105), volume * 0.1, 0 )
+						sound.Play( "vehicles/airboat/pontoon_splash"..math.random(1,2)..".wav", startpos, 75, math.Rand(95,105), volume * 0.2, 0 )
 					else
-						sound.Play( "ambient/water/water_splash"..math.random(1,3)..".wav", startpos, 75, pitch, volume * 0.1, 0 )
+						if not EngineActive then
+							sound.Play( "ambient/water/water_splash"..math.random(1,3)..".wav", startpos, 75, pitch, volume * 0.1, 0 )
+						end
 					end
 				end
 
