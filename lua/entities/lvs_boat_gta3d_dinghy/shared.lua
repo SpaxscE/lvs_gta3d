@@ -24,6 +24,7 @@ ENT.EngineSplashEndSize = 100
 ENT.EngineSplashVelocity = 400
 ENT.EngineSplashVelocityRandomAdd = 50
 ENT.EngineSplashThrowAngle = -20
+ENT.EngineSplashDistance = 50
 
 ENT.FloatForce = 10
 ENT.FloatWaveFrequency = 4
