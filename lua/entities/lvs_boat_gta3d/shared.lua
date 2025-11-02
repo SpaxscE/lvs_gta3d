@@ -12,6 +12,7 @@ ENT.AdminSpawnable		= false
 ENT.FloatHeight = 0
 ENT.FloatForce = 20
 ENT.FloatWaveFrequency = 5
+ENT.FloatExponent = 2
 
 ENT.TurnRate = 5
 ENT.TurnForceYaw = 600

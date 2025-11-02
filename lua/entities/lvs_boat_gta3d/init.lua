@@ -41,6 +41,8 @@ function ENT:PhysicsSimulate( phys, deltatime )
 
 	if self:GetEngineActive() then phys:Wake() end
 
+	local EntTable = self:GetTable()
+
 	local pos = phys:LocalToWorld( phys:GetMassCenter() )
 
 	local traceSky = util.TraceLine( {
@@ -59,7 +61,7 @@ function ENT:PhysicsSimulate( phys, deltatime )
 	traceData.mask = MASK_WATER
 	local traceWater = util.TraceLine( traceData )
 
-	local BuoyancyForce = math.min( math.max( traceWater.HitPos.z - pos.z + self.FloatHeight, 0 ), 10 )
+	local BuoyancyForce = math.min( math.max( traceWater.HitPos.z - pos.z + EntTable.FloatHeight, 0 ), 10 )
 
 	if not traceWater.Hit or BuoyancyForce == 0 then return vector_origin, vector_origin, SIM_NOTHING end
 
@@ -70,28 +72,29 @@ function ENT:PhysicsSimulate( phys, deltatime )
 	local mul = BuoyancyForce / 10
 	local invmul = math.Clamp( 1 - mul, 0, 1 )
 
-	local Force = (-Grav + Vector(0,0,-Vel.z * invmul * self.FloatForce)) * mul
+	local Force = (-Grav + Vector(0,0,-Vel.z * invmul * EntTable.FloatForce)) * mul
 	local ForcePos = pos + self:GetUp() * BuoyancyForce
 
 	local ForceLinear, ForceAngle = phys:CalculateForceOffset( Force, ForcePos )
 
-	ForceAngle = (ForceAngle - AngVel * invmul * 2) * 15 * self.ForceAngleMultiplier
+	ForceAngle = (ForceAngle - AngVel * invmul * 2) * 15 * EntTable.ForceAngleMultiplier
 
-	local Driver = self:GetDriver()
+	local Thrust = self:GetThrust()
+	local Steer = self:GetSteer()
 
-	if IsValid( Driver ) then
-		local Thrust = self:GetThrust()
-		local Steer = self:GetSteer()
+	local VelL = self:WorldToLocal( self:GetPos() + Vel )
 
-		local VelL = self:WorldToLocal( self:GetPos() + Vel )
+	local Pitch = -(math.max( math.cos( CurTime() * EntTable.FloatWaveFrequency + self:EntIndex() * 1337 ), 0 ) * VelL.x * 0.25 + Thrust * 0.25 * math.Clamp( VelL.x / EntTable.MaxVelocity,0,1))
+	local Yaw = - AngVel.z + Steer * EntTable.TurnForceYaw
+	local Roll = - AngVel.x * 5 - Steer * EntTable.TurnForceRoll
 
-		local Pitch = -(math.max( math.cos( CurTime() * self.FloatWaveFrequency + self:EntIndex() * 1337 ), 0 ) * VelL.x * 0.25 + Thrust * 0.25 * math.Clamp( VelL.x / self.MaxVelocity,0,1))
-		local Yaw = - AngVel.z + Steer * self.TurnForceYaw
-		local Roll = - AngVel.x * 5 - Steer * self.TurnForceRoll
+	ForceLinear:Add( self:GetForward() * Thrust + self:GetRight() * VelL.y * 0.5 )
+	ForceAngle:Add( Vector(Roll,Pitch,Yaw) )
 
-		ForceLinear:Add( self:GetForward() * Thrust + self:GetRight() * VelL.y * 0.5 )
-		ForceAngle:Add( Vector(Roll,Pitch,Yaw) )
-	end
+	local FloatExp = math.max( self:GetUp().z, 0 ) ^ EntTable.FloatExponent
+
+	ForceLinear:Mul( FloatExp )
+	ForceAngle:Mul( FloatExp )
 
 	return ForceAngle, ForceLinear, SIM_GLOBAL_ACCELERATION
 end

@@ -69,5 +69,6 @@ ENT.EngineSounds = {
 		FadeOut = 1,
 		FadeSpeed = 1,
 		UseDoppler = true,
+		FadeInRestart = true,
 	},
 }

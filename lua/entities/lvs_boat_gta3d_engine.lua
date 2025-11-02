@@ -56,7 +56,7 @@ end
 function ENT:HandleEngineSounds( vehicle )
 	local ply = LocalPlayer()
 	local pod = ply:GetVehicle()
-	local Throttle = vehicle:GetThrottle() - vehicle:GetThrustStrenght() * vehicle:GetThrottle() * 0.5
+	local Throttle = (vehicle:GetThrottle() - vehicle:GetThrustStrenght() * vehicle:GetThrottle() * 0.5) + vehicle:GetBrake()
 	local Doppler = vehicle:CalcDoppler( ply )
 
 	local DrivingMe = ply:lvsGetVehicle() == vehicle
@@ -140,8 +140,26 @@ function ENT:HandleEngineSounds( vehicle )
 				if sound.int then sound.int:ChangeVolume( 0, 0 ) end
 			end
 		else
-			sound:ChangePitch( math.Clamp( Pitch * PitchMul, 0, 255 ), 0.2 )
-			sound:ChangeVolume( Volume, data.FadeSpeed )
+			if data.FadeInRestart then
+				if Volume == 0 then
+					if sound:GetVolume() == 0 and sound:IsPlaying() then
+						sound:Stop()
+					else
+						sound:ChangePitch( math.Clamp( Pitch * PitchMul, 0, 255 ), 0.2 )
+						sound:ChangeVolume( Volume, data.FadeSpeed )
+					end
+				else
+					if sound:IsPlaying() then
+						sound:ChangePitch( math.Clamp( Pitch * PitchMul, 0, 255 ), 0.2 )
+						sound:ChangeVolume( Volume, data.FadeSpeed )
+					else
+						sound:PlayEx( Volume, math.Clamp( Pitch * PitchMul, 0, 255 ) )
+					end
+				end
+			else
+				sound:ChangePitch( math.Clamp( Pitch * PitchMul, 0, 255 ), 0.2 )
+				sound:ChangeVolume( Volume, data.FadeSpeed )
+			end
 		end
 	end
 end
