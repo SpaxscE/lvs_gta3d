@@ -11,9 +11,9 @@ ENT.AdminSpawnable		= false
 
 ENT.MinVelocity = 50
 
-ENT.MaxHealth = 300
-ENT.MaxHealthEngine = 25
-ENT.MaxHealthFuelTank = 10
+ENT.MaxHealth = 600
+ENT.MaxHealthEngine = 40
+ENT.MaxHealthFuelTank = 20
 
 ENT.TransShiftSound = "common/null.wav"
 

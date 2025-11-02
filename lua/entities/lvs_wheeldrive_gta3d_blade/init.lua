@@ -40,11 +40,11 @@ function ENT:OnSpawn( PObj )
 
 	local WheelModel = "models/diggercars/gtasa/shared/wheel_glendale.mdl"
 
-	local WheelFrontLeft = self:AddWheel( { pos = Vector(66.43,34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
-	local WheelFrontRight = self:AddWheel( { pos = Vector(66.43,-34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
+	local WheelFrontLeft = self:AddWheel( { pos = Vector(66.43,34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0), width = 5 } )
+	local WheelFrontRight = self:AddWheel( { pos = Vector(66.43,-34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0), width = 5 } )
 
-	local WheelRearLeft = self:AddWheel( { pos = Vector(-65.7,34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
-	local WheelRearRight = self:AddWheel( { pos = Vector(-65.7,-34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
+	local WheelRearLeft = self:AddWheel( { pos = Vector(-65.7,34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,-90,0), width = 5 } )
+	local WheelRearRight = self:AddWheel( { pos = Vector(-65.7,-34.2,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0), width = 5 } )
 
 	self:CreateHydraulicControler( "fl", WheelFrontLeft )
 	self:CreateHydraulicControler( "fr", WheelFrontRight )
@@ -83,23 +83,7 @@ function ENT:OnSpawn( PObj )
 		Wheels = { WheelRearLeft, WheelRearRight },
 		Suspension = SuspensionSettings,
 	} )
-	
-	if ( ProxyColor ) then
-		local ProxyColorPresets = {
-			{Color(94,112,114), Color(245,245,245)},
-			{Color(93,126,141), Color(245,245,245)},
-			{Color(165,169,167), Color(155,159,157)},
-			{Color(66,31,33), Color(155,159,157)},
-			{Color(132,148,171), Color(245,245,245)},
-			{Color(45,58,53), Color(245,245,245)},
-			{Color(156,141,113), Color(155,159,157)},
-			{Color(111,130,151), Color(155,159,157)},
-		}
-		
-		self:SetProxyColor( ProxyColorPresets[math.random(1,8)] )
-		self:SetColor(Color(255,255,255)) --remove the base color since we now have proxy colors
-	end
-	
+
 	-- call physics damage system in sv_pds.lua
 	self:CreatePDS()
 end

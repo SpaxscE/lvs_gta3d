@@ -5,7 +5,7 @@ DEFINE_BASECLASS( "lvs_bike_wheeldrive" )
 
 ENT.MinVelocity = 50
 
-ENT.MaxHealth = 300
+ENT.MaxHealth = 500
 ENT.MaxHealthEngine = 25
 ENT.MaxHealthFuelTank = 10
 
