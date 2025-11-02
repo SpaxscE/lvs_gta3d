@@ -3,6 +3,35 @@ AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
 include("sv_controls.lua")
 
+
+function ENT:SpawnFunction( ply, tr, ClassName )
+
+	local startpos = ply:GetShootPos()
+	local endpos = startpos + ply:GetAimVector() * 10000
+
+	local waterTrace = util.TraceLine( {
+		start = startpos,
+		endpos = endpos,
+		mask = MASK_WATER,
+		filter = ply
+	} )
+
+	if waterTrace.Hit then
+		tr = waterTrace
+	end
+
+	if not tr.Hit then return end
+
+	local ent = ents.Create( ClassName )
+	ent:StoreCPPI( ply )
+	ent:SetPos( tr.HitPos + tr.HitNormal * ent.SpawnNormalOffset )
+	ent:SetAngles( Angle(0, ply:EyeAngles().y, 0 ) )
+	ent:Spawn()
+	ent:Activate()
+
+	return ent
+end
+
 function ENT:RunAI()
 end
 
