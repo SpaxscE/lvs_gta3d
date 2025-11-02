@@ -56,7 +56,7 @@ ENT.EngineSounds = {
 		PitchMul = 10,
 		FadeIn = 0,
 		FadeOut = 0.1,
-		FadeSpeed = 1,
+		FadeSpeed = 0.5,
 		UseDoppler = false,
 	},
 	{
@@ -67,7 +67,7 @@ ENT.EngineSounds = {
 		PitchMul = 40,
 		FadeIn = 0.1,
 		FadeOut = 1,
-		FadeSpeed = 1,
+		FadeSpeed = 0.5,
 		UseDoppler = true,
 		FadeInRestart = true,
 	},
