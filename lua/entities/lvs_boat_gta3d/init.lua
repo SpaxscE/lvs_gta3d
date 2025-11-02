@@ -16,7 +16,7 @@ function ENT:SpawnFunction( ply, tr, ClassName )
 		filter = ply
 	} )
 
-	if waterTrace.Hit then
+	if waterTrace.Hit and ((waterTrace.HitPos - startpos):Length() < (tr.HitPos - startpos):Length()) then
 		tr = waterTrace
 	end
 
