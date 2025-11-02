@@ -83,6 +83,7 @@ function ENT:PhysicsSimulate( phys, deltatime )
 
 	local Thrust = self:GetThrust()
 	local Steer = self:GetSteer() * (Thrust == 0 and 1 or self:Sign( Thrust ))
+	Steer = Steer * math.min(math.abs( VelL.x ) / EntTable.MaxVelocity + self:GetThrottle() + self:GetBrake(), 1 )
 
 	local Pitch = -(math.max( math.cos( CurTime() * EntTable.FloatWaveFrequency + self:EntIndex() * 1337 ), 0 ) * VelL.x * 0.25 + Thrust * 0.25 * math.Clamp( VelL.x / EntTable.MaxVelocity,0,1))
 	local Yaw = - AngVel.z + Steer * EntTable.TurnForceYaw

@@ -13,10 +13,6 @@ function ENT:CalcSteer( ply, Steer )
 end
 
 function ENT:LerpSteer( Steer )
-	local VelL = self:WorldToLocal( self:GetPos() + self:GetVelocity() )
-
-	Steer = Steer * math.min(math.abs( VelL.x ) / self.MaxVelocity + self:GetThrottle() + self:GetBrake(), 1 )
-
 	local Rate = FrameTime() * self.TurnRate
 	local Cur = self:GetSteer()
 	local New = Cur + math.Clamp(Steer - Cur,-Rate,Rate)
