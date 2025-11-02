@@ -1,6 +1,7 @@
 AddCSLuaFile()
 
-ENT.Type            = "anim"
+ENT.Base = "lvs_wheeldrive_engine"
+DEFINE_BASECLASS( "lvs_wheeldrive_engine" )
 
 ENT.Spawnable       = false
 ENT.AdminSpawnable  = false
@@ -10,33 +11,10 @@ ENT._LVS = true
 
 ENT.RenderGroup = RENDERGROUP_BOTH 
 
-function ENT:SetupDataTables()
-	self:NetworkVar( "Entity",0, "Base" )
-end
-
-if SERVER then
-	function ENT:Initialize()	
-		self:SetMoveType( MOVETYPE_NONE )
-		self:SetSolid( SOLID_NONE )
-		self:DrawShadow( false )
-		debugoverlay.Cross( self:GetPos(), 50, 5, Color( 0, 255, 255 ) )
-	end
-
-	function ENT:Think()
-		return false
-	end
-
-	function ENT:OnTakeDamage( dmginfo )
-	end
-
-	return
-end
+if SERVER then return end
 
 ENT._oldEnActive = false
 ENT._ActiveSounds = {}
-
-function ENT:Initialize()
-end
 
 function ENT:StopSounds()
 	for id, sound in pairs( self._ActiveSounds ) do
@@ -94,6 +72,8 @@ function ENT:HandleEngineSounds( vehicle )
 	if DrivingMe then
 		HasActiveSoundEmitters = vehicle:HasActiveSoundEmitters()
 	end
+
+	local rpmSet = false
 
 	for id, sound in pairs( self._ActiveSounds ) do
 		if not sound then continue end
@@ -159,6 +139,12 @@ function ENT:HandleEngineSounds( vehicle )
 			else
 				sound:ChangePitch( math.Clamp( Pitch * PitchMul, 0, 255 ), 0.2 )
 				sound:ChangeVolume( Volume, data.FadeSpeed )
+			end
+
+			if not rpmSet then
+				rpmSet = true
+
+				self:SetRPM( vehicle.EngineIdleRPM + ((sound:GetPitch() - data.Pitch) / data.PitchMul) * (vehicle.EngineMaxRPM - vehicle.EngineIdleRPM) )
 			end
 		end
 	end

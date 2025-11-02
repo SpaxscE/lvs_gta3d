@@ -4,6 +4,14 @@ include("shared.lua")
 include("sv_controls.lua")
 include("sv_components.lua")
 
+function ENT:EnableManualTransmission()
+	return false
+end
+
+function ENT:DisableManualTransmission()
+	return false
+end
+
 function ENT:SpawnFunction( ply, tr, ClassName )
 
 	local startpos = ply:GetShootPos()

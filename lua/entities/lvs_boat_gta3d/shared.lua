@@ -9,6 +9,13 @@ ENT.Category = "[LVS] - Boats"
 ENT.Spawnable			= false
 ENT.AdminSpawnable		= false
 
+ENT.MaxHealth = 600
+ENT.MaxHealthEngine = 50
+ENT.MaxHealthFuelTank = 10
+
+ENT.EngineIdleRPM = 1000
+ENT.EngineMaxRPM = 6000
+
 ENT.DeleteOnExplode = true
 
 ENT.lvsAllowEngineTool = false
@@ -72,4 +79,12 @@ function ENT:GetThrustStrenght()
 	end
 
 	return math.Clamp((DesiredVelocity - VelL.x) / EntTable.MaxVelocity,-1,1) 
+end
+
+function ENT:GetGear()
+	return -1
+end
+
+function ENT:IsManualTransmission()
+	return false
 end
