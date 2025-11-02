@@ -22,7 +22,7 @@ ENT.TurnRate = 5
 ENT.TurnForceYaw = 600
 ENT.TurnForceRoll = 400
 
-ENT.MaxThrust = 1000
+ENT.MaxThrust = 650
 
 ENT.MaxVelocity = 1000
 ENT.MaxVelocityReverse = 350
