@@ -35,6 +35,14 @@ end
 function ENT:RunAI()
 end
 
+function ENT:GetEnginePos()
+	local Engine = self:GetEngine()
+
+	if IsValid( Engine ) then return Engine:GetPos() end
+
+	return self:LocalToWorld( self:OBBCenter() )
+end
+
 local up = Vector(0,0,1)
 local down = Vector(0,0,-1)
 function ENT:PhysicsSimulate( phys, deltatime )
@@ -43,7 +51,7 @@ function ENT:PhysicsSimulate( phys, deltatime )
 
 	local EntTable = self:GetTable()
 
-	local pos = phys:LocalToWorld( phys:GetMassCenter() )
+	local pos = self:GetEnginePos()
 
 	local traceSky = util.TraceLine( {
 		start = pos,
@@ -56,6 +64,8 @@ function ENT:PhysicsSimulate( phys, deltatime )
 		endpos = pos + down * 50000,
 		filter = self:GetCrosshairFilterEnts()
 	}
+
+	pos = phys:LocalToWorld( phys:GetMassCenter() )
 
 	local traceSoil = util.TraceLine( traceData )
 	traceData.mask = MASK_WATER
