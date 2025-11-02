@@ -2,7 +2,7 @@ AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include("shared.lua")
 include("sv_controls.lua")
-
+include("sv_components.lua")
 
 function ENT:SpawnFunction( ply, tr, ClassName )
 
@@ -94,4 +94,27 @@ function ENT:PhysicsSimulate( phys, deltatime )
 	end
 
 	return ForceAngle, ForceLinear, SIM_GLOBAL_ACCELERATION
+end
+
+function ENT:ApproachTargetAngle( TargetAngle )
+	local pod = self:GetDriverSeat()
+
+	if not IsValid( pod ) then return end
+
+	local ang = pod:GetAngles()
+	ang:RotateAroundAxis( self:GetUp(), 90 )
+
+	local Forward = ang:Right()
+	local View = pod:WorldToLocalAngles( TargetAngle ):Forward()
+
+	local Reversed = false
+	if self:AngleBetweenNormal( View, ang:Forward() ) < 90 then
+		Reversed = self:GetReverse()
+	end
+
+	local LocalAngSteer = (self:AngleBetweenNormal( View, ang:Right() ) - 90) / self.MouseSteerAngle
+
+	local Steer = (math.min( math.abs( LocalAngSteer ), 1 ) ^ self.MouseSteerExponent * self:Sign( LocalAngSteer ))
+
+	self:SetSteer( Steer )
 end

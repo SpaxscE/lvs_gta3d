@@ -1,8 +1,9 @@
 
 function ENT:CalcMouseSteer( ply )
+	self:ApproachTargetAngle( ply:EyeAngles() )
 end
 
-function ENT:CalcSteer( ply )
+function ENT:CalcSteer( ply, Steer )
 	local KeyLeft = ply:lvsKeyDown( "CAR_STEER_LEFT" )
 	local KeyRight = ply:lvsKeyDown( "CAR_STEER_RIGHT" )
 
@@ -46,14 +47,4 @@ function ENT:CalcTransmission( ply, T )
 end
 
 function ENT:OnHandbrakeActiveChanged( Active )
-end
-
-function ENT:GetThrust()
-	local EntTable = self:GetTable()
-
-	local VelL = self:WorldToLocal( self:GetPos() + self:GetVelocity() )
-
-	local DesiredVelocity = EntTable.MaxVelocity * self:GetThrottle() - EntTable.MaxVelocityReverse * self:GetBrake()
-
-	return ((DesiredVelocity - VelL.x) / EntTable.MaxVelocity) * EntTable.MaxThrust
 end

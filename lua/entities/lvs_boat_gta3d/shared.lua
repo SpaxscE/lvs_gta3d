@@ -22,6 +22,8 @@ ENT.MaxThrust = 1000
 ENT.MaxVelocity = 1000
 ENT.MaxVelocityReverse = 350
 
+ENT.MinVelocityAutoBrake = 400
+
 ENT.ForceLinearMultiplier = 1
 ENT.ForceAngleMultiplier = 1
 
@@ -43,4 +45,22 @@ function ENT:UpdateAnimation( ply, velocity, maxseqgroundspeed )
 	end
 
 	return false
+end
+
+function ENT:GetThrust()
+	return self:GetThrustStrenght() * self.MaxThrust
+end
+
+function ENT:GetThrustStrenght()
+	local EntTable = self:GetTable()
+
+	local VelL = self:WorldToLocal( self:GetPos() + self:GetVelocity() )
+
+	local DesiredVelocity = EntTable.MaxVelocity * self:GetThrottle() - EntTable.MaxVelocityReverse * self:GetBrake()
+
+	if DesiredVelocity == 0 and math.abs( VelL.x ) > EntTable.MinVelocityAutoBrake then
+		return 0
+	end
+
+	return math.Clamp((DesiredVelocity - VelL.x) / EntTable.MaxVelocity,-1,1) 
 end
