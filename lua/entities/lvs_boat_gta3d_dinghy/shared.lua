@@ -32,7 +32,7 @@ ENT.FloatWaveIntensity = 1
 ENT.FloatThrottleIntensity = 20
 
 ENT.TurnRate = 3
-ENT.TurnForceYaw = 200
+ENT.TurnForceYaw = 400
 ENT.TurnForceRoll = 400
 
 ENT.MaxThrust = 400
