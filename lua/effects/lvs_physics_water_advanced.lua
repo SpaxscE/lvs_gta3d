@@ -14,7 +14,7 @@ function EFFECT:Init( data )
 
 	local Speed = Vel:Length()
 
-	if Speed < 10 then return end
+	if Speed < 50 then return end
 
 	local ShouldPlaySound = false
 
@@ -81,70 +81,29 @@ function EFFECT:Init( data )
 		particle:SetThinkFunction( function( p )
 			local fxpos = p:GetPos()
 
-			if fxpos.z < Pos.z - math.Rand(0,5) then
-				p:SetDieTime( 0 )
+			p:SetNextThink( CurTime() )
 
-				if not IsValid( Ent ) or math.random(1,6) ~= 2 then return end
+			if fxpos.z > Pos.z then return end
 
-				local startpos = Vector(fxpos.x,fxpos.y,Pos.z + 1)
+			p:SetDieTime( 0 )
 
-				local emitter3D = Ent:GetParticleEmitter3D( Ent:GetPos() )
+			if not IsValid( Ent ) or math.random(1,6) ~= 2 then return end
 
-				if not IsValid( emitter3D ) then return end
+			local startpos = Vector(fxpos.x,fxpos.y,Pos.z + 1)
 
-				local particle = emitter3D:Add("effects/splashwake1", startpos )
+			local volume = math.min( math.abs( p:GetVelocity().z ) / 100, 1 )
 
-				if not particle then return end
+			if ShouldPlaySound and volume > 0.2 and p:GetStartSize() > 13 and math.random(1,10) == 1 then
+				local pitch = math.Rand(95,105) * math.Clamp( 1.5 - volume * 0.9,0.5,1)
 
-				local volume = math.min( math.abs( p:GetVelocity().z ) / 100, 1 )
-
-				if ShouldPlaySound and volume > 0.2 and p:GetStartSize() > 13 and math.random(1,10) == 1 then
-					local pitch = math.Rand(95,105) * math.Clamp( 1.5 - volume * 0.9,0.5,1)
-
-					if pitch < 58 then
-						sound.Play( "vehicles/airboat/pontoon_splash"..math.random(1,2)..".wav", startpos, 75, math.Rand(95,105), volume * 0.1, 0 )
-					else
-						if Speed < 600 then
-							sound.Play( "ambient/water/water_splash"..math.random(1,3)..".wav", startpos, 75, pitch, volume * 0.1, 0 )
-						end
+				if pitch < 58 then
+					sound.Play( "vehicles/airboat/pontoon_splash"..math.random(1,2)..".wav", startpos, 75, math.Rand(95,105), volume * 0.1, 0 )
+				else
+					if Speed < 600 then
+						sound.Play( "ambient/water/water_splash"..math.random(1,3)..".wav", startpos, 75, pitch, volume * 0.1, 0 )
 					end
 				end
-
-				local scale = math.Rand(0.5,2)
-				local size = p:GetEndSize()
-				local vsize = Vector(size,size,size)
-
-				particle:SetStartSize( size * scale * 0.5 )
-				particle:SetEndSize( size * scale )
-				particle:SetDieTime( math.Rand(0.5,1) )
-				particle:SetStartAlpha( 255 )
-				particle:SetEndAlpha( 0 )
-				particle:SetPos( startpos )
-				particle:SetAngles( Angle(-90,math.Rand(-180,180),0) )
-				particle:SetNextThink( CurTime() )
-				particle:SetThinkFunction( function( pfx )
-
-					local startpos = pfx:GetPos()
-					local endpos = startpos - Vector(0,0,100)
-
-					local trace = util.TraceHull( {
-						start = startpos,
-						endpos = endpos,
-						filter = Ent,
-						whitelist = true,
-						mins = -vsize,
-						maxs = vsize,
-					} )
-
-					if trace.Hit then pfx:SetDieTime( 0 ) return end
-	
-					pfx:SetNextThink( CurTime() )
-				end )
-
-				return
 			end
-
-			p:SetNextThink( CurTime() )
 		end )
 	end
 end

@@ -17,9 +17,13 @@ ENT.FloatHeight = 10
 
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
+
 ENT.EngineSplash = true
 ENT.EngineSplashStartSize = 50
 ENT.EngineSplashEndSize = 200
+ENT.EngineSplashVelocity = 500
+ENT.EngineSplashVelocityRandomAdd = 200
+ENT.EngineSplashThrowAngle = -30
 
 ENT.FloatForce = 20
 ENT.FloatWaveFrequency = 5

@@ -232,6 +232,8 @@ function ENT:Think()
 end
 
 function ENT:EngineFX( vehicle )
+	if not vehicle:GetEngineActive() then return end
+
 	local EntTable = vehicle:GetTable()
 
 	if not EntTable.EngineSplash then return end
@@ -240,9 +242,9 @@ function ENT:EngineFX( vehicle )
 
 	if (EntTable.nextPropFX or 0) > T then return end
 
-	EntTable.nextPropFX = T + 0.05
+	local throttle = (self:GetRPM() / EntTable.EngineMaxRPM)
 
-	if self:GetRPM() * vehicle:GetThrottle() <= EntTable.EngineIdleRPM then return end
+	EntTable.nextPropFX = T + math.max(0.2 - throttle,0.05)
 
 	local startpos = self:GetPos()
 	local endpos = self:LocalToWorld( Vector(0,0,-100) )
@@ -264,20 +266,20 @@ function ENT:EngineFX( vehicle )
 
 	local particle = emitter:Add( "effects/splash4", pos )
 
-	local dir = self:LocalToWorldAngles( Angle(-30,180 - vehicle:GetSteer() * 30,0) ):Forward()
+	local dir = self:LocalToWorldAngles( Angle(EntTable.EngineSplashThrowAngle,180 - vehicle:GetSteer() * 30,0) ):Forward()
 
-	local vel = VectorRand() * 200 + dir * 500
+	local vel = (VectorRand() * EntTable.EngineSplashVelocityRandomAdd + dir * EntTable.EngineSplashVelocity) * throttle
 
 	particle:SetVelocity( vel )
 	particle:SetDieTime( 1 )
 	particle:SetAirResistance( 10 ) 
 	particle:SetStartAlpha( 255 )
 
-	particle:SetStartSize( EntTable.EngineSplashStartSize )
-	particle:SetEndSize( EntTable.EngineSplashEndSize)
+	particle:SetStartSize( EntTable.EngineSplashStartSize * throttle )
+	particle:SetEndSize( EntTable.EngineSplashEndSize * throttle )
 
 	particle:SetRoll( math.Rand(-5,5) )
-	particle:SetColor( 255,255,255 )
+	particle:SetColor(255,255,255)
 	particle:SetGravity( Vector(0,0,-600) )
 	particle:SetCollide( false )
 	particle:SetNextThink( T )

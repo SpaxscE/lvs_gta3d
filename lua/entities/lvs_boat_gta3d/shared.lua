@@ -15,9 +15,13 @@ ENT.MaxHealthFuelTank = 10
 
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
+
 ENT.EngineSplash = false
 ENT.EngineSplashStartSize = 50
 ENT.EngineSplashEndSize = 200
+ENT.EngineSplashVelocity = 500
+ENT.EngineSplashVelocityRandomAdd = 200
+ENT.EngineSplashThrowAngle = 0
 
 ENT.DeleteOnExplode = true
 
