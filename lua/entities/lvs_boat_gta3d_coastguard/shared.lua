@@ -27,7 +27,7 @@ ENT.MaxThrust = 1000
 ENT.MaxVelocity = 1000
 ENT.MaxVelocityReverse = 350
 
-ENT.MinVelocityAutoBrake = 400
+ENT.MinVelocityAutoBrake = 200
 
 ENT.ForceLinearMultiplier = 1
 ENT.ForceAngleMultiplier = 1
