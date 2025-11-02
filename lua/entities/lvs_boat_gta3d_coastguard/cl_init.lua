@@ -1,6 +1,7 @@
 include("shared.lua")
 
 function ENT:OnFrame()
+	local EntTable = self:GetTable()
 	local Steer = self:GetSteer()
 
 	self:ManipulateBoneAngles( 1, Angle(0,Steer * 60,0) )
@@ -12,9 +13,11 @@ function ENT:OnFrame()
 
 	if not IsValid( Engine ) then return end
 
-	self._rRPM = self._rRPM and (self._rRPM + Engine:GetRPM() *  RealFrameTime()) or 0
+	local RPM = Engine:GetRPM()
 
-	local Rot = Angle(0,self._rRPM,0)
+	EntTable._rRPM = EntTable._rRPM and (EntTable._rRPM + RPM *  RealFrameTime()) or 0
+
+	local Rot = Angle(0,EntTable._rRPM,0)
 	Rot:Normalize() 
 
 	self:ManipulateBoneAngles( 4, Rot )

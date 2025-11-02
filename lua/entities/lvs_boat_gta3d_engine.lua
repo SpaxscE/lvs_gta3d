@@ -208,6 +208,7 @@ function ENT:Think()
 	if not IsValid( vehicle ) then return end
 
 	self:DamageFX( vehicle )
+	self:EngineFX( vehicle )
 
 	if not self.EngineSounds then
 		self.EngineSounds = vehicle.EngineSounds
@@ -224,32 +225,93 @@ function ENT:Think()
 
 	if EngineActive then
 		self:HandleEngineSounds( vehicle )
+		self:ExhaustFX( vehicle )
 	else
 		self._smTHR = 0
 	end
 end
 
-function ENT:OnRemove()
-	self:StopSounds()
-end
+function ENT:EngineFX( vehicle )
+	local EntTable = vehicle:GetTable()
 
-function ENT:Draw()
-end
+	if not EntTable.EngineSplash then return end
 
-function ENT:DrawTranslucent()
-end
-
-function ENT:DamageFX( vehicle )
 	local T = CurTime()
-	local HP = vehicle:GetHP()
-	local MaxHP = vehicle:GetMaxHP() 
 
-	if HP <= 0 or HP > MaxHP * 0.5 or (self.nextDFX or 0) > T then return end
+	if (EntTable.nextPropFX or 0) > T then return end
 
-	self.nextDFX = T + 0.05
+	EntTable.nextPropFX = T + 0.05
 
-	local effectdata = EffectData()
-		effectdata:SetOrigin( self:GetPos() )
-		effectdata:SetEntity( vehicle )
-	util.Effect( "lvs_engine_blacksmoke", effectdata )
+	if self:GetRPM() * vehicle:GetThrottle() <= EntTable.EngineIdleRPM then return end
+
+	local startpos = self:GetPos()
+	local endpos = self:LocalToWorld( Vector(0,0,-100) )
+
+	local traceWater = util.TraceLine( {
+		start = startpos,
+		endpos = endpos,
+		mask = MASK_WATER,
+		filter = vehicle:GetCrosshairFilterEnts()
+	} )
+
+	if not traceWater.Hit then return end
+
+	local pos = traceWater.HitPos
+
+	local emitter = vehicle:GetParticleEmitter( pos )
+
+	if not IsValid( emitter ) then return end
+
+	local particle = emitter:Add( "effects/splash4", pos )
+
+	local dir = self:LocalToWorldAngles( Angle(-30,180 - vehicle:GetSteer() * 45,0) ):Forward()
+
+	local vel = VectorRand() * 150 + dir * 500
+
+	particle:SetVelocity( vel )
+	particle:SetDieTime( 1 )
+	particle:SetAirResistance( 10 ) 
+	particle:SetStartAlpha( 255 )
+
+	particle:SetStartSize( EntTable.EngineSplashStartSize )
+	particle:SetEndSize( EntTable.EngineSplashEndSize)
+
+	particle:SetRoll( math.Rand(-5,5) )
+	particle:SetColor( 255,255,255 )
+	particle:SetGravity( Vector(0,0,-600) )
+	particle:SetCollide( false )
+	particle:SetNextThink( T )
+	particle:SetThinkFunction( function( p )
+		p:SetNextThink( CurTime() )
+
+		local fxpos = p:GetPos()
+
+		if fxpos.z > pos.z then return end
+
+		p:SetDieTime( 0 )
+
+		local startpos = Vector(fxpos.x,fxpos.y,pos.z + 1)
+
+		if not IsValid( vehicle ) then return end
+
+		local emitter3D = vehicle:GetParticleEmitter3D( vehicle:GetPos() )
+
+		if not IsValid( emitter3D ) then return end
+
+		local particle = emitter3D:Add("effects/splashwake1", startpos )
+
+		if not particle then return end
+
+		local scale = math.Rand(0.5,2)
+		local size = p:GetEndSize()
+		local vsize = Vector(size,size,size)
+
+		particle:SetStartSize( size * scale * 0.5 )
+		particle:SetEndSize( size * scale )
+		particle:SetDieTime( math.Rand(0.5,1) )
+		particle:SetStartAlpha( 255 )
+		particle:SetEndAlpha( 0 )
+		particle:SetPos( startpos )
+		particle:SetAngles( Angle(-90,math.Rand(-180,180),0) )
+	end )
 end

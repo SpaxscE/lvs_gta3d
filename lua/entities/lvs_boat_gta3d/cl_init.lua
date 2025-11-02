@@ -12,8 +12,10 @@ function ENT:DoVehicleFX()
 		EntTable._WindSFX:ChangeVolume( math.Clamp( (Vel * EntTable.GroundEffectsMultiplier - 1200) / 2800,0,1 ), 0.25 )
 	end
 
-	if (EntTable.nextFX or 0) < CurTime() then
-		EntTable.nextFX = CurTime() + 0.01
+	local T = CurTime()
+
+	if (EntTable.nextFX or 0) < T then
+		EntTable.nextFX = T + 0.01
 
 		self:DoAdvancedWaterEffects( EntTable, Vel )
 	end
