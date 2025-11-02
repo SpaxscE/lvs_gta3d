@@ -16,7 +16,7 @@ ENT.MDL = "models/diggercars/gtasa/boats/coastg.mdl"
 ENT.FloatHeight = 10
 
 ENT.EngineIdleRPM = 1000
-ENT.EngineMaxRPM = 6000
+ENT.EngineMaxRPM = 5000
 
 ENT.EngineSplash = true
 ENT.EngineSplashStartSize = 50
