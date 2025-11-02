@@ -32,6 +32,21 @@ ENT.MinVelocityAutoBrake = 400
 ENT.ForceLinearMultiplier = 1
 ENT.ForceAngleMultiplier = 1
 
+ENT.PlayerBoneManipulate = {
+	[1] = {
+		["ValveBiped.Bip01_Pelvis"] = Angle(0,0,40),
+		
+		["ValveBiped.Bip01_R_Thigh"] = Angle(15,75,0),
+		["ValveBiped.Bip01_L_Thigh"] = Angle(-15,75,0),
+
+		["ValveBiped.Bip01_R_Calf"] = Angle(0,-60,0),
+		["ValveBiped.Bip01_L_Calf"] = Angle(0,-60,0),
+		
+		["ValveBiped.Bip01_R_Foot"] = Angle(0,0,0),
+		["ValveBiped.Bip01_L_Foot"] = Angle(0,0,0),
+	},
+}
+
 ENT.EngineSounds = {
 	{
 		sound = "gta3d/engines/boat_coastguard/idle.wav",
