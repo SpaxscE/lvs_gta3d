@@ -108,7 +108,7 @@ function ENT:PhysicsSimulate( phys, deltatime )
 		Steer = Steer * -Brake
 	end
 
-	local Pitch = -(math.max( math.cos( CurTime() * EntTable.FloatWaveFrequency + self:EntIndex() * 1337 ), 0 ) * VelL.x * 0.25 + Thrust * 0.25 * math.Clamp( VelL.x / EntTable.MaxVelocity,0,1))
+	local Pitch = -(math.max( math.cos( CurTime() * EntTable.FloatWaveFrequency + self:EntIndex() * 1337 ), 0 ) * VelL.x * 0.25 * EntTable.FloatWaveIntensity + Thrust * 0.25 * math.Clamp( VelL.x / EntTable.MaxVelocity,0,1) * EntTable.FloatThrottleIntensity)
 	local Yaw = - AngVel.z + Steer * EntTable.TurnForceYaw
 	local Roll = - AngVel.x * 5 - Steer * EntTable.TurnForceRoll
 

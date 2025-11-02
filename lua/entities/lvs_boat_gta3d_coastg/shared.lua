@@ -27,14 +27,17 @@ ENT.EngineSplashThrowAngle = -30
 
 ENT.FloatForce = 20
 ENT.FloatWaveFrequency = 5
+ENT.FloatWaveIntensity = 1
+
+ENT.FloatThrottleIntensity = 3
 
 ENT.TurnRate = 5
-ENT.TurnForceYaw = 600
+ENT.TurnForceYaw = 400
 ENT.TurnForceRoll = 400
 
-ENT.MaxThrust = 650
+ENT.MaxThrust = 1200
 
-ENT.MaxVelocity = 1000
+ENT.MaxVelocity = 2000
 ENT.MaxVelocityReverse = 350
 
 ENT.MinVelocityAutoBrake = 200

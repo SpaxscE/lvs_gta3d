@@ -23,6 +23,7 @@ function EFFECT:Init( data )
 	local mul = math.min(Speed * 0.005,1)
 	local invmul = 1 - mul
 
+	local EntPos = Ent:GetPos()
 	local Len = Ent:BoundingRadius() * 1.5
 	local MoveDir = Vel:GetNormalized()
 	local MoveAng = MoveDir:Angle()
@@ -39,6 +40,7 @@ function EFFECT:Init( data )
 		end
 	end
 
+	local SwapSides = math.abs( Ent:GetSteer() ) > 0.9
 	local Res = math.max( math.Round( (Target:GetPos() - Pos):LengthSqr() / 2500000, 0 ), 5 )
 
 	for i = -90, 90, Res do
@@ -51,18 +53,24 @@ function EFFECT:Init( data )
 			start = StartPos,
 			endpos = EndPos,
 			filter = Ent,
+			ignoreworld = true,
 			whitelist = true,
 		} )
 
 		if not trace.Hit then continue end
 
-		local fxPos = trace.HitPos
+		local fxPos = Ent:WorldToLocal( trace.HitPos )
+		if SwapSides then fxPos.y = -fxPos.y end
+		fxPos = Ent:LocalToWorld( fxPos )
 
 		local particle = emitter:Add( "effects/splash4", fxPos + Vector(0,0,math.Rand(-5,5) * mul) )
 
 		if not particle then continue end
 
-		local pfxVel = Dir * Speed * 0.75 + trace.HitNormal * Speed * 0.25 + Vector(0,0,50)
+		local pfxVel = Ent:WorldToLocal( EntPos + Dir * Speed * 0.75 + trace.HitNormal * Speed * 0.25 + Vector(0,0,50) )
+		if SwapSides then pfxVel.y = -pfxVel.y end
+		pfxVel = Ent:LocalToWorld( pfxVel ) - EntPos
+
 		local pfxMul = math.Clamp( pfxVel.z / 250, 1, 2 )
 
 		particle:SetVelocity( pfxVel )
