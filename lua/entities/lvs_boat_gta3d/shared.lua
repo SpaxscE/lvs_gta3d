@@ -9,6 +9,14 @@ ENT.Category = "[LVS] - Boats"
 ENT.Spawnable			= false
 ENT.AdminSpawnable		= false
 
+ENT.DeleteOnExplode = true
+
+ENT.lvsAllowEngineTool = false
+ENT.lvsShowInSpawner = false
+
+ENT.AllowSuperCharger = false
+ENT.AllowTurbo = false
+
 ENT.FloatHeight = 0
 ENT.FloatForce = 20
 ENT.FloatWaveFrequency = 5
