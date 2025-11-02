@@ -47,16 +47,19 @@ ENT.PlayerBoneManipulate = {
 	},
 }
 
+ENT.HornSound = "gta3d/horns/horn_010HD.wav"
+ENT.HornPos = Vector(70,0,20)
+
 ENT.EngineSounds = {
 	{
 		sound = "gta3d/engines/boat_coastguard/idle.wav",
 		Pitch = 100,
 		PitchMin = 0,
 		PitchMax = 255,
-		PitchMul = 10,
+		PitchMul = 100,
 		FadeIn = 0,
 		FadeOut = 0.1,
-		FadeSpeed = 0.5,
+		FadeSpeed = 0.1,
 		UseDoppler = false,
 	},
 	{
@@ -67,7 +70,7 @@ ENT.EngineSounds = {
 		PitchMul = 40,
 		FadeIn = 0.1,
 		FadeOut = 1,
-		FadeSpeed = 0.5,
+		FadeSpeed = 0.1,
 		UseDoppler = true,
 		FadeInRestart = true,
 	},
