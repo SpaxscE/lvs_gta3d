@@ -30,7 +30,6 @@ ENT.AITEAM = 0
 ENT.MaxVelocity = 500
 
 ENT.ThrottleRate = 0.5
-ENT.ThrottleRateDown = 3.5
 
 ENT.EngineTorque = 100
 ENT.EngineCurve = 0.1
