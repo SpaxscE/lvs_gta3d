@@ -54,7 +54,7 @@ function ENT:OnSpawn( PObj )
 	local WheelModel = "models/diggercars/gtasa/shared/wheel_blista.mdl"
 
 	local SuspensionSettings = {
-		Height = 6,
+		Height = 8.2,
 		MaxTravel = 7,
 		ControlArmLength = 25,
 		SpringConstant = 30000,
@@ -76,6 +76,8 @@ function ENT:OnSpawn( PObj )
 		},
 		Suspension = SuspensionSettings,
 	} )
+
+	SuspensionSettings.Height = 4
 
 	local RearAxle = self:DefineAxle( {
 		Axle = {

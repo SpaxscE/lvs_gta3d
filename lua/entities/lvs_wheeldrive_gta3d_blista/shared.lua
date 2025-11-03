@@ -29,6 +29,8 @@ ENT.AITEAM = 0
 
 ENT.MaxVelocity = 2100
 
+ENT.MassCenterOverride = Vector(25,0,25)
+
 ENT.EngineTorque = 130
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
