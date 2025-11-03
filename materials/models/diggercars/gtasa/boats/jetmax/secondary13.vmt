@@ -1,0 +1,10 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/secondary.vmt"
+	insert
+	{
+"$basetexture" "models/diggercars/gtasa/shared/vehiclegeneric256"
+"$bumpmap" "models/diggercars/gtasa/shared/vehiclegeneric256_nm"
+"$colorfix" "{88 89 90}"
+}
+}
