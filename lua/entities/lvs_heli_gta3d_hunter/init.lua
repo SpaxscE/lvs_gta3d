@@ -6,6 +6,8 @@ ENT.DriverActiveSound = "common/null.wav"
 ENT.DriverInActiveSound = "common/null.wav"
 
 function ENT:OnSpawn( PObj )
+	PObj:SetInertia( Vector(60000,60000,60000) )
+
 	local DriverSeat = self:AddDriverSeat( Vector(105,0,70), Angle(0,-90,0) )
 	DriverSeat:SetCameraDistance( 0.2 )
 
@@ -34,6 +36,9 @@ function ENT:OnSpawn( PObj )
 
 		self:EmitSound( "physics/metal/metal_box_break2.wav" )
 	end
+
+	self.SNDTurret = self:AddSoundEmitter( Vector(175,0,19.33), "lvs/vehicles/222/cannon_fire.wav", "lvs/vehicles/222/cannon_fire_interior.wav" )
+	self.SNDTurret:SetSoundLevel( 95 )
 end
 
 function ENT:OnEngineActiveChanged( Active )
