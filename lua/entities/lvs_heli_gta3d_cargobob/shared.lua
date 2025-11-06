@@ -21,10 +21,10 @@ ENT.MaxVelocity = 2000
 
 ENT.ThrustUp = 1
 ENT.ThrustDown = 0.8
-ENT.ThrustRate = 1
+ENT.ThrustRate = 0.75
 
 ENT.ThrottleRateUp = 0.1
-ENT.ThrottleRateDown = 0.1
+ENT.ThrottleRateDown = 0.2
 
 ENT.TurnRatePitch = 0.5
 ENT.TurnRateYaw = 1
