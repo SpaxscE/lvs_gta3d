@@ -15,7 +15,7 @@ ENT.MDL = "models/diggercars/gtasa/helis/hunter.mdl"
 
 ENT.AITEAM = 2
 
-ENT.MaxHealth = 1600
+ENT.MaxHealth = 1000
 
 ENT.MaxVelocity = 2150
 
@@ -27,7 +27,7 @@ ENT.ThrottleRateUp = 0.2
 ENT.ThrottleRateDown = 0.2
 
 ENT.TurnRatePitch = 0.5
-ENT.TurnRateYaw = 1.25
+ENT.TurnRateYaw = 1
 ENT.TurnRateRoll = 0.7
 
 ENT.GravityTurnRateYaw = 3
@@ -37,27 +37,16 @@ ENT.ForceLinearDampingMultiplier = 2
 ENT.ForceAngleMultiplier = 1
 ENT.ForceAngleDampingMultiplier = 1
 
+ENT.useGta3dRadio = false
+
 ENT.EngineSounds = {
 	{
 		sound = "^gta3d/engines/hunter/loop_near.wav",
-		sound_int = "",
-		Pitch = 0,
-		PitchMin = 0,
-		PitchMax = 255,
-		PitchMul = 110,
-		Volume = 1,
-		VolumeMin = 0,
-		VolumeMax = 1,
-		SoundLevel = 125,
-		UseDoppler = true,
-	},
-	{
-		sound = "",
 		sound_int = "lvs/vehicles/helicopter/loop_interior.wav",
 		Pitch = 0,
 		PitchMin = 0,
 		PitchMax = 255,
-		PitchMul = 100,
+		PitchMul = 110,
 		Volume = 1,
 		VolumeMin = 0,
 		VolumeMax = 1,
@@ -83,7 +72,7 @@ function ENT:InitWeapons()
 	local weapon = {}
 	weapon.Icon = Material("lvs/weapons/flak_he.png")
 	weapon.Ammo = 600
-	weapon.Delay = 0.05
+	weapon.Delay = 0.12
 	weapon.HeatRateUp = 2
 	weapon.HeatRateDown = 2
 	weapon.Attack = function( ent )
