@@ -37,7 +37,7 @@ ENT.ForceLinearDampingMultiplier = 2
 ENT.ForceAngleMultiplier = 1
 ENT.ForceAngleDampingMultiplier = 1
 
-ENT.useGta3dRadio = false
+ENT.DisableRadio = true
 
 ENT.EngineSounds = {
 	{
@@ -68,6 +68,15 @@ ENT.EngineSounds = {
 	},
 }
 
+function ENT:TurretInRange()
+	local Pos = self:LocalToWorld( Vector(175,0,19.33) )
+
+	local Dir1 = self:GetForward()
+	local Dir2 = (self:GetEyeTrace().HitPos - Pos):GetNormalized()
+
+	return self:AngleBetweenNormal( Dir1, Dir2 ) < 30
+end
+
 function ENT:InitWeapons()
 	local weapon = {}
 	weapon.Icon = Material("lvs/weapons/flak_he.png")
@@ -76,15 +85,13 @@ function ENT:InitWeapons()
 	weapon.HeatRateUp = 2
 	weapon.HeatRateDown = 2
 	weapon.Attack = function( ent )
-		local Pos = ent:LocalToWorld( Vector(175,0,19.33) )
-		local Dir1 = self:GetForward()
-		local Dir2 = (ent:GetEyeTrace().HitPos - Pos):GetNormalized()
-
-		if self:AngleBetweenNormal( Dir1, Dir2 ) > 30 then return true end
+		if not ent:TurretInRange() then
+			return true
+		end
 
 		local bullet = {}
-		bullet.Src 	= Pos
-		bullet.Dir 	= Dir2
+		bullet.Src 	= ent:LocalToWorld( Vector(175,0,19.33) )
+		bullet.Dir 	= (ent:GetEyeTrace().HitPos - bullet.Src):GetNormalized()
 		bullet.Spread 	= Vector(0.01,0.01,0.01)
 		bullet.TracerName = "lvs_tracer_autocannon"
 		bullet.Force	= 3900
@@ -112,7 +119,14 @@ function ENT:InitWeapons()
 
 		ent.SNDTurret:PlayOnce( 140 + math.cos( CurTime() + ent:EntIndex() * 1337 ) * 5 + math.Rand(-1,1), 1 )
 	end
-	weapon.OnOverheat = function( ent )
+	weapon.HudPaint = function( ent, X, Y, ply )
+		local Pos2D = ent:GetEyeTrace().HitPos:ToScreen()
+
+		local Col =  ent:TurretInRange() and Color(255,255,255,255) or Color(255,0,0,255)
+
+		ent:PaintCrosshairCenter( Pos2D, Col )
+		ent:PaintCrosshairSquare( Pos2D, Col )
+		ent:LVSPaintHitMarker( Pos2D )
 	end
 	self:AddWeapon( weapon )
 
@@ -123,6 +137,9 @@ function ENT:InitWeapons()
 	weapon.HeatRateUp = 0.25
 	weapon.HeatRateDown = 0.25
 	weapon.Attack = function( ent )
+		if not ent:TurretInRange() then
+			return true
+		end
 
 		ent.FireLeft = not ent.FireLeft
 
@@ -156,7 +173,13 @@ function ENT:InitWeapons()
 
 		ent:TakeAmmo()
 	end
-	weapon.OnSelect = function( ent )
+	weapon.HudPaint = function( ent, X, Y, ply )
+		local Pos2D = ent:GetEyeTrace().HitPos:ToScreen()
+
+		local Col =  ent:TurretInRange() and Color(255,255,255,255) or Color(255,0,0,255)
+
+		ent:PaintCrosshairSquare( Pos2D, Col )
+		ent:LVSPaintHitMarker( Pos2D )
 	end
 	self:AddWeapon( weapon )
 end

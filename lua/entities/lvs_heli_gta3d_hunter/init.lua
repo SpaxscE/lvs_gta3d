@@ -9,7 +9,7 @@ function ENT:OnSpawn( PObj )
 	PObj:SetInertia( Vector(5000,60000,60000) )
 
 	local DriverSeat = self:AddDriverSeat( Vector(105,0,70), Angle(0,-90,0) )
-	DriverSeat:SetCameraDistance( 0.2 )
+	DriverSeat:SetCameraDistance( 0.4 )
 
 	local DoorHandler = self:AddDoorHandler( "!cabin", Vector(105,0,70), Angle(0,0,0), Vector(-30,-30,0), Vector(50,30,40), Vector(-30,-50,0), Vector(50,80,40) )
 	DoorHandler:SetSoundOpen( "vehicles/atv_ammo_open.wav" )
