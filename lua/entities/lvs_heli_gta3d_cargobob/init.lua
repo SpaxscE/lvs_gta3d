@@ -38,7 +38,7 @@ function ENT:OnSpawn( PObj )
 		self:EmitSound( "physics/metal/metal_box_break2.wav" )
 	end
 
-	self.TailRotor = self:AddRotor( Vector(-438,0,126), Angle(0,0,90), 20, -6000 )
+	self.TailRotor = self:AddRotor( Vector(-438,10,126), Angle(0,0,90), 20, -6000 )
 	self.TailRotor:SetHP( 10 )
 	function self.TailRotor:OnDestroyed( base )
 		base:SetBodygroup( 2, 2 ) 
