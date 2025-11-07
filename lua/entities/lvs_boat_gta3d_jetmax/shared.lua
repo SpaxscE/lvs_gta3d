@@ -15,6 +15,8 @@ ENT.MDL = "models/diggercars/gtasa/boats/jetmax.mdl"
 
 ENT.FloatHeight = 10
 
+ENT.MassCenterOverride = Vector(20,0,36)
+
 ENT.EngineIdleRPM = 500
 ENT.EngineMaxRPM = 5000
 
@@ -23,17 +25,17 @@ ENT.EngineSplashStartSize = 80
 ENT.EngineSplashEndSize = 400
 ENT.EngineSplashVelocity = 800
 ENT.EngineSplashVelocityRandomAdd = 200
-ENT.EngineSplashThrowAngle = -45
+ENT.EngineSplashThrowAngle = -15
 ENT.EngineSplashDistance = 50
 
 ENT.FloatForce = 20
 ENT.FloatWaveFrequency = 5
 ENT.FloatWaveIntensity = 0.25
 
-ENT.FloatThrottleIntensity = 2
+ENT.FloatThrottleIntensity = 3
 
 ENT.TurnRate = 4
-ENT.TurnForceYaw = 400
+ENT.TurnForceYaw = 280
 ENT.TurnForceRoll = 400
 
 ENT.MaxThrust = 1000
