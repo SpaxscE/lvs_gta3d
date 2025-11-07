@@ -36,6 +36,25 @@ if CLIENT then
 
 		self:PaintZoom( X, Y, ply )
 		self:PaintRadio( X, Y )
+
+		if ply ~= self:GetDriver() then return end
+
+		local HitPlane = self:GetEyeTrace( true ).HitPos:ToScreen()
+		local HitPilot = self:GetEyeTrace().HitPos:ToScreen()
+
+		local pod = ply:GetVehicle()
+
+		if self.Hud then
+			if not pod:GetThirdPersonMode() then
+				self:PaintHeliFlightInfo( X, Y, ply, HitPilot )
+			end
+		end
+
+		if self.HudThirdPerson then
+			if pod:GetThirdPersonMode() then
+				self:PaintHeliFlightInfo( X, Y, ply, HitPilot )
+			end
+		end
 	end
 
 	local Color1 = Color(150,150,150)
