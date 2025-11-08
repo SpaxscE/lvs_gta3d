@@ -9,6 +9,7 @@ function ENT:OnFrame()
 	local FT = RealFrameTime()
 
 	self:AnimControlSurfaces( FT )
+	self:AnimLandingGear( FT )
 end
 
 function ENT:AnimControlSurfaces( frametime )
@@ -31,4 +32,11 @@ function ENT:AnimControlSurfaces( frametime )
 	self:ManipulateBoneAngles( 3, Angle(self.smPitch,0,0) )
 
 	self:ManipulateBoneAngles( 1, Angle( self.smYaw,0,0 ) )
+end
+
+function ENT:AnimLandingGear( frametime )
+	self._smLandingGear = self._smLandingGear and self._smLandingGear + ((1 - self:GetLandingGear()) - self._smLandingGear) * frametime * 2 or 0
+
+	self:ManipulateBoneAngles( 6, Angle(0,0,self._smLandingGear * 80) )
+	self:ManipulateBoneAngles( 7, Angle(0,0,-self._smLandingGear * 105) )
 end

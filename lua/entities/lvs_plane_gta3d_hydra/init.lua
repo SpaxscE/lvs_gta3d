@@ -5,12 +5,24 @@ include("shared.lua")
 ENT.DriverActiveSound = "common/null.wav"
 ENT.DriverInActiveSound = "common/null.wav"
 
+ENT.WheelSteerAngle = 15
+ENT.WheelAutoRetract = true
+
 function ENT:OnSpawn( PObj )
+	PObj:SetMass( 1000 )
+	PObj:SetInertia( Vector(3000,5000,7500) )
+
 	local DriverSeat = self:AddDriverSeat( Vector(112,0,0), Angle(0,-90,0) )
 	DriverSeat:SetCameraDistance( 0.25 )
 	DriverSeat:SetCameraHeight( -0.1 )
 
 	self:AddEngine( Vector(-65,0,0) )
+
+	self:AddWheel( Vector(140,0,-55), 23, 15, LVS.WHEEL_STEER_FRONT )
+
+	self:AddWheel( Vector(-51,0,-55), 15, 15 )
+	self:AddWheel( Vector(-80,-97,-55), 15, 15 )
+	self:AddWheel( Vector(-80,97,-55), 15, 15 )
 end
 
 function ENT:OnEngineActiveChanged( Active )

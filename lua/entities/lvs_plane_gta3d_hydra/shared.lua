@@ -21,7 +21,7 @@ ENT.MaxPerfVelocity = 2250
 ENT.MaxThrust = 1800
 
 ENT.TurnRatePitch = 1
-ENT.TurnRateYaw = 1.5
+ENT.TurnRateYaw = 1
 
 ENT.MaxSlipAnglePitch = 10
 ENT.MaxSlipAngleYaw = 5
@@ -34,7 +34,7 @@ ENT.FlyByAdvance = 0.75
 ENT.FlyBySound = "gta3d/engines/hydra/flyby.wav" 
 
 ENT.GravityTurnRatePitch = 1
-ENT.GravityTurnRateYaw = 1
+ENT.GravityTurnRateYaw = 10
 
 ENT.EngineSounds = {
 	{
