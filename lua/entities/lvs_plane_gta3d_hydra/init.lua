@@ -10,7 +10,7 @@ ENT.WheelAutoRetract = true
 
 function ENT:OnSpawn( PObj )
 	PObj:SetMass( 1000 )
-	PObj:SetInertia( Vector(3000,5000,7500) )
+	PObj:SetInertia( Vector(9000,9000,9000) )
 
 	local DriverSeat = self:AddDriverSeat( Vector(112,0,-8), Angle(0,-90,0) )
 	DriverSeat:SetCameraDistance( 0.25 )
