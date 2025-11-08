@@ -40,3 +40,43 @@ function ENT:AnimLandingGear( frametime )
 	self:ManipulateBoneAngles( 6, Angle(0,0,self._smLandingGear * 80) )
 	self:ManipulateBoneAngles( 7, Angle(0,0,-self._smLandingGear * 105) )
 end
+
+function ENT:LVSHudPaint( X, Y, ply )
+	if not self:LVSPreHudPaint( X, Y, ply ) then return end
+
+	if ply ~= self:GetDriver() then return end
+
+	local HitPlane = self:GetEyeTrace( true ).HitPos:ToScreen()
+	local HitPilot = self:GetEyeTrace().HitPos:ToScreen()
+
+	local MouseAim = ply:lvsMouseAim()
+
+	if self:IsDrawingReflectorSight() then
+		self:DrawReflectorSight( HitPlane )
+
+		if MouseAim then
+			local LineVisible = false
+
+			if not ply:lvsKeyDown( "FREELOOK" ) then
+				LineVisible = self:LVSHudPaintMouseAim( HitPlane, HitPilot )
+			end
+
+			if LineVisible then
+				self:PaintCrosshairOuter( HitPilot )
+			end
+		end
+
+		self:LVSPaintHitMarker( HitPilot )
+
+		return
+	end
+
+	self:PaintCrosshairCenter( HitPlane )
+	self:PaintCrosshairOuter( HitPilot )
+
+	if MouseAim and not ply:lvsKeyDown( "FREELOOK" ) then
+		self:LVSHudPaintMouseAim( HitPlane, HitPilot )
+	end
+
+	self:LVSPaintHitMarker( HitPilot )
+end
