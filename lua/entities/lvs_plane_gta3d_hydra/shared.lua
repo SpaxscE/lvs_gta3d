@@ -30,20 +30,26 @@ ENT.MaxHealth = 650
 
 ENT.DisableRadio = true
 
+ENT.FlyByAdvance = 0.75
+ENT.FlyBySound = "gta3d/engines/hydra/flyby.wav" 
+
+ENT.GravityTurnRatePitch = 1
+ENT.GravityTurnRateYaw = 1
+
 ENT.EngineSounds = {
 	{
-		sound = "^gta3d/engines/stuntplane/rpm.wav",
-		Pitch = 85,
+		sound = "^gta3d/engines/hydra/engine.wav",
+		Pitch = 75,
 		PitchMin = 0,
 		PitchMax = 255,
-		PitchMul = 35,
+		PitchMul = 45,
 		FadeIn = 0,
 		FadeOut = 1,
 		FadeSpeed = 1.5,
 		UseDoppler = true,
 	},
 	{
-		sound = "^gta3d/engines/stuntplane/dist.wav",
+		sound = "^gta3d/engines/hydra/dist.wav",
 		sound_int = "",
 		Pitch = 80,
 		PitchMin = 0,
@@ -54,7 +60,7 @@ ENT.EngineSounds = {
 		FadeSpeed = 1.5,
 		UseDoppler = true,
 		VolumeMin = 0,
-		VolumeMax = 0.15,
+		VolumeMax = 1,
 		SoundLevel = 110,
 	},
 }
