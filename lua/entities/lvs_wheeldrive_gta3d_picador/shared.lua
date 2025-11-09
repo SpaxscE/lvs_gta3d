@@ -125,6 +125,7 @@ ENT.EngineSoundsSA = {
 		SoundLevel = 65,
 	},
 }
+
 ENT.Lights = {
 	{
 		Trigger = "main+high",
