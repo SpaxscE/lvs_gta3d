@@ -6,7 +6,6 @@ ENT.DriverActiveSound = "common/null.wav"
 ENT.DriverInActiveSound = "common/null.wav"
 
 ENT.WheelSteerAngle = 15
-ENT.WheelAutoRetract = true
 
 function ENT:OnSpawn( PObj )
 	PObj:SetMass( 1000 )
@@ -17,12 +16,17 @@ function ENT:OnSpawn( PObj )
 	DriverSeat:SetCameraHeight( -0.1 )
 
 	self:AddEngine( Vector(-65,0,0) )
+	self:AddThruster( Vector(-60,0,0) )	
 
 	self:AddWheel( Vector(140,0,-45), 33, 15, LVS.WHEEL_STEER_FRONT )
 
 	self:AddWheel( Vector(-51,0,-45), 25, 15 )
 	self:AddWheel( Vector(-80,-97,-45), 25, 15 )
 	self:AddWheel( Vector(-80,97,-45), 25, 15 )
+end
+
+function ENT:OnLandingGearToggled( IsDeployed )
+	self:EmitSound( "lvs/vehicles/generic/gear.wav" )
 end
 
 function ENT:OnEngineActiveChanged( Active )

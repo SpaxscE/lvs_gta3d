@@ -39,6 +39,9 @@ function ENT:AnimLandingGear( frametime )
 
 	self:ManipulateBoneAngles( 6, Angle(0,0,self._smLandingGear * 80) )
 	self:ManipulateBoneAngles( 7, Angle(0,0,-self._smLandingGear * 105) )
+
+	self:ManipulateBonePosition( 8, Vector(0,0,(self._smLandingGear ^ 2) * 10) )
+	self:ManipulateBoneAngles( 8, Angle(0,0,self._smLandingGear * 90) )
 end
 
 function ENT:LVSHudPaint( X, Y, ply )

@@ -42,6 +42,9 @@ ENT.StallVelocity = 150
 ENT.StallForceMultiplier = 4
 ENT.StallForceMax = 40
 
+ENT.ThrottleRateUp = 0.25
+ENT.ThrottleRateDown = 0.25
+
 ENT.SpawnNormalOffset = 100
 
 ENT.EngineSounds = {
