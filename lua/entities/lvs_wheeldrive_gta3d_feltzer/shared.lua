@@ -33,7 +33,7 @@ ENT.EngineTorque = 140
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.TransGears = 4
+ENT.TransGears = 5
 
 ENT.RandomColor = {
 	Color(154,167,144),
@@ -51,27 +51,27 @@ ENT.HornPos = Vector(70,0,20)
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/glen/idle.wav",
+		sound = "gta3d/engines/i4_2/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/glen/gear.wav",
-		soundDuration = 3.2,
-		speed = { 1.4, 1.25, 1.1, 1 },
+		sound = "gta3d/engines/i4_2/gear.wav",
+		soundDuration = 2.7,
+		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/glen/cruise.wav",
+		sound = "gta3d/engines/i4_2/cruise.wav",
 		Pitch = 80,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/glen/throttleoff.wav",
+		sound = "gta3d/engines/i4_2/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {
