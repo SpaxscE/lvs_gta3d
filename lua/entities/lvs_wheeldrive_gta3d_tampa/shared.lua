@@ -33,7 +33,7 @@ ENT.EngineTorque = 120
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.TransGears = 4
+ENT.TransGears = 5
 
 ENT.RandomColor = {
 	{
@@ -82,43 +82,42 @@ ENT.BodyWobbleDamping = 4
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/cutlass/idle.wav",
+		sound = "gta3d/engines/virgo/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/cutlass/gear.wav",
-		soundDuration = 3.2,
-		speed = { 1.4, 1.25, 1.1, 1 },
+		sound = "gta3d/engines/virgo/gear.wav",
+		soundDuration = 3.35,
+		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/cutlass/cruise.wav",
-		Pitch = 80,
+		sound = "gta3d/engines/virgo/cruise.wav",
+		Pitch = 90,
 		PitchMul = 40,
 		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/cutlass/throttleoff.wav",
+		sound = "gta3d/engines/virgo/throttleoff.wav",
 		SoundLevel = 75,
 	},
 	reverse_on = {
 		sound = "gta3d/share/reverse_on.wav",
 		Pitch = 90,
 		PitchMul = 20,
-		SoundLevel = 75,
+		SoundLevel = 65,
 	},
 	reverse_off = {
 		sound = "gta3d/share/reverse_off.wav",
 		Pitch = 80,
 		PitchMul = 20,
-		SoundLevel = 75,
+		SoundLevel = 65,
 	},
 }
-
 
 ENT.Lights = {
 	{
