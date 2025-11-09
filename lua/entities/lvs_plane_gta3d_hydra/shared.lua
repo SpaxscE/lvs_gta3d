@@ -29,8 +29,6 @@ ENT.MaxSlipAngleYaw = 5
 
 ENT.MaxHealth = 450
 
-ENT.DisableRadio = true
-
 ENT.FlyByAdvance = 0.75
 ENT.FlyBySound = "gta3d/engines/hydra/flyby.wav" 
 ENT.DeathSound = "npc/combine_gunship/gunship_explode2.wav"
