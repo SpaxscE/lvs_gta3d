@@ -13,6 +13,8 @@ ENT.AdminSpawnable		= false
 
 ENT.MDL = "models/diggercars/gtasa/boats/launch.mdl"
 
+ENT.AITEAM = 2
+
 ENT.MassCenterOverride = Vector(0,0,10)
 
 ENT.FloatHeight = 10
