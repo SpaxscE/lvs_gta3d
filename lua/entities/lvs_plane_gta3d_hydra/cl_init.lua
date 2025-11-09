@@ -11,6 +11,7 @@ function ENT:OnFrame()
 	self:AnimControlSurfaces( FT )
 	self:AnimLandingGear( FT )
 	self:AnimVtol( FT )
+	self:EngineEffects()
 end
 
 function ENT:AnimVtol( frametime )
@@ -18,6 +19,74 @@ function ENT:AnimVtol( frametime )
 
 	self:SetPoseParameter( "engine_spin", vtol )
 	self:InvalidateBoneCache()
+end
+
+
+function ENT:EngineEffects()
+	if not self:GetEngineActive() then return end
+
+	local T = CurTime()
+
+	if (self.nextEFX or 0) > T then return end
+
+	self.nextEFX = T + 0.01
+
+	local HP = self:GetHP()
+	local MaxHP = self:GetMaxHP() 
+
+	if HP <= 0 then return end
+
+	local THR = self:GetThrottle()
+
+	local emitter = self:GetParticleEmitter( self:GetPos() )
+
+	if not IsValid( emitter ) then return end
+
+	local data = {
+		[1] = self:GetAttachment( self:LookupAttachment( "tfl" ) ),
+		[2] = self:GetAttachment( self:LookupAttachment( "tfr" ) ),
+		[3] = self:GetAttachment( self:LookupAttachment( "trl" ) ),
+		[4] = self:GetAttachment( self:LookupAttachment( "trr" ) ),
+	}
+
+	local Throttle = self:GetThrottle()
+	local Vel = self:GetVelocity()
+
+	local Damaged = HP < MaxHP * 0.25
+
+	if Throttle <= 0.1 then return end
+
+	for _, att in pairs( data ) do
+		if not att then continue end
+
+		local vNormal = att.Ang:Forward()
+		local vOffset = att.Pos + vNormal * 5
+
+		if Damaged then
+			local effectdata = EffectData()
+				effectdata:SetOrigin( vOffset )
+				effectdata:SetNormal( vNormal )
+				effectdata:SetMagnitude( Throttle )
+				effectdata:SetEntity( self  )
+			util.Effect( "lvs_exhaust_fire", effectdata )
+
+			continue
+		end
+
+		local particle = emitter:Add( "effects/fluttercore_gmod", vOffset )
+
+		if not particle then continue end
+
+		particle:SetVelocity( vNormal * math.Rand(150,250) * (Throttle ^ 2) * 2 + Vel )
+		particle:SetLifeTime( 0 )
+		particle:SetDieTime( 0.1 )
+		particle:SetStartAlpha( 100 * (Throttle ^ 2) )
+		particle:SetEndAlpha( 0 )
+		particle:SetStartSize( 4 + Throttle * 3 )
+		particle:SetEndSize( 0 )
+		particle:SetRoll( math.Rand(-1,1) * 100 )
+		particle:SetColor( 200, 200, 255 )
+	end
 end
 
 function ENT:AnimControlSurfaces( frametime )
