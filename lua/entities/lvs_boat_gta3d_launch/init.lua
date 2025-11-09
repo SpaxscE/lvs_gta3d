@@ -6,5 +6,13 @@ function ENT:OnSpawn( PObj )
 	self:AddDriverSeat( Vector(22,-20,10), Angle(0,-90,0) )
 	self:AddPassengerSeat( Vector(33,20,16), Angle(0,-90,10) )
 
+	self:SetGunnerSeat( self:AddPassengerSeat( Vector(-175,0,30), Angle(0,90,0) ) )
+
 	self:AddEngine( Vector(-230,0,30), Angle(0,0,0) )
+
+	local ID = self:LookupAttachment( "muzzle" )
+	local Muzzle = self:GetAttachment( ID )
+	self.SNDTurret = self:AddSoundEmitter( self:WorldToLocal( Muzzle.Pos ), "lvs/vehicles/222/cannon_fire.wav" )
+	self.SNDTurret:SetSoundLevel( 95 )
+	self.SNDTurret:SetParent( self, ID )
 end
