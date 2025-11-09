@@ -81,7 +81,7 @@ function ENT:CalcThrottle( ply, cmd )
 	local VtolDown = ply:lvsKeyDown( "-VTOL_Z_SF" )
 
 	if VtolUp or VtolDown then
-		self:SetVtol( math.Clamp( self:GetVtol() + Delta * (VtolDown and 1 or -1), 0, 1) )
+		self:SetVtol( math.Clamp( self:GetVtol() + Delta * (VtolDown and 2 or -2), 0, 1) )
 	end
 
 end
