@@ -61,28 +61,28 @@ ENT.BodyWobbleDamping = 4
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/bravura/idle.wav",
+		sound = "gta3d/engines/i4_3/idle.wav",
 		Pitch = 100,
-		PitchMul = 70,
+		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/bravura/gear.wav",
+		sound = "gta3d/engines/i4_3/gear.wav",
 		soundDuration = 3.5,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
-		SoundLevel = 85,
+		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/bravura/cruise.wav",
+		sound = "gta3d/engines/i4_3/cruise.wav",
 		Pitch = 90,
 		PitchMul = 40,
-		SoundLevel = 85,
+		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/bravura/throttleoff.wav",
-		SoundLevel = 85,
+		sound = "gta3d/engines/i4_3/throttleoff.wav",
+		SoundLevel = 75,
 	},
 	reverse_on = {
 		sound = "gta3d/share/reverse_on.wav",
