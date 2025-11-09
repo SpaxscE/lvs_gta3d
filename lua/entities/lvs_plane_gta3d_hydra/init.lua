@@ -34,10 +34,14 @@ end
 function ENT:OnEngineActiveChanged( Active )
 	if Active then
 		self:EmitSound( "lvs/vehicles/helicopter/start.wav" )
+	else
+		self:EmitSound( "lvs/vehicles/naboo_n1_starfighter/stop.wav" )
 	end
 end
 
 function ENT:PhysicsSimulateOverride( ForceAngle, ForceLinear, phys, deltatime, simulate )
+	if not self:GetEngineActive() then return ForceAngle, ForceLinear, simulate end
+
 	local Vtol = self:GetVtol()
 	local invVtol = 1 - Vtol
 
@@ -49,7 +53,9 @@ function ENT:PhysicsSimulateOverride( ForceAngle, ForceLinear, phys, deltatime, 
 	ForceLinear:Mul( invVtol )
 	ForceLinear:Add( Vector(0,0,-ForceLinear.z + self:GetWorldGravity() * 2 * Throttle) * Vtol - VelL * Throttle * 2 * (Vtol ^ 2) )
 
-	ForceAngle.x = ForceAngle.x * invVtol - (self:LocalToWorldAngles( Angle(0,0,-self:GetSteer().x * 60) ).r * 5 + phys:GetAngleVelocity().x * 5) * (Vtol ^ 2)
+	if Throttle > 0 then
+		ForceAngle.x = ForceAngle.x * invVtol - (self:LocalToWorldAngles( Angle(0,0,-self:GetSteer().x * 60) ).r * 5 + phys:GetAngleVelocity().x * 5) * (Vtol ^ 2)
+	end
 
 	return ForceAngle, ForceLinear, simulate
 end
@@ -74,6 +80,9 @@ function ENT:CalcThrottle( ply, cmd )
 	local ThrottleVtol = (0.5 + (KeyThrottleUp and 0.5 or 0) - (KeyThrottleDown and 0.2 or 0)) * Vtol
 
 	local Target = (ThrottleVtol - CurThrottle) * Delta * 2
+	if self:HitGround() and not KeyThrottleUp then
+		Target = -2 * Delta
+	end
 
 	self:SetThrottle( CurThrottle + Target * Vtol + Throttle * InvVtol )
 
@@ -83,7 +92,6 @@ function ENT:CalcThrottle( ply, cmd )
 	if VtolUp or VtolDown then
 		self:SetVtol( math.Clamp( self:GetVtol() + Delta * (VtolDown and 2 or -2), 0, 1) )
 	end
-
 end
 
 DEFINE_BASECLASS( "lvs_plane_gta3d" )
@@ -91,7 +99,7 @@ DEFINE_BASECLASS( "lvs_plane_gta3d" )
 function ENT:GetStability()
 	local Stability, InvStability, ForwardVelocity = BaseClass.GetStability( self )
 
-	if self:GetThrottle() == 0 then return Stability, InvStability, ForwardVelocity end
+	if not self:GetEngineActive() or self:GetThrottle() == 0 then return Stability, InvStability, ForwardVelocity end
 
 	Stability = math.Clamp( Stability + self:GetVtol(), 0, 1 )
 	InvStability = 1 - Stability
