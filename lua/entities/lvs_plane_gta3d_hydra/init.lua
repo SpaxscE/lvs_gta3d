@@ -11,6 +11,9 @@ function ENT:OnSpawn( PObj )
 	PObj:SetMass( 1000 )
 	PObj:SetInertia( Vector(9000,9000,9000) )
 
+	self.SNDMG = self:AddSoundEmitter( Vector(140,0,0), "lvs/weapons/mg_loop.wav", "lvs/weapons/mg_loop_interior.wav" )
+	self.SNDMG:SetSoundLevel( 95 )
+
 	local DriverSeat = self:AddDriverSeat( Vector(112,0,-8), Angle(0,-90,0) )
 	DriverSeat:SetCameraDistance( 0.25 )
 	DriverSeat:SetCameraHeight( -0.1 )

@@ -31,7 +31,7 @@ ENT.MaxHealth = 450
 
 ENT.FlyByAdvance = 0.75
 ENT.FlyBySound = "gta3d/engines/hydra/flyby.wav" 
-ENT.DeathSound = "npc/combine_gunship/gunship_explode2.wav"
+ENT.DeathSound = "lvs/vehicles/generic_starfighter/crash.wav"
 
 ENT.GravityTurnRatePitch = 1
 ENT.GravityTurnRateYaw = 6
@@ -87,18 +87,10 @@ function ENT:InitWeapons()
 		[4] = { pos = Vector(11.54,-118.43,-22.81) },
 	}
 
-	if SERVER then
-		for id, data in pairs( self.FirePositions ) do
-			local soundemitter = self:AddSoundEmitter( data.pos, "^weapons/alyx_gun/alyx_gun_fire"..math.random(5,6)..".wav" )
-			soundemitter:SetSoundLevel( 95 )
-			self.FirePositions[ id ].sound = soundemitter
-		end
-	end
-
 	local weapon = {}
 	weapon.Icon = Material("lvs/weapons/flak_he.png")
 	weapon.Ammo = 600
-	weapon.Delay = 0.03
+	weapon.Delay = 0.045
 	weapon.HeatRateUp = 0.25
 	weapon.HeatRateDown = 0.5
 	weapon.Attack = function( ent )
@@ -109,11 +101,6 @@ function ENT:InitWeapons()
 
 		local data = ent.FirePositions[ ent.FireIndex ]
 		local pos = data.pos
-		local sound = data.sound
-
-		if IsValid( sound ) then
-			sound:PlayOnce( 80 + math.Rand(-5,5), 1 )
-		end
 
 		local pod = ent:GetDriverSeat()
 
@@ -134,7 +121,7 @@ function ENT:InitWeapons()
 		bullet.Spread 	= Vector(0.01,0.01,0.01)
 		bullet.TracerName = "lvs_tracer_white"
 		bullet.Force	= 3900
-		bullet.HullSize 	= 1
+		bullet.HullSize 	= 10
 		bullet.Damage	= 50
 		bullet.EnableBallistics = true
 		bullet.SplashDamage = 25
@@ -156,6 +143,15 @@ function ENT:InitWeapons()
 	end
 	weapon.OnOverheat = function( ent )
 		ent:EmitSound("lvs/vehicles/222/cannon_overheat.wav")
+	end
+	weapon.StartAttack = function( ent )
+		if not IsValid( ent.SNDMG ) then return end
+		ent.SNDMG:Play()
+	end
+	weapon.FinishAttack = function( ent )
+		if not IsValid( ent.SNDMG ) then return end
+		ent.SNDMG:Stop()
+		ent.SNDMG:EmitSound("lvs/weapons/mg_lastshot.wav")
 	end
 	self:AddWeapon( weapon )
 
