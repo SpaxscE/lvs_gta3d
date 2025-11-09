@@ -89,28 +89,28 @@ ENT.BodyWobbleDamping = 4
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/pathfinder/idle.wav",
+		sound = "gta3d/engines/picador/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
-		SoundLevel = 65,
+		SoundLevel = 75,
 	},
 	gears = {
-		sound = "gta3d/engines/pathfinder/gear.wav",
-		soundDuration = 3.047,
+		sound = "gta3d/engines/picador/gear.wav",
+		soundDuration = 3.4,
 		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
-		SoundLevel = 75,
+		SoundLevel = 85,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/pathfinder/cruise.wav",
+		sound = "gta3d/engines/picador/cruise.wav",
 		Pitch = 90,
 		PitchMul = 40,
-		SoundLevel = 75,
+		SoundLevel = 85,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/pathfinder/throttleoff.wav",
-		SoundLevel = 75,
+		sound = "gta3d/engines/picador/throttleoff.wav",
+		SoundLevel = 85,
 	},
 	reverse_on = {
 		sound = "gta3d/share/reverse_on.wav",
