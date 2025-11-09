@@ -177,7 +177,7 @@ function ENT:InitWeapons()
 
 		local projectile = ents.Create( "lvs_missile" )
 		projectile:SetPos( ent:LocalToWorld( Pos ) )
-		projectile:SetAngles( ent:LocalToWorldAngles( Angle(0,ent._swapMissile and 2 or -2,0) ) )
+		projectile:SetAngles( ent:LocalToWorldAngles( Angle(0,ent._swapMissile and 1 or -1,0) ) )
 		projectile:SetParent( ent )
 		projectile:Spawn()
 		projectile:Activate()
