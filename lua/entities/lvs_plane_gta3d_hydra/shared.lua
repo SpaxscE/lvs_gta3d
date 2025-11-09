@@ -45,6 +45,10 @@ ENT.ThrottleRateDown = 0.25
 
 ENT.SpawnNormalOffset = 100
 
+function ENT:OnSetupDataTables()
+	self:AddDT( "Float", "Vtol" )
+end
+
 ENT.EngineSounds = {
 	{
 		sound = "^gta3d/engines/hydra/engine.wav",

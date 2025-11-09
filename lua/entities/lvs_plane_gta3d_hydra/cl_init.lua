@@ -10,6 +10,14 @@ function ENT:OnFrame()
 
 	self:AnimControlSurfaces( FT )
 	self:AnimLandingGear( FT )
+	self:AnimVtol( FT )
+end
+
+function ENT:AnimVtol( frametime )
+	local vtol = self:GetVtol()
+
+	self:SetPoseParameter( "engine_spin", vtol )
+	self:InvalidateBoneCache()
 end
 
 function ENT:AnimControlSurfaces( frametime )

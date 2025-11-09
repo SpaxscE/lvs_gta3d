@@ -38,13 +38,63 @@ function ENT:OnEngineActiveChanged( Active )
 end
 
 function ENT:PhysicsSimulateOverride( ForceAngle, ForceLinear, phys, deltatime, simulate )
+	local Vtol = self:GetVtol()
+	local invVtol = 1 - Vtol
+
+	local VelL = self:WorldToLocal( self:GetPos() + self:GetVelocity() )
+	VelL.x = VelL.x * 0.1
+
+	local Throttle = self:GetThrottle()
+
+	ForceLinear:Mul( invVtol )
+	ForceLinear:Add( Vector(0,0,-ForceLinear.z + self:GetWorldGravity() * 2 * Throttle) * Vtol - VelL * Throttle * 2 * (Vtol ^ 2) )
+
+	ForceAngle.x = ForceAngle.x * invVtol - (self:LocalToWorldAngles( Angle(0,0,-self:GetSteer().x * 60) ).r * 5 + phys:GetAngleVelocity().x * 5) * (Vtol ^ 2)
+
 	return ForceAngle, ForceLinear, simulate
 end
 
-DEFINE_BASECLASS( "lvs_base_fighterplane" )
+function ENT:CalcThrottle( ply, cmd )
+	local EntTable = self:GetTable()
+
+	local Delta = FrameTime()
+
+	local CurThrottle = self:GetThrottle()
+
+	local KeyThrottleUp = ply:lvsKeyDown( "+THROTTLE" )
+	local KeyThrottleDown = ply:lvsKeyDown( "-THROTTLE" )
+
+	local ThrottleUp = KeyThrottleUp and EntTable.ThrottleRateUp or 0
+	local ThrottleDown = KeyThrottleDown and -EntTable.ThrottleRateDown or 0
+
+	local Vtol = self:GetVtol()
+	local InvVtol = 1 - Vtol
+
+	local Throttle = (ThrottleUp + ThrottleDown) * Delta
+	local ThrottleVtol = (0.5 + (KeyThrottleUp and 0.5 or 0) - (KeyThrottleDown and 0.2 or 0)) * Vtol
+
+	local Target = (ThrottleVtol - CurThrottle) * Delta * 2
+
+	self:SetThrottle( CurThrottle + Target * Vtol + Throttle * InvVtol )
+
+	local VtolUp = ply:lvsKeyDown( "+VTOL_Z_SF" )
+	local VtolDown = ply:lvsKeyDown( "-VTOL_Z_SF" )
+
+	if VtolUp or VtolDown then
+		self:SetVtol( math.Clamp( self:GetVtol() + Delta * (VtolDown and 1 or -1), 0, 1) )
+	end
+
+end
+
+DEFINE_BASECLASS( "lvs_plane_gta3d" )
 
 function ENT:GetStability()
 	local Stability, InvStability, ForwardVelocity = BaseClass.GetStability( self )
+
+	if self:GetThrottle() == 0 then return Stability, InvStability, ForwardVelocity end
+
+	Stability = math.Clamp( Stability + self:GetVtol(), 0, 1 )
+	InvStability = 1 - Stability
 
 	return Stability, InvStability, ForwardVelocity
 end
