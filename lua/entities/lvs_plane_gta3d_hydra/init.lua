@@ -57,7 +57,13 @@ function ENT:PhysicsSimulateOverride( ForceAngle, ForceLinear, phys, deltatime, 
 	ForceLinear:Add( Vector(0,0,-ForceLinear.z + self:GetWorldGravity() * 2 * Throttle) * Vtol - VelL * Throttle * 2 * (Vtol ^ 2) )
 
 	if Throttle > 0 then
-		ForceAngle.x = ForceAngle.x * invVtol - (self:LocalToWorldAngles( Angle(0,0,-self:GetSteer().x * 60) ).r * 5 + phys:GetAngleVelocity().x * 5) * (Vtol ^ 2)
+		local Steer = self:GetSteer()
+		local AngVel = phys:GetAngleVelocity()
+		local ExpVtol = Vtol ^ 2
+
+		ForceAngle.x = ForceAngle.x * invVtol - (self:LocalToWorldAngles( Angle(0,0,-Steer.x * 60) ).r * 5 + AngVel.x * 5) * ExpVtol
+		ForceAngle.y = ForceAngle.y * invVtol - (self:LocalToWorldAngles( Angle(-Steer.y * 60,0,0) ).p * 5 + AngVel.y * 5) * ExpVtol
+		ForceAngle.z = ForceAngle.z - self:GetAngles().r * 3 * ExpVtol
 	end
 
 	return ForceAngle, ForceLinear, simulate
