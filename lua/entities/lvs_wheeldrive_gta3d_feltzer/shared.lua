@@ -88,7 +88,6 @@ ENT.EngineSoundsSA = {
 	},
 }
 
-
 ENT.Lights = {
 	{
 		Trigger = "main+high",
