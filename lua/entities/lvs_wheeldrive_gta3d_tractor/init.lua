@@ -76,6 +76,8 @@ function ENT:OnSpawn( PObj )
 	} )
 
 	self:CreatePDS()
+
+	self:SetRadioDisable( true )
 end
 
 

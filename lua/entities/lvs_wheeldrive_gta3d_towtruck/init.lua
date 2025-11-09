@@ -91,6 +91,7 @@ function ENT:OnSpawn( PObj )
 	} )
 	self:SetBodygroup(10, 2)
 	self:CreatePDS()
+	self:SetRadioDisable( true )
 end
 
 

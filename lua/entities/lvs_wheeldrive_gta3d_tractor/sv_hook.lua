@@ -1,7 +1,6 @@
 DEFINE_BASECLASS( "lvs_wheeldrive_gta3d" )
 
 ENT.CameraDistanceHooked = 1.4
-ENT.DisableRadio = true
 
 function ENT:OnTick()
 	self:UpdateHookCollider()

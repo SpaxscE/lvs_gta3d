@@ -23,6 +23,8 @@ function ENT:OnSpawn( PObj )
 	self:AddWheel( Vector(-51,0,-45), 25, 15 )
 	self:AddWheel( Vector(-80,-97,-45), 25, 15 )
 	self:AddWheel( Vector(-80,97,-45), 25, 15 )
+
+	self:SetRadioDisable( true )
 end
 
 function ENT:OnLandingGearToggled( IsDeployed )
@@ -33,4 +35,16 @@ function ENT:OnEngineActiveChanged( Active )
 	if Active then
 		self:EmitSound( "lvs/vehicles/helicopter/start.wav" )
 	end
+end
+
+function ENT:PhysicsSimulateOverride( ForceAngle, ForceLinear, phys, deltatime, simulate )
+	return ForceAngle, ForceLinear, simulate
+end
+
+DEFINE_BASECLASS( "lvs_base_fighterplane" )
+
+function ENT:GetStability()
+	local Stability, InvStability, ForwardVelocity = BaseClass.GetStability( self )
+
+	return Stability, InvStability, ForwardVelocity
 end
