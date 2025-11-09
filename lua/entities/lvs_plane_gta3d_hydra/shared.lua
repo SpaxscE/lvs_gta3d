@@ -113,9 +113,22 @@ function ENT:InitWeapons()
 			sound:PlayOnce( 80 + math.Rand(-5,5), 1 )
 		end
 
+		local pod = ent:GetDriverSeat()
+
+		if not IsValid( pod ) then return end
+
+		local startpos = pod:LocalToWorld( pod:OBBCenter() )
+		local trace = util.TraceHull( {
+			start = startpos,
+			endpos = (startpos + ent:GetForward() * 50000),
+			mins = Vector( -10, -10, -10 ),
+			maxs = Vector( 10, 10, 10 ),
+			filter = ent:GetCrosshairFilterEnts()
+		} )
+
 		local bullet = {}
 		bullet.Src 	= ent:LocalToWorld( pos )
-		bullet.Dir 	= ent:GetForward()
+		bullet.Dir 	= (trace.HitPos - bullet.Src):GetNormalized()
 		bullet.Spread 	= Vector(0.01,0.01,0.01)
 		bullet.TracerName = "lvs_tracer_white"
 		bullet.Force	= 3900
