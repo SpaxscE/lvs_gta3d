@@ -39,6 +39,8 @@ function ENT:OnSpawn( PObj )
 
 	self.SNDTurret = self:AddSoundEmitter( Vector(175,0,19.33), "lvs/vehicles/222/cannon_fire.wav", "lvs/vehicles/222/cannon_fire_interior.wav" )
 	self.SNDTurret:SetSoundLevel( 95 )
+
+	self:SetRadioDisable( true )
 end
 
 function ENT:OnEngineActiveChanged( Active )

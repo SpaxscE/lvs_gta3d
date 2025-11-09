@@ -37,8 +37,6 @@ ENT.ForceLinearDampingMultiplier = 2
 ENT.ForceAngleMultiplier = 1
 ENT.ForceAngleDampingMultiplier = 1
 
-ENT.DisableRadio = true
-
 ENT.EngineSounds = {
 	{
 		sound = "^gta3d/engines/hunter/loop_near.wav",
