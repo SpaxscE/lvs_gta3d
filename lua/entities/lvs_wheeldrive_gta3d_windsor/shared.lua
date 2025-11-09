@@ -59,28 +59,28 @@ ENT.BodyWobbleDamping = 4
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/glen/idle.wav",
+		sound = "gta3d/engines/windsor/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
 		SoundLevel = 65,
 	},
 	gears = {
-		sound = "gta3d/engines/glen/gear.wav",
-		soundDuration = 3.2,
-		speed = { 1.4, 1.25, 1.1, 1 },
-		SoundLevel = 75,
+		sound = "gta3d/engines/windsor/gear.wav",
+		soundDuration = 2.55,
+		speed = { 1.2, 1.1, 1, 0.9 },
+		SoundLevel = 85,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/glen/cruise.wav",
+		sound = "gta3d/engines/windsor/cruise.wav",
 		Pitch = 80,
 		PitchMul = 40,
-		SoundLevel = 75,
+		SoundLevel = 85,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/glen/throttleoff.wav",
-		SoundLevel = 75,
+		sound = "gta3d/engines/windsor/throttleoff.wav",
+		SoundLevel = 85,
 	},
 	reverse_on = {
 		sound = "gta3d/share/reverse_on.wav",
