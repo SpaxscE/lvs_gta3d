@@ -1,4 +1,27 @@
 
+hook.Add( "LVS:Initialize", "[LVS] - Planes - Keys - gta3d extended", function()
+	local KEYS = {
+		{
+			name = "PLANE_VTOL_UP",
+			category = "LVS-Plane",
+			name_menu = "VTOL Up",
+			default = KEY_PAD_8,
+			cmd = "lvs_plane_vtol_up"
+		},
+		{
+			name = "PLANE_VTOL_DN",
+			category = "LVS-Plane",
+			name_menu = "VTOL Down",
+			default = KEY_PAD_2,
+			cmd = "lvs_plane_vtol_down"
+		},
+	}
+
+	for _, v in pairs( KEYS ) do
+		LVS:AddKey( v.name, v.category, v.name_menu, v.cmd, v.default )
+	end
+end )
+
 sound.Add( {
 	name = "SA_Horn_10",
 	channel = CHAN_STATIC,

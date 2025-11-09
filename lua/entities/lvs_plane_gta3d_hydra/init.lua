@@ -86,8 +86,8 @@ function ENT:CalcThrottle( ply, cmd )
 
 	self:SetThrottle( CurThrottle + Target * Vtol + Throttle * InvVtol )
 
-	local VtolUp = ply:lvsKeyDown( "+VTOL_Z_SF" )
-	local VtolDown = ply:lvsKeyDown( "-VTOL_Z_SF" )
+	local VtolUp = ply:lvsKeyDown( "PLANE_VTOL_UP" )
+	local VtolDown = ply:lvsKeyDown( "PLANE_VTOL_DN" )
 
 	if VtolUp or VtolDown then
 		self:SetVtol( math.Clamp( self:GetVtol() + Delta * (VtolDown and 2 or -2), 0, 1) )
