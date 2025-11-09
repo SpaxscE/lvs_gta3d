@@ -13,6 +13,8 @@ ENT.AdminSpawnable		= false
 
 ENT.MDL = "models/diggercars/gtasa/boats/launch.mdl"
 
+ENT.MassCenterOverride = Vector(0,0,10)
+
 ENT.FloatHeight = 10
 
 ENT.EngineIdleRPM = 1000
@@ -20,7 +22,7 @@ ENT.EngineMaxRPM = 5000
 
 ENT.EngineSplash = true
 ENT.EngineSplashStartSize = 80
-ENT.EngineSplashEndSize = 400
+ENT.EngineSplashEndSize = 300
 ENT.EngineSplashVelocity = 800
 ENT.EngineSplashVelocityRandomAdd = 200
 ENT.EngineSplashThrowAngle = -15
