@@ -49,28 +49,28 @@ ENT.HornPos = Vector(70,0,20)
 
 ENT.EngineSoundsSA = {
 	idle = {
-		sound = "gta3d/engines/i4_1/idle.wav",
+		sound = "gta3d/engines/i4_3/idle.wav",
 		Pitch = 100,
 		PitchMul = 60,
-		SoundLevel = 65,
+		SoundLevel = 75,
 	},
 	gears = {
-		sound = "gta3d/engines/i4_1/gear.wav",
-		soundDuration = 3.6,
-		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
-		SoundLevel = 75,
+		sound = "gta3d/engines/i4_3/gear.wav",
+		soundDuration = 3.5,
+		speed = { 1.4, 1.3, 1.2, 1.1, 1 },
+		SoundLevel = 85,
 		UseDoppler = true,
 	},
 	cruise = {
-		sound = "gta3d/engines/i4_1/cruise.wav",
+		sound = "gta3d/engines/i4_3/cruise.wav",
 		Pitch = 90,
 		PitchMul = 40,
-		SoundLevel = 75,
+		SoundLevel = 85,
 		UseDoppler = true,
 	},
 	throttle_off = {
-		sound = "gta3d/engines/i4_1/throttleoff.wav",
-		SoundLevel = 75,
+		sound = "gta3d/engines/i4_3/throttleoff.wav",
+		SoundLevel = 85,
 	},
 	reverse_on = {
 		sound = "gta3d/share/reverse_on.wav",
