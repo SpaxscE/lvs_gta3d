@@ -108,8 +108,6 @@ ENT.EngineSoundsSA = {
 
 ENT.Lights = {
 
-
-
 	{
 		Trigger = "main+high",
 		SubMaterialID = 7,
@@ -118,12 +116,21 @@ ENT.Lights = {
 			{  pos = "lf", width = 125, colorB = 200, colorA = 150 },
 
 		},
+	},
+	{
+		Trigger = "main",
 		ProjectedTextures = {
 			{  pos = "lf", colorB = 200, colorA = 150, shadows = true },
 			{  pos = "lf", colorB = 200, colorA = 150, shadows = true },
 		},
 	},
-
+	{
+		Trigger = "high",
+		ProjectedTextures = {
+			{  pos = "lf", colorB = 200, colorA = 150, shadows = true },
+			{  pos = "lf", colorB = 200, colorA = 150, shadows = true },
+		},
+	},	
 	{
 		Trigger = "main+brake",
 		SubMaterialID = 4,
@@ -132,15 +139,6 @@ ENT.Lights = {
 			{  pos = "lr", width = 40, colorG = 0, colorB = 0, colorA = 150 },
 		},
 	},
-	
-	{
-		Trigger = "high",
-		ProjectedTextures = {
-			{  pos = "lf", colorB = 200, colorA = 150, shadows = true },
-			{  pos = "lf", colorB = 200, colorA = 150, shadows = true },
-		},
-	},	
-
 }
 
 function ENT:CalcMainActivity( ply )

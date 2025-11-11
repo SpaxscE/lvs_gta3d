@@ -119,6 +119,10 @@ ENT.Lights = {
 			{  pos = "m3", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "guard", active = { 2 } }, },
 			{  pos = "m4", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "guard", active = { 2 } }, },
 		},
+	},
+
+	{
+		Trigger = "main",
 		ProjectedTextures = {
 			{  pos = "m1", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "guard", active = { 0 } }, },
 			{  pos = "m2", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "guard", active = { 0 } }, },
