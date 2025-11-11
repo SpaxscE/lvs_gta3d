@@ -123,12 +123,21 @@ ENT.Lights = {
 			{  pos = "a_fr", width = 125, colorB = 200, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
 
 		},
+	},
+	{
+		Trigger = "main",
 		ProjectedTextures = {
 			{  pos = "a_fl", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fl", active = { 0 } }, },
 			{  pos = "a_fr", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
 		},
 	},
-
+	{
+		Trigger = "high",
+		ProjectedTextures = {
+			{  pos = "a_fl", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_fr", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
+		},
+	},
 	{
 		Trigger = "main+brake",
 		SubMaterialID = 17,
@@ -153,16 +162,7 @@ ENT.Lights = {
 			{  pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
 			{  pos = "a_rlt", colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
 		},
-	},	
-	
-	{
-		Trigger = "high",
-		ProjectedTextures = {
-			{  pos = "a_fl", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fl", active = { 0 } }, },
-			{  pos = "a_fr", colorB = 200, colorA = 150, shadows = true, bodygroup = { name = "l_fr", active = { 0 } }, },
-		},
-	},	
-
+	},
 	{
 		Trigger = "fog",
 		SubMaterialID = 13,
