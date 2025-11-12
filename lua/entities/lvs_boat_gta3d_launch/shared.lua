@@ -147,8 +147,8 @@ function ENT:InitWeapons()
 
 		local Pos, Ang = WorldToLocal( AimPos, AimAng, muzzle.Pos, base:LocalToWorldAngles( Angle(0,180,0) ) )
 
-		base:SetPoseParameter("mg_pitch",  -Ang.p * 0.6 )
-		base:SetPoseParameter("mg_yaw", -Ang.y * 0.6 )
+		base:SetPoseParameter("mg_pitch",  -Ang.p )
+		base:SetPoseParameter("mg_yaw", -Ang.y )
 	end
 	weapon.HudPaint = function( ent, X, Y, ply )
 		local base = ent:GetVehicle()
@@ -204,7 +204,7 @@ function ENT:UpdateAnimation( ply, velocity, maxseqgroundspeed )
 			ply:InvalidateBoneCache()
 		else
 			if ply:GetVehicle() == self:GetGunnerSeat() then
-				local Pitch = math.Remap( self:GetPoseParameter( "mg_pitch" ),0,1,-10,10)
+				local Pitch = math.Remap( self:GetPoseParameter( "mg_pitch" ),0,1,-30,30)
 				local Yaw = math.Remap( self:GetPoseParameter( "mg_yaw" ),0,1,-50,50) 
 
 				ply:SetPoseParameter( "aim_pitch", Pitch * 3 )
