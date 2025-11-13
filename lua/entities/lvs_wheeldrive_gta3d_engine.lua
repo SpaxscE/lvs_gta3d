@@ -116,10 +116,6 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 
 	if NextGear <= (MaxGears + 1) and Gear ~= 0 then
 		if T < NextPlay then
-			if EntTable._GearSoundSaved then
-				EntTable._GearSoundSaved:ChangePitch( EntTable.GearSoundPitch * 100 )
-			end
-
 			return
 		end
 
