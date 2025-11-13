@@ -52,15 +52,6 @@ function ENT:OnSpawn( PObj )
 
 	local WheelModel = "models/diggercars/gtasa/shared/wheel_previon.mdl"
 
-	local SuspensionSettings = {
-		Height = 6,
-		MaxTravel = 7,
-		ControlArmLength = 25,
-		SpringConstant = 30000,
-		SpringDamping = 2000,
-		SpringRelativeDamping = 2000,
-	}
-
 	local FrontAxle = self:DefineAxle( {
 		Axle = {
 			ForwardAngle = Angle(0,0,0),
@@ -73,7 +64,14 @@ function ENT:OnSpawn( PObj )
 			self:AddWheel( { pos = self:WorldToLocal( att_wheel_fl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fl.Ang ) + Angle(90,-90,0) } ),
 			self:AddWheel( { pos = self:WorldToLocal( att_wheel_fr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fr.Ang ) + Angle(90,-90,0) } ),
 		},
-		Suspension = SuspensionSettings,
+		Suspension = {
+			Height = 11,
+			MaxTravel = 7,
+			ControlArmLength = 30,
+			SpringConstant = 30000,
+			SpringDamping = 2000,
+			SpringRelativeDamping = 2000,
+		},
 	} )
 
 	local RearAxle = self:DefineAxle( {
@@ -85,16 +83,16 @@ function ENT:OnSpawn( PObj )
 			UseHandbrake = true,
 		},
 		Wheels = {
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
-			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos + Vector(0,0,5) ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0) } ),
+			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos + Vector(0,0,5) ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
 		},
 		Suspension = {
-		Height = 8,
-		MaxTravel = 7,
-		ControlArmLength = 25,
-		SpringConstant = 30000,
-		SpringDamping = 2000,
-		SpringRelativeDamping = 2000,
+			Height = 13,
+			MaxTravel = 12,
+			ControlArmLength = 80,
+			SpringConstant = 12000,
+			SpringDamping = 800,
+			SpringRelativeDamping = 800,
 		},
 	} )
 
