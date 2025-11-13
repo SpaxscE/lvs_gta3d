@@ -35,7 +35,7 @@ function ENT:PlayCruiseSound( vehicle )
 	if self.CruiseSound then return self.CruiseSound end
 
 	if self.PreventNextCruiseSound  then
-		if self.PreventNextCruiseSound > CurTime() then
+		if self.PreventNextCruiseSound > UnPredictedCurTime() then
 		
 			return
 		else
@@ -57,7 +57,7 @@ function ENT:PlayReverseSound( vehicle )
 
 	if self.ReverseSound then return self.ReverseSound end
 
-	local T = CurTime()
+	local T = UnPredictedCurTime()
 
 	if (self.NextReverse or 0) > T then return end
 
@@ -77,7 +77,7 @@ function ENT:PlayReverseOffSound( vehicle )
 
 	if self.ReverseOffSound then return self.ReverseOffSound end
 
-	local T = CurTime()
+	local T = UnPredictedCurTime()
 
 	if (self.NextReverseOff or 0) > T then return end
 
@@ -96,7 +96,7 @@ end
 function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 	if not self.EngineSoundsSA.gears or not self.EngineSoundsSA.gears.sound then return end
 
-	local T = CurTime()
+	local T = UnPredictedCurTime()
 
 	local EntTable = self:GetTable()
 
@@ -115,7 +115,13 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 	EntTable._ClutchActive = Gear <= MaxGears and NextPlay < T
 
 	if NextGear <= (MaxGears + 1) and Gear ~= 0 then
-		if T < NextPlay then return end
+		if T < NextPlay then
+			if EntTable._GearSoundSaved then
+				EntTable._GearSoundSaved:ChangePitch( EntTable.GearSoundPitch * 100 )
+			end
+
+			return
+		end
 
 		if EntTable.PreventNextGearSound then
 			if EntTable.PreventNextGearSound > T then
@@ -137,6 +143,8 @@ function ENT:PlayGearSound( vehicle, speedMul, VelocityGeared )
 
 		local sound = EntTable._GearSoundSaved
 		sound:PlayEx(self:GetEngineVolume(),100 * speed )
+
+		EntTable._LastPitch = 90 * speed
 
 		EntTable.GearSound = sound
 		EntTable.GearSoundDuration = EntTable.EngineSoundsSA.gears.soundDuration * (1 / speed)
@@ -178,7 +186,7 @@ end
 function ENT:PlayThrottleOffSound()
 	if not self.EngineSoundsSA.throttle_off or not self.EngineSoundsSA.throttle_off.sound then return end
 
-	local T = CurTime()
+	local T = UnPredictedCurTime()
 
 	if (self.NextThrottleOff or 0) > T then return end
 
@@ -194,7 +202,7 @@ function ENT:FadeOutGearSound( fadetime )
 
 	self.IsFadingGearSound = true
 
-	self.PreventNextGearSound = CurTime() + 0.5
+	self.PreventNextGearSound = UnPredictedCurTime() + 0.5
 
 	self.GearSound:ChangeVolume( 0, math.max( fadetime - 0.01, 0 ) )
 
@@ -211,7 +219,7 @@ function ENT:FadeOutCruiseSound()
 
 	self.IsFadingCruiseSound = true
 
-	self.PreventNextCruiseSound = CurTime() + 0.5
+	self.PreventNextCruiseSound = UnPredictedCurTime() + 0.5
 
 	self.CruiseSound:ChangeVolume( 0, 0.48 )
 
@@ -333,7 +341,7 @@ function ENT:HandleEngineSounds( vehicle )
 
 	local Volume = self:SetEngineVolume( LVS.EngineVolume )
 
-	local T = CurTime()
+	local T = UnPredictedCurTime()
 
 	local Velocity = vehicle:GetVelocity()
 	local vehVel = Velocity:Length()
