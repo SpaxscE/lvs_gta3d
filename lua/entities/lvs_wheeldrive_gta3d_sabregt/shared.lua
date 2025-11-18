@@ -29,7 +29,7 @@ ENT.AITEAM = 0
 
 ENT.MaxVelocity = 2300
 
-ENT.EngineTorque = 165
+ENT.EngineTorque = 180
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
