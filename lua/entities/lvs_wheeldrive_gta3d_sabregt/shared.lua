@@ -29,7 +29,7 @@ ENT.AITEAM = 0
 
 ENT.MaxVelocity = 2300
 
-ENT.EngineTorque = 180
+ENT.EngineTorque = 190
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
@@ -72,7 +72,7 @@ ENT.EngineSoundsSA = {
 	cruise = {
 		sound = "gta3d/engines/sabregt/cruise.wav",
 		Pitch = 70,
-		PitchMul = 60,
+		PitchMul = 50,
 		SoundLevel = 80,
 		UseDoppler = true,
 	},
