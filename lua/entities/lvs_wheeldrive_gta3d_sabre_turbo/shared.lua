@@ -1,7 +1,7 @@
 
 ENT.Base = "lvs_wheeldrive_gta3d"
 
-ENT.PrintName = "Sabre GT"
+ENT.PrintName = "Sabre Turbo"
 ENT.Author = "Digger"
 ENT.Information = ""
 ENT.Category = "[LVS] GTA3D - Sports"
