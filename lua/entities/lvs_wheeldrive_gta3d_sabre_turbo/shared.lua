@@ -39,6 +39,10 @@ ENT.RandomColor = {
 	{
 		Skin = 1,
 		Color = Color(24,63,114),
+	},
+	{
+		Skin = 1,
+		Color = Color(104,39,29),
 	}
 }
 
