@@ -56,33 +56,6 @@ function ENT:SetupDataTables()
 	end
 end
 
-if SERVER then
-	function ENT:AddThruster( pos )
-		local Thruster = ents.Create( "lvs_plane_gta3d_thruster" )
-
-		if not IsValid( Thruster ) then
-			self:Remove()
-
-			print("LVS: Failed to create thruster entity. Vehicle terminated.")
-
-			return
-		end
-
-		Thruster:SetPos( self:LocalToWorld( pos ) )
-		Thruster:SetAngles( self:GetAngles() )
-		Thruster:Spawn()
-		Thruster:Activate()
-		Thruster:SetParent( self )
-		Thruster:SetBase( self )
-
-		self:DeleteOnRemove( Thruster )
-
-		self:TransferCPPI( Thruster )
-
-		return Thruster
-	end
-end
-
 if CLIENT then
 	local Frame = Material("lvs/3d2dmats/frame.png")
 
