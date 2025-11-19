@@ -4,10 +4,10 @@ ENT.Base = "lvs_wheeldrive_gta3d"
 ENT.PrintName = "Sabre GT"
 ENT.Author = "Digger"
 ENT.Information = ""
-ENT.Category = "[LVS] GTA3D - Coupes/Hatchbacks"
+ENT.Category = "[LVS] GTA3D - Sports"
 
 ENT.VehicleCategory = "GTA3D"
-ENT.VehicleSubCategory = "Coupes/Hatchbacks"
+ENT.VehicleSubCategory = "Sports"
 
 ENT.Spawnable			= true
 ENT.AdminSpawnable		= false
