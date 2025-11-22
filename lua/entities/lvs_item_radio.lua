@@ -159,7 +159,7 @@ else
 			if not self.CurFile then return end
 	
 			sound.PlayFile( self.CurFile, "noblock noplay 3d", function( station, errCode, errStr )
-				if not IsValid( station ) then return end
+				if not IsValid( station ) or not IsValid( self ) then return end
 
 				self.SoundHandler = station
 
