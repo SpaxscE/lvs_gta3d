@@ -21,8 +21,8 @@ function ENT:OnSpawn( PObj )
 
 	local DriverSeat = self:AddDriverSeat( self:WorldToLocal( att_seat1.Pos ) + Vector(-8,0,-13), self:WorldToLocalAngles( att_seat1.Ang) + Angle(0,-90,-85) )
 	local RFSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat2.Pos ) + Vector(2,0,-6), self:WorldToLocalAngles( att_seat2.Ang ) + Angle(0,-90,-75) )
-	local RRSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat3.Pos ) + Vector(2,0,-6), self:WorldToLocalAngles( att_seat3.Ang ) + Angle(0,-90,-77) )
-	local LRSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat4.Pos ) + Vector(2,0,-6), self:WorldToLocalAngles( att_seat4.Ang ) + Angle(0,-90,-77) )
+	local RRSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat3.Pos ) + Vector(12,0,-6), self:WorldToLocalAngles( att_seat3.Ang ) + Angle(0,-90,-77) )
+	local LRSeat = self:AddPassengerSeat( self:WorldToLocal( att_seat4.Pos ) + Vector(12,0,-6), self:WorldToLocalAngles( att_seat4.Ang ) + Angle(0,-90,-77) )
 
 
 	local pos, ang, mins, maxs = self:GetBoneInfo( "dfl" )
