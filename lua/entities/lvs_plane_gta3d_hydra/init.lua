@@ -19,7 +19,7 @@ function ENT:OnSpawn( PObj )
 	DriverSeat:SetCameraHeight( -0.1 )
 
 	self:AddEngine( Vector(-65,0,0) )
-	self:AddThruster( Vector(-60,0,0) )	
+	self:AddThruster( Vector(-60,0,0) )
 
 	self:AddWheel( Vector(140,0,-45), 33, 15, LVS.WHEEL_STEER_FRONT )
 
