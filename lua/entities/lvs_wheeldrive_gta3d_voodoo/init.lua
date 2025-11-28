@@ -57,10 +57,10 @@ function ENT:OnSpawn( PObj )
 
 	local WheelModel = "models/diggercars/gtasa/shared/wheel_voodoo.mdl"
 
-	local FLWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_fl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fl.Ang ) + Angle(90,-90,0), width = 5 } )
-	local FRWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_fr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fr.Ang ) + Angle(90,-90,0), width = 5 } )
-	local RLWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0), width = 5 } )
-	local RRWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0), width = 5 } )
+	local FLWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_fl.Pos ) + Vector(0,-1,0), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fl.Ang ) + Angle(90,-90,0), width = 5 } )
+	local FRWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_fr.Pos ) + Vector(0,1,0), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fr.Ang ) + Angle(90,-90,0), width = 5 } )
+	local RLWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_rl.Pos ) + Vector(0,-1,-2), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rl.Ang ) + Angle(90,-90,0), width = 5 } )
+	local RRWheel = self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ) + Vector(0,1,-2), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0), width = 5 } )
 
 	self:CreateRigControler( "fl", FLWheel, -14, 6 )
 	self:CreateRigControler( "fr", FRWheel, -14, 6 )
