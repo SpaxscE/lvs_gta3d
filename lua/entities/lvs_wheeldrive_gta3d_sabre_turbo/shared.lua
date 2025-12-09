@@ -70,19 +70,19 @@ ENT.EngineSoundsSA = {
 		sound = "gta3d/engines/sabregt/gear.wav",
 		soundDuration = 2.5,
 		speed = { 1.2, 1.15, 1.075, 1 },
-		SoundLevel = 80,
+		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	cruise = {
 		sound = "gta3d/engines/sabregt/cruise.wav",
 		Pitch = 70,
 		PitchMul = 50,
-		SoundLevel = 80,
+		SoundLevel = 75,
 		UseDoppler = true,
 	},
 	throttle_off = {
 		sound = "gta3d/engines/sabregt/throttleoff.wav",
-		SoundLevel = 80,
+		SoundLevel = 75,
 	},
 	reverse_on = {
 		sound = "gta3d/share/reverse_on.wav",
