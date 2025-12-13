@@ -1,6 +1,8 @@
 include("shared.lua")
 
 function ENT:OnFrame()
+	self:DoBodyWobble()
+
 	local EntTable = self:GetTable()
 	local Steer = self:GetSteer()
 

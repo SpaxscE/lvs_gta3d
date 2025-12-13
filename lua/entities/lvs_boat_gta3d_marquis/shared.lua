@@ -46,6 +46,16 @@ ENT.MinVelocityAutoBrake = 200
 ENT.ForceLinearMultiplier = 1
 ENT.ForceAngleMultiplier = 1
 
+ENT.BodyWobbleEnabled = true
+ENT.BodyWobbleBone = "rm"
+
+ENT.BodyWobbleAngleMulPitch = -10
+ENT.BodyWobbleAngleMulRoll = 0
+ENT.BodyWobbleAngleMax = 1
+
+ENT.BodyWobbleConstant = 0.1
+ENT.BodyWobbleDamping = 5
+
 ENT.PlayerBoneManipulate = {
 	[1] = {
 		["ValveBiped.Bip01_Pelvis"] = Angle(0,0,40),
