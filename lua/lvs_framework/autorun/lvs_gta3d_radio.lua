@@ -490,8 +490,14 @@ hook.Add( "Think", "LVSGTA3Dradio", function()
 
 			SoundFlags = "3d"
 
-			if IsValid( SoundHandler ) then
-				SoundHandler:SetPos( LastVehicle:LocalToWorld( LastVehicle:OBBCenter() ) )
+			if IsValid( SoundHandler ) and LastVehicle.GetDriverSeat then
+				local Pod = LastVehicle:GetDriverSeat()
+
+				if IsValid( Pod ) then
+					SoundHandler:SetPos( Pod:LocalToWorld( Pod:OBBCenter() ) )
+				else
+					SoundHandler:SetPos( LastVehicle:LocalToWorld( LastVehicle:OBBCenter() ) )
+				end
 			end
 		else
 			DesiredFile = nil
