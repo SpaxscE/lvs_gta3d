@@ -18,6 +18,10 @@ ENT.FloatHeight = 10
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 5000
 
+ENT.PhysicsMass = 1000
+ENT.PhysicsInertia = Vector(1500,1500,1500)
+ENT.PhysicsWeightScale = 4
+
 ENT.EngineSplash = true
 ENT.EngineSplashStartSize = 60
 ENT.EngineSplashEndSize = 250
@@ -26,11 +30,11 @@ ENT.EngineSplashVelocityRandomAdd = 150
 ENT.EngineSplashThrowAngle = -15
 ENT.EngineSplashDistance = 50
 
-ENT.FloatForce = 10
-ENT.FloatWaveFrequency = 5
+ENT.FloatForce = 20
+ENT.FloatWaveFrequency = 4
 ENT.FloatWaveIntensity = 0.5
 
-ENT.FloatThrottleIntensity = 4
+ENT.FloatThrottleIntensity = 5
 
 ENT.TurnRate = 1
 ENT.TurnForceYaw = 400
