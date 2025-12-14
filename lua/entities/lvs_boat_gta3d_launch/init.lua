@@ -4,10 +4,10 @@ include("shared.lua")
 
 function ENT:OnSpawn( PObj )
 	local Pod = self:AddDriverSeat( Vector(22,-20,10), Angle(0,-90,0) )
-	Pod.ExitPos = Vector(22,-20,10)
+	Pod.ExitPos = Vector(0,-15,0)
 
 	local Pod = self:AddPassengerSeat( Vector(33,20,16), Angle(0,-90,10) )
-	Pod.ExitPos = Vector(33,20,16)
+	Pod.ExitPos = Vector(0,15,0)
 
 	local Pod = self:AddPassengerSeat( Vector(-175,0,30), Angle(0,90,0) ) 
 	Pod.ExitPos = Vector(-175,0,40)
