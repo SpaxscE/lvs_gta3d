@@ -99,3 +99,20 @@ ENT.EngineSounds = {
 		FadeInRestart = true,
 	},
 }
+
+ENT.RandomColor = {
+	{
+		BodyGroups = {
+			[1] = 1,
+			[2] = 1,
+			[3] = 1,
+		},
+	},
+	{
+		BodyGroups = {
+			[1] = 0,
+			[2] = 0,
+			[3] = 0,
+		},
+	},
+}
