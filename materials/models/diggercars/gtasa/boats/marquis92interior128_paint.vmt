@@ -8,5 +8,6 @@ $bumpmap "models/diggercars/gtasa/boats/marquis92interior128_nm"
 "$envmap" "env_cubemap"
 "$envmaptint" "[0.1 0.1 0.1]"
 $normalmapalphaenvmapmask "1"
+$nocull "0"
 }
 }

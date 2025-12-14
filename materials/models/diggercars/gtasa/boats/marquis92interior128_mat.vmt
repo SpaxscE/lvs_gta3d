@@ -4,5 +4,6 @@
 	insert
 	{
 $basetexture				"models/diggercars/gtasa/boats/marquis92interior128"
+$nocull "0"
 }
 }
