@@ -1,7 +1,7 @@
 include("shared.lua")
 
 function ENT:UpdatePoseParameters( steer, speed_kmh, engine_rpm, throttle, brake, handbrake, clutch, gear, temperature, fuel, oil, ammeter )
-	steer = self:GetSteer()
+	steer = -self:GetSteer()
 
 	self:SetPoseParameter( "sail_f", steer )
 	self:SetPoseParameter( "sail_r", steer )

@@ -53,12 +53,12 @@ ENT.ForceAngleMultiplier = 1
 ENT.BodyWobbleEnabled = true
 ENT.BodyWobbleBone = "rm"
 
-ENT.BodyWobbleAngleMulPitch = -10
+ENT.BodyWobbleAngleMulPitch = 10
 ENT.BodyWobbleAngleMulRoll = 0
 ENT.BodyWobbleAngleMax = 1
 
-ENT.BodyWobbleConstant = 0.1
-ENT.BodyWobbleDamping = 5
+ENT.BodyWobbleConstant = 0.01
+ENT.BodyWobbleDamping = 50
 
 ENT.PlayerBoneManipulate = {
 	[1] = {
