@@ -30,15 +30,15 @@ ENT.AITEAM = 0
 ENT.MaxVelocity = 2500
 
 ENT.EngineTorque = 200
-ENT.EngineCurve = 0.8
+ENT.EngineCurve = 0.65
 ENT.EngineCurveBoostLow = 3
 
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
-ENT.TransGears = 5
+ENT.TransGears = 4
 
-ENT.MassCenterOverride = Vector(-25,0,20)
+ENT.MassCenterOverride = Vector(-25,0,13)
 
 ENT.RandomColor = {
 	{
@@ -89,7 +89,7 @@ ENT.EngineSoundsSA = {
 	gears = {
 		sound = "gta3d/engines/i4_1/gear.wav",
 		soundDuration = 3.6,
-		speed = { 1.4, 1.25, 1.1, 1.05, 1 },
+		speed = { 1.4, 1.25, 1.1, 1 },
 		SoundLevel = 75,
 		UseDoppler = true,
 	},

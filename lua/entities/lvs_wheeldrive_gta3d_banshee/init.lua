@@ -70,8 +70,8 @@ function ENT:OnSpawn( PObj )
 			MaxTravel = 7,
 			ControlArmLength = 25,
 			SpringConstant = 35000,
-			SpringDamping = 3000,
-			SpringRelativeDamping = 3000,
+			SpringDamping = 2000,
+			SpringRelativeDamping = 2000,
 		},
 	} )
 
@@ -92,8 +92,8 @@ function ENT:OnSpawn( PObj )
 			MaxTravel = 7,
 			ControlArmLength = 25,
 			SpringConstant = 35000,
-			SpringDamping = 3000,
-			SpringRelativeDamping = 3000,
+			SpringDamping = 2000,
+			SpringRelativeDamping = 2000,
 		},
 	} )
 
