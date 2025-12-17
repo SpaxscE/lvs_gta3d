@@ -1,0 +1,10 @@
+{
+	"title"		: "[LVS] - GTA3d - Pack",
+	"type"		: "vehicle",
+	"tags"		: [ "cartoon", "comic" ],
+	"ignore"	: [
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
