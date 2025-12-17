@@ -3,7 +3,6 @@
 	"$basetexture" "models/diggercars/gtasa/shared/stafford92wheel64"
 	"$bumpmap" "models/diggercars/gtasa/shared/stafford92wheel64_nm"
 	"$nocull" "1"
-	"$normalmapalphaenvmapmask" 1
 	"$nodecal" "1"
 	"$halflambert" 1
 
