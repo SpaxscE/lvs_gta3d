@@ -3,5 +3,6 @@
 	include "materials/models/diggercars/gtasa/shared/primary.vmt"
 	insert
 	{
-$basetexture				"models/diggercars/gtasa/majestic/grey"
+		$basetexture				"models/diggercars/gtasa/majestic/grey"
+	}
 }
