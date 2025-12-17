@@ -3,7 +3,6 @@
 	"$basetexture" "models/diggercars/gtasa/shared/vehiclegeneric256"
 	"$bumpmap" "models/diggercars/gtasa/shared/vehiclegeneric256_nm"
 	"$nocull" "1"
-	"$normalmapalphaenvmapmask" 1
 	"$nodecal" "1"
 	"$halflambert" 1
 
