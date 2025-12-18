@@ -8,26 +8,32 @@ function ENT:OnSpawn( PObj )
 	local Pod = self:AddDriverSeat( Vector(-210,0,71), Angle(0,-90,15) )
 	Pod:SetCameraDistance( -0.6 )
 	Pod.ExitPos = Vector(-210,0,71)
+	Pod.PlaceBehindVelocity = 500
 
 	local Pod = self:AddPassengerSeat( Vector(-220,0,68), Angle(0,-90,0) )
 	Pod:SetCameraDistance( -0.6 )
 	Pod.ExitPos = Vector(-220,0,68)
+	Pod.PlaceBehindVelocity = 500
 
 	local Pod = self:AddPassengerSeat( Vector(-165,-50,68), Angle(0,0,0) )
 	Pod:SetCameraDistance( -0.6 )
 	Pod.ExitPos = Vector(-165,-50,68)
+	Pod.PlaceBehindVelocity = 500
 
 	local Pod = self:AddPassengerSeat( Vector(-165,50,68), Angle(0,180,0) )
 	Pod:SetCameraDistance( -0.6 )
 	Pod.ExitPos = Vector(-165,50,68)
+	Pod.PlaceBehindVelocity = 500
 
 	local Pod = self:AddPassengerSeat( Vector(-220,-20,68), Angle(0,-90,0) )
 	Pod:SetCameraDistance( -0.6 )
 	Pod.ExitPos = Vector(-220,-20,68)
+	Pod.PlaceBehindVelocity = 500
 
 	local Pod = self:AddPassengerSeat( Vector(-220,20,68), Angle(0,-90,0) )
 	Pod:SetCameraDistance( -0.6 )
 	Pod.ExitPos = Vector(-220,20,68)
+	Pod.PlaceBehindVelocity = 500
 
 	self:AddEngine( Vector(-275,0,30), Angle(0,0,0) )
 end
