@@ -14,7 +14,7 @@ ENT.AdminSpawnable		= false
 
 ENT.SpawnNormalOffset = 40
 
-ENT.MDL = "models/gta3d/simf/taxi.mdl"
+ENT.MDL = "models/gta3d/lv3d/taxi.mdl"
 ENT.MDL_DESTROYED = "models/gta3d/gibs/premier/chassis_taxi.mdl"
 
 ENT.GibModels = {

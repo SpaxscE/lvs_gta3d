@@ -57,7 +57,7 @@ function ENT:OnSpawn( PObj )
 	self:AddFuelTank( Vector(-82,42,4), Angle(0,0,0), 650, LVS.FUELTYPE_PETROL )
 
 
-	local WheelModel = "models/gta3d/simf/wheel_emperor.mdl"
+	local WheelModel = "models/gta3d/lv3d/wheel_emperor.mdl"
 
 	local WheelFrontLeft = self:AddWheel( { pos = Vector(62.21,34.96,-13.48), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
 	local WheelFrontRight = self:AddWheel( { pos = Vector(62.21,-34.96,-13.48), mdl = WheelModel, mdl_ang = Angle(0,-90,0) } )
