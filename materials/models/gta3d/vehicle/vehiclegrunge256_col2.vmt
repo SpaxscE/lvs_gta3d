@@ -1,0 +1,4 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/secondary.vmt"
+}
