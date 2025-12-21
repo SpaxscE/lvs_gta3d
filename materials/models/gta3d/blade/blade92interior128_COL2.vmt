@@ -1,8 +1,0 @@
-"patch"
-{
-	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_mat.vmt"
-	insert
-	{
-$basetexture				"models/gta3d/blade/blade92interior128"
-}
-}
