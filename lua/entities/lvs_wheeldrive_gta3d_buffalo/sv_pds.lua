@@ -8,7 +8,7 @@ function ENT:CreatePDS()
 		maxs = maxs,
 		stages = {
 			{ bodygroup = { [2] = 1 }, sound = "SA_Collision" },
-			{ bodygroup = { [2] = 2 }, sound = "SA_Collision" },
+			{ bodygroup = { [2] = 2 }, sound = "SA_Collision", maxvelocity = 500 },
 			{
 				sound = "SA_Collision",
 				bodygroup = { [2] = 3 },
