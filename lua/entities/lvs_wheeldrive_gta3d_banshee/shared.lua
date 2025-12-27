@@ -29,16 +29,19 @@ ENT.AITEAM = 0
 
 ENT.MaxVelocity = 2500
 
-ENT.EngineTorque = 200
-ENT.EngineCurve = 0.65
-ENT.EngineCurveBoostLow = 3
-
+ENT.EngineTorque = 170
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
 ENT.TransGears = 4
 
-ENT.MassCenterOverride = Vector(-25,0,13)
+ENT.MassCenterOverride = Vector(-5,0,18)
+
+ENT.ForceLinearMultiplier = 1.75
+ENT.ForceAngleMultiplier = 0.75
+
+ENT.WheelSideForce = 1200
+ENT.WheelDownForce = 1000
 
 ENT.RandomColor = {
 	{

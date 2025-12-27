@@ -36,6 +36,12 @@ ENT.EngineMaxRPM = 6000
 
 ENT.TransGears = 5
 
+ENT.ForceLinearMultiplier = 1.75
+ENT.ForceAngleMultiplier = 0.75
+
+ENT.WheelSideForce = 1200
+ENT.WheelDownForce = 1000
+
 ENT.RandomColor = {
 	Color(70,89,122),
 	Color(88,89,90),

@@ -26,11 +26,22 @@ ENT.GibModels = {
 
 ENT.AITEAM = 0
 
+ENT.MassCenterOverride = Vector(-10,0,22)
+
 ENT.MaxVelocity = 2600
 
-ENT.EngineTorque = 160
+ENT.EngineTorque = 150
+ENT.EngineCurve = 0.85
+ENT.EngineCurveBoostLow = 3
+
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
+
+ENT.ForceLinearMultiplier = 1.75
+ENT.ForceAngleMultiplier = 0.75
+
+ENT.WheelSideForce = 1000
+ENT.WheelDownForce = 800
 
 ENT.TransGears = 5
 

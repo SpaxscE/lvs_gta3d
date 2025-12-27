@@ -49,35 +49,33 @@ function ENT:OnSpawn( PObj )
 
 	local WheelModel = "models/diggercars/gtasa/shared/wheel_banshee.mdl"
 
-	local SuspensionSettings = {
-		Height = 3,
-		MaxTravel = 7,
-		ControlArmLength = 25,
-		SpringConstant = 30000,
-		SpringDamping = 2000,
-		SpringRelativeDamping = 2000,
-	}
-
 	local FrontAxle = self:DefineAxle( {
 		Axle = {
 			ForwardAngle = Angle(0,0,0),
 			SteerType = LVS.WHEEL_STEER_FRONT,
 			SteerAngle = 30,
-			TorqueFactor = 0.2,
+			TorqueFactor = 0,
 			BrakeFactor = 1,
 		},
 		Wheels = {
 			self:AddWheel( { pos = self:WorldToLocal( att_wheel_fl.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fl.Ang ) + Angle(90,-90,0) } ),
 			self:AddWheel( { pos = self:WorldToLocal( att_wheel_fr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_fr.Ang ) + Angle(90,-90,0) } ),
 		},
-		Suspension = SuspensionSettings,
+		Suspension = {
+			Height = 5,
+			MaxTravel = 7,
+			ControlArmLength = 25,
+			SpringConstant = 30000,
+			SpringDamping = 2000,
+			SpringRelativeDamping = 2000,
+		},
 	} )
 
 	local RearAxle = self:DefineAxle( {
 		Axle = {
 			ForwardAngle = Angle(0,0,0),
 			SteerType = LVS.WHEEL_STEER_NONE,
-			TorqueFactor = 0.8,
+			TorqueFactor = 1,
 			BrakeFactor = 1,
 			UseHandbrake = true,
 		},
@@ -86,12 +84,12 @@ function ENT:OnSpawn( PObj )
 			self:AddWheel( { pos = self:WorldToLocal( att_wheel_rr.Pos ), mdl = WheelModel, mdl_ang = self:WorldToLocalAngles( att_wheel_rr.Ang ) + Angle(90,-90,0) } ),
 		},
 		Suspension = {
-		Height = 5,
-		MaxTravel = 7,
-		ControlArmLength = 25,
-		SpringConstant = 52000,
-		SpringDamping = 5100,
-		SpringRelativeDamping = 5100,
+			Height = 7,
+			MaxTravel = 7,
+			ControlArmLength = 25,
+			SpringConstant = 30000,
+			SpringDamping = 2000,
+			SpringRelativeDamping = 2000,
 		},
 	} )
 

@@ -49,6 +49,12 @@ ENT.RandomColor = {
 	Color(132,4,16),
 }
 
+ENT.ForceLinearMultiplier = 1.75
+ENT.ForceAngleMultiplier = 0.75
+
+ENT.WheelSideForce = 1200
+ENT.WheelDownForce = 1000
+
 ENT.HornSound = "gta3d/horns/horn_006_112.wav"
 ENT.HornPos = Vector(70,0,20)
 

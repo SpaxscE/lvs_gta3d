@@ -29,11 +29,19 @@ ENT.AITEAM = 0
 
 ENT.MaxVelocity = 2300
 
-ENT.EngineTorque = 190
+ENT.EngineTorque = 170
+ENT.EngineCurveBoostLow = 1.5
+
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
 
 ENT.TransGears = 4
+
+ENT.ForceLinearMultiplier = 1.75
+ENT.ForceAngleMultiplier = 0.75
+
+ENT.WheelSideForce = 1200
+ENT.WheelDownForce = 1000
 
 ENT.RandomColor = {
 	{

@@ -43,12 +43,12 @@ function ENT:OnSpawn( PObj )
 	local WheelRearRight = self:AddWheel( { pos = Vector(-65.1,-36.29,-13.3), mdl = WheelModel, mdl_ang = Angle(0,90,0) } )
 
 	local SuspensionSettings = {
-		Height = 6,
-		MaxTravel = 7,
+		Height = 8,
+		MaxTravel = 9,
 		ControlArmLength = 25,
-		SpringConstant = 30000,
-		SpringDamping = 2000,
-		SpringRelativeDamping = 2000,
+		SpringConstant = 20000,
+		SpringDamping = 1000,
+		SpringRelativeDamping = 1000,
 	}
 
 	local FrontAxle = self:DefineAxle( {
@@ -56,7 +56,7 @@ function ENT:OnSpawn( PObj )
 			ForwardAngle = Angle(0,0,0),
 			SteerType = LVS.WHEEL_STEER_FRONT,
 			SteerAngle = 30,
-			TorqueFactor = 0.2,
+			TorqueFactor = 0,
 			BrakeFactor = 1,
 		},
 		Wheels = { WheelFrontLeft, WheelFrontRight },
@@ -67,7 +67,7 @@ function ENT:OnSpawn( PObj )
 		Axle = {
 			ForwardAngle = Angle(0,0,0),
 			SteerType = LVS.WHEEL_STEER_NONE,
-			TorqueFactor = 0.8,
+			TorqueFactor = 1,
 			BrakeFactor = 1,
 			UseHandbrake = true,
 		},

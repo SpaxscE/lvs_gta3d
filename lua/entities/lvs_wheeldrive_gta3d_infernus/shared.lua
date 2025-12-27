@@ -29,9 +29,19 @@ ENT.AITEAM = 0
 
 ENT.MaxVelocity = 2600
 
-ENT.EngineTorque = 180
+ENT.MassCenterOverride = Vector(0,0,-5)
+
+ENT.EngineTorque = 210
+ENT.EngineCurveBoostLow = 0.5
+
 ENT.EngineIdleRPM = 1000
 ENT.EngineMaxRPM = 6000
+
+ENT.ForceLinearMultiplier = 2.3
+ENT.ForceAngleMultiplier = 1
+
+ENT.WheelSideForce = 1200
+ENT.WheelDownForce = 1000
 
 ENT.TransGears = 5
 
