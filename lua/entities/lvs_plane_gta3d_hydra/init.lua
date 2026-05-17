@@ -30,6 +30,14 @@ function ENT:OnSpawn( PObj )
 	self:SetRadioDisable( true )
 end
 
+function ENT:DoMissileDistraction()
+	if not self:CanDoMissileDistraction() then return end
+
+	self:CreateFlares( Vector(50,0,-50), Angle(0,0,0), 4 )
+
+	self:SetNextMissileDistraction( 4 )
+end
+
 function ENT:OnLandingGearToggled( IsDeployed )
 	self:EmitSound( "lvs/vehicles/generic/gear.wav" )
 end
