@@ -195,7 +195,7 @@ function ENT:InitWeapons()
 		projectile:SetAttacker( IsValid( Driver ) and Driver or self )
 		projectile:SetEntityFilter( ent:GetCrosshairFilterEnts() )
 		projectile:SetDamage( 500 )
-		projectile:SetTurnSpeed( 6 )
+		projectile:SetTurnSpeed( 2 )
 
 		ent._FiredMissile = projectile
 
