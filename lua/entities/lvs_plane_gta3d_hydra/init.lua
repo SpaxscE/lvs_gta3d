@@ -35,7 +35,7 @@ function ENT:DoMissileDistraction()
 
 	self:CreateFlares( Vector(50,0,-50), Angle(0,0,0), 4 )
 
-	self:SetNextMissileDistraction( 4 )
+	self:SetNextMissileDistraction( 6 )
 end
 
 function ENT:OnLandingGearToggled( IsDeployed )
