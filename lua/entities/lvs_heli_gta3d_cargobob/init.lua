@@ -48,6 +48,16 @@ function ENT:OnSpawn( PObj )
 	end
 end
 
+function ENT:DoMissileDistraction()
+	if not self:CanDoMissileDistraction() then return end
+
+	self:CreateFlares( Vector(0,0,35), Angle(-5,0,0), 2 )
+	self:CreateFlares( Vector(0,50,35), Angle(-5,120,0), 2 )
+	self:CreateFlares( Vector(0,-50,35), Angle(-5,-120,0), 2 )
+
+	self:SetNextMissileDistraction( 8 )
+end
+
 function ENT:OnEngineActiveChanged( Active )
 	if Active then
 		self:EmitSound( "lvs/vehicles/helicopter/start.wav" )

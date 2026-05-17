@@ -33,7 +33,7 @@ end
 function ENT:DoMissileDistraction()
 	if not self:CanDoMissileDistraction() then return end
 
-	self:CreateFlares( Vector(50,0,-50), Angle(0,0,0), 4 )
+	self:CreateFlares( Vector(50,0,-30), Angle(0,0,0), 4 )
 
 	self:SetNextMissileDistraction( 6 )
 end
