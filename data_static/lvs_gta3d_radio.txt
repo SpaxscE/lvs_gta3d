@@ -676,43 +676,43 @@
 	"headradio": [
 		{
 			"sound": "sound/gta3d/radio_3/headradio.ogg",
-			"length": 1405
+			"length": 1405.6431746032
 		}
 	],
 	"doubleclef": [
 		{
 			"sound": "sound/gta3d/radio_3/doubleclef.ogg",
-			"length": 1364
+			"length": 1364.5438548753
 		}
 	],
 	"rise": [
 		{
 			"sound": "sound/gta3d/radio_3/rise.ogg",
-			"length": 1568
+			"length": 1568.043537415
 		}
 	],
 	"lips106": [
 		{
 			"sound": "sound/gta3d/radio_3/lips106.ogg",
-			"length": 1206
+			"length": 1206.9732426304
 		}
 	],
 	"msx": [
 		{
 			"sound": "sound/gta3d/radio_3/msx.ogg",
-			"length": 1500
+			"length": 1500.0787301587
 		}
 	],
 	"flashback": [
 		{
 			"sound": "sound/gta3d/radio_3/flashback.ogg",
-			"length": 1125
+			"length": 1125.8659410431
 		}
 	],
 	"chatterbox": [
 		{
 			"sound": "sound/gta3d/radio_3/chatterbox.ogg",
-			"length": 3484
+			"length": 3484.1309750567
 		}
 	],
 	"adverts": [
