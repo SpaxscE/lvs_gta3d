@@ -673,6 +673,48 @@
 			"length": 3966.7722448979594
 		}
 	],
+	"headradio": [
+		{
+			"sound": "sound/gta3d/radio_3/headradio.ogg",
+			"length": 1405
+		}
+	],
+	"doubleclef": [
+		{
+			"sound": "sound/gta3d/radio_3/doubleclef.ogg",
+			"length": 1364
+		}
+	],
+	"rise": [
+		{
+			"sound": "sound/gta3d/radio_3/rise.ogg",
+			"length": 1568
+		}
+	],
+	"lips106": [
+		{
+			"sound": "sound/gta3d/radio_3/lips106.ogg",
+			"length": 1206
+		}
+	],
+	"msx": [
+		{
+			"sound": "sound/gta3d/radio_3/msx.ogg",
+			"length": 1500
+		}
+	],
+	"flashback": [
+		{
+			"sound": "sound/gta3d/radio_3/flashback.ogg",
+			"length": 1125
+		}
+	],
+	"chatterbox": [
+		{
+			"sound": "sound/gta3d/radio_3/chatterbox.ogg",
+			"length": 3484
+		}
+	],
 	"adverts": [
 		{
 			"sound": "sound/gta3d/radio/adverts/abiggo_brokerage_and_pawn.ogg",

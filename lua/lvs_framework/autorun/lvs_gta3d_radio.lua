@@ -126,6 +126,48 @@ LVSGTA3D.Channel = {
 		icon = Material("lvs/gta3d/wave103.png"),
 		sequential = true,
 	},
+	[21] = {
+		name = "Head Radio",
+		channel = "headradio",
+		icon = Material("lvs/gta3d/headradio.png"),
+		sequential = true,
+	},
+	[22] = {
+		name = "Double Clef FM",
+		channel = "doubleclef",
+		icon = Material("lvs/gta3d/doubleclef.png"),
+		sequential = true,
+	},
+	[23] = {
+		name = "Rise FM",
+		channel = "rise",
+		icon = Material("lvs/gta3d/rise.png"),
+		sequential = true,
+	},
+	[24] = {
+		name = "Lips 106",
+		channel = "lips106",
+		icon = Material("lvs/gta3d/lips106.png"),
+		sequential = true,
+	},
+	[25] = {
+		name = "MSX FM",
+		channel = "msx",
+		icon = Material("lvs/gta3d/msxfm.png"),
+		sequential = true,
+	},
+	[26] = {
+		name = "Flashback 95.6",
+		channel = "flashback",
+		icon = Material("lvs/gta3d/flashback.png"),
+		sequential = true,
+	},
+	[27] = {
+		name = "Chatterbox FM",
+		channel = "chatterbox",
+		icon = Material("lvs/gta3d/chatterbox.png"),
+		sequential = true,
+	},
 }
 
 function LVSGTA3D:GetChannel( id )
