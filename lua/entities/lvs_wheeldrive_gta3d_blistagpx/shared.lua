@@ -155,7 +155,7 @@ ENT.Lights = {
 		Trigger = "turnright",
 		SubMaterialID = 20,
 		Sprites = {
-			{  pos = "a_frt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_fr", active = { 0 } }, },
+			{  pos = "a_frt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_frt", active = { 0 } }, },
 			{  pos = "a_rrt", colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rr", active = { 0 } }, },
 		},
 	},
@@ -163,7 +163,7 @@ ENT.Lights = {
 		Trigger = "turnleft",
 		SubMaterialID = 21,
 		Sprites = {
-			{  pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_fl", active = { 0 } }, },
+			{  pos = "a_flt", colorG = 100, colorB = 0, colorA = 150, bodygroup = { name = "l_flt", active = { 0 } }, },
 			{  pos = "a_rlt", colorG = 0, colorB = 0, colorA = 150, bodygroup = { name = "l_rl", active = { 0 } }, },
 		},
 	},
