@@ -85,7 +85,8 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				gib = {
 					mdl = "models/diggercars/gtasa/sultan/boot_dam.mdl",
-					target = "placementOrigin",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
@@ -155,7 +156,8 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				gib = {
 					mdl = "models/diggercars/gtasa/sultan/bump_front_dam.mdl",
-					target = "placementOrigin",
+					pos = Vector(0,0,0),
+					ang = Angle(0,0,0),
 				},
 			},
 		}
