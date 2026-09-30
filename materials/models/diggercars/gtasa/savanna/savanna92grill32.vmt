@@ -1,0 +1,13 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/vehiclegeneric256_met.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/savanna/savanna92grill32"
+$bumpmap "models/diggercars/gtasa/savanna/savanna92grill32_nm"
+"$envmap" "env_cubemap"
+"$envmaptint" "[0.1 0.1 0.1]"
+$normalmapalphaenvmapmask "1"
+}
+}
+

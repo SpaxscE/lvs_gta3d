@@ -1,0 +1,10 @@
+"patch"
+{
+	include "materials/models/diggercars/gtasa/shared/alpha.vmt"
+	insert
+	{
+$basetexture				"models/diggercars/gtasa/savanna/savanna92interior128"
+$bumpmap "models/diggercars/gtasa/savanna/savanna92interior128_nm"
+"$colorfix" "{68 98 79}"
+}
+}
