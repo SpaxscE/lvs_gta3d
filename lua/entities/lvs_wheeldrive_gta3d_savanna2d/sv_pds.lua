@@ -196,7 +196,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [6] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/savanna/door_lf_dam.mdl",
+					mdl = "models/diggercars/gtasa/savanna/door_l_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
@@ -218,7 +218,7 @@ function ENT:CreatePDS()
 				sound = "SA_Collision",
 				bodygroup = { [5] = 3 },
 				gib = {
-					mdl = "models/diggercars/gtasa/savanna/door_rf_dam.mdl",
+					mdl = "models/diggercars/gtasa/savanna/door_r_dam.mdl",
 					pos = Vector(0,0,0),
 					ang = Angle(0,0,0),
 				},
